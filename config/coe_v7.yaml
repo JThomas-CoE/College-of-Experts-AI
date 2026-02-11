@@ -1,0 +1,78 @@
+# College of Experts V7 Configuration
+# ====================================
+
+system:
+  # VRAM budget (MB) - 64GB total
+  max_vram_mb: 64000
+  
+  # Expert slots: 3 for council router + 3 for expert execution = 6 total
+  # Each Qwen3-VL:4B needs ~9GB VRAM = ~54GB total
+  num_expert_slots: 6
+  
+  # Base model used for all experts and router (V7.0 constraint)
+  base_model: "models/Qwen3-VL-4B-Instruct"
+
+# Council Router Configuration
+router:
+  # Uses 3× Qwen3-VL:4B with parallel inference
+  type: "council"
+  temperatures: [0.3, 0.5, 0.7]
+  
+  # Voting thresholds
+  completion_majority: 2  # 2/3 votes needed for task completion
+  checkpoint_majority: 2  # 2/3 votes needed for chunk approval
+
+# HRM Loop Timing
+timing:
+  # Inner loop: crosstalk frequency (seconds)
+  crosstalk_interval_sec: 3
+  
+  # Inner loop: checkpoint frequency (seconds)
+  checkpoint_interval_sec: 10
+  
+  # Expert timeout before escalation (seconds)
+  expert_timeout_sec: 60
+  
+  # Outer loop: max iterations before best-effort synthesis
+  max_outer_iterations: 5
+  
+  # Inner loop: max iterations before chunk commit
+  max_inner_iterations: 3
+
+# Expert Council Mode (Temperature-Diverse Experts)
+council:
+  default_parallelism: 5
+  temperatures: [0.3, 0.5, 0.7, 0.9, 1.1]
+  selection_method: "vote"  # vote, critic, blend
+
+# Episodic Memory
+memory:
+  backend: "json"  # memvid, json, sqlite
+  max_wip_items: 100
+  commit_requires_approval: true
+  storage_path: "data/episodic_memory"
+
+# Expert Library
+expert_library:
+  catalog_path: "config/expert_catalog.json"
+  
+  # Experts to preload at startup (reduces first-query latency)
+  preload_experts: []  # Empty = load on demand
+  
+# Logging
+logging:
+  session_log_dir: "logs"
+  log_level: "INFO"
+  log_crosstalk: true
+  log_checkpoints: true
+
+# Debug Options
+debug:
+  # Print council voting details
+  verbose_voting: false
+  
+  # Print memory operations
+  verbose_memory: false
+  
+  # Disable parallel execution (for debugging)
+  sequential_mode: false

@@ -1,0 +1,178 @@
+# Security Architect Expert - Grounded Scope Document
+# V12 Architecture - Aligned to Qwen2.5-Coder-7B with security focus
+
+expert_id: security_architect
+display_name: "Security Architecture Expert"
+emoji: "🛡️"
+savant_model: "models/Qwen2.5-Coder-7B-DML"
+
+# Capability scope for embedding-based routing (~800 words)
+# These describe tasks this expert SHOULD handle
+capability_scope: |
+  Application security architecture design
+  Security design patterns and best practices
+  Defense-in-depth strategy planning
+  Security layer identification and placement
+  Trust boundary definition and enforcement
+  
+  Authentication system design
+  OAuth 2.0 flow implementation guidance
+  OpenID Connect integration patterns
+  JWT token design and validation
+  Session management security
+  Multi-factor authentication patterns
+  Password hashing strategies (bcrypt, argon2)
+  
+  Authorization and access control
+  Role-based access control (RBAC) design
+  Attribute-based access control (ABAC) patterns
+  Permission model architecture
+  Principle of least privilege implementation
+  
+  Data protection architecture
+  Encryption at rest strategies
+  Encryption in transit requirements
+  Key management architecture
+  Data classification and handling
+  PII and PHI data protection patterns
+  Data masking and anonymization approaches
+  
+  OWASP Top 10 vulnerability prevention
+  SQL injection prevention patterns
+  Cross-site scripting (XSS) mitigation
+  Cross-site request forgery (CSRF) protection
+  Insecure deserialization prevention
+  Security misconfiguration avoidance
+  Broken authentication prevention
+  Sensitive data exposure mitigation
+  
+  HIPAA technical safeguard design
+  HIPAA Security Rule compliance architecture
+  Access control technical requirements
+  Audit logging for HIPAA compliance
+  Encryption requirements for PHI
+  Integrity control mechanisms
+  
+  GDPR technical compliance design
+  Data protection by design principles
+  Privacy by default architecture
+  Data subject rights implementation
+  Consent management design
+  
+  Secure coding review guidance
+  Security code review checklist items
+  Vulnerability pattern identification
+  Secure development lifecycle guidance
+  Security testing strategy
+  
+  API security design
+  API authentication patterns
+  Rate limiting and throttling
+  Input validation strategies
+  API gateway security
+  
+  Audit logging architecture
+  Security event logging design
+  Log integrity protection
+  Audit trail requirements
+  Security monitoring integration
+  
+  Secrets management design
+  Secret storage architecture
+  Key rotation strategies
+  Environment variable security
+  Configuration security
+
+# Exclusion scope for embedding-based ANTI-routing (~400 words)
+# These describe tasks this expert should NOT handle
+exclusion_scope: |
+  Legal document drafting or contract writing
+  Privacy policy text authoring
+  Terms of service drafting
+  Compliance policy document prose
+  Legal liability assessment
+  Regulatory interpretation
+  
+  Clinical medical diagnosis
+  Medical treatment recommendations
+  Healthcare clinical procedures
+  Patient care protocols
+  Pharmacological interactions
+  
+  Mathematical theorem proofs
+  Statistical hypothesis testing
+  Advanced calculus derivations
+  Numerical algorithm design
+  
+  Database schema design
+  SQL query writing and optimization
+  Database performance tuning
+  Data modeling decisions
+  Database administration tasks
+  
+  Business application feature coding
+  User interface implementation
+  Frontend development
+  Non-security-focused backend logic
+  General purpose scripting
+  
+  Penetration testing execution
+  Exploit development
+  Active vulnerability scanning
+  Red team operations
+  Social engineering assessment
+  
+  Network infrastructure design
+  Firewall rule configuration
+  Router and switch setup
+  Network topology planning
+  Physical security controls
+  
+  Cloud infrastructure provisioning
+  Kubernetes deployment configuration
+  Container orchestration
+  DevOps pipeline implementation
+
+# Harness constraints - injected into system prompt
+harness_constraints: |
+  You are a security architecture specialist. Your expertise covers:
+  - Application security design patterns
+  - Authentication and authorization architecture
+  - OWASP Top 10 prevention strategies
+  - Data protection (encryption, masking, key management)
+  - HIPAA/GDPR technical compliance design
+  - Audit logging and security monitoring
+  
+  You MAY:
+  - Design security architectures and patterns
+  - Review designs for security vulnerabilities
+  - Recommend encryption and access control approaches
+  - Define security requirements and controls
+  - Guide secure development practices
+  
+  You must REFUSE or REDIRECT if asked to:
+  - Draft legal documents or policies
+  - Provide medical diagnoses
+  - Write complex SQL queries
+  - Perform active penetration testing
+  - Configure network infrastructure
+  
+  When a request is partially outside your scope:
+  - Complete the security design portions
+  - Insert {{ASSIST:expert:domain:description}} for non-security needs
+  - Example: {{ASSIST:expert:python_coder:implement this encryption pattern}}
+  - Example: {{ASSIST:expert:legal:HIPAA BAA contract language}}
+
+# Verification metadata
+capability_verified_date: "2026-01-26"
+verification_method: "owasp_design_review_v1"
+known_strengths:
+  - "OWASP vulnerability patterns"
+  - "Authentication/authorization design"
+  - "Encryption pattern selection"
+  - "HIPAA technical safeguards"
+known_weaknesses:
+  - "Cloud-native security (AWS/Azure specific)"
+  - "Hardware security modules (HSM)"
+  - "Embedded systems security"
+  - "Industrial control system security"

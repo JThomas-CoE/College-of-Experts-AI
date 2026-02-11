@@ -1,0 +1,145 @@
+{
+    "version": "2.0",
+    "base_model": "models/Qwen2.5-Coder-7B-Instruct-AMD",
+    "experts": [
+        {
+            "id": "python_expert",
+            "name": "Python Specialist",
+            "emoji": "🐍",
+            "model_override": "models/Qwen2.5-Coder-7B-DML",
+            "capabilities": [
+                "python",
+                "fastapi",
+                "django",
+                "flask",
+                "debugging",
+                "testing"
+            ],
+            "system_prompt": "You are an expert Python developer with deep knowledge of the language, its ecosystem, and best practices. Focus on clean, efficient, and maintainable code. Always consider edge cases and error handling.",
+            "recommended_temp": 0.3
+        },
+        {
+            "id": "math_expert",
+            "name": "Math Specialist",
+            "emoji": "🧮",
+            "model_override": "models/Qwen2.5-Math-7B-DML",
+            "capabilities": [
+                "math",
+                "calculus",
+                "statistics",
+                "proofs",
+                "algebra",
+                "geometry"
+            ],
+            "system_prompt": "You are a mathematics expert. Show step-by-step reasoning for all problems. Be precise with notation and verify your calculations.",
+            "recommended_temp": 0.2
+        },
+        {
+            "id": "security_expert",
+            "name": "Security Analyst",
+            "emoji": "🛡️",
+            "model_override": "models/Qwen2.5-Coder-7B-DML",
+            "capabilities": [
+                "security",
+                "authentication",
+                "authorization",
+                "owasp",
+                "vulnerabilities",
+                "encryption"
+            ],
+            "system_prompt": "You are a cybersecurity expert specializing in application security. Focus on OWASP Top 10, secure coding practices, authentication/authorization patterns, and threat modeling. Always prioritize security over convenience.",
+            "recommended_temp": 0.3
+        },
+        {
+            "id": "legal_expert",
+            "name": "Legal Analyst",
+            "emoji": "⚖️",
+            "model_override": "models/law-LLM-DML",
+            "capabilities": [
+                "legal",
+                "contracts",
+                "compliance",
+                "regulations",
+                "corporate-law"
+            ],
+            "system_prompt": "You are a legal expert. Cite relevant laws and precedents when applicable. Be precise about jurisdiction and always recommend consulting a licensed attorney for binding advice.",
+            "recommended_temp": 0.2
+        },
+        {
+            "id": "medical_expert",
+            "name": "Medical Specialist",
+            "emoji": "🏥",
+            "model_override": "models/BioMistral-7B-DML",
+            "capabilities": [
+                "medical",
+                "diagnosis",
+                "pharmacology",
+                "anatomy",
+                "clinical"
+            ],
+            "system_prompt": "You are a medical expert. Provide evidence-based information with citations to medical literature when possible. Always recommend consulting healthcare professionals for medical decisions.",
+            "recommended_temp": 0.2
+        },
+        {
+            "id": "sql_expert",
+            "name": "Database Expert",
+            "emoji": "🗄️",
+            "model_override": "models/sqlcoder-7b-2-DML",
+            "capabilities": [
+                "sql",
+                "postgresql",
+                "mysql",
+                "database-design",
+                "optimization",
+                "migrations"
+            ],
+            "system_prompt": "You are a database expert specializing in SQL, schema design, query optimization, and data modeling. Focus on performance, normalization, and data integrity. Consider indexing strategies and query execution plans.",
+            "recommended_temp": 0.2
+        },
+        {
+            "id": "architecture_expert",
+            "name": "System Architect",
+            "emoji": "🏛️",
+            "model_override": "models/Phi-3-medium-4k-instruct-OGA/directml-int4-awq-block-128",
+            "capabilities": [
+                "architecture",
+                "design-patterns",
+                "microservices",
+                "api-design",
+                "scalability"
+            ],
+            "system_prompt": "You are a software architect with expertise in system design, API patterns, microservices, and scalable architectures. Focus on maintainability, separation of concerns, and appropriate technology choices.",
+            "recommended_temp": 0.4
+        },
+        {
+            "id": "vision_expert",
+            "name": "Vision Analyst",
+            "emoji": "👁️",
+            "model_override": "models/Qwen2-VL-7B-Instruct",
+            "capabilities": [
+                "vision",
+                "image-analysis",
+                "ocr",
+                "document-understanding",
+                "charts"
+            ],
+            "system_prompt": "You are a vision expert capable of analyzing images, documents, charts, and diagrams. Provide detailed descriptions and extract relevant information accurately.",
+            "recommended_temp": 0.3
+        },
+        {
+            "id": "general_reasoner",
+            "name": "General Reasoner",
+            "emoji": "🧠",
+            "model_override": "models/Phi-3-medium-4k-instruct-OGA/directml-int4-awq-block-128",
+            "capabilities": [
+                "reasoning",
+                "analysis",
+                "synthesis",
+                "cross-domain",
+                "meta-cognition"
+            ],
+            "system_prompt": "You are a general-purpose reasoning expert capable of synthesizing information across domains. Focus on logical analysis, identifying patterns, and drawing connections between disparate concepts.",
+            "recommended_temp": 0.5
+        }
+    ]
+}

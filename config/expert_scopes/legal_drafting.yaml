@@ -1,0 +1,180 @@
+# Legal Drafting Expert - Grounded Scope Document
+# V12 Architecture - Aligned to Law-LLM-7B training data
+
+expert_id: legal_drafting
+display_name: "Legal Drafting Expert"
+emoji: "⚖️"
+savant_model: "models/law-LLM-DML"
+
+# Capability scope for embedding-based routing (~800 words)
+# These describe tasks this expert SHOULD handle
+capability_scope: |
+  Legal disclaimer drafting and review
+  Limitation of liability clauses
+  Indemnification provisions
+  Hold harmless agreements
+  Warranty disclaimer language
+  No-warranty and as-is provisions
+  
+  Software licensing agreements
+  MIT License customization and explanation
+  Apache 2.0 License provisions
+  GNU GPL compatibility considerations
+  Proprietary software license drafting
+  End-user license agreements (EULA)
+  Software-as-a-Service (SaaS) terms
+  
+  Terms of service document drafting
+  Website terms and conditions
+  Acceptable use policies
+  User-generated content policies
+  Account termination provisions
+  
+  Privacy policy drafting
+  CCPA compliance notice language
+  GDPR privacy notice requirements
+  Data collection disclosure statements
+  Cookie policy provisions
+  Data retention policy language
+  
+  Non-disclosure agreements (NDA)
+  Mutual NDA provisions
+  Unilateral confidentiality agreements
+  Trade secret protection clauses
+  Confidential information definitions
+  
+  Independent contractor agreements
+  Work-for-hire provisions
+  Intellectual property assignment clauses
+  Non-compete clause drafting
+  Non-solicitation provisions
+  
+  Delaware corporate law provisions
+  Delaware corporation formation documents
+  Certificate of incorporation language
+  Corporate bylaws drafting
+  Board resolution templates
+  Stockholder agreement provisions
+  
+  Employment agreement provisions
+  At-will employment disclaimers
+  Severance agreement terms
+  Employee handbook policies
+  
+  Contract interpretation and analysis
+  Contract clause explanation
+  Legal terminology definition
+  Statutory citation and reference
+  Regulatory requirement identification
+  
+  HIPAA Business Associate Agreements
+  HIPAA compliance documentation language
+  Protected Health Information (PHI) handling provisions
+  GDPR data processing agreements
+  
+  Intellectual property provisions
+  Copyright assignment language
+  Trademark usage guidelines
+  Patent licensing terms
+
+# Exclusion scope for embedding-based ANTI-routing (~400 words)
+# These describe tasks this expert should NOT handle
+exclusion_scope: |
+  Software code implementation or debugging
+  Python scripting or programming
+  Database queries or schema design
+  API endpoint implementation
+  Technical architecture decisions
+  
+  Clinical medical diagnosis
+  Medical treatment recommendations
+  Pharmacological advice
+  Patient care protocols
+  Healthcare clinical procedures
+  
+  Mathematical calculations or proofs
+  Statistical analysis methodology
+  Data science algorithms
+  Numerical computation
+  
+  Security vulnerability assessment
+  Penetration testing procedures
+  Encryption implementation code
+  Security architecture design
+  Cybersecurity incident response
+  
+  Courtroom litigation strategy
+  Trial preparation procedures
+  Witness examination techniques
+  Legal case strategy
+  Appellate brief writing
+  
+  Tax return preparation
+  Tax planning advice
+  IRS audit representation
+  Tax code interpretation
+  Financial auditing procedures
+  
+  Patent prosecution
+  Patent claim drafting for technical inventions
+  Patent prior art analysis
+  USPTO filing procedures
+  
+  Immigration law petitions
+  Visa application procedures
+  Citizenship documentation
+  
+  Criminal defense strategy
+  Criminal sentencing guidelines
+  Plea bargain negotiations
+  
+  Non-US jurisdictional law
+  International law treaties
+  Foreign legal system analysis
+  EU member state specific law
+
+# Harness constraints - injected into system prompt
+harness_constraints: |
+  You are a legal drafting specialist. Your expertise covers:
+  - Disclaimers, limitations of liability, indemnification
+  - Software licenses, terms of service, privacy policies
+  - NDAs, contractor agreements, employment provisions
+  - Delaware corporate documents, bylaws, resolutions
+  - HIPAA BAAs, GDPR DPAs, compliance documentation
+  
+  You MAY:
+  - Draft legal text for contracts, agreements, policies
+  - Explain legal concepts and terminology
+  - Identify relevant statutes and regulations
+  - Review and improve existing legal language
+  - Cite Delaware Code, UCC, or federal regulations
+  
+  You must REFUSE or REDIRECT if asked to:
+  - Write code or technical implementations
+  - Provide medical diagnoses or treatment advice
+  - Perform mathematical calculations
+  - Design security architectures
+  - Provide litigation strategy or courtroom advice
+  
+  ALWAYS include this notice:
+  "This is informational only and does not constitute legal advice.
+   Consult a licensed attorney for binding legal guidance."
+  
+  When a request is partially outside your scope:
+  - Complete the legal drafting portions
+  - Insert {{ASSIST:expert:domain:description}} for non-legal needs
+  - Example: {{ASSIST:expert:python_coder:encryption implementation code}}
+
+# Verification metadata
+capability_verified_date: "2026-01-26"
+verification_method: "legalbench_subset_v1"
+known_strengths:
+  - "Contract drafting and interpretation"
+  - "Software licensing terminology"
+  - "Delaware corporate law"
+  - "Privacy policy requirements"
+known_weaknesses:
+  - "Non-US jurisdictions (UK, EU member states)"
+  - "Highly technical patent claims"
+  - "Recent case law citations (training cutoff)"
+  - "Specific court formatting requirements"

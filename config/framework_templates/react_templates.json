@@ -1,0 +1,1976 @@
+[
+  {
+    "id": "react_react_functional_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Functional Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "props",
+        "dependencies": [],
+        "description": "Complete props"
+      },
+      {
+        "id": "s1",
+        "title": "state",
+        "dependencies": [],
+        "description": "Complete state"
+      },
+      {
+        "id": "s2",
+        "title": "effects",
+        "dependencies": [],
+        "description": "Complete effects"
+      },
+      {
+        "id": "s3",
+        "title": "render",
+        "dependencies": [],
+        "description": "Complete render"
+      },
+      {
+        "id": "s4",
+        "title": "export",
+        "dependencies": [],
+        "description": "Complete export"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Functional Component framework template"
+  },
+  {
+    "id": "react_react_custom_hook",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Custom Hook",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "state",
+        "dependencies": [],
+        "description": "Complete state"
+      },
+      {
+        "id": "s1",
+        "title": "effects",
+        "dependencies": [],
+        "description": "Complete effects"
+      },
+      {
+        "id": "s2",
+        "title": "handlers",
+        "dependencies": [],
+        "description": "Complete handlers"
+      },
+      {
+        "id": "s3",
+        "title": "return_value",
+        "dependencies": [],
+        "description": "Complete return_value"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Custom Hook framework template"
+  },
+  {
+    "id": "react_react_context_provider",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Context Provider",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "context",
+        "dependencies": [],
+        "description": "Complete context"
+      },
+      {
+        "id": "s1",
+        "title": "provider",
+        "dependencies": [],
+        "description": "Complete provider"
+      },
+      {
+        "id": "s2",
+        "title": "hook",
+        "dependencies": [],
+        "description": "Complete hook"
+      },
+      {
+        "id": "s3",
+        "title": "usage",
+        "dependencies": [],
+        "description": "Complete usage"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Context Provider framework template"
+  },
+  {
+    "id": "react_react_form_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Form Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "state",
+        "dependencies": [],
+        "description": "Complete state"
+      },
+      {
+        "id": "s1",
+        "title": "handlers",
+        "dependencies": [],
+        "description": "Complete handlers"
+      },
+      {
+        "id": "s2",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s3",
+        "title": "submission",
+        "dependencies": [],
+        "description": "Complete submission"
+      },
+      {
+        "id": "s4",
+        "title": "render",
+        "dependencies": [],
+        "description": "Complete render"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Form Component framework template"
+  },
+  {
+    "id": "react_react_modal_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Modal Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "portal",
+        "dependencies": [],
+        "description": "Complete portal"
+      },
+      {
+        "id": "s1",
+        "title": "overlay",
+        "dependencies": [],
+        "description": "Complete overlay"
+      },
+      {
+        "id": "s2",
+        "title": "content",
+        "dependencies": [],
+        "description": "Complete content"
+      },
+      {
+        "id": "s3",
+        "title": "close_handler",
+        "dependencies": [],
+        "description": "Complete close_handler"
+      },
+      {
+        "id": "s4",
+        "title": "accessibility",
+        "dependencies": [],
+        "description": "Complete accessibility"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Modal Component framework template"
+  },
+  {
+    "id": "react_react_table_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Table Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "headers",
+        "dependencies": [],
+        "description": "Complete headers"
+      },
+      {
+        "id": "s1",
+        "title": "rows",
+        "dependencies": [],
+        "description": "Complete rows"
+      },
+      {
+        "id": "s2",
+        "title": "sorting",
+        "dependencies": [],
+        "description": "Complete sorting"
+      },
+      {
+        "id": "s3",
+        "title": "pagination",
+        "dependencies": [],
+        "description": "Complete pagination"
+      },
+      {
+        "id": "s4",
+        "title": "selection",
+        "dependencies": [],
+        "description": "Complete selection"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Table Component framework template"
+  },
+  {
+    "id": "react_react_list_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React List Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "items",
+        "dependencies": [],
+        "description": "Complete items"
+      },
+      {
+        "id": "s1",
+        "title": "rendering",
+        "dependencies": [],
+        "description": "Complete rendering"
+      },
+      {
+        "id": "s2",
+        "title": "virtualization",
+        "dependencies": [],
+        "description": "Complete virtualization"
+      },
+      {
+        "id": "s3",
+        "title": "empty_state",
+        "dependencies": [],
+        "description": "Complete empty_state"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React List Component framework template"
+  },
+  {
+    "id": "react_react_search_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Search Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "input",
+        "dependencies": [],
+        "description": "Complete input"
+      },
+      {
+        "id": "s1",
+        "title": "debounce",
+        "dependencies": [],
+        "description": "Complete debounce"
+      },
+      {
+        "id": "s2",
+        "title": "results",
+        "dependencies": [],
+        "description": "Complete results"
+      },
+      {
+        "id": "s3",
+        "title": "highlighting",
+        "dependencies": [],
+        "description": "Complete highlighting"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Search Component framework template"
+  },
+  {
+    "id": "react_react_tabs_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Tabs Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "tab_list",
+        "dependencies": [],
+        "description": "Complete tab_list"
+      },
+      {
+        "id": "s1",
+        "title": "tab_panels",
+        "dependencies": [],
+        "description": "Complete tab_panels"
+      },
+      {
+        "id": "s2",
+        "title": "state",
+        "dependencies": [],
+        "description": "Complete state"
+      },
+      {
+        "id": "s3",
+        "title": "accessibility",
+        "dependencies": [],
+        "description": "Complete accessibility"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Tabs Component framework template"
+  },
+  {
+    "id": "react_react_accordion_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Accordion Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "items",
+        "dependencies": [],
+        "description": "Complete items"
+      },
+      {
+        "id": "s1",
+        "title": "expand_collapse",
+        "dependencies": [],
+        "description": "Complete expand_collapse"
+      },
+      {
+        "id": "s2",
+        "title": "animation",
+        "dependencies": [],
+        "description": "Complete animation"
+      },
+      {
+        "id": "s3",
+        "title": "accessibility",
+        "dependencies": [],
+        "description": "Complete accessibility"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Accordion Component framework template"
+  },
+  {
+    "id": "react_react_dropdown_menu",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Dropdown Menu",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "trigger",
+        "dependencies": [],
+        "description": "Complete trigger"
+      },
+      {
+        "id": "s1",
+        "title": "menu",
+        "dependencies": [],
+        "description": "Complete menu"
+      },
+      {
+        "id": "s2",
+        "title": "items",
+        "dependencies": [],
+        "description": "Complete items"
+      },
+      {
+        "id": "s3",
+        "title": "keyboard",
+        "dependencies": [],
+        "description": "Complete keyboard"
+      },
+      {
+        "id": "s4",
+        "title": "accessibility",
+        "dependencies": [],
+        "description": "Complete accessibility"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Dropdown Menu framework template"
+  },
+  {
+    "id": "react_react_toast_notifications",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Toast Notifications",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "context",
+        "dependencies": [],
+        "description": "Complete context"
+      },
+      {
+        "id": "s1",
+        "title": "toast_component",
+        "dependencies": [],
+        "description": "Complete toast_component"
+      },
+      {
+        "id": "s2",
+        "title": "queue",
+        "dependencies": [],
+        "description": "Complete queue"
+      },
+      {
+        "id": "s3",
+        "title": "animations",
+        "dependencies": [],
+        "description": "Complete animations"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Toast Notifications framework template"
+  },
+  {
+    "id": "react_react_infinite_scroll",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Infinite Scroll",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "data_fetching",
+        "dependencies": [],
+        "description": "Complete data_fetching"
+      },
+      {
+        "id": "s1",
+        "title": "intersection_observer",
+        "dependencies": [],
+        "description": "Complete intersection_observer"
+      },
+      {
+        "id": "s2",
+        "title": "loading",
+        "dependencies": [],
+        "description": "Complete loading"
+      },
+      {
+        "id": "s3",
+        "title": "error",
+        "dependencies": [],
+        "description": "Complete error"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Infinite Scroll framework template"
+  },
+  {
+    "id": "react_react_drag_and_drop",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Drag and Drop",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "draggable",
+        "dependencies": [],
+        "description": "Complete draggable"
+      },
+      {
+        "id": "s1",
+        "title": "droppable",
+        "dependencies": [],
+        "description": "Complete droppable"
+      },
+      {
+        "id": "s2",
+        "title": "dnd_context",
+        "dependencies": [],
+        "description": "Complete dnd_context"
+      },
+      {
+        "id": "s3",
+        "title": "handlers",
+        "dependencies": [],
+        "description": "Complete handlers"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Drag and Drop framework template"
+  },
+  {
+    "id": "react_react_file_upload",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React File Upload",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "dropzone",
+        "dependencies": [],
+        "description": "Complete dropzone"
+      },
+      {
+        "id": "s1",
+        "title": "preview",
+        "dependencies": [],
+        "description": "Complete preview"
+      },
+      {
+        "id": "s2",
+        "title": "progress",
+        "dependencies": [],
+        "description": "Complete progress"
+      },
+      {
+        "id": "s3",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React File Upload framework template"
+  },
+  {
+    "id": "react_react_data_fetching_hook",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Data Fetching Hook",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "fetch",
+        "dependencies": [],
+        "description": "Complete fetch"
+      },
+      {
+        "id": "s1",
+        "title": "loading",
+        "dependencies": [],
+        "description": "Complete loading"
+      },
+      {
+        "id": "s2",
+        "title": "error",
+        "dependencies": [],
+        "description": "Complete error"
+      },
+      {
+        "id": "s3",
+        "title": "refetch",
+        "dependencies": [],
+        "description": "Complete refetch"
+      },
+      {
+        "id": "s4",
+        "title": "cache",
+        "dependencies": [],
+        "description": "Complete cache"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Data Fetching Hook framework template"
+  },
+  {
+    "id": "react_react_auth_context",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Auth Context",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "user_state",
+        "dependencies": [],
+        "description": "Complete user_state"
+      },
+      {
+        "id": "s1",
+        "title": "login",
+        "dependencies": [],
+        "description": "Complete login"
+      },
+      {
+        "id": "s2",
+        "title": "logout",
+        "dependencies": [],
+        "description": "Complete logout"
+      },
+      {
+        "id": "s3",
+        "title": "protected_route",
+        "dependencies": [],
+        "description": "Complete protected_route"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Auth Context framework template"
+  },
+  {
+    "id": "react_react_theme_context",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Theme Context",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "theme_state",
+        "dependencies": [],
+        "description": "Complete theme_state"
+      },
+      {
+        "id": "s1",
+        "title": "toggle",
+        "dependencies": [],
+        "description": "Complete toggle"
+      },
+      {
+        "id": "s2",
+        "title": "provider",
+        "dependencies": [],
+        "description": "Complete provider"
+      },
+      {
+        "id": "s3",
+        "title": "hook",
+        "dependencies": [],
+        "description": "Complete hook"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Theme Context framework template"
+  },
+  {
+    "id": "react_react_query_integration",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Query Integration",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "queries",
+        "dependencies": [],
+        "description": "Complete queries"
+      },
+      {
+        "id": "s1",
+        "title": "mutations",
+        "dependencies": [],
+        "description": "Complete mutations"
+      },
+      {
+        "id": "s2",
+        "title": "cache",
+        "dependencies": [],
+        "description": "Complete cache"
+      },
+      {
+        "id": "s3",
+        "title": "optimistic",
+        "dependencies": [],
+        "description": "Complete optimistic"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Query Integration framework template"
+  },
+  {
+    "id": "react_react_router_setup",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Router Setup",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "routes",
+        "dependencies": [],
+        "description": "Complete routes"
+      },
+      {
+        "id": "s1",
+        "title": "layout",
+        "dependencies": [],
+        "description": "Complete layout"
+      },
+      {
+        "id": "s2",
+        "title": "guards",
+        "dependencies": [],
+        "description": "Complete guards"
+      },
+      {
+        "id": "s3",
+        "title": "lazy_loading",
+        "dependencies": [],
+        "description": "Complete lazy_loading"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Router Setup framework template"
+  },
+  {
+    "id": "react_react_form_hook_integration",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Form Hook Integration",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "register",
+        "dependencies": [],
+        "description": "Complete register"
+      },
+      {
+        "id": "s1",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s2",
+        "title": "errors",
+        "dependencies": [],
+        "description": "Complete errors"
+      },
+      {
+        "id": "s3",
+        "title": "submission",
+        "dependencies": [],
+        "description": "Complete submission"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Form Hook Integration framework template"
+  },
+  {
+    "id": "react_react_state_management_zustand",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React State Management Zustand",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "store",
+        "dependencies": [],
+        "description": "Complete store"
+      },
+      {
+        "id": "s1",
+        "title": "actions",
+        "dependencies": [],
+        "description": "Complete actions"
+      },
+      {
+        "id": "s2",
+        "title": "selectors",
+        "dependencies": [],
+        "description": "Complete selectors"
+      },
+      {
+        "id": "s3",
+        "title": "middleware",
+        "dependencies": [],
+        "description": "Complete middleware"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React State Management Zustand framework template"
+  },
+  {
+    "id": "react_react_error_boundary",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Error Boundary",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "boundary_class",
+        "dependencies": [],
+        "description": "Complete boundary_class"
+      },
+      {
+        "id": "s1",
+        "title": "fallback",
+        "dependencies": [],
+        "description": "Complete fallback"
+      },
+      {
+        "id": "s2",
+        "title": "reset",
+        "dependencies": [],
+        "description": "Complete reset"
+      },
+      {
+        "id": "s3",
+        "title": "logging",
+        "dependencies": [],
+        "description": "Complete logging"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Error Boundary framework template"
+  },
+  {
+    "id": "react_react_suspense_loading",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Suspense Loading",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "suspense",
+        "dependencies": [],
+        "description": "Complete suspense"
+      },
+      {
+        "id": "s1",
+        "title": "lazy",
+        "dependencies": [],
+        "description": "Complete lazy"
+      },
+      {
+        "id": "s2",
+        "title": "fallback",
+        "dependencies": [],
+        "description": "Complete fallback"
+      },
+      {
+        "id": "s3",
+        "title": "error_boundary",
+        "dependencies": [],
+        "description": "Complete error_boundary"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Suspense Loading framework template"
+  },
+  {
+    "id": "react_react_portal_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Portal Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "portal_root",
+        "dependencies": [],
+        "description": "Complete portal_root"
+      },
+      {
+        "id": "s1",
+        "title": "render",
+        "dependencies": [],
+        "description": "Complete render"
+      },
+      {
+        "id": "s2",
+        "title": "cleanup",
+        "dependencies": [],
+        "description": "Complete cleanup"
+      },
+      {
+        "id": "s3",
+        "title": "events",
+        "dependencies": [],
+        "description": "Complete events"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Portal Component framework template"
+  },
+  {
+    "id": "react_react_animation_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Animation Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "mount_animation",
+        "dependencies": [],
+        "description": "Complete mount_animation"
+      },
+      {
+        "id": "s1",
+        "title": "unmount_animation",
+        "dependencies": [],
+        "description": "Complete unmount_animation"
+      },
+      {
+        "id": "s2",
+        "title": "transitions",
+        "dependencies": [],
+        "description": "Complete transitions"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Animation Component framework template"
+  },
+  {
+    "id": "react_react_skeleton_loading",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Skeleton Loading",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "skeleton_component",
+        "dependencies": [],
+        "description": "Complete skeleton_component"
+      },
+      {
+        "id": "s1",
+        "title": "variants",
+        "dependencies": [],
+        "description": "Complete variants"
+      },
+      {
+        "id": "s2",
+        "title": "animation",
+        "dependencies": [],
+        "description": "Complete animation"
+      },
+      {
+        "id": "s3",
+        "title": "composition",
+        "dependencies": [],
+        "description": "Complete composition"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Skeleton Loading framework template"
+  },
+  {
+    "id": "react_react_responsive_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Responsive Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "breakpoints",
+        "dependencies": [],
+        "description": "Complete breakpoints"
+      },
+      {
+        "id": "s1",
+        "title": "media_queries",
+        "dependencies": [],
+        "description": "Complete media_queries"
+      },
+      {
+        "id": "s2",
+        "title": "render_props",
+        "dependencies": [],
+        "description": "Complete render_props"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Responsive Component framework template"
+  },
+  {
+    "id": "react_react_a11y_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React A11y Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "aria_attributes",
+        "dependencies": [],
+        "description": "Complete aria_attributes"
+      },
+      {
+        "id": "s1",
+        "title": "keyboard",
+        "dependencies": [],
+        "description": "Complete keyboard"
+      },
+      {
+        "id": "s2",
+        "title": "focus",
+        "dependencies": [],
+        "description": "Complete focus"
+      },
+      {
+        "id": "s3",
+        "title": "screen_reader",
+        "dependencies": [],
+        "description": "Complete screen_reader"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React A11y Component framework template"
+  },
+  {
+    "id": "react_react_testing_suite",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Testing Suite",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "render_tests",
+        "dependencies": [],
+        "description": "Complete render_tests"
+      },
+      {
+        "id": "s1",
+        "title": "interaction_tests",
+        "dependencies": [],
+        "description": "Complete interaction_tests"
+      },
+      {
+        "id": "s2",
+        "title": "snapshot_tests",
+        "dependencies": [],
+        "description": "Complete snapshot_tests"
+      },
+      {
+        "id": "s3",
+        "title": "mocks",
+        "dependencies": [],
+        "description": "Complete mocks"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Testing Suite framework template"
+  },
+  {
+    "id": "react_react_carousel_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Carousel Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "slides",
+        "dependencies": [],
+        "description": "Complete slides"
+      },
+      {
+        "id": "s1",
+        "title": "navigation",
+        "dependencies": [],
+        "description": "Complete navigation"
+      },
+      {
+        "id": "s2",
+        "title": "autoplay",
+        "dependencies": [],
+        "description": "Complete autoplay"
+      },
+      {
+        "id": "s3",
+        "title": "indicators",
+        "dependencies": [],
+        "description": "Complete indicators"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Carousel Component framework template"
+  },
+  {
+    "id": "react_react_date_picker",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Date Picker",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "calendar",
+        "dependencies": [],
+        "description": "Complete calendar"
+      },
+      {
+        "id": "s1",
+        "title": "input",
+        "dependencies": [],
+        "description": "Complete input"
+      },
+      {
+        "id": "s2",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s3",
+        "title": "localization",
+        "dependencies": [],
+        "description": "Complete localization"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Date Picker framework template"
+  },
+  {
+    "id": "react_react_select_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Select Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "options",
+        "dependencies": [],
+        "description": "Complete options"
+      },
+      {
+        "id": "s1",
+        "title": "search",
+        "dependencies": [],
+        "description": "Complete search"
+      },
+      {
+        "id": "s2",
+        "title": "multi_select",
+        "dependencies": [],
+        "description": "Complete multi_select"
+      },
+      {
+        "id": "s3",
+        "title": "async_options",
+        "dependencies": [],
+        "description": "Complete async_options"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Select Component framework template"
+  },
+  {
+    "id": "react_react_tree_view",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Tree View",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "nodes",
+        "dependencies": [],
+        "description": "Complete nodes"
+      },
+      {
+        "id": "s1",
+        "title": "expand_collapse",
+        "dependencies": [],
+        "description": "Complete expand_collapse"
+      },
+      {
+        "id": "s2",
+        "title": "selection",
+        "dependencies": [],
+        "description": "Complete selection"
+      },
+      {
+        "id": "s3",
+        "title": "lazy_loading",
+        "dependencies": [],
+        "description": "Complete lazy_loading"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Tree View framework template"
+  },
+  {
+    "id": "react_react_rich_text_editor",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Rich Text Editor",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "toolbar",
+        "dependencies": [],
+        "description": "Complete toolbar"
+      },
+      {
+        "id": "s1",
+        "title": "content",
+        "dependencies": [],
+        "description": "Complete content"
+      },
+      {
+        "id": "s2",
+        "title": "formatting",
+        "dependencies": [],
+        "description": "Complete formatting"
+      },
+      {
+        "id": "s3",
+        "title": "plugins",
+        "dependencies": [],
+        "description": "Complete plugins"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Rich Text Editor framework template"
+  },
+  {
+    "id": "react_react_chart_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Chart Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "data",
+        "dependencies": [],
+        "description": "Complete data"
+      },
+      {
+        "id": "s1",
+        "title": "options",
+        "dependencies": [],
+        "description": "Complete options"
+      },
+      {
+        "id": "s2",
+        "title": "responsive",
+        "dependencies": [],
+        "description": "Complete responsive"
+      },
+      {
+        "id": "s3",
+        "title": "interactivity",
+        "dependencies": [],
+        "description": "Complete interactivity"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Chart Component framework template"
+  },
+  {
+    "id": "react_react_map_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Map Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "markers",
+        "dependencies": [],
+        "description": "Complete markers"
+      },
+      {
+        "id": "s1",
+        "title": "layers",
+        "dependencies": [],
+        "description": "Complete layers"
+      },
+      {
+        "id": "s2",
+        "title": "controls",
+        "dependencies": [],
+        "description": "Complete controls"
+      },
+      {
+        "id": "s3",
+        "title": "events",
+        "dependencies": [],
+        "description": "Complete events"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Map Component framework template"
+  },
+  {
+    "id": "react_react_stepper_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Stepper Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "steps",
+        "dependencies": [],
+        "description": "Complete steps"
+      },
+      {
+        "id": "s1",
+        "title": "navigation",
+        "dependencies": [],
+        "description": "Complete navigation"
+      },
+      {
+        "id": "s2",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s3",
+        "title": "state",
+        "dependencies": [],
+        "description": "Complete state"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Stepper Component framework template"
+  },
+  {
+    "id": "react_react_timeline_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Timeline Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "events",
+        "dependencies": [],
+        "description": "Complete events"
+      },
+      {
+        "id": "s1",
+        "title": "layout",
+        "dependencies": [],
+        "description": "Complete layout"
+      },
+      {
+        "id": "s2",
+        "title": "scrolling",
+        "dependencies": [],
+        "description": "Complete scrolling"
+      },
+      {
+        "id": "s3",
+        "title": "filtering",
+        "dependencies": [],
+        "description": "Complete filtering"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Timeline Component framework template"
+  },
+  {
+    "id": "react_react_color_picker",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Color Picker",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "color_space",
+        "dependencies": [],
+        "description": "Complete color_space"
+      },
+      {
+        "id": "s1",
+        "title": "input",
+        "dependencies": [],
+        "description": "Complete input"
+      },
+      {
+        "id": "s2",
+        "title": "preview",
+        "dependencies": [],
+        "description": "Complete preview"
+      },
+      {
+        "id": "s3",
+        "title": "presets",
+        "dependencies": [],
+        "description": "Complete presets"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Color Picker framework template"
+  },
+  {
+    "id": "react_react_image_gallery",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Image Gallery",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "images",
+        "dependencies": [],
+        "description": "Complete images"
+      },
+      {
+        "id": "s1",
+        "title": "lightbox",
+        "dependencies": [],
+        "description": "Complete lightbox"
+      },
+      {
+        "id": "s2",
+        "title": "thumbnails",
+        "dependencies": [],
+        "description": "Complete thumbnails"
+      },
+      {
+        "id": "s3",
+        "title": "navigation",
+        "dependencies": [],
+        "description": "Complete navigation"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Image Gallery framework template"
+  },
+  {
+    "id": "react_react_video_player",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Video Player",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "controls",
+        "dependencies": [],
+        "description": "Complete controls"
+      },
+      {
+        "id": "s1",
+        "title": "progress",
+        "dependencies": [],
+        "description": "Complete progress"
+      },
+      {
+        "id": "s2",
+        "title": "quality",
+        "dependencies": [],
+        "description": "Complete quality"
+      },
+      {
+        "id": "s3",
+        "title": "subtitles",
+        "dependencies": [],
+        "description": "Complete subtitles"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Video Player framework template"
+  },
+  {
+    "id": "react_react_audio_player",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Audio Player",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "controls",
+        "dependencies": [],
+        "description": "Complete controls"
+      },
+      {
+        "id": "s1",
+        "title": "playlist",
+        "dependencies": [],
+        "description": "Complete playlist"
+      },
+      {
+        "id": "s2",
+        "title": "visualization",
+        "dependencies": [],
+        "description": "Complete visualization"
+      },
+      {
+        "id": "s3",
+        "title": "progress",
+        "dependencies": [],
+        "description": "Complete progress"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Audio Player framework template"
+  },
+  {
+    "id": "react_react_comment_system",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Comment System",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "comments",
+        "dependencies": [],
+        "description": "Complete comments"
+      },
+      {
+        "id": "s1",
+        "title": "replies",
+        "dependencies": [],
+        "description": "Complete replies"
+      },
+      {
+        "id": "s2",
+        "title": "voting",
+        "dependencies": [],
+        "description": "Complete voting"
+      },
+      {
+        "id": "s3",
+        "title": "moderation",
+        "dependencies": [],
+        "description": "Complete moderation"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Comment System framework template"
+  },
+  {
+    "id": "react_react_rating_component",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Rating Component",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "stars",
+        "dependencies": [],
+        "description": "Complete stars"
+      },
+      {
+        "id": "s1",
+        "title": "half_stars",
+        "dependencies": [],
+        "description": "Complete half_stars"
+      },
+      {
+        "id": "s2",
+        "title": "readonly",
+        "dependencies": [],
+        "description": "Complete readonly"
+      },
+      {
+        "id": "s3",
+        "title": "feedback",
+        "dependencies": [],
+        "description": "Complete feedback"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Rating Component framework template"
+  },
+  {
+    "id": "react_react_breadcrumb",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Breadcrumb",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "items",
+        "dependencies": [],
+        "description": "Complete items"
+      },
+      {
+        "id": "s1",
+        "title": "separator",
+        "dependencies": [],
+        "description": "Complete separator"
+      },
+      {
+        "id": "s2",
+        "title": "collapse",
+        "dependencies": [],
+        "description": "Complete collapse"
+      },
+      {
+        "id": "s3",
+        "title": "home",
+        "dependencies": [],
+        "description": "Complete home"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Breadcrumb framework template"
+  },
+  {
+    "id": "react_react_pagination_server",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Pagination Server",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "page_state",
+        "dependencies": [],
+        "description": "Complete page_state"
+      },
+      {
+        "id": "s1",
+        "title": "fetch",
+        "dependencies": [],
+        "description": "Complete fetch"
+      },
+      {
+        "id": "s2",
+        "title": "loading",
+        "dependencies": [],
+        "description": "Complete loading"
+      },
+      {
+        "id": "s3",
+        "title": "navigation",
+        "dependencies": [],
+        "description": "Complete navigation"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Pagination Server framework template"
+  },
+  {
+    "id": "react_react_filter_panel",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Filter Panel",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "filters",
+        "dependencies": [],
+        "description": "Complete filters"
+      },
+      {
+        "id": "s1",
+        "title": "state",
+        "dependencies": [],
+        "description": "Complete state"
+      },
+      {
+        "id": "s2",
+        "title": "apply",
+        "dependencies": [],
+        "description": "Complete apply"
+      },
+      {
+        "id": "s3",
+        "title": "reset",
+        "dependencies": [],
+        "description": "Complete reset"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Filter Panel framework template"
+  },
+  {
+    "id": "react_react_data_grid",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Data Grid",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "columns",
+        "dependencies": [],
+        "description": "Complete columns"
+      },
+      {
+        "id": "s1",
+        "title": "rows",
+        "dependencies": [],
+        "description": "Complete rows"
+      },
+      {
+        "id": "s2",
+        "title": "editing",
+        "dependencies": [],
+        "description": "Complete editing"
+      },
+      {
+        "id": "s3",
+        "title": "export",
+        "dependencies": [],
+        "description": "Complete export"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Data Grid framework template"
+  },
+  {
+    "id": "react_react_kanban_board",
+    "category": "react",
+    "subcategory": "components",
+    "title": "React Kanban Board",
+    "persona": "react_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "columns",
+        "dependencies": [],
+        "description": "Complete columns"
+      },
+      {
+        "id": "s1",
+        "title": "cards",
+        "dependencies": [],
+        "description": "Complete cards"
+      },
+      {
+        "id": "s2",
+        "title": "drag_drop",
+        "dependencies": [],
+        "description": "Complete drag_drop"
+      },
+      {
+        "id": "s3",
+        "title": "persistence",
+        "dependencies": [],
+        "description": "Complete persistence"
+      }
+    ],
+    "tags": [
+      "react",
+      "frontend",
+      "components"
+    ],
+    "description": "React Kanban Board framework template"
+  }
+]

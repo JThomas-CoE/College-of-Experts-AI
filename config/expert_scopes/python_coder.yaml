@@ -1,0 +1,143 @@
+# Python Coder Expert - Grounded Scope Document
+# V12 Architecture - Aligned to Qwen2.5-Coder-7B training data
+
+expert_id: python_coder
+display_name: "Python Development Expert"
+emoji: "🐍"
+savant_model: "models/Qwen2.5-Coder-7B-DML"
+
+# Capability scope for embedding-based routing (~800 words)
+# These describe tasks this expert SHOULD handle
+capability_scope: |
+  Python script development and implementation
+  Python function and class design with type hints
+  Python async/await patterns and asyncio programming
+  Python decorator implementation and metaprogramming
+  Python context managers and resource handling
+  Python exception handling and error management
+  Python file I/O operations and path manipulation
+  Python data structures: lists, dicts, sets, tuples, dataclasses
+  Python comprehensions and generator expressions
+  Python virtual environments and dependency management
+  Python package structure and module organization
+  
+  FastAPI web application development
+  FastAPI route handlers and endpoint implementation
+  FastAPI dependency injection patterns
+  FastAPI request/response models with Pydantic
+  FastAPI middleware and exception handlers
+  FastAPI authentication integration
+  
+  Flask web application development
+  Django web application basics
+  
+  SQLAlchemy ORM model definitions
+  SQLAlchemy query construction and execution
+  SQLAlchemy relationship mapping
+  SQLAlchemy session management
+  
+  Pytest test case implementation
+  Pytest fixtures and parameterization
+  Unit testing patterns and mocking
+  
+  Pandas DataFrame operations
+  NumPy array manipulation
+  Data processing and transformation scripts
+  CSV and JSON file processing
+  API client implementation with requests/httpx
+  
+  Cryptography library usage for encryption
+  Fernet symmetric encryption implementation
+  Hashlib for hashing operations
+  Secrets module for secure random generation
+  
+  Logging configuration and implementation
+  Argparse command-line interface design
+  Configuration file parsing (YAML, JSON, TOML)
+  Environment variable handling
+  
+  Python code refactoring and optimization
+  Python code review and improvement suggestions
+  Python debugging strategies
+  Python performance profiling approaches
+
+# Exclusion scope for embedding-based ANTI-routing (~400 words)
+# These describe tasks this expert should NOT handle
+exclusion_scope: |
+  Legal document drafting or contract writing
+  Legal advice or statutory interpretation
+  Jurisdictional legal analysis
+  Liability disclaimer authoring
+  Compliance policy document creation
+  
+  Clinical medical diagnosis or treatment recommendations
+  Pharmacological advice or drug interactions
+  Medical symptom interpretation
+  Patient care protocols
+  Healthcare clinical guidelines
+  
+  Mathematical theorem proofs
+  Advanced calculus derivations
+  Statistical hypothesis testing methodology
+  Abstract algebra or number theory
+  
+  Database schema design decisions
+  SQL query optimization strategies
+  Database indexing recommendations
+  Data modeling architecture choices
+  
+  Security vulnerability assessment
+  Penetration testing methodology
+  Threat modeling and risk analysis
+  Security architecture design
+  Compliance audit procedures
+  
+  System architecture design decisions
+  Infrastructure planning and scaling
+  Cloud deployment architecture
+  Microservices design patterns
+  
+  Non-Python programming languages (Java, C++, Rust, Go)
+  Frontend JavaScript/TypeScript development
+  Mobile application development
+  Low-level systems programming
+
+# Harness constraints - injected into system prompt
+harness_constraints: |
+  You are a Python development specialist. Your expertise covers:
+  - Python scripting, functions, classes, and modules
+  - Web frameworks: FastAPI, Flask, Django basics
+  - Data processing: Pandas, NumPy, file I/O
+  - Testing: Pytest, unit testing patterns
+  - Security-aware coding: encryption, hashing, secure patterns
+  
+  You MAY:
+  - Write Python code for any described functionality
+  - Implement secure coding patterns (encryption, auth)
+  - Create tests and documentation
+  - Refactor and optimize existing Python code
+  
+  You must REFUSE or REDIRECT if asked to:
+  - Draft legal documents or disclaimers
+  - Provide medical diagnoses or treatment advice
+  - Design database schemas (route to SQL expert)
+  - Perform security audits (route to security expert)
+  - Write mathematical proofs (route to math expert)
+  
+  When a request is partially outside your scope:
+  - Complete the Python implementation portions
+  - Insert {{ASSIST:expert:domain:description}} for non-Python needs
+  - Example: {{ASSIST:expert:legal:Delaware liability disclaimer text}}
+
+# Verification metadata
+capability_verified_date: "2026-01-26"
+verification_method: "benchmark_humaneval_v3"
+known_strengths:
+  - "Python 3.10+ modern syntax"
+  - "FastAPI/Pydantic ecosystem"
+  - "Async programming patterns"
+  - "Cryptography library usage"
+known_weaknesses:
+  - "Legacy Python 2.x code"
+  - "GUI frameworks (tkinter, PyQt)"
+  - "Machine learning model training code"

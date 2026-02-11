@@ -1,0 +1,176 @@
+# Medical Clinical Expert - Grounded Scope Document
+# V12 Architecture - Aligned to BioMistral-7B training data
+
+expert_id: medical_clinical
+display_name: "Medical Clinical Expert"
+emoji: "🏥"
+savant_model: "models/BioMistral-7B-DML"
+
+# Capability scope for embedding-based routing (~800 words)
+# These describe tasks this expert SHOULD handle
+capability_scope: |
+  Clinical symptom analysis and interpretation
+  Differential diagnosis reasoning
+  Medical history evaluation
+  Physical examination finding interpretation
+  Symptom pattern recognition
+  Disease progression understanding
+  
+  Pharmacological treatment information
+  Drug mechanism of action explanations
+  Drug interaction identification
+  Dosing consideration guidance
+  Side effect profiles
+  Contraindication identification
+  Therapeutic drug class comparisons
+  
+  Human anatomy and physiology
+  Organ system function explanations
+  Anatomical structure identification
+  Physiological process descriptions
+  Pathophysiology of disease states
+  Homeostatic mechanism explanations
+  
+  Disease and condition information
+  Infectious disease characteristics
+  Chronic disease management information
+  Autoimmune condition explanations
+  Metabolic disorder descriptions
+  Cardiovascular disease information
+  Respiratory condition details
+  Neurological disorder explanations
+  Oncological terminology and staging
+  
+  Laboratory test interpretation
+  Blood test result analysis
+  Urinalysis interpretation
+  Imaging study type explanations
+  Diagnostic test selection rationale
+  Reference range explanations
+  
+  Medical terminology definitions
+  ICD-10 code explanations
+  CPT procedure code descriptions
+  Medical abbreviation clarifications
+  Clinical documentation terminology
+  
+  Treatment protocol explanations
+  Standard of care descriptions
+  Clinical guideline summaries
+  Evidence-based medicine principles
+  Treatment outcome expectations
+  
+  Patient education content
+  Disease explanation for patients
+  Medication instructions
+  Lifestyle modification guidance
+  Preventive care recommendations
+  
+  Medical literature interpretation
+  Clinical study design understanding
+  Research finding explanations
+  Evidence quality assessment
+  PubMed article summarization
+
+# Exclusion scope for embedding-based ANTI-routing (~400 words)
+# These describe tasks this expert should NOT handle
+exclusion_scope: |
+  Software code implementation
+  Python scripting or programming
+  Database queries or design
+  API development
+  Web application development
+  Technical architecture design
+  
+  Legal document drafting
+  Medical malpractice analysis
+  HIPAA regulation interpretation
+  Healthcare contract drafting
+  Informed consent document creation
+  Liability disclaimer authoring
+  
+  Mathematical theorem proofs
+  Statistical methodology design
+  Biostatistics analysis execution
+  Clinical trial statistical design
+  
+  Security architecture design
+  Data encryption implementation
+  Access control system design
+  Cybersecurity vulnerability assessment
+  
+  SQL query writing
+  Database schema design
+  Electronic health record system design
+  Healthcare IT infrastructure
+  
+  Medical billing and coding procedures
+  Insurance claim processing
+  Healthcare reimbursement
+  Revenue cycle management
+  
+  Hospital administration
+  Healthcare facility management
+  Medical practice operations
+  Healthcare policy analysis
+  
+  Medical device operation
+  Surgical procedure execution
+  Interventional procedure guidance
+  Emergency medical protocols
+  
+  Veterinary medicine
+  Animal health diagnosis
+  Non-human pharmacology
+  
+  Mental health therapy sessions
+  Psychotherapy techniques
+  Counseling interventions
+
+# Harness constraints - injected into system prompt
+harness_constraints: |
+  You are a medical clinical knowledge specialist. Your expertise covers:
+  - Clinical symptom analysis and differential diagnosis reasoning
+  - Pharmacology: drug mechanisms, interactions, dosing considerations
+  - Human anatomy, physiology, and pathophysiology
+  - Disease information and treatment protocol explanations
+  - Laboratory test interpretation and diagnostic reasoning
+  - Medical terminology and clinical documentation
+  
+  You MAY:
+  - Explain medical conditions, symptoms, and treatments
+  - Describe drug mechanisms and potential interactions
+  - Interpret laboratory results in educational context
+  - Define medical terminology
+  - Summarize clinical guidelines and evidence
+  
+  You must REFUSE or REDIRECT if asked to:
+  - Write software code or technical implementations
+  - Draft legal documents or liability disclaimers
+  - Design security architectures
+  - Write SQL queries or design databases
+  - Provide specific treatment orders for actual patients
+  
+  ALWAYS include this notice:
+  "This information is educational only. It does not constitute medical advice.
+   Consult a qualified healthcare provider for diagnosis and treatment decisions."
+  
+  When a request is partially outside your scope:
+  - Complete the medical/clinical information portions
+  - Insert {{ASSIST:expert:domain:description}} for non-clinical needs
+  - Example: {{ASSIST:expert:legal:HIPAA compliance language}}
+  - Example: {{ASSIST:expert:python_coder:EHR data extraction script}}
+
+# Verification metadata
+capability_verified_date: "2026-01-26"
+verification_method: "pubmedqa_subset_v1"
+known_strengths:
+  - "General medical terminology"
+  - "Pharmacology and drug information"
+  - "Anatomy and physiology"
+  - "Common disease explanations"
+known_weaknesses:
+  - "Rare disease specifics"
+  - "Latest treatment protocols (training cutoff)"
+  - "Specific dosing calculations"
+  - "Regional healthcare system specifics"

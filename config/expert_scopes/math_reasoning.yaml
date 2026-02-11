@@ -1,0 +1,186 @@
+# Math Reasoning Expert - Grounded Scope Document
+# V12 Architecture - Aligned to Qwen2.5-Math-7B training data
+
+expert_id: math_reasoning
+display_name: "Mathematics Expert"
+emoji: "🧮"
+savant_model: "models/Qwen2.5-Math-7B-DML"
+
+# Capability scope for embedding-based routing (~800 words)
+# These describe tasks this expert SHOULD handle
+capability_scope: |
+  Arithmetic calculations and number operations
+  Integer arithmetic and divisibility
+  Fraction and decimal operations
+  Percentage calculations
+  Ratio and proportion problems
+  
+  Algebraic expression manipulation
+  Polynomial operations
+  Factoring expressions
+  Solving linear equations
+  Solving quadratic equations
+  Systems of linear equations
+  Inequalities and absolute values
+  Algebraic word problems
+  
+  Geometry problem solving
+  Triangle properties and theorems
+  Circle theorems and calculations
+  Area and perimeter calculations
+  Volume and surface area
+  Coordinate geometry
+  Pythagorean theorem applications
+  Similarity and congruence
+  Trigonometric ratios
+  
+  Calculus concepts and problems
+  Limits and continuity
+  Derivative calculations
+  Differentiation rules
+  Integration techniques
+  Definite and indefinite integrals
+  Applications of derivatives
+  Optimization problems
+  Related rates problems
+  
+  Probability and statistics
+  Basic probability calculations
+  Combinatorics (permutations, combinations)
+  Expected value calculations
+  Variance and standard deviation
+  Normal distribution problems
+  Probability distributions
+  Conditional probability
+  Bayes' theorem applications
+  
+  Number theory concepts
+  Prime numbers and factorization
+  GCD and LCM calculations
+  Modular arithmetic
+  Divisibility rules
+  
+  Sequences and series
+  Arithmetic sequences
+  Geometric sequences
+  Sum formulas
+  Convergence analysis
+  
+  Linear algebra basics
+  Matrix operations
+  Determinants
+  Vector operations
+  Dot and cross products
+  
+  Mathematical proof verification
+  Direct proof construction
+  Proof by contradiction
+  Mathematical induction
+  Logical reasoning in proofs
+  
+  Word problem translation
+  Converting verbal problems to equations
+  Unit conversion
+  Rate and work problems
+  Mixture problems
+  Distance-rate-time problems
+
+# Exclusion scope for embedding-based ANTI-routing (~400 words)
+# These describe tasks this expert should NOT handle
+exclusion_scope: |
+  Software code implementation
+  Python programming
+  Algorithm implementation in code
+  Data structure implementation
+  Web development
+  Database queries
+  
+  Legal document drafting
+  Contract interpretation
+  Regulatory compliance
+  Legal terminology
+  
+  Clinical medical diagnosis
+  Medical treatment information
+  Pharmacological calculations (beyond basic math)
+  Healthcare protocols
+  
+  Security architecture design
+  Encryption algorithms (beyond math theory)
+  Access control design
+  Vulnerability assessment
+  
+  SQL query writing
+  Database schema design
+  Data modeling
+  
+  Financial accounting
+  Tax calculations
+  Investment portfolio analysis
+  Business valuation
+  
+  Physics calculations (beyond math)
+  Engineering design
+  Scientific experiment design
+  Laboratory procedures
+  
+  Machine learning model design
+  Neural network architecture
+  AI algorithm implementation
+  Data science methodology
+  
+  Advanced research mathematics
+  Research-level abstract algebra
+  Advanced topology
+  Category theory
+  Research-level number theory
+
+# Harness constraints - injected into system prompt
+harness_constraints: |
+  You are a mathematics specialist. Your expertise covers:
+  - Arithmetic, algebra, and equation solving
+  - Geometry, trigonometry, and coordinate math
+  - Calculus: derivatives, integrals, optimization
+  - Probability, statistics, and combinatorics
+  - Number theory and sequences
+  - Linear algebra basics
+  - Mathematical proofs and reasoning
+  
+  You MAY:
+  - Solve mathematical problems step-by-step
+  - Explain mathematical concepts and theorems
+  - Verify mathematical proofs
+  - Translate word problems to equations
+  - Perform calculations and show work
+  
+  You must REFUSE or REDIRECT if asked to:
+  - Write software code implementations
+  - Draft legal documents
+  - Provide medical diagnoses
+  - Design security systems
+  - Write database queries
+  
+  ALWAYS:
+  - Show step-by-step work for calculations
+  - Verify your answers when possible
+  - State assumptions clearly
+  - Use proper mathematical notation
+  
+  When a request is partially outside your scope:
+  - Complete the mathematical portions
+  - Insert {{ASSIST:expert:domain:description}} for non-math needs
+  - Example: {{ASSIST:expert:python_coder:implement this algorithm in Python}}
+
+# Verification metadata
+capability_verified_date: "2026-01-26"
+verification_method: "gsm8k_math_benchmark_v1"
+known_strengths:
+  - "Step-by-step problem solving"
+  - "Algebraic manipulation"
+  - "Calculus fundamentals"
+  - "Probability calculations"
+known_weaknesses:
+  - "Advanced abstract mathematics"
+  - "Numerical precision for large calculations"
+  - "Mathematical visualization"
+  - "Research-level proofs"

@@ -1,0 +1,104 @@
+# Hardware Profiles for V12 College of Experts
+# 
+# Default: 32GB VRAM for accessibility
+# Users can override with --vram-limit flag or by specifying a profile
+#
+# Profiles are selected automatically based on detected VRAM,
+# or can be explicitly set via configuration.
+
+default_profile: "standard"
+
+profiles:
+  minimal:
+    description: "8GB GPUs (RTX 3070, RX 6700) - Sequential only"
+    vram_budget_mb: 8000
+    max_concurrent_slots: 1
+    context_length: 4096
+    preload_enabled: false
+    notes: |
+      Very tight VRAM budget. Only one savant loaded at a time.
+      Expect noticeable pauses (~3-5s) between different experts.
+      Recommended for testing or simple single-domain queries.
+    
+  compact:
+    description: "16GB GPUs (RTX 4070, RX 7800) - 1 active + preload"
+    vram_budget_mb: 16000
+    max_concurrent_slots: 1
+    context_length: 8192
+    preload_enabled: true
+    notes: |
+      Can preload next savant while current one executes.
+      Smoother transitions but still sequential execution.
+      Good for most single-domain and simple multi-domain queries.
+    
+  standard:
+    description: "32GB target - 2 parallel + preload (DEFAULT)"
+    vram_budget_mb: 32000
+    max_concurrent_slots: 2
+    context_length: 8192
+    preload_enabled: true
+    notes: |
+      Recommended for demos and general use.
+      Can run 2 independent slots in parallel.
+      Handles most multi-domain queries efficiently.
+      Accessible to users with 32GB+ system RAM using large iGPU allocation.
+    
+  performance:
+    description: "48GB+ GPUs - Near-full parallelism"
+    vram_budget_mb: 48000
+    max_concurrent_slots: 4
+    context_length: 16384
+    preload_enabled: true
+    notes: |
+      High-end configuration for maximum throughput.
+      Can run complex DAGs with significant parallelism.
+      Extended context for longer documents.
+    
+  unlimited:
+    description: "64GB+ - All savants can be resident"
+    vram_budget_mb: 64000
+    max_concurrent_slots: 6
+    context_length: 16384
+    preload_enabled: true
+    notes: |
+      All 6 savants can remain loaded simultaneously.
+      No model swapping overhead.
+      Maximum performance configuration.
+
+# VRAM allocation breakdown (reference)
+vram_components:
+  fixed_overhead:
+    bge_m3_embeddings: 1000    # ~1GB for embedding model
+    system_overhead: 1000      # OS, driver, misc
+    total: 2000
+    
+  per_slot_estimate:
+    model_weights_7b_int4: 5000    # ~5GB for 7B DML model in INT4 quantization
+    kv_cache_8k_context: 2500      # ~2.5GB for 8K context
+    activation_memory: 500         # ~0.5GB working memory
+    total: 8000
+
+# Pressure thresholds (fraction of available pool)
+pressure_thresholds:
+  elevated: 0.80    # 80% - pause preloading
+  high: 0.90        # 90% - warn, no new slots
+  critical: 0.95    # 95% - emergency eviction
+
+# Emergency eviction policy
+eviction_policy:
+  # When critical pressure detected:
+  # 1. Find slot with largest KV cache
+  # 2. Evict that model (save partial state if possible)
+  # 3. Reschedule slot for retry when VRAM available
+  # 
+  # This ensures we never corrupt output - only the
+  # largest consumer gets evicted and retried.
+  target: "largest_kv_cache"
+  min_resident_seconds: 60    # Don't evict models loaded < 60s ago
+  retry_delay_seconds: 5      # Wait before retrying evicted slot
+
+# Auto-detection settings
+auto_detect:
+  enabled: true
+  safety_margin: 0.90         # Use 90% of detected VRAM
+  fallback_profile: "standard"

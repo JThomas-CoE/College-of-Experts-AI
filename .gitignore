@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+.venv/
+coe_env/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Project Specific - Large Models & Data
+models/
+checkpoints/
+
+# Logs and Debug Output
+*.log
+last_debug.log
+startup_debug.log
+prompt_debug.log
+demo_debug.log
+demo_output.txt
+expert_raw_dump.txt
+test_output.txt
+test_falcon_output.txt
+
+# External Source Trees (do not ship)
+bitsandbytes-src/
+
+# Agent Artifacts
+.agent/
+CODE_REVIEW_*.md
+CODE_REVIEW_REPORT
+
+# Development Archive (old demo versions)
+archive/
+
+# Runtime Data
+episodic_memory.json/
+logs/
+experts/
+plans/
+
+# Temporary / Cache
+offload_temp/
+*.tmp

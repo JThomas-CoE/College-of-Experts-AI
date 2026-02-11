@@ -1,0 +1,3134 @@
+[
+  {
+    "id": "legal_contract_nda_mutual",
+    "category": "legal",
+    "subcategory": "contracts",
+    "title": "NDA Mutual",
+    "persona": "legal_contracts",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parties",
+        "dependencies": [],
+        "description": "Complete parties"
+      },
+      {
+        "id": "s1",
+        "title": "definitions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete definitions"
+      },
+      {
+        "id": "s2",
+        "title": "confidential_info",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete confidential_info"
+      },
+      {
+        "id": "s3",
+        "title": "obligations",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete obligations"
+      },
+      {
+        "id": "s4",
+        "title": "term",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete term"
+      },
+      {
+        "id": "s5",
+        "title": "remedies",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete remedies"
+      }
+    ],
+    "tags": [
+      "legal",
+      "contracts"
+    ],
+    "description": "NDA Mutual framework template"
+  },
+  {
+    "id": "legal_contract_nda_one-way",
+    "category": "legal",
+    "subcategory": "contracts",
+    "title": "NDA One-Way",
+    "persona": "legal_contracts",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parties",
+        "dependencies": [],
+        "description": "Complete parties"
+      },
+      {
+        "id": "s1",
+        "title": "discloser_obligations",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete discloser_obligations"
+      },
+      {
+        "id": "s2",
+        "title": "recipient_obligations",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete recipient_obligations"
+      },
+      {
+        "id": "s3",
+        "title": "exceptions",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete exceptions"
+      },
+      {
+        "id": "s4",
+        "title": "term",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete term"
+      }
+    ],
+    "tags": [
+      "legal",
+      "contracts"
+    ],
+    "description": "NDA One-Way framework template"
+  },
+  {
+    "id": "legal_contract_service_agreement",
+    "category": "legal",
+    "subcategory": "contracts",
+    "title": "Service Agreement",
+    "persona": "legal_contracts",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parties",
+        "dependencies": [],
+        "description": "Complete parties"
+      },
+      {
+        "id": "s1",
+        "title": "services",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete services"
+      },
+      {
+        "id": "s2",
+        "title": "deliverables",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete deliverables"
+      },
+      {
+        "id": "s3",
+        "title": "payment",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete payment"
+      },
+      {
+        "id": "s4",
+        "title": "warranties",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete warranties"
+      },
+      {
+        "id": "s5",
+        "title": "termination",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete termination"
+      }
+    ],
+    "tags": [
+      "legal",
+      "contracts"
+    ],
+    "description": "Service Agreement framework template"
+  },
+  {
+    "id": "legal_contract_consulting_agreement",
+    "category": "legal",
+    "subcategory": "contracts",
+    "title": "Consulting Agreement",
+    "persona": "legal_contracts",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parties",
+        "dependencies": [],
+        "description": "Complete parties"
+      },
+      {
+        "id": "s1",
+        "title": "scope",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete scope"
+      },
+      {
+        "id": "s2",
+        "title": "compensation",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete compensation"
+      },
+      {
+        "id": "s3",
+        "title": "ip_ownership",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete ip_ownership"
+      },
+      {
+        "id": "s4",
+        "title": "confidentiality",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete confidentiality"
+      },
+      {
+        "id": "s5",
+        "title": "term",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete term"
+      }
+    ],
+    "tags": [
+      "legal",
+      "contracts"
+    ],
+    "description": "Consulting Agreement framework template"
+  },
+  {
+    "id": "legal_contract_software_license",
+    "category": "legal",
+    "subcategory": "contracts",
+    "title": "Software License",
+    "persona": "legal_contracts",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "grant",
+        "dependencies": [],
+        "description": "Complete grant"
+      },
+      {
+        "id": "s1",
+        "title": "restrictions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete restrictions"
+      },
+      {
+        "id": "s2",
+        "title": "fees",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete fees"
+      },
+      {
+        "id": "s3",
+        "title": "support",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete support"
+      },
+      {
+        "id": "s4",
+        "title": "warranties",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete warranties"
+      },
+      {
+        "id": "s5",
+        "title": "liability",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete liability"
+      }
+    ],
+    "tags": [
+      "legal",
+      "contracts"
+    ],
+    "description": "Software License framework template"
+  },
+  {
+    "id": "legal_contract_saas_agreement",
+    "category": "legal",
+    "subcategory": "contracts",
+    "title": "SaaS Agreement",
+    "persona": "legal_contracts",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "services",
+        "dependencies": [],
+        "description": "Complete services"
+      },
+      {
+        "id": "s1",
+        "title": "fees",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete fees"
+      },
+      {
+        "id": "s2",
+        "title": "sla",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete sla"
+      },
+      {
+        "id": "s3",
+        "title": "data_handling",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete data_handling"
+      },
+      {
+        "id": "s4",
+        "title": "termination",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete termination"
+      },
+      {
+        "id": "s5",
+        "title": "liability",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete liability"
+      }
+    ],
+    "tags": [
+      "legal",
+      "contracts"
+    ],
+    "description": "SaaS Agreement framework template"
+  },
+  {
+    "id": "legal_contract_master_service_agreement",
+    "category": "legal",
+    "subcategory": "contracts",
+    "title": "Master Service Agreement",
+    "persona": "legal_contracts",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parties",
+        "dependencies": [],
+        "description": "Complete parties"
+      },
+      {
+        "id": "s1",
+        "title": "services",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete services"
+      },
+      {
+        "id": "s2",
+        "title": "ordering",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete ordering"
+      },
+      {
+        "id": "s3",
+        "title": "payment",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete payment"
+      },
+      {
+        "id": "s4",
+        "title": "liability",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete liability"
+      },
+      {
+        "id": "s5",
+        "title": "general",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete general"
+      }
+    ],
+    "tags": [
+      "legal",
+      "contracts"
+    ],
+    "description": "Master Service Agreement framework template"
+  },
+  {
+    "id": "legal_contract_statement_of_work",
+    "category": "legal",
+    "subcategory": "contracts",
+    "title": "Statement of Work",
+    "persona": "legal_contracts",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "background",
+        "dependencies": [],
+        "description": "Complete background"
+      },
+      {
+        "id": "s1",
+        "title": "scope",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete scope"
+      },
+      {
+        "id": "s2",
+        "title": "deliverables",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete deliverables"
+      },
+      {
+        "id": "s3",
+        "title": "timeline",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete timeline"
+      },
+      {
+        "id": "s4",
+        "title": "acceptance",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete acceptance"
+      },
+      {
+        "id": "s5",
+        "title": "payment",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete payment"
+      }
+    ],
+    "tags": [
+      "legal",
+      "contracts"
+    ],
+    "description": "Statement of Work framework template"
+  },
+  {
+    "id": "legal_contract_lease_agreement",
+    "category": "legal",
+    "subcategory": "contracts",
+    "title": "Lease Agreement",
+    "persona": "legal_contracts",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "premises",
+        "dependencies": [],
+        "description": "Complete premises"
+      },
+      {
+        "id": "s1",
+        "title": "term",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete term"
+      },
+      {
+        "id": "s2",
+        "title": "rent",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete rent"
+      },
+      {
+        "id": "s3",
+        "title": "maintenance",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete maintenance"
+      },
+      {
+        "id": "s4",
+        "title": "insurance",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete insurance"
+      },
+      {
+        "id": "s5",
+        "title": "termination",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete termination"
+      }
+    ],
+    "tags": [
+      "legal",
+      "contracts"
+    ],
+    "description": "Lease Agreement framework template"
+  },
+  {
+    "id": "legal_contract_partnership_agreement",
+    "category": "legal",
+    "subcategory": "contracts",
+    "title": "Partnership Agreement",
+    "persona": "legal_contracts",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parties",
+        "dependencies": [],
+        "description": "Complete parties"
+      },
+      {
+        "id": "s1",
+        "title": "purpose",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete purpose"
+      },
+      {
+        "id": "s2",
+        "title": "contributions",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete contributions"
+      },
+      {
+        "id": "s3",
+        "title": "profit_sharing",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete profit_sharing"
+      },
+      {
+        "id": "s4",
+        "title": "management",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete management"
+      },
+      {
+        "id": "s5",
+        "title": "dissolution",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete dissolution"
+      }
+    ],
+    "tags": [
+      "legal",
+      "contracts"
+    ],
+    "description": "Partnership Agreement framework template"
+  },
+  {
+    "id": "legal_corporate_articles_of_incorporation",
+    "category": "legal",
+    "subcategory": "corporate",
+    "title": "Articles of Incorporation",
+    "persona": "legal_corporate",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "preamble",
+        "dependencies": [],
+        "description": "Complete preamble"
+      },
+      {
+        "id": "s1",
+        "title": "name",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete name"
+      },
+      {
+        "id": "s2",
+        "title": "purpose",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete purpose"
+      },
+      {
+        "id": "s3",
+        "title": "stock",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete stock"
+      },
+      {
+        "id": "s4",
+        "title": "directors",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete directors"
+      },
+      {
+        "id": "s5",
+        "title": "registered_agent",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete registered_agent"
+      }
+    ],
+    "tags": [
+      "legal",
+      "corporate"
+    ],
+    "description": "Articles of Incorporation framework template"
+  },
+  {
+    "id": "legal_corporate_corporate_bylaws",
+    "category": "legal",
+    "subcategory": "corporate",
+    "title": "Corporate Bylaws",
+    "persona": "legal_corporate",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "offices",
+        "dependencies": [],
+        "description": "Complete offices"
+      },
+      {
+        "id": "s1",
+        "title": "shareholders",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete shareholders"
+      },
+      {
+        "id": "s2",
+        "title": "directors",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete directors"
+      },
+      {
+        "id": "s3",
+        "title": "officers",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete officers"
+      },
+      {
+        "id": "s4",
+        "title": "stock",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete stock"
+      },
+      {
+        "id": "s5",
+        "title": "amendments",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete amendments"
+      }
+    ],
+    "tags": [
+      "legal",
+      "corporate"
+    ],
+    "description": "Corporate Bylaws framework template"
+  },
+  {
+    "id": "legal_corporate_board_resolution",
+    "category": "legal",
+    "subcategory": "corporate",
+    "title": "Board Resolution",
+    "persona": "legal_corporate",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "recitals",
+        "dependencies": [],
+        "description": "Complete recitals"
+      },
+      {
+        "id": "s1",
+        "title": "resolved_clauses",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete resolved_clauses"
+      },
+      {
+        "id": "s2",
+        "title": "authorization",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete authorization"
+      },
+      {
+        "id": "s3",
+        "title": "certification",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete certification"
+      }
+    ],
+    "tags": [
+      "legal",
+      "corporate"
+    ],
+    "description": "Board Resolution framework template"
+  },
+  {
+    "id": "legal_corporate_unanimous_written_consent",
+    "category": "legal",
+    "subcategory": "corporate",
+    "title": "Unanimous Written Consent",
+    "persona": "legal_corporate",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "recitals",
+        "dependencies": [],
+        "description": "Complete recitals"
+      },
+      {
+        "id": "s1",
+        "title": "action",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete action"
+      },
+      {
+        "id": "s2",
+        "title": "approval",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete approval"
+      },
+      {
+        "id": "s3",
+        "title": "signatures",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete signatures"
+      }
+    ],
+    "tags": [
+      "legal",
+      "corporate"
+    ],
+    "description": "Unanimous Written Consent framework template"
+  },
+  {
+    "id": "legal_corporate_shareholder_agreement",
+    "category": "legal",
+    "subcategory": "corporate",
+    "title": "Shareholder Agreement",
+    "persona": "legal_corporate",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parties",
+        "dependencies": [],
+        "description": "Complete parties"
+      },
+      {
+        "id": "s1",
+        "title": "shares",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete shares"
+      },
+      {
+        "id": "s2",
+        "title": "transfer_restrictions",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete transfer_restrictions"
+      },
+      {
+        "id": "s3",
+        "title": "governance",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete governance"
+      },
+      {
+        "id": "s4",
+        "title": "exit",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete exit"
+      }
+    ],
+    "tags": [
+      "legal",
+      "corporate"
+    ],
+    "description": "Shareholder Agreement framework template"
+  },
+  {
+    "id": "legal_corporate_stock_purchase_agreement",
+    "category": "legal",
+    "subcategory": "corporate",
+    "title": "Stock Purchase Agreement",
+    "persona": "legal_corporate",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parties",
+        "dependencies": [],
+        "description": "Complete parties"
+      },
+      {
+        "id": "s1",
+        "title": "shares",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete shares"
+      },
+      {
+        "id": "s2",
+        "title": "price",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete price"
+      },
+      {
+        "id": "s3",
+        "title": "representations",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete representations"
+      },
+      {
+        "id": "s4",
+        "title": "closing",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete closing"
+      }
+    ],
+    "tags": [
+      "legal",
+      "corporate"
+    ],
+    "description": "Stock Purchase Agreement framework template"
+  },
+  {
+    "id": "legal_corporate_investor_rights_agreement",
+    "category": "legal",
+    "subcategory": "corporate",
+    "title": "Investor Rights Agreement",
+    "persona": "legal_corporate",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parties",
+        "dependencies": [],
+        "description": "Complete parties"
+      },
+      {
+        "id": "s1",
+        "title": "information_rights",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete information_rights"
+      },
+      {
+        "id": "s2",
+        "title": "registration",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete registration"
+      },
+      {
+        "id": "s3",
+        "title": "protective_provisions",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete protective_provisions"
+      }
+    ],
+    "tags": [
+      "legal",
+      "corporate"
+    ],
+    "description": "Investor Rights Agreement framework template"
+  },
+  {
+    "id": "legal_corporate_option_agreement",
+    "category": "legal",
+    "subcategory": "corporate",
+    "title": "Option Agreement",
+    "persona": "legal_corporate",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "grant",
+        "dependencies": [],
+        "description": "Complete grant"
+      },
+      {
+        "id": "s1",
+        "title": "vesting",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete vesting"
+      },
+      {
+        "id": "s2",
+        "title": "exercise",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete exercise"
+      },
+      {
+        "id": "s3",
+        "title": "termination",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete termination"
+      },
+      {
+        "id": "s4",
+        "title": "tax",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete tax"
+      }
+    ],
+    "tags": [
+      "legal",
+      "corporate"
+    ],
+    "description": "Option Agreement framework template"
+  },
+  {
+    "id": "legal_corporate_llc_operating_agreement",
+    "category": "legal",
+    "subcategory": "corporate",
+    "title": "LLC Operating Agreement",
+    "persona": "legal_corporate",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "members",
+        "dependencies": [],
+        "description": "Complete members"
+      },
+      {
+        "id": "s1",
+        "title": "capital",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete capital"
+      },
+      {
+        "id": "s2",
+        "title": "distributions",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete distributions"
+      },
+      {
+        "id": "s3",
+        "title": "management",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete management"
+      },
+      {
+        "id": "s4",
+        "title": "dissolution",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete dissolution"
+      }
+    ],
+    "tags": [
+      "legal",
+      "corporate"
+    ],
+    "description": "LLC Operating Agreement framework template"
+  },
+  {
+    "id": "legal_corporate_founders_agreement",
+    "category": "legal",
+    "subcategory": "corporate",
+    "title": "Founders Agreement",
+    "persona": "legal_corporate",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "founders",
+        "dependencies": [],
+        "description": "Complete founders"
+      },
+      {
+        "id": "s1",
+        "title": "equity",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete equity"
+      },
+      {
+        "id": "s2",
+        "title": "vesting",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete vesting"
+      },
+      {
+        "id": "s3",
+        "title": "ip_assignment",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete ip_assignment"
+      },
+      {
+        "id": "s4",
+        "title": "roles",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete roles"
+      }
+    ],
+    "tags": [
+      "legal",
+      "corporate"
+    ],
+    "description": "Founders Agreement framework template"
+  },
+  {
+    "id": "legal_compliance_privacy_policy_web",
+    "category": "legal",
+    "subcategory": "compliance",
+    "title": "Privacy Policy Web",
+    "persona": "legal_compliance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "introduction",
+        "dependencies": [],
+        "description": "Complete introduction"
+      },
+      {
+        "id": "s1",
+        "title": "collection",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete collection"
+      },
+      {
+        "id": "s2",
+        "title": "use",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete use"
+      },
+      {
+        "id": "s3",
+        "title": "sharing",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete sharing"
+      },
+      {
+        "id": "s4",
+        "title": "security",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete security"
+      },
+      {
+        "id": "s5",
+        "title": "rights",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete rights"
+      },
+      {
+        "id": "s6",
+        "title": "contact",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "description": "Complete contact"
+      }
+    ],
+    "tags": [
+      "legal",
+      "compliance",
+      "privacy"
+    ],
+    "description": "Privacy Policy Web framework template"
+  },
+  {
+    "id": "legal_compliance_privacy_policy_app",
+    "category": "legal",
+    "subcategory": "compliance",
+    "title": "Privacy Policy App",
+    "persona": "legal_compliance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "introduction",
+        "dependencies": [],
+        "description": "Complete introduction"
+      },
+      {
+        "id": "s1",
+        "title": "collection",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete collection"
+      },
+      {
+        "id": "s2",
+        "title": "permissions",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete permissions"
+      },
+      {
+        "id": "s3",
+        "title": "use",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete use"
+      },
+      {
+        "id": "s4",
+        "title": "sharing",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete sharing"
+      },
+      {
+        "id": "s5",
+        "title": "rights",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete rights"
+      }
+    ],
+    "tags": [
+      "legal",
+      "compliance",
+      "privacy"
+    ],
+    "description": "Privacy Policy App framework template"
+  },
+  {
+    "id": "legal_compliance_terms_of_service",
+    "category": "legal",
+    "subcategory": "compliance",
+    "title": "Terms of Service",
+    "persona": "legal_compliance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "acceptance",
+        "dependencies": [],
+        "description": "Complete acceptance"
+      },
+      {
+        "id": "s1",
+        "title": "services",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete services"
+      },
+      {
+        "id": "s2",
+        "title": "accounts",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete accounts"
+      },
+      {
+        "id": "s3",
+        "title": "user_conduct",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete user_conduct"
+      },
+      {
+        "id": "s4",
+        "title": "ip",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete ip"
+      },
+      {
+        "id": "s5",
+        "title": "disclaimers",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete disclaimers"
+      },
+      {
+        "id": "s6",
+        "title": "liability",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "description": "Complete liability"
+      }
+    ],
+    "tags": [
+      "legal",
+      "compliance",
+      "privacy"
+    ],
+    "description": "Terms of Service framework template"
+  },
+  {
+    "id": "legal_compliance_cookie_policy",
+    "category": "legal",
+    "subcategory": "compliance",
+    "title": "Cookie Policy",
+    "persona": "legal_compliance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "what_cookies",
+        "dependencies": [],
+        "description": "Complete what_cookies"
+      },
+      {
+        "id": "s1",
+        "title": "types",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete types"
+      },
+      {
+        "id": "s2",
+        "title": "purposes",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete purposes"
+      },
+      {
+        "id": "s3",
+        "title": "management",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete management"
+      },
+      {
+        "id": "s4",
+        "title": "consent",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete consent"
+      }
+    ],
+    "tags": [
+      "legal",
+      "compliance",
+      "privacy"
+    ],
+    "description": "Cookie Policy framework template"
+  },
+  {
+    "id": "legal_compliance_gdpr_dpa",
+    "category": "legal",
+    "subcategory": "compliance",
+    "title": "GDPR DPA",
+    "persona": "legal_compliance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parties",
+        "dependencies": [],
+        "description": "Complete parties"
+      },
+      {
+        "id": "s1",
+        "title": "scope",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete scope"
+      },
+      {
+        "id": "s2",
+        "title": "obligations",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete obligations"
+      },
+      {
+        "id": "s3",
+        "title": "subprocessors",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete subprocessors"
+      },
+      {
+        "id": "s4",
+        "title": "security",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete security"
+      },
+      {
+        "id": "s5",
+        "title": "audit",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete audit"
+      },
+      {
+        "id": "s6",
+        "title": "termination",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "description": "Complete termination"
+      }
+    ],
+    "tags": [
+      "legal",
+      "compliance",
+      "privacy"
+    ],
+    "description": "GDPR DPA framework template"
+  },
+  {
+    "id": "legal_compliance_hipaa_baa",
+    "category": "legal",
+    "subcategory": "compliance",
+    "title": "HIPAA BAA",
+    "persona": "legal_compliance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parties",
+        "dependencies": [],
+        "description": "Complete parties"
+      },
+      {
+        "id": "s1",
+        "title": "definitions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete definitions"
+      },
+      {
+        "id": "s2",
+        "title": "obligations",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete obligations"
+      },
+      {
+        "id": "s3",
+        "title": "permitted_uses",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete permitted_uses"
+      },
+      {
+        "id": "s4",
+        "title": "safeguards",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete safeguards"
+      },
+      {
+        "id": "s5",
+        "title": "breach",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete breach"
+      }
+    ],
+    "tags": [
+      "legal",
+      "compliance",
+      "privacy"
+    ],
+    "description": "HIPAA BAA framework template"
+  },
+  {
+    "id": "legal_compliance_acceptable_use_policy",
+    "category": "legal",
+    "subcategory": "compliance",
+    "title": "Acceptable Use Policy",
+    "persona": "legal_compliance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "purpose",
+        "dependencies": [],
+        "description": "Complete purpose"
+      },
+      {
+        "id": "s1",
+        "title": "prohibited_uses",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete prohibited_uses"
+      },
+      {
+        "id": "s2",
+        "title": "enforcement",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete enforcement"
+      },
+      {
+        "id": "s3",
+        "title": "reporting",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete reporting"
+      }
+    ],
+    "tags": [
+      "legal",
+      "compliance",
+      "privacy"
+    ],
+    "description": "Acceptable Use Policy framework template"
+  },
+  {
+    "id": "legal_compliance_data_retention_policy",
+    "category": "legal",
+    "subcategory": "compliance",
+    "title": "Data Retention Policy",
+    "persona": "legal_compliance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "categories",
+        "dependencies": [],
+        "description": "Complete categories"
+      },
+      {
+        "id": "s1",
+        "title": "retention_periods",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete retention_periods"
+      },
+      {
+        "id": "s2",
+        "title": "exceptions",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete exceptions"
+      },
+      {
+        "id": "s3",
+        "title": "destruction",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete destruction"
+      }
+    ],
+    "tags": [
+      "legal",
+      "compliance",
+      "privacy"
+    ],
+    "description": "Data Retention Policy framework template"
+  },
+  {
+    "id": "legal_compliance_incident_response_plan",
+    "category": "legal",
+    "subcategory": "compliance",
+    "title": "Incident Response Plan",
+    "persona": "legal_compliance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "definitions",
+        "dependencies": [],
+        "description": "Complete definitions"
+      },
+      {
+        "id": "s1",
+        "title": "roles",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete roles"
+      },
+      {
+        "id": "s2",
+        "title": "detection",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete detection"
+      },
+      {
+        "id": "s3",
+        "title": "response",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete response"
+      },
+      {
+        "id": "s4",
+        "title": "communication",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete communication"
+      },
+      {
+        "id": "s5",
+        "title": "recovery",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete recovery"
+      }
+    ],
+    "tags": [
+      "legal",
+      "compliance",
+      "privacy"
+    ],
+    "description": "Incident Response Plan framework template"
+  },
+  {
+    "id": "legal_compliance_information_security_policy",
+    "category": "legal",
+    "subcategory": "compliance",
+    "title": "Information Security Policy",
+    "persona": "legal_compliance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "scope",
+        "dependencies": [],
+        "description": "Complete scope"
+      },
+      {
+        "id": "s1",
+        "title": "responsibilities",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete responsibilities"
+      },
+      {
+        "id": "s2",
+        "title": "controls",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete controls"
+      },
+      {
+        "id": "s3",
+        "title": "compliance",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete compliance"
+      },
+      {
+        "id": "s4",
+        "title": "exceptions",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete exceptions"
+      }
+    ],
+    "tags": [
+      "legal",
+      "compliance",
+      "privacy"
+    ],
+    "description": "Information Security Policy framework template"
+  },
+  {
+    "id": "legal_ip_ip_assignment_employee",
+    "category": "legal",
+    "subcategory": "ip",
+    "title": "IP Assignment Employee",
+    "persona": "legal_ip",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parties",
+        "dependencies": [],
+        "description": "Complete parties"
+      },
+      {
+        "id": "s1",
+        "title": "definitions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete definitions"
+      },
+      {
+        "id": "s2",
+        "title": "assignment",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete assignment"
+      },
+      {
+        "id": "s3",
+        "title": "representations",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete representations"
+      },
+      {
+        "id": "s4",
+        "title": "consideration",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete consideration"
+      }
+    ],
+    "tags": [
+      "legal",
+      "ip",
+      "licensing"
+    ],
+    "description": "IP Assignment Employee framework template"
+  },
+  {
+    "id": "legal_ip_ip_assignment_contractor",
+    "category": "legal",
+    "subcategory": "ip",
+    "title": "IP Assignment Contractor",
+    "persona": "legal_ip",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parties",
+        "dependencies": [],
+        "description": "Complete parties"
+      },
+      {
+        "id": "s1",
+        "title": "work_product",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete work_product"
+      },
+      {
+        "id": "s2",
+        "title": "assignment",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete assignment"
+      },
+      {
+        "id": "s3",
+        "title": "moral_rights",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete moral_rights"
+      },
+      {
+        "id": "s4",
+        "title": "consideration",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete consideration"
+      }
+    ],
+    "tags": [
+      "legal",
+      "ip",
+      "licensing"
+    ],
+    "description": "IP Assignment Contractor framework template"
+  },
+  {
+    "id": "legal_ip_copyright_license",
+    "category": "legal",
+    "subcategory": "ip",
+    "title": "Copyright License",
+    "persona": "legal_ip",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "grant",
+        "dependencies": [],
+        "description": "Complete grant"
+      },
+      {
+        "id": "s1",
+        "title": "scope",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete scope"
+      },
+      {
+        "id": "s2",
+        "title": "territory",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete territory"
+      },
+      {
+        "id": "s3",
+        "title": "term",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete term"
+      },
+      {
+        "id": "s4",
+        "title": "fees",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete fees"
+      },
+      {
+        "id": "s5",
+        "title": "attribution",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete attribution"
+      }
+    ],
+    "tags": [
+      "legal",
+      "ip",
+      "licensing"
+    ],
+    "description": "Copyright License framework template"
+  },
+  {
+    "id": "legal_ip_trademark_license",
+    "category": "legal",
+    "subcategory": "ip",
+    "title": "Trademark License",
+    "persona": "legal_ip",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "grant",
+        "dependencies": [],
+        "description": "Complete grant"
+      },
+      {
+        "id": "s1",
+        "title": "quality_control",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete quality_control"
+      },
+      {
+        "id": "s2",
+        "title": "territory",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete territory"
+      },
+      {
+        "id": "s3",
+        "title": "term",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete term"
+      },
+      {
+        "id": "s4",
+        "title": "fees",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete fees"
+      }
+    ],
+    "tags": [
+      "legal",
+      "ip",
+      "licensing"
+    ],
+    "description": "Trademark License framework template"
+  },
+  {
+    "id": "legal_ip_open_source_policy",
+    "category": "legal",
+    "subcategory": "ip",
+    "title": "Open Source Policy",
+    "persona": "legal_ip",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "approved_licenses",
+        "dependencies": [],
+        "description": "Complete approved_licenses"
+      },
+      {
+        "id": "s1",
+        "title": "review_process",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete review_process"
+      },
+      {
+        "id": "s2",
+        "title": "compliance",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete compliance"
+      },
+      {
+        "id": "s3",
+        "title": "contributions",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete contributions"
+      }
+    ],
+    "tags": [
+      "legal",
+      "ip",
+      "licensing"
+    ],
+    "description": "Open Source Policy framework template"
+  },
+  {
+    "id": "legal_ip_dmca_policy",
+    "category": "legal",
+    "subcategory": "ip",
+    "title": "DMCA Policy",
+    "persona": "legal_ip",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "agent",
+        "dependencies": [],
+        "description": "Complete agent"
+      },
+      {
+        "id": "s1",
+        "title": "takedown_process",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete takedown_process"
+      },
+      {
+        "id": "s2",
+        "title": "counter_notice",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete counter_notice"
+      },
+      {
+        "id": "s3",
+        "title": "repeat_infringers",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete repeat_infringers"
+      }
+    ],
+    "tags": [
+      "legal",
+      "ip",
+      "licensing"
+    ],
+    "description": "DMCA Policy framework template"
+  },
+  {
+    "id": "legal_ip_trade_secret_policy",
+    "category": "legal",
+    "subcategory": "ip",
+    "title": "Trade Secret Policy",
+    "persona": "legal_ip",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "identification",
+        "dependencies": [],
+        "description": "Complete identification"
+      },
+      {
+        "id": "s1",
+        "title": "protection",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete protection"
+      },
+      {
+        "id": "s2",
+        "title": "access",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete access"
+      },
+      {
+        "id": "s3",
+        "title": "disclosure",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete disclosure"
+      },
+      {
+        "id": "s4",
+        "title": "departing",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete departing"
+      }
+    ],
+    "tags": [
+      "legal",
+      "ip",
+      "licensing"
+    ],
+    "description": "Trade Secret Policy framework template"
+  },
+  {
+    "id": "legal_ip_brand_guidelines",
+    "category": "legal",
+    "subcategory": "ip",
+    "title": "Brand Guidelines",
+    "persona": "legal_ip",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "logo_usage",
+        "dependencies": [],
+        "description": "Complete logo_usage"
+      },
+      {
+        "id": "s1",
+        "title": "colors",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete colors"
+      },
+      {
+        "id": "s2",
+        "title": "typography",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete typography"
+      },
+      {
+        "id": "s3",
+        "title": "dos_donts",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete dos_donts"
+      },
+      {
+        "id": "s4",
+        "title": "approval",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete approval"
+      }
+    ],
+    "tags": [
+      "legal",
+      "ip",
+      "licensing"
+    ],
+    "description": "Brand Guidelines framework template"
+  },
+  {
+    "id": "legal_ip_content_license_agreement",
+    "category": "legal",
+    "subcategory": "ip",
+    "title": "Content License Agreement",
+    "persona": "legal_ip",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "grant",
+        "dependencies": [],
+        "description": "Complete grant"
+      },
+      {
+        "id": "s1",
+        "title": "content",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete content"
+      },
+      {
+        "id": "s2",
+        "title": "restrictions",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete restrictions"
+      },
+      {
+        "id": "s3",
+        "title": "fees",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete fees"
+      },
+      {
+        "id": "s4",
+        "title": "attribution",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete attribution"
+      }
+    ],
+    "tags": [
+      "legal",
+      "ip",
+      "licensing"
+    ],
+    "description": "Content License Agreement framework template"
+  },
+  {
+    "id": "legal_ip_api_license_agreement",
+    "category": "legal",
+    "subcategory": "ip",
+    "title": "API License Agreement",
+    "persona": "legal_ip",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "grant",
+        "dependencies": [],
+        "description": "Complete grant"
+      },
+      {
+        "id": "s1",
+        "title": "restrictions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete restrictions"
+      },
+      {
+        "id": "s2",
+        "title": "rate_limits",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete rate_limits"
+      },
+      {
+        "id": "s3",
+        "title": "fees",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete fees"
+      },
+      {
+        "id": "s4",
+        "title": "support",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete support"
+      }
+    ],
+    "tags": [
+      "legal",
+      "ip",
+      "licensing"
+    ],
+    "description": "API License Agreement framework template"
+  },
+  {
+    "id": "legal_employment_offer_letter",
+    "category": "legal",
+    "subcategory": "employment",
+    "title": "Offer Letter",
+    "persona": "legal_employment",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "position",
+        "dependencies": [],
+        "description": "Complete position"
+      },
+      {
+        "id": "s1",
+        "title": "compensation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete compensation"
+      },
+      {
+        "id": "s2",
+        "title": "benefits",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete benefits"
+      },
+      {
+        "id": "s3",
+        "title": "start_date",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete start_date"
+      },
+      {
+        "id": "s4",
+        "title": "conditions",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete conditions"
+      },
+      {
+        "id": "s5",
+        "title": "at_will",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete at_will"
+      }
+    ],
+    "tags": [
+      "legal",
+      "employment",
+      "hr"
+    ],
+    "description": "Offer Letter framework template"
+  },
+  {
+    "id": "legal_employment_employment_agreement",
+    "category": "legal",
+    "subcategory": "employment",
+    "title": "Employment Agreement",
+    "persona": "legal_employment",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parties",
+        "dependencies": [],
+        "description": "Complete parties"
+      },
+      {
+        "id": "s1",
+        "title": "position",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete position"
+      },
+      {
+        "id": "s2",
+        "title": "duties",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete duties"
+      },
+      {
+        "id": "s3",
+        "title": "compensation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete compensation"
+      },
+      {
+        "id": "s4",
+        "title": "benefits",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete benefits"
+      },
+      {
+        "id": "s5",
+        "title": "termination",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete termination"
+      }
+    ],
+    "tags": [
+      "legal",
+      "employment",
+      "hr"
+    ],
+    "description": "Employment Agreement framework template"
+  },
+  {
+    "id": "legal_employment_confidentiality_agreement",
+    "category": "legal",
+    "subcategory": "employment",
+    "title": "Confidentiality Agreement",
+    "persona": "legal_employment",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "definitions",
+        "dependencies": [],
+        "description": "Complete definitions"
+      },
+      {
+        "id": "s1",
+        "title": "obligations",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete obligations"
+      },
+      {
+        "id": "s2",
+        "title": "exceptions",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete exceptions"
+      },
+      {
+        "id": "s3",
+        "title": "return",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete return"
+      },
+      {
+        "id": "s4",
+        "title": "remedies",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete remedies"
+      }
+    ],
+    "tags": [
+      "legal",
+      "employment",
+      "hr"
+    ],
+    "description": "Confidentiality Agreement framework template"
+  },
+  {
+    "id": "legal_employment_non-compete_agreement",
+    "category": "legal",
+    "subcategory": "employment",
+    "title": "Non-Compete Agreement",
+    "persona": "legal_employment",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "restrictions",
+        "dependencies": [],
+        "description": "Complete restrictions"
+      },
+      {
+        "id": "s1",
+        "title": "scope",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete scope"
+      },
+      {
+        "id": "s2",
+        "title": "duration",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete duration"
+      },
+      {
+        "id": "s3",
+        "title": "geographic",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete geographic"
+      },
+      {
+        "id": "s4",
+        "title": "consideration",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete consideration"
+      }
+    ],
+    "tags": [
+      "legal",
+      "employment",
+      "hr"
+    ],
+    "description": "Non-Compete Agreement framework template"
+  },
+  {
+    "id": "legal_employment_non-solicitation_agreement",
+    "category": "legal",
+    "subcategory": "employment",
+    "title": "Non-Solicitation Agreement",
+    "persona": "legal_employment",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "customers",
+        "dependencies": [],
+        "description": "Complete customers"
+      },
+      {
+        "id": "s1",
+        "title": "employees",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete employees"
+      },
+      {
+        "id": "s2",
+        "title": "duration",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete duration"
+      },
+      {
+        "id": "s3",
+        "title": "scope",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete scope"
+      },
+      {
+        "id": "s4",
+        "title": "consideration",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete consideration"
+      }
+    ],
+    "tags": [
+      "legal",
+      "employment",
+      "hr"
+    ],
+    "description": "Non-Solicitation Agreement framework template"
+  },
+  {
+    "id": "legal_employment_severance_agreement",
+    "category": "legal",
+    "subcategory": "employment",
+    "title": "Severance Agreement",
+    "persona": "legal_employment",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "separation",
+        "dependencies": [],
+        "description": "Complete separation"
+      },
+      {
+        "id": "s1",
+        "title": "benefits",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete benefits"
+      },
+      {
+        "id": "s2",
+        "title": "release",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete release"
+      },
+      {
+        "id": "s3",
+        "title": "confidentiality",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete confidentiality"
+      },
+      {
+        "id": "s4",
+        "title": "non-disparagement",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete non-disparagement"
+      }
+    ],
+    "tags": [
+      "legal",
+      "employment",
+      "hr"
+    ],
+    "description": "Severance Agreement framework template"
+  },
+  {
+    "id": "legal_employment_independent_contractor_agreement",
+    "category": "legal",
+    "subcategory": "employment",
+    "title": "Independent Contractor Agreement",
+    "persona": "legal_employment",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "services",
+        "dependencies": [],
+        "description": "Complete services"
+      },
+      {
+        "id": "s1",
+        "title": "compensation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete compensation"
+      },
+      {
+        "id": "s2",
+        "title": "relationship",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete relationship"
+      },
+      {
+        "id": "s3",
+        "title": "ip",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete ip"
+      },
+      {
+        "id": "s4",
+        "title": "termination",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete termination"
+      }
+    ],
+    "tags": [
+      "legal",
+      "employment",
+      "hr"
+    ],
+    "description": "Independent Contractor Agreement framework template"
+  },
+  {
+    "id": "legal_employment_internship_agreement",
+    "category": "legal",
+    "subcategory": "employment",
+    "title": "Internship Agreement",
+    "persona": "legal_employment",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "program",
+        "dependencies": [],
+        "description": "Complete program"
+      },
+      {
+        "id": "s1",
+        "title": "duties",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete duties"
+      },
+      {
+        "id": "s2",
+        "title": "supervision",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete supervision"
+      },
+      {
+        "id": "s3",
+        "title": "compensation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete compensation"
+      },
+      {
+        "id": "s4",
+        "title": "term",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete term"
+      }
+    ],
+    "tags": [
+      "legal",
+      "employment",
+      "hr"
+    ],
+    "description": "Internship Agreement framework template"
+  },
+  {
+    "id": "legal_employment_employee_handbook",
+    "category": "legal",
+    "subcategory": "employment",
+    "title": "Employee Handbook",
+    "persona": "legal_employment",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "welcome",
+        "dependencies": [],
+        "description": "Complete welcome"
+      },
+      {
+        "id": "s1",
+        "title": "policies",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete policies"
+      },
+      {
+        "id": "s2",
+        "title": "benefits",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete benefits"
+      },
+      {
+        "id": "s3",
+        "title": "conduct",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete conduct"
+      },
+      {
+        "id": "s4",
+        "title": "acknowledgment",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete acknowledgment"
+      }
+    ],
+    "tags": [
+      "legal",
+      "employment",
+      "hr"
+    ],
+    "description": "Employee Handbook framework template"
+  },
+  {
+    "id": "legal_employment_remote_work_policy",
+    "category": "legal",
+    "subcategory": "employment",
+    "title": "Remote Work Policy",
+    "persona": "legal_employment",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "eligibility",
+        "dependencies": [],
+        "description": "Complete eligibility"
+      },
+      {
+        "id": "s1",
+        "title": "requirements",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete requirements"
+      },
+      {
+        "id": "s2",
+        "title": "equipment",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete equipment"
+      },
+      {
+        "id": "s3",
+        "title": "security",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete security"
+      },
+      {
+        "id": "s4",
+        "title": "expectations",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete expectations"
+      }
+    ],
+    "tags": [
+      "legal",
+      "employment",
+      "hr"
+    ],
+    "description": "Remote Work Policy framework template"
+  }
+]

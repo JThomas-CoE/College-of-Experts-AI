@@ -1,0 +1,20 @@
+{
+  "chunks": [
+    {
+      "id": "ui_modern_dark_001",
+      "content": "Modern Dark Theme UI Best Practices (2024+):\n\nCOLOR PALETTE:\n- Background: #0f0f0f (near-black) or #1a1a2e (dark blue-gray)\n- Surface/Cards: #1e1e2e or #16213e  \n- Primary accent: #6366f1 (indigo) or #8b5cf6 (violet)\n- Success: #22c55e (green)\n- Error: #ef4444 (red)\n- Text primary: #f1f5f9 (off-white)\n- Text secondary: #94a3b8 (muted)\n- Border: #334155 (subtle)\n\nCSS VARIABLES EXAMPLE:\n```css\n:root {\n    --bg-primary: #0f0f0f;\n    --bg-secondary: #1a1a2e;\n    --bg-card: #1e1e2e;\n    --accent-primary: #6366f1;\n    --accent-hover: #818cf8;\n    --text-primary: #f1f5f9;\n    --text-secondary: #94a3b8;\n    --border-color: #334155;\n    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);\n    --radius: 0.75rem;\n}\n```\n\nTYPOGRAPHY:\n- Font: Inter, system-ui, -apple-system, sans-serif\n- Headings: font-weight: 600-700\n- Body: font-weight: 400, line-height: 1.6\n- Use font-smoothing: antialiased\n\nSPACING:\n- Use 8px grid system (0.5rem increments)\n- Card padding: 1.5rem (24px)\n- Section gaps: 2rem (32px)\n\nEFFECTS:\n- Subtle gradients on buttons/cards\n- Box shadows with low opacity\n- Border-radius: 8-16px for modern feel\n- Transitions: 150-200ms ease-out\n\nACCESSIBILITY:\n- Ensure 4.5:1 contrast ratio minimum\n- Focus states with visible outlines\n- Reduce motion for prefers-reduced-motion",
+      "category": "ui_ux",
+      "subcategory": "dark_theme",
+      "tags": [
+        "css",
+        "dark-mode",
+        "color-palette",
+        "modern",
+        "design-system"
+      ],
+      "source": "local",
+      "source_url": null,
+      "created_at": "2026-01-28T14:19:13.537396"
+    }
+  ]
+}

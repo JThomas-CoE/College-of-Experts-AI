@@ -1,0 +1,11 @@
+{
+  "chunk_ids": [
+    "ui_modern_dark_001",
+    "ui_task_manager_001",
+    "coding_flask_rest_001",
+    "security_bcrypt_001",
+    "database_sqlite_001"
+  ],
+  "total_chunks": 5,
+  "updated_at": "2026-01-28T14:19:14.556708"
+}

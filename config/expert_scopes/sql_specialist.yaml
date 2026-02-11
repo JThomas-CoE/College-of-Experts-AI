@@ -1,0 +1,185 @@
+# SQL Specialist Expert - Grounded Scope Document
+# V12 Architecture - Aligned to SQLCoder-7B training data
+
+expert_id: sql_specialist
+display_name: "SQL Database Expert"
+emoji: "🗄️"
+savant_model: "models/sqlcoder-7b-2-DML"
+
+# Capability scope for embedding-based routing (~800 words)
+# These describe tasks this expert SHOULD handle
+capability_scope: |
+  SQL query writing and construction
+  SELECT statement composition
+  Multi-table JOIN operations
+  Subquery design and optimization
+  Common Table Expressions (CTE)
+  Window functions and analytical queries
+  Aggregate functions and GROUP BY
+  HAVING clause filtering
+  UNION and set operations
+  
+  PostgreSQL specific syntax
+  PostgreSQL data types
+  PostgreSQL array operations
+  PostgreSQL JSON/JSONB queries
+  PostgreSQL full-text search
+  PostgreSQL window functions
+  PostgreSQL stored procedures
+  PostgreSQL triggers
+  
+  MySQL specific syntax
+  MySQL data types
+  MySQL string functions
+  MySQL date/time operations
+  MySQL stored procedures
+  MySQL triggers and events
+  
+  SQLite query construction
+  SQLite data types
+  SQLite specific functions
+  
+  Database schema design
+  Table structure design
+  Column data type selection
+  Primary key design
+  Foreign key relationships
+  Normalization (1NF, 2NF, 3NF, BCNF)
+  Denormalization strategies
+  
+  Index design and optimization
+  B-tree index selection
+  Composite index design
+  Covering index strategies
+  Index usage analysis
+  
+  Query optimization
+  Execution plan analysis
+  Query performance tuning
+  Index optimization recommendations
+  Query rewriting for performance
+  
+  Data modeling
+  Entity-relationship design
+  One-to-many relationships
+  Many-to-many relationships
+  Self-referential relationships
+  Temporal data modeling
+  
+  Database migrations
+  Schema migration scripts
+  ALTER TABLE operations
+  Data migration queries
+  Backward compatible changes
+  
+  Data integrity
+  Constraint design (UNIQUE, CHECK, NOT NULL)
+  Referential integrity
+  Transaction isolation levels
+  ACID compliance considerations
+  
+  Reporting queries
+  Business intelligence queries
+  Data aggregation for reports
+  Time-series data queries
+  Pivot and unpivot operations
+
+# Exclusion scope for embedding-based ANTI-routing (~400 words)
+# These describe tasks this expert should NOT handle
+exclusion_scope: |
+  Application code implementation
+  Python scripting beyond database access
+  Web framework development
+  API endpoint implementation
+  Frontend development
+  Backend business logic
+  
+  Legal document drafting
+  Data privacy policy writing
+  GDPR compliance documentation
+  Contract or agreement drafting
+  Regulatory interpretation
+  
+  Clinical medical information
+  Healthcare diagnosis
+  Medical treatment information
+  Pharmacological data
+  Patient care guidance
+  
+  Mathematical theorem proofs
+  Statistical methodology design
+  Algorithm complexity analysis
+  Numerical computation
+  
+  Security architecture design
+  Encryption implementation
+  Authentication system design
+  Access control architecture
+  Vulnerability assessment
+  
+  Database administration tasks
+  Server configuration
+  Backup and recovery procedures
+  Replication setup
+  High availability configuration
+  Performance monitoring setup
+  
+  NoSQL database design
+  MongoDB queries
+  Redis operations
+  Cassandra data modeling
+  Graph database queries
+  
+  Cloud database services configuration
+  AWS RDS setup
+  Azure SQL configuration
+  Google Cloud SQL management
+  
+  ETL pipeline development
+  Data warehouse architecture
+  Data lake design
+  Stream processing
+
+# Harness constraints - injected into system prompt
+harness_constraints: |
+  You are a SQL database specialist. Your expertise covers:
+  - SQL query writing: SELECT, JOIN, subqueries, CTEs, window functions
+  - PostgreSQL, MySQL, SQLite specific syntax
+  - Database schema design and normalization
+  - Index design and query optimization
+  - Data modeling and relationships
+  - Migration scripts and schema changes
+  
+  You MAY:
+  - Write SQL queries for any described data retrieval
+  - Design table schemas and relationships
+  - Optimize queries and recommend indexes
+  - Create migration scripts
+  - Explain query execution plans
+  
+  You must REFUSE or REDIRECT if asked to:
+  - Write application code beyond SQL
+  - Draft legal documents or policies
+  - Provide medical information
+  - Design security architectures
+  - Configure database servers or administration
+  
+  When a request is partially outside your scope:
+  - Complete the SQL and schema design portions
+  - Insert {{ASSIST:expert:domain:description}} for non-SQL needs
+  - Example: {{ASSIST:expert:python_coder:SQLAlchemy model implementation}}
+  - Example: {{ASSIST:expert:security:database access control design}}
+
+# Verification metadata
+capability_verified_date: "2026-01-26"
+verification_method: "spider_benchmark_v1"
+known_strengths:
+  - "Complex multi-table JOINs"
+  - "PostgreSQL specific features"
+  - "Query optimization patterns"
+  - "Schema normalization"
+known_weaknesses:
+  - "Vendor-specific advanced features"
+  - "Stored procedure debugging"
+  - "Performance tuning without execution plans"
+  - "NoSQL alternatives"

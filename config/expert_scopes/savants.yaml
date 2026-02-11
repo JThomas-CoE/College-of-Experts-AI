@@ -1,0 +1,164 @@
+# Savant Model Registry
+# Base models with their raw capabilities - personas are built on top of these
+# V12 Architecture - Savant Layer
+
+version: "1.0"
+description: |
+  Savant models are the underlying LLMs. Each savant can host multiple
+  expert personas with different system prompts, constraints, and scopes.
+  
+  Routing targets PERSONAS, not savants directly.
+  Personas inherit savant capabilities but specialize via harness configuration.
+
+savants:
+  qwen25_coder_7b:
+    name: "Qwen2.5-Coder-7B-Instruct"
+    model_path: "models/qwen25-coder-7b-instruct"
+    model_type: "onnx"  # or gguf, pytorch
+    device_preference: ["dml", "npu", "cpu"]
+    context_length: 32768
+    base_capabilities:
+      - "Code generation in 40+ programming languages"
+      - "Code completion and infilling"
+      - "Code explanation and documentation"
+      - "Bug fixing and refactoring"
+      - "Unit test generation"
+      - "Strong Python, JavaScript, TypeScript, Java, C++, Go, Rust"
+      - "Web frameworks: React, Vue, Angular, FastAPI, Django, Express"
+      - "Markup: HTML5, CSS3, SCSS, Markdown"
+    known_limitations:
+      - "May hallucinate non-existent APIs"
+      - "Limited domain knowledge outside code"
+      - "No real-time or post-training data"
+    personas:
+      - python_backend
+      - python_data
+      - python_ml
+      - python_testing
+      - javascript_core
+      - typescript_fullstack
+      - react_frontend
+      - vue_frontend
+      - nodejs_backend
+      - html_css_specialist
+      - devops_containers
+
+  law_llm_7b:
+    name: "Law-LLM-7B"
+    model_path: "models/law-llm-7b"
+    model_type: "onnx"
+    device_preference: ["dml", "cpu"]
+    context_length: 8192
+    base_capabilities:
+      - "Legal document drafting and review"
+      - "Contract analysis and clause generation"
+      - "Legal research and citation"
+      - "Compliance document creation"
+      - "Corporate governance documents"
+      - "U.S. common law and statutory interpretation"
+    known_limitations:
+      - "U.S. law focus, limited international law"
+      - "Not a substitute for licensed attorney"
+      - "May not reflect recent case law"
+      - "Cannot provide privileged legal advice"
+    personas:
+      - legal_contracts
+      - legal_corporate
+      - legal_compliance
+      - legal_ip
+      - legal_employment
+
+  biomistral_7b:
+    name: "BioMistral-7B"
+    model_path: "models/biomistral-7b"
+    model_type: "onnx"
+    device_preference: ["dml", "cpu"]
+    context_length: 8192
+    base_capabilities:
+      - "Medical literature comprehension"
+      - "Clinical terminology and ICD/CPT codes"
+      - "Patient education content"
+      - "Medical documentation templates"
+      - "Drug interaction awareness"
+      - "Anatomy and physiology explanations"
+    known_limitations:
+      - "NOT for diagnosis or treatment decisions"
+      - "Educational/informational use only"
+      - "May not reflect latest clinical guidelines"
+      - "Cannot replace clinical judgment"
+    personas:
+      - medical_clinical
+      - medical_research
+      - medical_documentation
+
+  sqlcoder_7b:
+    name: "SQLCoder-7B"
+    model_path: "models/sqlcoder-7b"
+    model_type: "onnx"
+    device_preference: ["dml", "cpu"]
+    context_length: 8192
+    base_capabilities:
+      - "SQL query generation from natural language"
+      - "Query optimization and analysis"
+      - "Schema design and normalization"
+      - "PostgreSQL, MySQL, SQL Server, SQLite dialects"
+      - "Complex joins, CTEs, window functions"
+      - "Index strategy recommendations"
+    known_limitations:
+      - "Limited to SQL - no NoSQL expertise"
+      - "May not know proprietary extensions"
+      - "Cannot execute queries or access data"
+    personas:
+      - sql_query_builder
+      - sql_schema_architect
+      - sql_analytics
+      - sql_optimization
+
+  qwen25_math_7b:
+    name: "Qwen2.5-Math-7B-Instruct"
+    model_path: "models/qwen25-math-7b-instruct"
+    model_type: "onnx"
+    device_preference: ["dml", "cpu"]
+    context_length: 8192
+    base_capabilities:
+      - "Mathematical proofs and derivations"
+      - "Symbolic computation and algebra"
+      - "Calculus, linear algebra, statistics"
+      - "Optimization problems"
+      - "Step-by-step problem solving"
+      - "LaTeX mathematical notation"
+    known_limitations:
+      - "May make arithmetic errors in long calculations"
+      - "Limited to mathematical reasoning"
+      - "No numerical computation execution"
+    personas:
+      - math_proofs
+      - math_statistics
+      - math_optimization
+      - math_applied
+
+  deepseek_r1_distill_7b:
+    name: "DeepSeek-R1-Distill-Qwen-7B"
+    model_path: "models/deepseek-r1-distill-qwen-7b"
+    model_type: "onnx"
+    device_preference: ["dml", "npu", "cpu"]
+    context_length: 32768
+    base_capabilities:
+      - "Complex multi-step reasoning"
+      - "Chain-of-thought problem solving"
+      - "Analysis and synthesis"
+      - "Research and summarization"
+      - "Planning and strategy"
+      - "General knowledge across domains"
+      - "Security and architecture thinking"
+    known_limitations:
+      - "Generalist - may be outperformed by specialists"
+      - "No specialized domain training"
+      - "May be verbose in reasoning"
+    personas:
+      - reasoning_analyst
+      - reasoning_planner
+      - security_architect
+      - security_assessor
+      - research_synthesizer
+      - general_assistant

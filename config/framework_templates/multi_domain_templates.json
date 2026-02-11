@@ -1,0 +1,652 @@
+[
+  {
+    "id": "multi_secure_web_app",
+    "category": "multi_domain",
+    "subcategory": "integration",
+    "title": "Secure Web Application",
+    "slots": [
+      {
+        "id": "security_requirements",
+        "title": "Security Requirements",
+        "persona": "security_architect",
+        "dependencies": [],
+        "description": "Complete Security Requirements"
+      },
+      {
+        "id": "frontend_design",
+        "title": "Frontend Design",
+        "persona": "html_css_specialist",
+        "dependencies": [
+          "security_requirements"
+        ],
+        "description": "Complete Frontend Design"
+      },
+      {
+        "id": "api_design",
+        "title": "Api Design",
+        "persona": "python_backend",
+        "dependencies": [
+          "security_requirements",
+          "frontend_design"
+        ],
+        "description": "Complete Api Design"
+      },
+      {
+        "id": "database_schema",
+        "title": "Database Schema",
+        "persona": "sql_schema_architect",
+        "dependencies": [
+          "security_requirements",
+          "frontend_design"
+        ],
+        "description": "Complete Database Schema"
+      },
+      {
+        "id": "implementation",
+        "title": "Implementation",
+        "persona": "react_frontend",
+        "dependencies": [
+          "security_requirements",
+          "frontend_design"
+        ],
+        "description": "Complete Implementation"
+      },
+      {
+        "id": "security_review",
+        "title": "Security Review",
+        "persona": "security_assessor",
+        "dependencies": [
+          "security_requirements",
+          "frontend_design"
+        ],
+        "description": "Complete Security Review"
+      }
+    ],
+    "tags": [
+      "multi-domain",
+      "integration"
+    ],
+    "description": "Secure Web Application framework template"
+  },
+  {
+    "id": "multi_compliant_data_system",
+    "category": "multi_domain",
+    "subcategory": "integration",
+    "title": "Compliant Data Processing System",
+    "slots": [
+      {
+        "id": "compliance_requirements",
+        "title": "Compliance Requirements",
+        "persona": "legal_compliance",
+        "dependencies": [],
+        "description": "Complete Compliance Requirements"
+      },
+      {
+        "id": "security_architecture",
+        "title": "Security Architecture",
+        "persona": "security_architect",
+        "dependencies": [
+          "compliance_requirements"
+        ],
+        "description": "Complete Security Architecture"
+      },
+      {
+        "id": "data_schema",
+        "title": "Data Schema",
+        "persona": "sql_schema_architect",
+        "dependencies": [
+          "compliance_requirements",
+          "security_architecture"
+        ],
+        "description": "Complete Data Schema"
+      },
+      {
+        "id": "etl_pipeline",
+        "title": "Etl Pipeline",
+        "persona": "python_data",
+        "dependencies": [
+          "compliance_requirements",
+          "security_architecture"
+        ],
+        "description": "Complete Etl Pipeline"
+      },
+      {
+        "id": "api_layer",
+        "title": "Api Layer",
+        "persona": "python_backend",
+        "dependencies": [
+          "compliance_requirements",
+          "security_architecture"
+        ],
+        "description": "Complete Api Layer"
+      },
+      {
+        "id": "compliance_verification",
+        "title": "Compliance Verification",
+        "persona": "legal_compliance",
+        "dependencies": [
+          "compliance_requirements",
+          "security_architecture"
+        ],
+        "description": "Complete Compliance Verification"
+      }
+    ],
+    "tags": [
+      "multi-domain",
+      "integration"
+    ],
+    "description": "Compliant Data Processing System framework template"
+  },
+  {
+    "id": "multi_healthcare_portal",
+    "category": "multi_domain",
+    "subcategory": "integration",
+    "title": "Healthcare Patient Portal",
+    "slots": [
+      {
+        "id": "hipaa_requirements",
+        "title": "Hipaa Requirements",
+        "persona": "legal_compliance",
+        "dependencies": [],
+        "description": "Complete Hipaa Requirements"
+      },
+      {
+        "id": "clinical_requirements",
+        "title": "Clinical Requirements",
+        "persona": "medical_clinical",
+        "dependencies": [
+          "hipaa_requirements"
+        ],
+        "description": "Complete Clinical Requirements"
+      },
+      {
+        "id": "security_design",
+        "title": "Security Design",
+        "persona": "security_architect",
+        "dependencies": [
+          "hipaa_requirements",
+          "clinical_requirements"
+        ],
+        "description": "Complete Security Design"
+      },
+      {
+        "id": "database_design",
+        "title": "Database Design",
+        "persona": "sql_schema_architect",
+        "dependencies": [
+          "hipaa_requirements",
+          "clinical_requirements"
+        ],
+        "description": "Complete Database Design"
+      },
+      {
+        "id": "backend_api",
+        "title": "Backend Api",
+        "persona": "python_backend",
+        "dependencies": [
+          "hipaa_requirements",
+          "clinical_requirements"
+        ],
+        "description": "Complete Backend Api"
+      },
+      {
+        "id": "frontend_ui",
+        "title": "Frontend Ui",
+        "persona": "react_frontend",
+        "dependencies": [
+          "hipaa_requirements",
+          "clinical_requirements"
+        ],
+        "description": "Complete Frontend Ui"
+      }
+    ],
+    "tags": [
+      "multi-domain",
+      "integration"
+    ],
+    "description": "Healthcare Patient Portal framework template"
+  },
+  {
+    "id": "multi_ml_platform",
+    "category": "multi_domain",
+    "subcategory": "integration",
+    "title": "ML Model Deployment Platform",
+    "slots": [
+      {
+        "id": "model_requirements",
+        "title": "Model Requirements",
+        "persona": "python_ml",
+        "dependencies": [],
+        "description": "Complete Model Requirements"
+      },
+      {
+        "id": "api_design",
+        "title": "Api Design",
+        "persona": "python_backend",
+        "dependencies": [
+          "model_requirements"
+        ],
+        "description": "Complete Api Design"
+      },
+      {
+        "id": "infrastructure",
+        "title": "Infrastructure",
+        "persona": "devops_containers",
+        "dependencies": [
+          "model_requirements",
+          "api_design"
+        ],
+        "description": "Complete Infrastructure"
+      },
+      {
+        "id": "monitoring",
+        "title": "Monitoring",
+        "persona": "devops_containers",
+        "dependencies": [
+          "model_requirements",
+          "api_design"
+        ],
+        "description": "Complete Monitoring"
+      },
+      {
+        "id": "documentation",
+        "title": "Documentation",
+        "persona": "general_assistant",
+        "dependencies": [
+          "model_requirements",
+          "api_design"
+        ],
+        "description": "Complete Documentation"
+      }
+    ],
+    "tags": [
+      "multi-domain",
+      "integration"
+    ],
+    "description": "ML Model Deployment Platform framework template"
+  },
+  {
+    "id": "multi_legal_tech_platform",
+    "category": "multi_domain",
+    "subcategory": "integration",
+    "title": "Legal Document Management Platform",
+    "slots": [
+      {
+        "id": "legal_requirements",
+        "title": "Legal Requirements",
+        "persona": "legal_compliance",
+        "dependencies": [],
+        "description": "Complete Legal Requirements"
+      },
+      {
+        "id": "document_templates",
+        "title": "Document Templates",
+        "persona": "legal_contracts",
+        "dependencies": [
+          "legal_requirements"
+        ],
+        "description": "Complete Document Templates"
+      },
+      {
+        "id": "database_design",
+        "title": "Database Design",
+        "persona": "sql_schema_architect",
+        "dependencies": [
+          "legal_requirements",
+          "document_templates"
+        ],
+        "description": "Complete Database Design"
+      },
+      {
+        "id": "backend_api",
+        "title": "Backend Api",
+        "persona": "nodejs_backend",
+        "dependencies": [
+          "legal_requirements",
+          "document_templates"
+        ],
+        "description": "Complete Backend Api"
+      },
+      {
+        "id": "frontend_ui",
+        "title": "Frontend Ui",
+        "persona": "react_frontend",
+        "dependencies": [
+          "legal_requirements",
+          "document_templates"
+        ],
+        "description": "Complete Frontend Ui"
+      },
+      {
+        "id": "security_review",
+        "title": "Security Review",
+        "persona": "security_assessor",
+        "dependencies": [
+          "legal_requirements",
+          "document_templates"
+        ],
+        "description": "Complete Security Review"
+      }
+    ],
+    "tags": [
+      "multi-domain",
+      "integration"
+    ],
+    "description": "Legal Document Management Platform framework template"
+  },
+  {
+    "id": "multi_analytics_dashboard",
+    "category": "multi_domain",
+    "subcategory": "integration",
+    "title": "Business Analytics Dashboard",
+    "slots": [
+      {
+        "id": "requirements_analysis",
+        "title": "Requirements Analysis",
+        "persona": "reasoning_analyst",
+        "dependencies": [],
+        "description": "Complete Requirements Analysis"
+      },
+      {
+        "id": "data_model",
+        "title": "Data Model",
+        "persona": "sql_schema_architect",
+        "dependencies": [
+          "requirements_analysis"
+        ],
+        "description": "Complete Data Model"
+      },
+      {
+        "id": "analytics_queries",
+        "title": "Analytics Queries",
+        "persona": "sql_analytics",
+        "dependencies": [
+          "requirements_analysis",
+          "data_model"
+        ],
+        "description": "Complete Analytics Queries"
+      },
+      {
+        "id": "backend_api",
+        "title": "Backend Api",
+        "persona": "python_backend",
+        "dependencies": [
+          "requirements_analysis",
+          "data_model"
+        ],
+        "description": "Complete Backend Api"
+      },
+      {
+        "id": "frontend_dashboard",
+        "title": "Frontend Dashboard",
+        "persona": "react_frontend",
+        "dependencies": [
+          "requirements_analysis",
+          "data_model"
+        ],
+        "description": "Complete Frontend Dashboard"
+      },
+      {
+        "id": "documentation",
+        "title": "Documentation",
+        "persona": "general_assistant",
+        "dependencies": [
+          "requirements_analysis",
+          "data_model"
+        ],
+        "description": "Complete Documentation"
+      }
+    ],
+    "tags": [
+      "multi-domain",
+      "integration"
+    ],
+    "description": "Business Analytics Dashboard framework template"
+  },
+  {
+    "id": "multi_ecommerce_platform",
+    "category": "multi_domain",
+    "subcategory": "integration",
+    "title": "E-commerce Platform",
+    "slots": [
+      {
+        "id": "requirements",
+        "title": "Requirements",
+        "persona": "reasoning_analyst",
+        "dependencies": [],
+        "description": "Complete Requirements"
+      },
+      {
+        "id": "legal_terms",
+        "title": "Legal Terms",
+        "persona": "legal_contracts",
+        "dependencies": [
+          "requirements"
+        ],
+        "description": "Complete Legal Terms"
+      },
+      {
+        "id": "database_design",
+        "title": "Database Design",
+        "persona": "sql_schema_architect",
+        "dependencies": [
+          "requirements",
+          "legal_terms"
+        ],
+        "description": "Complete Database Design"
+      },
+      {
+        "id": "backend_api",
+        "title": "Backend Api",
+        "persona": "nodejs_backend",
+        "dependencies": [
+          "requirements",
+          "legal_terms"
+        ],
+        "description": "Complete Backend Api"
+      },
+      {
+        "id": "frontend_store",
+        "title": "Frontend Store",
+        "persona": "react_frontend",
+        "dependencies": [
+          "requirements",
+          "legal_terms"
+        ],
+        "description": "Complete Frontend Store"
+      },
+      {
+        "id": "payment_security",
+        "title": "Payment Security",
+        "persona": "security_architect",
+        "dependencies": [
+          "requirements",
+          "legal_terms"
+        ],
+        "description": "Complete Payment Security"
+      }
+    ],
+    "tags": [
+      "multi-domain",
+      "integration"
+    ],
+    "description": "E-commerce Platform framework template"
+  },
+  {
+    "id": "multi_research_paper",
+    "category": "multi_domain",
+    "subcategory": "integration",
+    "title": "Research Paper with Analysis",
+    "slots": [
+      {
+        "id": "literature_review",
+        "title": "Literature Review",
+        "persona": "research_synthesizer",
+        "dependencies": [],
+        "description": "Complete Literature Review"
+      },
+      {
+        "id": "methodology",
+        "title": "Methodology",
+        "persona": "reasoning_analyst",
+        "dependencies": [
+          "literature_review"
+        ],
+        "description": "Complete Methodology"
+      },
+      {
+        "id": "statistical_analysis",
+        "title": "Statistical Analysis",
+        "persona": "math_statistics",
+        "dependencies": [
+          "literature_review",
+          "methodology"
+        ],
+        "description": "Complete Statistical Analysis"
+      },
+      {
+        "id": "results",
+        "title": "Results",
+        "persona": "reasoning_analyst",
+        "dependencies": [
+          "literature_review",
+          "methodology"
+        ],
+        "description": "Complete Results"
+      },
+      {
+        "id": "conclusions",
+        "title": "Conclusions",
+        "persona": "general_assistant",
+        "dependencies": [
+          "literature_review",
+          "methodology"
+        ],
+        "description": "Complete Conclusions"
+      }
+    ],
+    "tags": [
+      "multi-domain",
+      "integration"
+    ],
+    "description": "Research Paper with Analysis framework template"
+  },
+  {
+    "id": "multi_startup_formation",
+    "category": "multi_domain",
+    "subcategory": "integration",
+    "title": "Startup Company Formation",
+    "slots": [
+      {
+        "id": "business_plan",
+        "title": "Business Plan",
+        "persona": "reasoning_planner",
+        "dependencies": [],
+        "description": "Complete Business Plan"
+      },
+      {
+        "id": "corporate_documents",
+        "title": "Corporate Documents",
+        "persona": "legal_corporate",
+        "dependencies": [
+          "business_plan"
+        ],
+        "description": "Complete Corporate Documents"
+      },
+      {
+        "id": "founder_agreements",
+        "title": "Founder Agreements",
+        "persona": "legal_contracts",
+        "dependencies": [
+          "business_plan",
+          "corporate_documents"
+        ],
+        "description": "Complete Founder Agreements"
+      },
+      {
+        "id": "compliance_setup",
+        "title": "Compliance Setup",
+        "persona": "legal_compliance",
+        "dependencies": [
+          "business_plan",
+          "corporate_documents"
+        ],
+        "description": "Complete Compliance Setup"
+      },
+      {
+        "id": "ip_protection",
+        "title": "Ip Protection",
+        "persona": "legal_ip",
+        "dependencies": [
+          "business_plan",
+          "corporate_documents"
+        ],
+        "description": "Complete Ip Protection"
+      }
+    ],
+    "tags": [
+      "multi-domain",
+      "integration"
+    ],
+    "description": "Startup Company Formation framework template"
+  },
+  {
+    "id": "multi_api_platform",
+    "category": "multi_domain",
+    "subcategory": "integration",
+    "title": "API Platform with Documentation",
+    "slots": [
+      {
+        "id": "api_design",
+        "title": "Api Design",
+        "persona": "python_backend",
+        "dependencies": [],
+        "description": "Complete Api Design"
+      },
+      {
+        "id": "typescript_sdk",
+        "title": "Typescript Sdk",
+        "persona": "typescript_fullstack",
+        "dependencies": [
+          "api_design"
+        ],
+        "description": "Complete Typescript Sdk"
+      },
+      {
+        "id": "security",
+        "title": "Security",
+        "persona": "security_architect",
+        "dependencies": [
+          "api_design",
+          "typescript_sdk"
+        ],
+        "description": "Complete Security"
+      },
+      {
+        "id": "documentation",
+        "title": "Documentation",
+        "persona": "general_assistant",
+        "dependencies": [
+          "api_design",
+          "typescript_sdk"
+        ],
+        "description": "Complete Documentation"
+      },
+      {
+        "id": "testing",
+        "title": "Testing",
+        "persona": "python_testing",
+        "dependencies": [
+          "api_design",
+          "typescript_sdk"
+        ],
+        "description": "Complete Testing"
+      }
+    ],
+    "tags": [
+      "multi-domain",
+      "integration"
+    ],
+    "description": "API Platform with Documentation framework template"
+  }
+]

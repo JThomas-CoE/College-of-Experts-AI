@@ -1,0 +1,253 @@
+{
+  "version": "2.0",
+  "description": "V12 Expert Persona Registry - Personas are routed to, savants execute",
+  "architecture": {
+    "routing_target": "persona",
+    "execution_target": "savant",
+    "relationship": "many_personas_to_one_savant"
+  },
+  "savants_file": "savants.yaml",
+  "personas": {
+    "python_backend": {
+      "savant": "qwen25_coder_7b",
+      "scope_file": "personas/python_backend.yaml",
+      "display_name": "Python Backend Developer",
+      "category": "code",
+      "subcategory": "python"
+    },
+    "python_data": {
+      "savant": "qwen25_coder_7b",
+      "scope_file": "personas/python_data.yaml",
+      "display_name": "Python Data Engineer",
+      "category": "code",
+      "subcategory": "python"
+    },
+    "python_ml": {
+      "savant": "qwen25_coder_7b",
+      "scope_file": "personas/python_ml.yaml",
+      "display_name": "Python ML Engineer",
+      "category": "code",
+      "subcategory": "python"
+    },
+    "python_testing": {
+      "savant": "qwen25_coder_7b",
+      "scope_file": "personas/python_testing.yaml",
+      "display_name": "Python Test Engineer",
+      "category": "code",
+      "subcategory": "python"
+    },
+    "javascript_core": {
+      "savant": "qwen25_coder_7b",
+      "scope_file": "personas/javascript_core.yaml",
+      "display_name": "JavaScript Developer",
+      "category": "code",
+      "subcategory": "javascript"
+    },
+    "typescript_fullstack": {
+      "savant": "qwen25_coder_7b",
+      "scope_file": "personas/typescript_fullstack.yaml",
+      "display_name": "TypeScript Fullstack Developer",
+      "category": "code",
+      "subcategory": "typescript"
+    },
+    "react_frontend": {
+      "savant": "qwen25_coder_7b",
+      "scope_file": "personas/react_frontend.yaml",
+      "display_name": "React Frontend Developer",
+      "category": "code",
+      "subcategory": "frontend"
+    },
+    "vue_frontend": {
+      "savant": "qwen25_coder_7b",
+      "scope_file": "personas/vue_frontend.yaml",
+      "display_name": "Vue.js Developer",
+      "category": "code",
+      "subcategory": "frontend"
+    },
+    "nodejs_backend": {
+      "savant": "qwen25_coder_7b",
+      "scope_file": "personas/nodejs_backend.yaml",
+      "display_name": "Node.js Backend Developer",
+      "category": "code",
+      "subcategory": "nodejs"
+    },
+    "html_css_specialist": {
+      "savant": "qwen25_coder_7b",
+      "scope_file": "personas/html_css_specialist.yaml",
+      "display_name": "HTML/CSS Specialist",
+      "category": "code",
+      "subcategory": "frontend"
+    },
+    "devops_containers": {
+      "savant": "qwen25_coder_7b",
+      "scope_file": "personas/devops_containers.yaml",
+      "display_name": "DevOps Container Specialist",
+      "category": "code",
+      "subcategory": "devops"
+    },
+    "legal_contracts": {
+      "savant": "law_llm_7b",
+      "scope_file": "personas/legal_contracts.yaml",
+      "display_name": "Contract Drafting Specialist",
+      "category": "legal",
+      "subcategory": "contracts"
+    },
+    "legal_corporate": {
+      "savant": "law_llm_7b",
+      "scope_file": "personas/legal_corporate.yaml",
+      "display_name": "Corporate Law Specialist",
+      "category": "legal",
+      "subcategory": "corporate"
+    },
+    "legal_compliance": {
+      "savant": "law_llm_7b",
+      "scope_file": "personas/legal_compliance.yaml",
+      "display_name": "Compliance Specialist",
+      "category": "legal",
+      "subcategory": "compliance"
+    },
+    "legal_ip": {
+      "savant": "law_llm_7b",
+      "scope_file": "personas/legal_ip.yaml",
+      "display_name": "IP Law Specialist",
+      "category": "legal",
+      "subcategory": "ip"
+    },
+    "legal_employment": {
+      "savant": "law_llm_7b",
+      "scope_file": "personas/legal_employment.yaml",
+      "display_name": "Employment Law Specialist",
+      "category": "legal",
+      "subcategory": "employment"
+    },
+    "medical_clinical": {
+      "savant": "biomistral_7b",
+      "scope_file": "personas/medical_clinical.yaml",
+      "display_name": "Clinical Information Specialist",
+      "category": "medical",
+      "subcategory": "clinical"
+    },
+    "medical_research": {
+      "savant": "biomistral_7b",
+      "scope_file": "personas/medical_research.yaml",
+      "display_name": "Medical Research Assistant",
+      "category": "medical",
+      "subcategory": "research"
+    },
+    "medical_documentation": {
+      "savant": "biomistral_7b",
+      "scope_file": "personas/medical_documentation.yaml",
+      "display_name": "Medical Documentation Specialist",
+      "category": "medical",
+      "subcategory": "documentation"
+    },
+    "sql_query_builder": {
+      "savant": "sqlcoder_7b",
+      "scope_file": "personas/sql_query_builder.yaml",
+      "display_name": "SQL Query Builder",
+      "category": "data",
+      "subcategory": "sql"
+    },
+    "sql_schema_architect": {
+      "savant": "sqlcoder_7b",
+      "scope_file": "personas/sql_schema_architect.yaml",
+      "display_name": "Database Schema Architect",
+      "category": "data",
+      "subcategory": "sql"
+    },
+    "sql_analytics": {
+      "savant": "sqlcoder_7b",
+      "scope_file": "personas/sql_analytics.yaml",
+      "display_name": "SQL Analytics Specialist",
+      "category": "data",
+      "subcategory": "sql"
+    },
+    "sql_optimization": {
+      "savant": "sqlcoder_7b",
+      "scope_file": "personas/sql_optimization.yaml",
+      "display_name": "SQL Performance Optimizer",
+      "category": "data",
+      "subcategory": "sql"
+    },
+    "math_proofs": {
+      "savant": "qwen25_math_7b",
+      "scope_file": "personas/math_proofs.yaml",
+      "display_name": "Mathematical Proof Assistant",
+      "category": "math",
+      "subcategory": "proofs"
+    },
+    "math_statistics": {
+      "savant": "qwen25_math_7b",
+      "scope_file": "personas/math_statistics.yaml",
+      "display_name": "Statistics Specialist",
+      "category": "math",
+      "subcategory": "statistics"
+    },
+    "math_optimization": {
+      "savant": "qwen25_math_7b",
+      "scope_file": "personas/math_optimization.yaml",
+      "display_name": "Optimization Specialist",
+      "category": "math",
+      "subcategory": "optimization"
+    },
+    "math_applied": {
+      "savant": "qwen25_math_7b",
+      "scope_file": "personas/math_applied.yaml",
+      "display_name": "Applied Mathematics Specialist",
+      "category": "math",
+      "subcategory": "applied"
+    },
+    "reasoning_analyst": {
+      "savant": "deepseek_r1_distill_7b",
+      "scope_file": "personas/reasoning_analyst.yaml",
+      "display_name": "Analysis Specialist",
+      "category": "reasoning",
+      "subcategory": "analysis"
+    },
+    "reasoning_planner": {
+      "savant": "deepseek_r1_distill_7b",
+      "scope_file": "personas/reasoning_planner.yaml",
+      "display_name": "Strategic Planner",
+      "category": "reasoning",
+      "subcategory": "planning"
+    },
+    "security_architect": {
+      "savant": "deepseek_r1_distill_7b",
+      "scope_file": "personas/security_architect.yaml",
+      "display_name": "Security Architect",
+      "category": "security",
+      "subcategory": "architecture"
+    },
+    "security_assessor": {
+      "savant": "deepseek_r1_distill_7b",
+      "scope_file": "personas/security_assessor.yaml",
+      "display_name": "Security Assessor",
+      "category": "security",
+      "subcategory": "assessment"
+    },
+    "research_synthesizer": {
+      "savant": "deepseek_r1_distill_7b",
+      "scope_file": "personas/research_synthesizer.yaml",
+      "display_name": "Research Synthesizer",
+      "category": "reasoning",
+      "subcategory": "research"
+    },
+    "general_assistant": {
+      "savant": "deepseek_r1_distill_7b",
+      "scope_file": "personas/general_assistant.yaml",
+      "display_name": "General Assistant",
+      "category": "general",
+      "subcategory": "assistant"
+    }
+  },
+  "category_summary": {
+    "code": ["python_backend", "python_data", "python_ml", "python_testing", "javascript_core", "typescript_fullstack", "react_frontend", "vue_frontend", "nodejs_backend", "html_css_specialist", "devops_containers"],
+    "legal": ["legal_contracts", "legal_corporate", "legal_compliance", "legal_ip", "legal_employment"],
+    "medical": ["medical_clinical", "medical_research", "medical_documentation"],
+    "data": ["sql_query_builder", "sql_schema_architect", "sql_analytics", "sql_optimization"],
+    "math": ["math_proofs", "math_statistics", "math_optimization", "math_applied"],
+    "security": ["security_architect", "security_assessor"],
+    "reasoning": ["reasoning_analyst", "reasoning_planner", "research_synthesizer"],
+    "general": ["general_assistant"]
+  }
+}

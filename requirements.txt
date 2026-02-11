@@ -1,0 +1,34 @@
+# Core dependencies
+ollama>=0.1.0
+httpx>=0.25.0
+rich>=13.0.0
+
+# Memory layer - Memvid
+memvid>=0.1.0
+sentence-transformers>=2.2.0
+
+# Fallback memory storage
+sqlite-utils>=3.35
+
+# Transformers backend (for hybrid inference)
+# NOTE: Install the appropriate torch version for your GPU:
+#
+# NVIDIA (CUDA):
+#   pip install torch>=2.0.0 --index-url https://download.pytorch.org/whl/cu121
+#
+# AMD (DirectML/ROCm on Windows):
+#   pip install torch>=2.0.0 torch-directml>=0.2.0
+#
+# AMD (ROCm on Linux):
+#   pip install torch>=2.0.0 --index-url https://download.pytorch.org/whl/rocm5.7
+#
+# CPU only:
+#   pip install torch>=2.0.0 --index-url https://download.pytorch.org/whl/cpu
+#
+torch>=2.0.0
+transformers>=4.35.0
+
+# Development
+pytest>=7.0.0
+black>=23.0.0
+isort>=5.12.0

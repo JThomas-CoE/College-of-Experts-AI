@@ -1,0 +1,1034 @@
+[
+  {
+    "id": "security_arch_zero_trust_architecture",
+    "category": "security",
+    "subcategory": "architecture",
+    "title": "Zero Trust Architecture",
+    "persona": "security_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "identity",
+        "dependencies": [],
+        "description": "Complete identity"
+      },
+      {
+        "id": "s1",
+        "title": "device",
+        "dependencies": [],
+        "description": "Complete device"
+      },
+      {
+        "id": "s2",
+        "title": "network",
+        "dependencies": [],
+        "description": "Complete network"
+      },
+      {
+        "id": "s3",
+        "title": "application",
+        "dependencies": [],
+        "description": "Complete application"
+      },
+      {
+        "id": "s4",
+        "title": "data",
+        "dependencies": [],
+        "description": "Complete data"
+      },
+      {
+        "id": "s5",
+        "title": "monitoring",
+        "dependencies": [],
+        "description": "Complete monitoring"
+      }
+    ],
+    "tags": [
+      "security",
+      "architecture"
+    ],
+    "description": "Zero Trust Architecture framework template"
+  },
+  {
+    "id": "security_arch_api_security_design",
+    "category": "security",
+    "subcategory": "architecture",
+    "title": "API Security Design",
+    "persona": "security_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "authentication",
+        "dependencies": [],
+        "description": "Complete authentication"
+      },
+      {
+        "id": "s1",
+        "title": "authorization",
+        "dependencies": [],
+        "description": "Complete authorization"
+      },
+      {
+        "id": "s2",
+        "title": "input_validation",
+        "dependencies": [],
+        "description": "Complete input_validation"
+      },
+      {
+        "id": "s3",
+        "title": "rate_limiting",
+        "dependencies": [],
+        "description": "Complete rate_limiting"
+      },
+      {
+        "id": "s4",
+        "title": "logging",
+        "dependencies": [],
+        "description": "Complete logging"
+      }
+    ],
+    "tags": [
+      "security",
+      "architecture"
+    ],
+    "description": "API Security Design framework template"
+  },
+  {
+    "id": "security_arch_authentication_system",
+    "category": "security",
+    "subcategory": "architecture",
+    "title": "Authentication System",
+    "persona": "security_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "methods",
+        "dependencies": [],
+        "description": "Complete methods"
+      },
+      {
+        "id": "s1",
+        "title": "mfa",
+        "dependencies": [],
+        "description": "Complete mfa"
+      },
+      {
+        "id": "s2",
+        "title": "session",
+        "dependencies": [],
+        "description": "Complete session"
+      },
+      {
+        "id": "s3",
+        "title": "token_management",
+        "dependencies": [],
+        "description": "Complete token_management"
+      },
+      {
+        "id": "s4",
+        "title": "revocation",
+        "dependencies": [],
+        "description": "Complete revocation"
+      }
+    ],
+    "tags": [
+      "security",
+      "architecture"
+    ],
+    "description": "Authentication System framework template"
+  },
+  {
+    "id": "security_arch_authorization_system",
+    "category": "security",
+    "subcategory": "architecture",
+    "title": "Authorization System",
+    "persona": "security_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "model",
+        "dependencies": [],
+        "description": "Complete model"
+      },
+      {
+        "id": "s1",
+        "title": "roles",
+        "dependencies": [],
+        "description": "Complete roles"
+      },
+      {
+        "id": "s2",
+        "title": "permissions",
+        "dependencies": [],
+        "description": "Complete permissions"
+      },
+      {
+        "id": "s3",
+        "title": "enforcement",
+        "dependencies": [],
+        "description": "Complete enforcement"
+      },
+      {
+        "id": "s4",
+        "title": "audit",
+        "dependencies": [],
+        "description": "Complete audit"
+      }
+    ],
+    "tags": [
+      "security",
+      "architecture"
+    ],
+    "description": "Authorization System framework template"
+  },
+  {
+    "id": "security_arch_data_protection_design",
+    "category": "security",
+    "subcategory": "architecture",
+    "title": "Data Protection Design",
+    "persona": "security_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "classification",
+        "dependencies": [],
+        "description": "Complete classification"
+      },
+      {
+        "id": "s1",
+        "title": "encryption_at_rest",
+        "dependencies": [],
+        "description": "Complete encryption_at_rest"
+      },
+      {
+        "id": "s2",
+        "title": "encryption_in_transit",
+        "dependencies": [],
+        "description": "Complete encryption_in_transit"
+      },
+      {
+        "id": "s3",
+        "title": "key_management",
+        "dependencies": [],
+        "description": "Complete key_management"
+      }
+    ],
+    "tags": [
+      "security",
+      "architecture"
+    ],
+    "description": "Data Protection Design framework template"
+  },
+  {
+    "id": "security_arch_logging_architecture",
+    "category": "security",
+    "subcategory": "architecture",
+    "title": "Logging Architecture",
+    "persona": "security_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "events",
+        "dependencies": [],
+        "description": "Complete events"
+      },
+      {
+        "id": "s1",
+        "title": "collection",
+        "dependencies": [],
+        "description": "Complete collection"
+      },
+      {
+        "id": "s2",
+        "title": "storage",
+        "dependencies": [],
+        "description": "Complete storage"
+      },
+      {
+        "id": "s3",
+        "title": "analysis",
+        "dependencies": [],
+        "description": "Complete analysis"
+      },
+      {
+        "id": "s4",
+        "title": "alerting",
+        "dependencies": [],
+        "description": "Complete alerting"
+      }
+    ],
+    "tags": [
+      "security",
+      "architecture"
+    ],
+    "description": "Logging Architecture framework template"
+  },
+  {
+    "id": "security_arch_network_security_design",
+    "category": "security",
+    "subcategory": "architecture",
+    "title": "Network Security Design",
+    "persona": "security_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "segmentation",
+        "dependencies": [],
+        "description": "Complete segmentation"
+      },
+      {
+        "id": "s1",
+        "title": "firewalls",
+        "dependencies": [],
+        "description": "Complete firewalls"
+      },
+      {
+        "id": "s2",
+        "title": "ids_ips",
+        "dependencies": [],
+        "description": "Complete ids_ips"
+      },
+      {
+        "id": "s3",
+        "title": "vpn",
+        "dependencies": [],
+        "description": "Complete vpn"
+      },
+      {
+        "id": "s4",
+        "title": "monitoring",
+        "dependencies": [],
+        "description": "Complete monitoring"
+      }
+    ],
+    "tags": [
+      "security",
+      "architecture"
+    ],
+    "description": "Network Security Design framework template"
+  },
+  {
+    "id": "security_arch_cloud_security_architecture",
+    "category": "security",
+    "subcategory": "architecture",
+    "title": "Cloud Security Architecture",
+    "persona": "security_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "iam",
+        "dependencies": [],
+        "description": "Complete iam"
+      },
+      {
+        "id": "s1",
+        "title": "network",
+        "dependencies": [],
+        "description": "Complete network"
+      },
+      {
+        "id": "s2",
+        "title": "data",
+        "dependencies": [],
+        "description": "Complete data"
+      },
+      {
+        "id": "s3",
+        "title": "compute",
+        "dependencies": [],
+        "description": "Complete compute"
+      },
+      {
+        "id": "s4",
+        "title": "monitoring",
+        "dependencies": [],
+        "description": "Complete monitoring"
+      }
+    ],
+    "tags": [
+      "security",
+      "architecture"
+    ],
+    "description": "Cloud Security Architecture framework template"
+  },
+  {
+    "id": "security_arch_container_security",
+    "category": "security",
+    "subcategory": "architecture",
+    "title": "Container Security",
+    "persona": "security_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "image",
+        "dependencies": [],
+        "description": "Complete image"
+      },
+      {
+        "id": "s1",
+        "title": "registry",
+        "dependencies": [],
+        "description": "Complete registry"
+      },
+      {
+        "id": "s2",
+        "title": "runtime",
+        "dependencies": [],
+        "description": "Complete runtime"
+      },
+      {
+        "id": "s3",
+        "title": "orchestration",
+        "dependencies": [],
+        "description": "Complete orchestration"
+      },
+      {
+        "id": "s4",
+        "title": "monitoring",
+        "dependencies": [],
+        "description": "Complete monitoring"
+      }
+    ],
+    "tags": [
+      "security",
+      "architecture"
+    ],
+    "description": "Container Security framework template"
+  },
+  {
+    "id": "security_arch_secrets_management",
+    "category": "security",
+    "subcategory": "architecture",
+    "title": "Secrets Management",
+    "persona": "security_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "storage",
+        "dependencies": [],
+        "description": "Complete storage"
+      },
+      {
+        "id": "s1",
+        "title": "rotation",
+        "dependencies": [],
+        "description": "Complete rotation"
+      },
+      {
+        "id": "s2",
+        "title": "access",
+        "dependencies": [],
+        "description": "Complete access"
+      },
+      {
+        "id": "s3",
+        "title": "audit",
+        "dependencies": [],
+        "description": "Complete audit"
+      },
+      {
+        "id": "s4",
+        "title": "integration",
+        "dependencies": [],
+        "description": "Complete integration"
+      }
+    ],
+    "tags": [
+      "security",
+      "architecture"
+    ],
+    "description": "Secrets Management framework template"
+  },
+  {
+    "id": "security_assess_threat_model_stride",
+    "category": "security",
+    "subcategory": "assessment",
+    "title": "Threat Model STRIDE",
+    "persona": "security_assessor",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "decomposition",
+        "dependencies": [],
+        "description": "Complete decomposition"
+      },
+      {
+        "id": "s1",
+        "title": "threats",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete threats"
+      },
+      {
+        "id": "s2",
+        "title": "mitigations",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete mitigations"
+      },
+      {
+        "id": "s3",
+        "title": "residual_risk",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete residual_risk"
+      },
+      {
+        "id": "s4",
+        "title": "documentation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete documentation"
+      }
+    ],
+    "tags": [
+      "security",
+      "assessment",
+      "risk"
+    ],
+    "description": "Threat Model STRIDE framework template"
+  },
+  {
+    "id": "security_assess_vulnerability_assessment",
+    "category": "security",
+    "subcategory": "assessment",
+    "title": "Vulnerability Assessment",
+    "persona": "security_assessor",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "scope",
+        "dependencies": [],
+        "description": "Complete scope"
+      },
+      {
+        "id": "s1",
+        "title": "scanning",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete scanning"
+      },
+      {
+        "id": "s2",
+        "title": "analysis",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete analysis"
+      },
+      {
+        "id": "s3",
+        "title": "prioritization",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete prioritization"
+      },
+      {
+        "id": "s4",
+        "title": "remediation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete remediation"
+      }
+    ],
+    "tags": [
+      "security",
+      "assessment",
+      "risk"
+    ],
+    "description": "Vulnerability Assessment framework template"
+  },
+  {
+    "id": "security_assess_risk_assessment",
+    "category": "security",
+    "subcategory": "assessment",
+    "title": "Risk Assessment",
+    "persona": "security_assessor",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "assets",
+        "dependencies": [],
+        "description": "Complete assets"
+      },
+      {
+        "id": "s1",
+        "title": "threats",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete threats"
+      },
+      {
+        "id": "s2",
+        "title": "vulnerabilities",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete vulnerabilities"
+      },
+      {
+        "id": "s3",
+        "title": "likelihood",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete likelihood"
+      },
+      {
+        "id": "s4",
+        "title": "impact",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete impact"
+      },
+      {
+        "id": "s5",
+        "title": "risk_rating",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete risk_rating"
+      }
+    ],
+    "tags": [
+      "security",
+      "assessment",
+      "risk"
+    ],
+    "description": "Risk Assessment framework template"
+  },
+  {
+    "id": "security_assess_security_architecture_review",
+    "category": "security",
+    "subcategory": "assessment",
+    "title": "Security Architecture Review",
+    "persona": "security_assessor",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "scope",
+        "dependencies": [],
+        "description": "Complete scope"
+      },
+      {
+        "id": "s1",
+        "title": "design_review",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete design_review"
+      },
+      {
+        "id": "s2",
+        "title": "findings",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete findings"
+      },
+      {
+        "id": "s3",
+        "title": "recommendations",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete recommendations"
+      }
+    ],
+    "tags": [
+      "security",
+      "assessment",
+      "risk"
+    ],
+    "description": "Security Architecture Review framework template"
+  },
+  {
+    "id": "security_assess_code_security_review",
+    "category": "security",
+    "subcategory": "assessment",
+    "title": "Code Security Review",
+    "persona": "security_assessor",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "scope",
+        "dependencies": [],
+        "description": "Complete scope"
+      },
+      {
+        "id": "s1",
+        "title": "static_analysis",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete static_analysis"
+      },
+      {
+        "id": "s2",
+        "title": "manual_review",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete manual_review"
+      },
+      {
+        "id": "s3",
+        "title": "findings",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete findings"
+      },
+      {
+        "id": "s4",
+        "title": "remediation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete remediation"
+      }
+    ],
+    "tags": [
+      "security",
+      "assessment",
+      "risk"
+    ],
+    "description": "Code Security Review framework template"
+  },
+  {
+    "id": "security_assess_penetration_test_plan",
+    "category": "security",
+    "subcategory": "assessment",
+    "title": "Penetration Test Plan",
+    "persona": "security_assessor",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "scope",
+        "dependencies": [],
+        "description": "Complete scope"
+      },
+      {
+        "id": "s1",
+        "title": "methodology",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete methodology"
+      },
+      {
+        "id": "s2",
+        "title": "rules",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete rules"
+      },
+      {
+        "id": "s3",
+        "title": "timeline",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete timeline"
+      },
+      {
+        "id": "s4",
+        "title": "deliverables",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete deliverables"
+      }
+    ],
+    "tags": [
+      "security",
+      "assessment",
+      "risk"
+    ],
+    "description": "Penetration Test Plan framework template"
+  },
+  {
+    "id": "security_assess_compliance_assessment",
+    "category": "security",
+    "subcategory": "assessment",
+    "title": "Compliance Assessment",
+    "persona": "security_assessor",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "framework",
+        "dependencies": [],
+        "description": "Complete framework"
+      },
+      {
+        "id": "s1",
+        "title": "controls",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete controls"
+      },
+      {
+        "id": "s2",
+        "title": "gaps",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete gaps"
+      },
+      {
+        "id": "s3",
+        "title": "remediation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete remediation"
+      },
+      {
+        "id": "s4",
+        "title": "roadmap",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete roadmap"
+      }
+    ],
+    "tags": [
+      "security",
+      "assessment",
+      "risk"
+    ],
+    "description": "Compliance Assessment framework template"
+  },
+  {
+    "id": "security_assess_third_party_risk_assessment",
+    "category": "security",
+    "subcategory": "assessment",
+    "title": "Third Party Risk Assessment",
+    "persona": "security_assessor",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "vendor",
+        "dependencies": [],
+        "description": "Complete vendor"
+      },
+      {
+        "id": "s1",
+        "title": "questionnaire",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete questionnaire"
+      },
+      {
+        "id": "s2",
+        "title": "review",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete review"
+      },
+      {
+        "id": "s3",
+        "title": "risk_rating",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete risk_rating"
+      },
+      {
+        "id": "s4",
+        "title": "recommendations",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete recommendations"
+      }
+    ],
+    "tags": [
+      "security",
+      "assessment",
+      "risk"
+    ],
+    "description": "Third Party Risk Assessment framework template"
+  },
+  {
+    "id": "security_assess_incident_response_plan",
+    "category": "security",
+    "subcategory": "assessment",
+    "title": "Incident Response Plan",
+    "persona": "security_assessor",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "preparation",
+        "dependencies": [],
+        "description": "Complete preparation"
+      },
+      {
+        "id": "s1",
+        "title": "detection",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete detection"
+      },
+      {
+        "id": "s2",
+        "title": "containment",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete containment"
+      },
+      {
+        "id": "s3",
+        "title": "eradication",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete eradication"
+      },
+      {
+        "id": "s4",
+        "title": "recovery",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete recovery"
+      },
+      {
+        "id": "s5",
+        "title": "lessons",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete lessons"
+      }
+    ],
+    "tags": [
+      "security",
+      "assessment",
+      "risk"
+    ],
+    "description": "Incident Response Plan framework template"
+  },
+  {
+    "id": "security_assess_business_continuity_plan",
+    "category": "security",
+    "subcategory": "assessment",
+    "title": "Business Continuity Plan",
+    "persona": "security_assessor",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "impact_analysis",
+        "dependencies": [],
+        "description": "Complete impact_analysis"
+      },
+      {
+        "id": "s1",
+        "title": "recovery_objectives",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete recovery_objectives"
+      },
+      {
+        "id": "s2",
+        "title": "strategies",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete strategies"
+      },
+      {
+        "id": "s3",
+        "title": "testing",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete testing"
+      }
+    ],
+    "tags": [
+      "security",
+      "assessment",
+      "risk"
+    ],
+    "description": "Business Continuity Plan framework template"
+  }
+]

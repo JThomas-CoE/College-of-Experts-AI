@@ -1,0 +1,22 @@
+{
+  "chunks": [
+    {
+      "id": "security_bcrypt_001",
+      "content": "bcrypt Password Hashing Best Practices:\n\n```python\nfrom flask_bcrypt import Bcrypt\nfrom flask import Flask\nimport secrets\n\napp = Flask(__name__)\nbcrypt = Bcrypt(app)\n\n# ========== PASSWORD HASHING ==========\n\ndef hash_password(plain_password: str) -> str:\n    \"\"\"\n    Hash a password using bcrypt.\n    \n    bcrypt automatically:\n    - Generates a random salt\n    - Uses adaptive cost factor (default 12 rounds)\n    - Produces a 60-character hash string\n    \"\"\"\n    return bcrypt.generate_password_hash(plain_password).decode('utf-8')\n\ndef verify_password(plain_password: str, hashed_password: str) -> bool:\n    \"\"\"Verify a password against its hash.\"\"\"\n    return bcrypt.check_password_hash(hashed_password, plain_password)\n\n# ========== USER MODEL WITH AUTH ==========\n\nclass User(db.Model):\n    __tablename__ = 'users'\n    \n    id = db.Column(db.Integer, primary_key=True)\n    email = db.Column(db.String(120), unique=True, nullable=False, index=True)\n    password_hash = db.Column(db.String(128), nullable=False)\n    created_at = db.Column(db.DateTime, default=datetime.utcnow)\n    \n    def set_password(self, password: str):\n        \"\"\"Hash and store password.\"\"\"\n        self.password_hash = hash_password(password)\n    \n    def check_password(self, password: str) -> bool:\n        \"\"\"Verify password.\"\"\"\n        return verify_password(password, self.password_hash)\n    \n    @staticmethod\n    def validate_password_strength(password: str) -> tuple[bool, str]:\n        \"\"\"Validate password meets security requirements.\"\"\"\n        if len(password) < 8:\n            return False, \"Password must be at least 8 characters\"\n        if not any(c.isupper() for c in password):\n            return False, \"Password must contain uppercase letter\"\n        if not any(c.islower() for c in password):\n            return False, \"Password must contain lowercase letter\"\n        if not any(c.isdigit() for c in password):\n            return False, \"Password must contain a digit\"\n        return True, \"Password is strong\"\n\n# ========== AUTH ROUTES ==========\n\n@app.route('/api/auth/register', methods=['POST'])\ndef register():\n    data = request.get_json()\n    \n    email = data.get('email', '').lower().strip()\n    password = data.get('password', '')\n    \n    # Validate\n    if not email or '@' not in email:\n        return jsonify({'error': 'Valid email required'}), 400\n    \n    valid, msg = User.validate_password_strength(password)\n    if not valid:\n        return jsonify({'error': msg}), 400\n    \n    if User.query.filter_by(email=email).first():\n        return jsonify({'error': 'Email already registered'}), 409\n    \n    # Create user\n    user = User(email=email)\n    user.set_password(password)\n    \n    db.session.add(user)\n    db.session.commit()\n    \n    return jsonify({'message': 'User created', 'id': user.id}), 201\n\n@app.route('/api/auth/login', methods=['POST'])\ndef login():\n    data = request.get_json()\n    \n    email = data.get('email', '').lower().strip()\n    password = data.get('password', '')\n    \n    user = User.query.filter_by(email=email).first()\n    \n    # Constant-time comparison to prevent timing attacks\n    if not user or not user.check_password(password):\n        return jsonify({'error': 'Invalid credentials'}), 401\n    \n    # Generate session token (use JWT in production)\n    token = secrets.token_urlsafe(32)\n    \n    return jsonify({\n        'message': 'Login successful',\n        'token': token,\n        'user_id': user.id\n    })\n```\n\nSECURITY NOTES:\n- bcrypt cost factor of 12 is good for 2024 hardware\n- Always use constant-time comparison for auth\n- Store only the hash, never plain passwords\n- Use HTTPS in production\n- Implement rate limiting on auth endpoints\n- Add account lockout after failed attempts",
+      "category": "security",
+      "subcategory": "authentication",
+      "tags": [
+        "bcrypt",
+        "password",
+        "hashing",
+        "authentication",
+        "security",
+        "python",
+        "flask"
+      ],
+      "source": "local",
+      "source_url": null,
+      "created_at": "2026-01-28T14:19:13.537396"
+    }
+  ]
+}

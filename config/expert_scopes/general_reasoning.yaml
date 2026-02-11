@@ -1,0 +1,188 @@
+# General Reasoning Expert - Grounded Scope Document
+# V12 Architecture - Aligned to DeepSeek-R1-Distill-Qwen-7B training data
+
+expert_id: general_reasoning
+display_name: "General Reasoning Expert"
+emoji: "🧠"
+savant_model: "models/DeepSeek-R1-Distill-Qwen-7B-DML"
+
+# Capability scope for embedding-based routing (~800 words)
+# These describe tasks this expert SHOULD handle
+capability_scope: |
+  Task decomposition and planning
+  Breaking complex problems into subtasks
+  Identifying task dependencies
+  Creating step-by-step action plans
+  Prioritizing subtasks
+  Workflow design and sequencing
+  
+  Logical reasoning and analysis
+  Deductive reasoning
+  Inductive reasoning
+  Abductive reasoning
+  Causal reasoning
+  Analogical reasoning
+  Identifying logical fallacies
+  
+  Problem-solving strategies
+  Root cause analysis
+  Systematic troubleshooting
+  Decision tree construction
+  Trade-off analysis
+  Constraint satisfaction
+  
+  Critical thinking and evaluation
+  Argument analysis
+  Evidence evaluation
+  Assumption identification
+  Bias detection
+  Claim verification reasoning
+  
+  Information synthesis
+  Summarizing multiple sources
+  Comparing and contrasting
+  Identifying patterns and themes
+  Drawing conclusions from evidence
+  
+  Question clarification
+  Ambiguity resolution
+  Scope definition
+  Requirement elicitation
+  Intent interpretation
+  
+  Explanation and teaching
+  Concept explanation
+  Analogy construction
+  Step-by-step tutorials
+  Simplifying complex topics
+  
+  Meta-cognitive tasks
+  Strategy selection
+  Progress monitoring
+  Error detection and correction
+  Learning from feedback
+  
+  General knowledge application
+  Cross-domain connections
+  Common sense reasoning
+  World knowledge application
+  Contextual understanding
+  
+  Communication and formatting
+  Response structuring
+  Audience adaptation
+  Clarity optimization
+  Information organization
+  
+  Research and investigation planning
+  Information gathering strategies
+  Source identification
+  Research question formulation
+  Investigation workflow design
+
+# Exclusion scope for embedding-based ANTI-routing (~400 words)
+# These describe tasks this expert should NOT handle
+exclusion_scope: |
+  Detailed Python code implementation
+  Complex algorithm coding
+  Framework-specific development
+  Code debugging and optimization
+  Software architecture implementation
+  
+  SQL query construction
+  Database schema design
+  Query optimization
+  Data modeling
+  
+  Legal document drafting
+  Contract language
+  Compliance documentation
+  Liability disclaimers
+  Regulatory interpretation
+  
+  Clinical medical diagnosis
+  Treatment recommendations
+  Drug information
+  Patient care protocols
+  Medical terminology details
+  
+  Security vulnerability assessment
+  Penetration testing
+  Encryption implementation details
+  Security architecture specifics
+  
+  Advanced mathematical proofs
+  Complex calculus problems
+  Statistical analysis execution
+  Numerical computation
+  
+  Domain-specific expert knowledge
+  Specialized technical details
+  Industry-specific regulations
+  Professional practice standards
+  
+  Creative writing and fiction
+  Poetry composition
+  Narrative storytelling
+  Character development
+  
+  Real-time data retrieval
+  Current events information
+  Live system queries
+  Up-to-date pricing or availability
+
+# Harness constraints - injected into system prompt
+harness_constraints: |
+  You are a general reasoning and planning specialist. Your expertise covers:
+  - Task decomposition and workflow planning
+  - Logical reasoning and problem analysis
+  - Critical thinking and evaluation
+  - Information synthesis and summarization
+  - Question clarification and intent interpretation
+  - Explanation and teaching
+  
+  PRIMARY ROLE IN V12:
+  You serve as the DECOMPOSER - analyzing user requests and creating
+  structured task frameworks for expert assignment.
+  
+  You MAY:
+  - Decompose complex requests into manageable subtasks
+  - Create task dependency graphs
+  - Clarify ambiguous requirements
+  - Synthesize outputs from multiple experts
+  - Provide meta-level reasoning about approaches
+  
+  You must DEFER TO SPECIALISTS for:
+  - Detailed code implementation → python_coder
+  - Database queries → sql_specialist
+  - Legal documents → legal_drafting
+  - Medical information → medical_clinical
+  - Security design → security_architect
+  - Math calculations → math_reasoning
+  
+  When decomposing tasks:
+  - Identify the task TYPE (code, document, analysis, design)
+  - Identify domain CONTEXT (what the data/subject is about)
+  - Identify expertise REQUIRED (what specialist knowledge is needed)
+  - Do NOT conflate "data about X" with "expertise in X"
+  
+  Example:
+  "Medical records database" needs:
+  - sql_specialist for queries (data storage)
+  - security_architect for access control (data protection)
+  - legal_drafting for disclaimers (compliance documentation)
+  - NOT medical_clinical (no clinical judgment required)
+
+# Verification metadata
+capability_verified_date: "2026-01-26"
+verification_method: "decomposition_quality_v1"
+known_strengths:
+  - "Multi-step reasoning chains"
+  - "Task decomposition"
+  - "Ambiguity resolution"
+  - "Cross-domain synthesis"
+known_weaknesses:
+  - "Domain-specific technical depth"
+  - "Current events (training cutoff)"
+  - "Numerical precision"
+  - "Code implementation details"

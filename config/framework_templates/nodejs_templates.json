@@ -1,0 +1,1955 @@
+[
+  {
+    "id": "node_express_rest_api",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Express REST API",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "app_setup",
+        "dependencies": [],
+        "description": "Complete app_setup"
+      },
+      {
+        "id": "s1",
+        "title": "middleware",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete middleware"
+      },
+      {
+        "id": "s2",
+        "title": "routes",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete routes"
+      },
+      {
+        "id": "s3",
+        "title": "controllers",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete controllers"
+      },
+      {
+        "id": "s4",
+        "title": "error_handling",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete error_handling"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Express REST API framework template"
+  },
+  {
+    "id": "node_express_authentication",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Express Authentication",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "passport_setup",
+        "dependencies": [],
+        "description": "Complete passport_setup"
+      },
+      {
+        "id": "s1",
+        "title": "strategies",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete strategies"
+      },
+      {
+        "id": "s2",
+        "title": "routes",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete routes"
+      },
+      {
+        "id": "s3",
+        "title": "middleware",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete middleware"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Express Authentication framework template"
+  },
+  {
+    "id": "node_express_file_upload",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Express File Upload",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "multer_config",
+        "dependencies": [],
+        "description": "Complete multer_config"
+      },
+      {
+        "id": "s1",
+        "title": "routes",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete routes"
+      },
+      {
+        "id": "s2",
+        "title": "validation",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s3",
+        "title": "storage",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete storage"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Express File Upload framework template"
+  },
+  {
+    "id": "node_express_websocket",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Express WebSocket",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "socket_io_setup",
+        "dependencies": [],
+        "description": "Complete socket_io_setup"
+      },
+      {
+        "id": "s1",
+        "title": "events",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete events"
+      },
+      {
+        "id": "s2",
+        "title": "rooms",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete rooms"
+      },
+      {
+        "id": "s3",
+        "title": "middleware",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete middleware"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Express WebSocket framework template"
+  },
+  {
+    "id": "node_express_rate_limiting",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Express Rate Limiting",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "limiter_config",
+        "dependencies": [],
+        "description": "Complete limiter_config"
+      },
+      {
+        "id": "s1",
+        "title": "middleware",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete middleware"
+      },
+      {
+        "id": "s2",
+        "title": "storage",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete storage"
+      },
+      {
+        "id": "s3",
+        "title": "responses",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete responses"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Express Rate Limiting framework template"
+  },
+  {
+    "id": "node_express_validation",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Express Validation",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "schemas",
+        "dependencies": [],
+        "description": "Complete schemas"
+      },
+      {
+        "id": "s1",
+        "title": "middleware",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete middleware"
+      },
+      {
+        "id": "s2",
+        "title": "error_formatting",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete error_formatting"
+      },
+      {
+        "id": "s3",
+        "title": "sanitization",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete sanitization"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Express Validation framework template"
+  },
+  {
+    "id": "node_express_logging",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Express Logging",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "winston_setup",
+        "dependencies": [],
+        "description": "Complete winston_setup"
+      },
+      {
+        "id": "s1",
+        "title": "morgan",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete morgan"
+      },
+      {
+        "id": "s2",
+        "title": "request_logging",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete request_logging"
+      },
+      {
+        "id": "s3",
+        "title": "error_logging",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete error_logging"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Express Logging framework template"
+  },
+  {
+    "id": "node_express_caching",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Express Caching",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "redis_setup",
+        "dependencies": [],
+        "description": "Complete redis_setup"
+      },
+      {
+        "id": "s1",
+        "title": "cache_middleware",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete cache_middleware"
+      },
+      {
+        "id": "s2",
+        "title": "invalidation",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete invalidation"
+      },
+      {
+        "id": "s3",
+        "title": "patterns",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete patterns"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Express Caching framework template"
+  },
+  {
+    "id": "node_express_job_queue",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Express Job Queue",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "bull_setup",
+        "dependencies": [],
+        "description": "Complete bull_setup"
+      },
+      {
+        "id": "s1",
+        "title": "job_definitions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete job_definitions"
+      },
+      {
+        "id": "s2",
+        "title": "workers",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete workers"
+      },
+      {
+        "id": "s3",
+        "title": "monitoring",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete monitoring"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Express Job Queue framework template"
+  },
+  {
+    "id": "node_express_testing",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Express Testing",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "supertest",
+        "dependencies": [],
+        "description": "Complete supertest"
+      },
+      {
+        "id": "s1",
+        "title": "mocking",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete mocking"
+      },
+      {
+        "id": "s2",
+        "title": "fixtures",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete fixtures"
+      },
+      {
+        "id": "s3",
+        "title": "integration",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete integration"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Express Testing framework template"
+  },
+  {
+    "id": "node_nestjs_module",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "NestJS Module",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "module",
+        "dependencies": [],
+        "description": "Complete module"
+      },
+      {
+        "id": "s1",
+        "title": "controller",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete controller"
+      },
+      {
+        "id": "s2",
+        "title": "service",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete service"
+      },
+      {
+        "id": "s3",
+        "title": "dto",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete dto"
+      },
+      {
+        "id": "s4",
+        "title": "tests",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete tests"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "NestJS Module framework template"
+  },
+  {
+    "id": "node_nestjs_auth_guard",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "NestJS Auth Guard",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "guard",
+        "dependencies": [],
+        "description": "Complete guard"
+      },
+      {
+        "id": "s1",
+        "title": "strategy",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete strategy"
+      },
+      {
+        "id": "s2",
+        "title": "decorator",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete decorator"
+      },
+      {
+        "id": "s3",
+        "title": "module",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete module"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "NestJS Auth Guard framework template"
+  },
+  {
+    "id": "node_mongodb_mongoose",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "MongoDB Mongoose",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "schema",
+        "dependencies": [],
+        "description": "Complete schema"
+      },
+      {
+        "id": "s1",
+        "title": "model",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete model"
+      },
+      {
+        "id": "s2",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete queries"
+      },
+      {
+        "id": "s3",
+        "title": "middleware",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete middleware"
+      },
+      {
+        "id": "s4",
+        "title": "virtuals",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete virtuals"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "MongoDB Mongoose framework template"
+  },
+  {
+    "id": "node_postgresql_sequelize",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "PostgreSQL Sequelize",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "model",
+        "dependencies": [],
+        "description": "Complete model"
+      },
+      {
+        "id": "s1",
+        "title": "associations",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete associations"
+      },
+      {
+        "id": "s2",
+        "title": "migrations",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete migrations"
+      },
+      {
+        "id": "s3",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete queries"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "PostgreSQL Sequelize framework template"
+  },
+  {
+    "id": "node_prisma_setup",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Prisma Setup",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "schema",
+        "dependencies": [],
+        "description": "Complete schema"
+      },
+      {
+        "id": "s1",
+        "title": "client",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete client"
+      },
+      {
+        "id": "s2",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete queries"
+      },
+      {
+        "id": "s3",
+        "title": "migrations",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete migrations"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Prisma Setup framework template"
+  },
+  {
+    "id": "node_node_cli_tool",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node CLI Tool",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "commander",
+        "dependencies": [],
+        "description": "Complete commander"
+      },
+      {
+        "id": "s1",
+        "title": "prompts",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete prompts"
+      },
+      {
+        "id": "s2",
+        "title": "commands",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete commands"
+      },
+      {
+        "id": "s3",
+        "title": "output",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete output"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node CLI Tool framework template"
+  },
+  {
+    "id": "node_node_file_system",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node File System",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "reading",
+        "dependencies": [],
+        "description": "Complete reading"
+      },
+      {
+        "id": "s1",
+        "title": "writing",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete writing"
+      },
+      {
+        "id": "s2",
+        "title": "watching",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete watching"
+      },
+      {
+        "id": "s3",
+        "title": "streaming",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete streaming"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node File System framework template"
+  },
+  {
+    "id": "node_node_http_server",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node HTTP Server",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "server",
+        "dependencies": [],
+        "description": "Complete server"
+      },
+      {
+        "id": "s1",
+        "title": "routing",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete routing"
+      },
+      {
+        "id": "s2",
+        "title": "middleware",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete middleware"
+      },
+      {
+        "id": "s3",
+        "title": "responses",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete responses"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node HTTP Server framework template"
+  },
+  {
+    "id": "node_node_worker_threads",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node Worker Threads",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "worker",
+        "dependencies": [],
+        "description": "Complete worker"
+      },
+      {
+        "id": "s1",
+        "title": "communication",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete communication"
+      },
+      {
+        "id": "s2",
+        "title": "pool",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete pool"
+      },
+      {
+        "id": "s3",
+        "title": "tasks",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete tasks"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node Worker Threads framework template"
+  },
+  {
+    "id": "node_node_stream_processing",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node Stream Processing",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "readable",
+        "dependencies": [],
+        "description": "Complete readable"
+      },
+      {
+        "id": "s1",
+        "title": "writable",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete writable"
+      },
+      {
+        "id": "s2",
+        "title": "transform",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete transform"
+      },
+      {
+        "id": "s3",
+        "title": "pipeline",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete pipeline"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node Stream Processing framework template"
+  },
+  {
+    "id": "node_graphql_server_apollo",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "GraphQL Server Apollo",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "type_defs",
+        "dependencies": [],
+        "description": "Complete type_defs"
+      },
+      {
+        "id": "s1",
+        "title": "resolvers",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete resolvers"
+      },
+      {
+        "id": "s2",
+        "title": "context",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete context"
+      },
+      {
+        "id": "s3",
+        "title": "subscriptions",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete subscriptions"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "GraphQL Server Apollo framework template"
+  },
+  {
+    "id": "node_graphql_server_nexus",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "GraphQL Server Nexus",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "object_types",
+        "dependencies": [],
+        "description": "Complete object_types"
+      },
+      {
+        "id": "s1",
+        "title": "queries",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete queries"
+      },
+      {
+        "id": "s2",
+        "title": "mutations",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete mutations"
+      },
+      {
+        "id": "s3",
+        "title": "context",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete context"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "GraphQL Server Nexus framework template"
+  },
+  {
+    "id": "node_rest_api_koa",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "REST API Koa",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "app",
+        "dependencies": [],
+        "description": "Complete app"
+      },
+      {
+        "id": "s1",
+        "title": "middleware",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete middleware"
+      },
+      {
+        "id": "s2",
+        "title": "routes",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete routes"
+      },
+      {
+        "id": "s3",
+        "title": "error_handling",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete error_handling"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "REST API Koa framework template"
+  },
+  {
+    "id": "node_rest_api_hapi",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "REST API Hapi",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "server",
+        "dependencies": [],
+        "description": "Complete server"
+      },
+      {
+        "id": "s1",
+        "title": "routes",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete routes"
+      },
+      {
+        "id": "s2",
+        "title": "plugins",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete plugins"
+      },
+      {
+        "id": "s3",
+        "title": "validation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete validation"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "REST API Hapi framework template"
+  },
+  {
+    "id": "node_websocket_raw",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "WebSocket Raw",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "server",
+        "dependencies": [],
+        "description": "Complete server"
+      },
+      {
+        "id": "s1",
+        "title": "connection",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete connection"
+      },
+      {
+        "id": "s2",
+        "title": "messaging",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete messaging"
+      },
+      {
+        "id": "s3",
+        "title": "broadcast",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete broadcast"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "WebSocket Raw framework template"
+  },
+  {
+    "id": "node_server_sent_events",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Server Sent Events",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "setup",
+        "dependencies": [],
+        "description": "Complete setup"
+      },
+      {
+        "id": "s1",
+        "title": "events",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete events"
+      },
+      {
+        "id": "s2",
+        "title": "reconnection",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete reconnection"
+      },
+      {
+        "id": "s3",
+        "title": "client",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete client"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Server Sent Events framework template"
+  },
+  {
+    "id": "node_node_cluster",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node Cluster",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "master",
+        "dependencies": [],
+        "description": "Complete master"
+      },
+      {
+        "id": "s1",
+        "title": "workers",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete workers"
+      },
+      {
+        "id": "s2",
+        "title": "load_balancing",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete load_balancing"
+      },
+      {
+        "id": "s3",
+        "title": "recovery",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete recovery"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node Cluster framework template"
+  },
+  {
+    "id": "node_node_process_management",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node Process Management",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "signals",
+        "dependencies": [],
+        "description": "Complete signals"
+      },
+      {
+        "id": "s1",
+        "title": "graceful_shutdown",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete graceful_shutdown"
+      },
+      {
+        "id": "s2",
+        "title": "health_check",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete health_check"
+      },
+      {
+        "id": "s3",
+        "title": "restart",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete restart"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node Process Management framework template"
+  },
+  {
+    "id": "node_node_memory_management",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node Memory Management",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "heap",
+        "dependencies": [],
+        "description": "Complete heap"
+      },
+      {
+        "id": "s1",
+        "title": "garbage_collection",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete garbage_collection"
+      },
+      {
+        "id": "s2",
+        "title": "monitoring",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete monitoring"
+      },
+      {
+        "id": "s3",
+        "title": "optimization",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete optimization"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node Memory Management framework template"
+  },
+  {
+    "id": "node_node_performance",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node Performance",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "profiling",
+        "dependencies": [],
+        "description": "Complete profiling"
+      },
+      {
+        "id": "s1",
+        "title": "optimization",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete optimization"
+      },
+      {
+        "id": "s2",
+        "title": "benchmarking",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete benchmarking"
+      },
+      {
+        "id": "s3",
+        "title": "tracing",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete tracing"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node Performance framework template"
+  },
+  {
+    "id": "node_node_security_headers",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node Security Headers",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "helmet",
+        "dependencies": [],
+        "description": "Complete helmet"
+      },
+      {
+        "id": "s1",
+        "title": "cors",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete cors"
+      },
+      {
+        "id": "s2",
+        "title": "csp",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete csp"
+      },
+      {
+        "id": "s3",
+        "title": "hsts",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete hsts"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node Security Headers framework template"
+  },
+  {
+    "id": "node_node_email_service",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node Email Service",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "transport",
+        "dependencies": [],
+        "description": "Complete transport"
+      },
+      {
+        "id": "s1",
+        "title": "templates",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete templates"
+      },
+      {
+        "id": "s2",
+        "title": "queue",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete queue"
+      },
+      {
+        "id": "s3",
+        "title": "tracking",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete tracking"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node Email Service framework template"
+  },
+  {
+    "id": "node_node_pdf_generation",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node PDF Generation",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "template",
+        "dependencies": [],
+        "description": "Complete template"
+      },
+      {
+        "id": "s1",
+        "title": "rendering",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete rendering"
+      },
+      {
+        "id": "s2",
+        "title": "streaming",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete streaming"
+      },
+      {
+        "id": "s3",
+        "title": "storage",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete storage"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node PDF Generation framework template"
+  },
+  {
+    "id": "node_node_image_processing",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node Image Processing",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "sharp",
+        "dependencies": [],
+        "description": "Complete sharp"
+      },
+      {
+        "id": "s1",
+        "title": "resize",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete resize"
+      },
+      {
+        "id": "s2",
+        "title": "format",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete format"
+      },
+      {
+        "id": "s3",
+        "title": "optimization",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete optimization"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node Image Processing framework template"
+  },
+  {
+    "id": "node_node_csv_processing",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node CSV Processing",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parsing",
+        "dependencies": [],
+        "description": "Complete parsing"
+      },
+      {
+        "id": "s1",
+        "title": "streaming",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete streaming"
+      },
+      {
+        "id": "s2",
+        "title": "transformation",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete transformation"
+      },
+      {
+        "id": "s3",
+        "title": "writing",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete writing"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node CSV Processing framework template"
+  },
+  {
+    "id": "node_node_scheduled_tasks",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node Scheduled Tasks",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "cron",
+        "dependencies": [],
+        "description": "Complete cron"
+      },
+      {
+        "id": "s1",
+        "title": "scheduling",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete scheduling"
+      },
+      {
+        "id": "s2",
+        "title": "locking",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete locking"
+      },
+      {
+        "id": "s3",
+        "title": "monitoring",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete monitoring"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node Scheduled Tasks framework template"
+  },
+  {
+    "id": "node_node_event_sourcing",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node Event Sourcing",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "events",
+        "dependencies": [],
+        "description": "Complete events"
+      },
+      {
+        "id": "s1",
+        "title": "aggregates",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete aggregates"
+      },
+      {
+        "id": "s2",
+        "title": "projections",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete projections"
+      },
+      {
+        "id": "s3",
+        "title": "snapshots",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete snapshots"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node Event Sourcing framework template"
+  },
+  {
+    "id": "node_node_cqrs_pattern",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node CQRS Pattern",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "commands",
+        "dependencies": [],
+        "description": "Complete commands"
+      },
+      {
+        "id": "s1",
+        "title": "queries",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete queries"
+      },
+      {
+        "id": "s2",
+        "title": "handlers",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete handlers"
+      },
+      {
+        "id": "s3",
+        "title": "bus",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete bus"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node CQRS Pattern framework template"
+  },
+  {
+    "id": "node_node_microservice_communication",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node Microservice Communication",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "grpc",
+        "dependencies": [],
+        "description": "Complete grpc"
+      },
+      {
+        "id": "s1",
+        "title": "rabbitmq",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete rabbitmq"
+      },
+      {
+        "id": "s2",
+        "title": "events",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete events"
+      },
+      {
+        "id": "s3",
+        "title": "discovery",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete discovery"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node Microservice Communication framework template"
+  },
+  {
+    "id": "node_node_api_gateway",
+    "category": "nodejs",
+    "subcategory": "backend",
+    "title": "Node API Gateway",
+    "persona": "nodejs_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "routing",
+        "dependencies": [],
+        "description": "Complete routing"
+      },
+      {
+        "id": "s1",
+        "title": "auth",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete auth"
+      },
+      {
+        "id": "s2",
+        "title": "rate_limiting",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete rate_limiting"
+      },
+      {
+        "id": "s3",
+        "title": "aggregation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete aggregation"
+      }
+    ],
+    "tags": [
+      "nodejs",
+      "express",
+      "backend"
+    ],
+    "description": "Node API Gateway framework template"
+  }
+]

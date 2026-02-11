@@ -1,0 +1,1097 @@
+[
+  {
+    "id": "reasoning_analysis_swot_analysis",
+    "category": "reasoning",
+    "subcategory": "analysis",
+    "title": "SWOT Analysis",
+    "persona": "reasoning_analyst",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "strengths",
+        "dependencies": [],
+        "description": "Complete strengths"
+      },
+      {
+        "id": "s1",
+        "title": "weaknesses",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete weaknesses"
+      },
+      {
+        "id": "s2",
+        "title": "opportunities",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete opportunities"
+      },
+      {
+        "id": "s3",
+        "title": "threats",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete threats"
+      },
+      {
+        "id": "s4",
+        "title": "synthesis",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete synthesis"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "analysis"
+    ],
+    "description": "SWOT Analysis framework template"
+  },
+  {
+    "id": "reasoning_analysis_root_cause_analysis",
+    "category": "reasoning",
+    "subcategory": "analysis",
+    "title": "Root Cause Analysis",
+    "persona": "reasoning_analyst",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "problem",
+        "dependencies": [],
+        "description": "Complete problem"
+      },
+      {
+        "id": "s1",
+        "title": "data",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete data"
+      },
+      {
+        "id": "s2",
+        "title": "causes",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete causes"
+      },
+      {
+        "id": "s3",
+        "title": "verification",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete verification"
+      },
+      {
+        "id": "s4",
+        "title": "solutions",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete solutions"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "analysis"
+    ],
+    "description": "Root Cause Analysis framework template"
+  },
+  {
+    "id": "reasoning_analysis_cost_benefit_analysis",
+    "category": "reasoning",
+    "subcategory": "analysis",
+    "title": "Cost Benefit Analysis",
+    "persona": "reasoning_analyst",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "alternatives",
+        "dependencies": [],
+        "description": "Complete alternatives"
+      },
+      {
+        "id": "s1",
+        "title": "costs",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete costs"
+      },
+      {
+        "id": "s2",
+        "title": "benefits",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete benefits"
+      },
+      {
+        "id": "s3",
+        "title": "comparison",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete comparison"
+      },
+      {
+        "id": "s4",
+        "title": "recommendation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete recommendation"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "analysis"
+    ],
+    "description": "Cost Benefit Analysis framework template"
+  },
+  {
+    "id": "reasoning_analysis_stakeholder_analysis",
+    "category": "reasoning",
+    "subcategory": "analysis",
+    "title": "Stakeholder Analysis",
+    "persona": "reasoning_analyst",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "identification",
+        "dependencies": [],
+        "description": "Complete identification"
+      },
+      {
+        "id": "s1",
+        "title": "interests",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete interests"
+      },
+      {
+        "id": "s2",
+        "title": "influence",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete influence"
+      },
+      {
+        "id": "s3",
+        "title": "strategy",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete strategy"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "analysis"
+    ],
+    "description": "Stakeholder Analysis framework template"
+  },
+  {
+    "id": "reasoning_analysis_gap_analysis",
+    "category": "reasoning",
+    "subcategory": "analysis",
+    "title": "Gap Analysis",
+    "persona": "reasoning_analyst",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "current_state",
+        "dependencies": [],
+        "description": "Complete current_state"
+      },
+      {
+        "id": "s1",
+        "title": "desired_state",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete desired_state"
+      },
+      {
+        "id": "s2",
+        "title": "gaps",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete gaps"
+      },
+      {
+        "id": "s3",
+        "title": "priorities",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete priorities"
+      },
+      {
+        "id": "s4",
+        "title": "plan",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete plan"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "analysis"
+    ],
+    "description": "Gap Analysis framework template"
+  },
+  {
+    "id": "reasoning_analysis_competitive_analysis",
+    "category": "reasoning",
+    "subcategory": "analysis",
+    "title": "Competitive Analysis",
+    "persona": "reasoning_analyst",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "competitors",
+        "dependencies": [],
+        "description": "Complete competitors"
+      },
+      {
+        "id": "s1",
+        "title": "strengths",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete strengths"
+      },
+      {
+        "id": "s2",
+        "title": "weaknesses",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete weaknesses"
+      },
+      {
+        "id": "s3",
+        "title": "differentiation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete differentiation"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "analysis"
+    ],
+    "description": "Competitive Analysis framework template"
+  },
+  {
+    "id": "reasoning_analysis_process_analysis",
+    "category": "reasoning",
+    "subcategory": "analysis",
+    "title": "Process Analysis",
+    "persona": "reasoning_analyst",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "mapping",
+        "dependencies": [],
+        "description": "Complete mapping"
+      },
+      {
+        "id": "s1",
+        "title": "bottlenecks",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete bottlenecks"
+      },
+      {
+        "id": "s2",
+        "title": "waste",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete waste"
+      },
+      {
+        "id": "s3",
+        "title": "improvements",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete improvements"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "analysis"
+    ],
+    "description": "Process Analysis framework template"
+  },
+  {
+    "id": "reasoning_analysis_decision_matrix",
+    "category": "reasoning",
+    "subcategory": "analysis",
+    "title": "Decision Matrix",
+    "persona": "reasoning_analyst",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "options",
+        "dependencies": [],
+        "description": "Complete options"
+      },
+      {
+        "id": "s1",
+        "title": "criteria",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete criteria"
+      },
+      {
+        "id": "s2",
+        "title": "weights",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete weights"
+      },
+      {
+        "id": "s3",
+        "title": "scoring",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete scoring"
+      },
+      {
+        "id": "s4",
+        "title": "recommendation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete recommendation"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "analysis"
+    ],
+    "description": "Decision Matrix framework template"
+  },
+  {
+    "id": "reasoning_analysis_force_field_analysis",
+    "category": "reasoning",
+    "subcategory": "analysis",
+    "title": "Force Field Analysis",
+    "persona": "reasoning_analyst",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "change",
+        "dependencies": [],
+        "description": "Complete change"
+      },
+      {
+        "id": "s1",
+        "title": "driving",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete driving"
+      },
+      {
+        "id": "s2",
+        "title": "restraining",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete restraining"
+      },
+      {
+        "id": "s3",
+        "title": "strategy",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete strategy"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "analysis"
+    ],
+    "description": "Force Field Analysis framework template"
+  },
+  {
+    "id": "reasoning_analysis_pareto_analysis",
+    "category": "reasoning",
+    "subcategory": "analysis",
+    "title": "Pareto Analysis",
+    "persona": "reasoning_analyst",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "data",
+        "dependencies": [],
+        "description": "Complete data"
+      },
+      {
+        "id": "s1",
+        "title": "categorization",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete categorization"
+      },
+      {
+        "id": "s2",
+        "title": "ranking",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete ranking"
+      },
+      {
+        "id": "s3",
+        "title": "focus_areas",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete focus_areas"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "analysis"
+    ],
+    "description": "Pareto Analysis framework template"
+  },
+  {
+    "id": "reasoning_planning_project_plan",
+    "category": "reasoning",
+    "subcategory": "planning",
+    "title": "Project Plan",
+    "persona": "reasoning_planner",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "objectives",
+        "dependencies": [],
+        "description": "Complete objectives"
+      },
+      {
+        "id": "s1",
+        "title": "scope",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete scope"
+      },
+      {
+        "id": "s2",
+        "title": "timeline",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete timeline"
+      },
+      {
+        "id": "s3",
+        "title": "resources",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete resources"
+      },
+      {
+        "id": "s4",
+        "title": "risks",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete risks"
+      },
+      {
+        "id": "s5",
+        "title": "communication",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete communication"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "planning"
+    ],
+    "description": "Project Plan framework template"
+  },
+  {
+    "id": "reasoning_planning_implementation_plan",
+    "category": "reasoning",
+    "subcategory": "planning",
+    "title": "Implementation Plan",
+    "persona": "reasoning_planner",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "phases",
+        "dependencies": [],
+        "description": "Complete phases"
+      },
+      {
+        "id": "s1",
+        "title": "tasks",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete tasks"
+      },
+      {
+        "id": "s2",
+        "title": "dependencies",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete dependencies"
+      },
+      {
+        "id": "s3",
+        "title": "milestones",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete milestones"
+      },
+      {
+        "id": "s4",
+        "title": "validation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete validation"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "planning"
+    ],
+    "description": "Implementation Plan framework template"
+  },
+  {
+    "id": "reasoning_planning_migration_plan",
+    "category": "reasoning",
+    "subcategory": "planning",
+    "title": "Migration Plan",
+    "persona": "reasoning_planner",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "assessment",
+        "dependencies": [],
+        "description": "Complete assessment"
+      },
+      {
+        "id": "s1",
+        "title": "strategy",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete strategy"
+      },
+      {
+        "id": "s2",
+        "title": "execution",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete execution"
+      },
+      {
+        "id": "s3",
+        "title": "testing",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete testing"
+      },
+      {
+        "id": "s4",
+        "title": "rollback",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete rollback"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "planning"
+    ],
+    "description": "Migration Plan framework template"
+  },
+  {
+    "id": "reasoning_planning_launch_plan",
+    "category": "reasoning",
+    "subcategory": "planning",
+    "title": "Launch Plan",
+    "persona": "reasoning_planner",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "preparation",
+        "dependencies": [],
+        "description": "Complete preparation"
+      },
+      {
+        "id": "s1",
+        "title": "execution",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete execution"
+      },
+      {
+        "id": "s2",
+        "title": "monitoring",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete monitoring"
+      },
+      {
+        "id": "s3",
+        "title": "communication",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete communication"
+      },
+      {
+        "id": "s4",
+        "title": "contingency",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete contingency"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "planning"
+    ],
+    "description": "Launch Plan framework template"
+  },
+  {
+    "id": "reasoning_planning_training_plan",
+    "category": "reasoning",
+    "subcategory": "planning",
+    "title": "Training Plan",
+    "persona": "reasoning_planner",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "objectives",
+        "dependencies": [],
+        "description": "Complete objectives"
+      },
+      {
+        "id": "s1",
+        "title": "content",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete content"
+      },
+      {
+        "id": "s2",
+        "title": "delivery",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete delivery"
+      },
+      {
+        "id": "s3",
+        "title": "assessment",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete assessment"
+      },
+      {
+        "id": "s4",
+        "title": "follow_up",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete follow_up"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "planning"
+    ],
+    "description": "Training Plan framework template"
+  },
+  {
+    "id": "reasoning_planning_communication_plan",
+    "category": "reasoning",
+    "subcategory": "planning",
+    "title": "Communication Plan",
+    "persona": "reasoning_planner",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "stakeholders",
+        "dependencies": [],
+        "description": "Complete stakeholders"
+      },
+      {
+        "id": "s1",
+        "title": "messages",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete messages"
+      },
+      {
+        "id": "s2",
+        "title": "channels",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete channels"
+      },
+      {
+        "id": "s3",
+        "title": "timing",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete timing"
+      },
+      {
+        "id": "s4",
+        "title": "feedback",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete feedback"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "planning"
+    ],
+    "description": "Communication Plan framework template"
+  },
+  {
+    "id": "reasoning_planning_change_management_plan",
+    "category": "reasoning",
+    "subcategory": "planning",
+    "title": "Change Management Plan",
+    "persona": "reasoning_planner",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "impact",
+        "dependencies": [],
+        "description": "Complete impact"
+      },
+      {
+        "id": "s1",
+        "title": "readiness",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete readiness"
+      },
+      {
+        "id": "s2",
+        "title": "strategy",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete strategy"
+      },
+      {
+        "id": "s3",
+        "title": "resistance",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete resistance"
+      },
+      {
+        "id": "s4",
+        "title": "reinforcement",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete reinforcement"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "planning"
+    ],
+    "description": "Change Management Plan framework template"
+  },
+  {
+    "id": "reasoning_planning_risk_management_plan",
+    "category": "reasoning",
+    "subcategory": "planning",
+    "title": "Risk Management Plan",
+    "persona": "reasoning_planner",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "identification",
+        "dependencies": [],
+        "description": "Complete identification"
+      },
+      {
+        "id": "s1",
+        "title": "assessment",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete assessment"
+      },
+      {
+        "id": "s2",
+        "title": "response",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete response"
+      },
+      {
+        "id": "s3",
+        "title": "monitoring",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete monitoring"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "planning"
+    ],
+    "description": "Risk Management Plan framework template"
+  },
+  {
+    "id": "reasoning_planning_quality_plan",
+    "category": "reasoning",
+    "subcategory": "planning",
+    "title": "Quality Plan",
+    "persona": "reasoning_planner",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "standards",
+        "dependencies": [],
+        "description": "Complete standards"
+      },
+      {
+        "id": "s1",
+        "title": "processes",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete processes"
+      },
+      {
+        "id": "s2",
+        "title": "metrics",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete metrics"
+      },
+      {
+        "id": "s3",
+        "title": "reviews",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete reviews"
+      },
+      {
+        "id": "s4",
+        "title": "improvement",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete improvement"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "planning"
+    ],
+    "description": "Quality Plan framework template"
+  },
+  {
+    "id": "reasoning_planning_resource_plan",
+    "category": "reasoning",
+    "subcategory": "planning",
+    "title": "Resource Plan",
+    "persona": "reasoning_planner",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "requirements",
+        "dependencies": [],
+        "description": "Complete requirements"
+      },
+      {
+        "id": "s1",
+        "title": "allocation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete allocation"
+      },
+      {
+        "id": "s2",
+        "title": "constraints",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete constraints"
+      },
+      {
+        "id": "s3",
+        "title": "optimization",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete optimization"
+      }
+    ],
+    "tags": [
+      "reasoning",
+      "planning"
+    ],
+    "description": "Resource Plan framework template"
+  }
+]
