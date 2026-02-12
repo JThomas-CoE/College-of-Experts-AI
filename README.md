@@ -60,11 +60,21 @@ python scripts/download_models.py
 
 ### Run the Demo
 
-Start the interactive console:
+Start the interactive console (V4 Stable):
 
 ```bash
 python demo.py
 ```
+
+### Experimental: Multi-Specialist Demo (Tier 3)
+
+For an early preview of **Tier 3 (Multi-Specialist)** orchestration, where multiple domain experts collaborate on a single complex query:
+
+```bash
+python demo_v13.py
+```
+
+*Note: This is an experimental build demonstrating complex multi-turn coordination. Expect higher latency and occasional routing quirks.*
 
 ## Architecture
 
