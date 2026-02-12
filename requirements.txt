@@ -1,34 +1,27 @@
-# Core dependencies
-ollama>=0.1.0
-httpx>=0.25.0
-rich>=13.0.0
+# College of Experts - Dependencies
+#
+# Primary Target: Windows with DirectML (AMD/Intel/NVIDIA)
+# On Linux, replace `onnxruntime-genai-directml` with `onnxruntime-genai-cuda` or `onnxruntime-genai-rocm`
 
-# Memory layer - Memvid
-memvid>=0.1.0
-sentence-transformers>=2.2.0
+# --- Inference Engine (DirectML) ---
+# Accelerates quantized models on consumer GPUs via DirectX 12
+onnxruntime-genai-directml>=0.4.0
 
-# Fallback memory storage
-sqlite-utils>=3.35
+# --- Core Utilities ---
+numpy>=1.26.0
+requests>=2.31.0
+psutil>=5.9.0
+colorama>=0.4.6
+Pillow>=10.0.0
+tqdm>=4.66.0
 
-# Transformers backend (for hybrid inference)
-# NOTE: Install the appropriate torch version for your GPU:
-#
-# NVIDIA (CUDA):
-#   pip install torch>=2.0.0 --index-url https://download.pytorch.org/whl/cu121
-#
-# AMD (DirectML/ROCm on Windows):
-#   pip install torch>=2.0.0 torch-directml>=0.2.0
-#
-# AMD (ROCm on Linux):
-#   pip install torch>=2.0.0 --index-url https://download.pytorch.org/whl/rocm5.7
-#
-# CPU only:
-#   pip install torch>=2.0.0 --index-url https://download.pytorch.org/whl/cpu
-#
-torch>=2.0.0
-transformers>=4.35.0
+# --- AI Frameworks ---
+huggingface_hub>=0.23.0    # Model downloads
+transformers>=4.40.0       # Tokenizers / fallback support
+chromadb>=0.4.0            # Vector memory store
+sentence-transformers>=2.7.0
 
-# Development
-pytest>=7.0.0
-black>=23.0.0
-isort>=5.12.0
+# --- PyTorch (CPU Only) ---
+# Used for utility functions and tokenizer support.
+# Heavy inference is handled by onnxruntime-genai, so CPU torch is sufficient (and smaller).
+torch>=2.2.0 --index-url https://download.pytorch.org/whl/cpu
