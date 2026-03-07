@@ -956,6 +956,7 @@ class ModelManager:
         self._load_error: Optional[str] = None
         self._embedder_event: threading.Event = threading.Event()
         self._embed_thread: Optional[threading.Thread] = None
+        self._templates_ready: threading.Event = threading.Event()
 
     def _resolve(self, name: str) -> str:
         """Resolve a bare model folder name to an absolute path."""
@@ -996,7 +997,8 @@ class ModelManager:
         else:
             cprint("[ModelManager] sentence-transformers not available — embedding features disabled", "yellow")
             debug_log("startup.embedder_unavailable")
-            self._embedder_event.set()  # nothing to wait for
+            self._embedder_event.set()   # nothing to wait for
+            self._templates_ready.set()  # nothing to wait for
 
     def _load_embedder_bg(self, embed_device: str) -> None:
         """Background thread: load EmbeddingManager and set the ready event."""
@@ -1022,6 +1024,13 @@ class ModelManager:
                 cprint("[CoE] Embedder still loading — please wait a moment…", "dim")
             self._embedder_event.wait()
         return self._embedder
+
+    def await_ready(self, verbose: bool = True) -> None:
+        """Block until embedder + template cache are both fully initialised."""
+        if not self._templates_ready.is_set():
+            if verbose:
+                cprint("[CoE] Initialising templates — please wait a moment…", "dim")
+            self._templates_ready.wait()
 
     def shutdown(self) -> None:
         """Unload all models."""
@@ -3385,8 +3394,8 @@ def _dispatch(
     settings: dict,
 ) -> None:
     """Classify and dispatch a query through the appropriate pipeline."""
-    # Block here (briefly at most) until the background embedder thread is done.
-    mgr.await_embedder(verbose=True)
+    # Block until embedder + template cache are both ready (no-op after first query).
+    mgr.await_ready(verbose=True)
 
     enhance = settings.get("enhance", True)
     kb_on = settings.get("kb", True)
@@ -3636,7 +3645,10 @@ def main() -> None:
                     emb.compact()
                 except Exception:
                     pass
+            mgr._templates_ready.set()  # signal: embedder + templates both ready
         threading.Thread(target=_bg_init, daemon=True).start()
+    else:
+        mgr._templates_ready.set()  # no embedding features; nothing to wait for
 
     cprint(f"[SessionStore] Session: {session_store.session_id}", "dim")
     debug_log("session.started", session_id=session_store.session_id)
