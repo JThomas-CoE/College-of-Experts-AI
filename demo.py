@@ -954,6 +954,8 @@ class ModelManager:
         self._load_thread: Optional[threading.Thread] = None
         self._pending_specialist_path: Optional[str] = None
         self._load_error: Optional[str] = None
+        self._embedder_event: threading.Event = threading.Event()
+        self._embed_thread: Optional[threading.Thread] = None
 
     def _resolve(self, name: str) -> str:
         """Resolve a bare model folder name to an absolute path."""
@@ -976,7 +978,7 @@ class ModelManager:
     # ── Startup / Shutdown ────────────────────────────────────────────────
 
     def startup(self) -> None:
-        """Load supervisor + embedding model synchronously."""
+        """Load supervisor synchronously; start embedder load in a background thread."""
         debug_log("startup.begin", device=self.device)
 
         self._load_supervisor_handle()
@@ -986,8 +988,20 @@ class ModelManager:
             # To avoid VRAM contention/creep with OGA models, default embedder to CPU
             # for dml workflows. Keep GPU embedder only for explicit "cuda" runs.
             embed_device = "cuda" if self.device == "cuda" else "cpu"
-            cprint(f"[ModelManager] Loading embedder: {EMBEDDING_MODEL} on {embed_device}")
-            t0 = time.time()
+            cprint(f"[ModelManager] Loading embedder: {EMBEDDING_MODEL} on {embed_device} (background…)")
+            self._embed_thread = threading.Thread(
+                target=self._load_embedder_bg, args=(embed_device,), daemon=True
+            )
+            self._embed_thread.start()
+        else:
+            cprint("[ModelManager] sentence-transformers not available — embedding features disabled", "yellow")
+            debug_log("startup.embedder_unavailable")
+            self._embedder_event.set()  # nothing to wait for
+
+    def _load_embedder_bg(self, embed_device: str) -> None:
+        """Background thread: load EmbeddingManager and set the ready event."""
+        t0 = time.time()
+        try:
             self._embedder = EmbeddingManager(
                 model_name=EMBEDDING_MODEL,
                 device=embed_device,
@@ -996,9 +1010,18 @@ class ModelManager:
             )
             cprint(f"[ModelManager] Embedder ready ({time.time() - t0:.1f}s)", "green")
             debug_log("startup.embedder_ready", device=embed_device)
-        else:
-            cprint("[ModelManager] sentence-transformers not available — embedding features disabled", "yellow")
-            debug_log("startup.embedder_unavailable")
+        except Exception as e:
+            cprint(f"[ModelManager] Embedder load failed: {e}", "yellow")
+        finally:
+            self._embedder_event.set()
+
+    def await_embedder(self, verbose: bool = True) -> Optional["EmbeddingManager"]:
+        """Block until the background embedder thread has finished. Returns the embedder (or None)."""
+        if not self._embedder_event.is_set():
+            if verbose:
+                cprint("[CoE] Embedder still loading — please wait a moment…", "dim")
+            self._embedder_event.wait()
+        return self._embedder
 
     def shutdown(self) -> None:
         """Unload all models."""
@@ -3362,6 +3385,9 @@ def _dispatch(
     settings: dict,
 ) -> None:
     """Classify and dispatch a query through the appropriate pipeline."""
+    # Block here (briefly at most) until the background embedder thread is done.
+    mgr.await_embedder(verbose=True)
+
     enhance = settings.get("enhance", True)
     kb_on = settings.get("kb", True)
     confirm_on = settings.get("confirm", True)
@@ -3596,17 +3622,21 @@ def main() -> None:
         cprint(f"[FATAL] ModelManager startup failed: {e}", "red")
         sys.exit(1)
 
-    # Init KB with embedder if available
-    if mgr._embedder:
-        init_kb(mgr._embedder)
-
-    # Pre-compute template embeddings
-    if mgr._embedder:
-        template_store.startup(mgr._embedder)
-        try:
-            mgr._embedder.compact()
-        except Exception:
-            pass
+    # Init KB + template cache in background — waits for the embedder thread to finish,
+    # then runs init_kb and template_store.startup so startup doesn't block the REPL.
+    if EMBED_AVAILABLE:
+        _kb_on = settings.get("kb", True)
+        def _bg_init(_ts=template_store, _kb=_kb_on):
+            emb = mgr.await_embedder(verbose=False)
+            if emb:
+                if _kb:
+                    init_kb(emb)
+                _ts.startup(emb)
+                try:
+                    emb.compact()
+                except Exception:
+                    pass
+        threading.Thread(target=_bg_init, daemon=True).start()
 
     cprint(f"[SessionStore] Session: {session_store.session_id}", "dim")
     debug_log("session.started", session_id=session_store.session_id)
