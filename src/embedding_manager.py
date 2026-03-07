@@ -17,6 +17,13 @@ from typing import List, Optional, Union
 import numpy as np
 
 try:
+    import torch
+    HAS_TORCH = True
+except ImportError:
+    torch = None
+    HAS_TORCH = False
+
+try:
     from sentence_transformers import SentenceTransformer
     HAS_SENTENCE_TRANSFORMERS = True
 except ImportError:
@@ -33,7 +40,13 @@ class EmbeddingManager:
     DEFAULT_MODEL = "BAAI/bge-m3"
     EMBED_DIM = 1024  # BGE-M3 dimension
     
-    def __init__(self, model_name: str = DEFAULT_MODEL, device: str = "cuda"):
+    def __init__(
+        self,
+        model_name: str = DEFAULT_MODEL,
+        device: str = "cuda",
+        cpu_batch_size: int = 96,
+        cpu_threads: Optional[int] = None,
+    ):
         """
         Initialize embedding manager with specified model.
         
@@ -43,8 +56,29 @@ class EmbeddingManager:
         """
         self.model_name = model_name
         self.device = device
+        self.cpu_batch_size = max(8, int(cpu_batch_size))
+        self.cpu_threads = cpu_threads
         self.model = None
+        self._encode_calls = 0
         self._load_model()
+
+    def _maybe_compact_cuda_cache(self, force: bool = False) -> None:
+        """Release unused PyTorch CUDA cache pages when embedding on GPU."""
+        if not HAS_TORCH:
+            return
+        if self.device != "cuda":
+            return
+        if not torch.cuda.is_available():
+            return
+        if force or (self._encode_calls % 8 == 0):
+            try:
+                torch.cuda.empty_cache()
+            except Exception:
+                pass
+
+    def compact(self) -> None:
+        """Public compaction hook for callers after large embedding workloads."""
+        self._maybe_compact_cuda_cache(force=True)
     
     def _load_model(self):
         """Load the embedding model into memory."""
@@ -54,6 +88,16 @@ class EmbeddingManager:
         
         print(f"[EmbeddingManager] Loading {self.model_name}...")
         try:
+            if HAS_TORCH and self.device == "cpu":
+                try:
+                    cores = os.cpu_count() or 4
+                    threads = self.cpu_threads if self.cpu_threads is not None else min(cores, 16)
+                    threads = max(1, min(int(threads), max(1, cores)))
+                    torch.set_num_threads(threads)
+                    torch.set_num_interop_threads(max(1, min(threads // 2, 8)))
+                    print(f"[EmbeddingManager] CPU thread tuning: intra={threads}")
+                except Exception:
+                    pass
             self.model = SentenceTransformer(self.model_name, device=self.device)
             print(f"[EmbeddingManager] Model loaded successfully on {self.device}")
         except Exception as e:
@@ -78,12 +122,28 @@ class EmbeddingManager:
             if isinstance(texts, str):
                 return np.random.randn(self.EMBED_DIM).astype(np.float32)
             return np.random.randn(len(texts), self.EMBED_DIM).astype(np.float32)
+
+        if isinstance(texts, list):
+            batch_size = self.cpu_batch_size if self.device == "cpu" else 32
+            return self.encode_batch(texts, batch_size=batch_size, normalize=normalize)
+
+        self._encode_calls += 1
         
-        embeddings = self.model.encode(
-            texts,
-            normalize_embeddings=normalize,
-            show_progress_bar=False
-        )
+        if HAS_TORCH:
+            with torch.inference_mode():
+                embeddings = self.model.encode(
+                    texts,
+                    normalize_embeddings=normalize,
+                    show_progress_bar=False
+                )
+        else:
+            embeddings = self.model.encode(
+                texts,
+                normalize_embeddings=normalize,
+                show_progress_bar=False
+            )
+
+        self._maybe_compact_cuda_cache(force=False)
         
         return embeddings.astype(np.float32)
     
@@ -102,12 +162,25 @@ class EmbeddingManager:
         if self.model is None:
             return np.random.randn(len(texts), self.EMBED_DIM).astype(np.float32)
         
-        embeddings = self.model.encode(
-            texts,
-            batch_size=batch_size,
-            normalize_embeddings=normalize,
-            show_progress_bar=len(texts) > 100
-        )
+        self._encode_calls += 1
+
+        if HAS_TORCH:
+            with torch.inference_mode():
+                embeddings = self.model.encode(
+                    texts,
+                    batch_size=batch_size,
+                    normalize_embeddings=normalize,
+                    show_progress_bar=len(texts) > 100
+                )
+        else:
+            embeddings = self.model.encode(
+                texts,
+                batch_size=batch_size,
+                normalize_embeddings=normalize,
+                show_progress_bar=len(texts) > 100
+            )
+
+        self._maybe_compact_cuda_cache(force=False)
         
         return embeddings.astype(np.float32)
 
@@ -157,7 +230,12 @@ class EmbeddingStore:
                     hasher.update(f.read())
         return hasher.hexdigest()[:16]
     
-    def needs_rebuild(self, source_files: List[str], model_name: str) -> bool:
+    def needs_rebuild(
+        self,
+        source_files: List[str],
+        model_name: str,
+        vector_name: str = "vectors",
+    ) -> bool:
         """
         Check if embeddings need to be rebuilt.
         
@@ -168,7 +246,10 @@ class EmbeddingStore:
         Returns:
             bool: True if rebuild needed
         """
-        if not (self.store_path / "vectors.npy").exists():
+        vec_file = self.store_path / f"{vector_name}.npy"
+        ids_file = self.store_path / f"{vector_name}_ids.json"
+
+        if not vec_file.exists() or not ids_file.exists():
             return True
         
         if self.metadata.get("embedding_model") != model_name:

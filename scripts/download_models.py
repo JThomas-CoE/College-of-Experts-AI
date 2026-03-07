@@ -1,8 +1,10 @@
 """
-Download models for College of Experts (v4).
+Download specialist models for College of Experts.
 
-Fetches the pre-quantized (INT4) models from the JThomas-CoE Hugging Face collection
-and places them in the ./models directory structure expected by the demo.
+Fetches the pre-quantized (INT4) specialist models from the JThomas-CoE Hugging Face
+collection and places them in the ./models directory structure expected by the stable
+root demo. The stable root demo also requires a Nanbeige supervisor model folder,
+which is not downloaded by this script.
 """
 
 import argparse
@@ -79,7 +81,8 @@ def main():
     base_dir = Path(args.dir)
     base_dir.mkdir(parents=True, exist_ok=True)
 
-    print(f"College of Experts - Model Downloader")
+    print(f"College of Experts - Specialist Model Downloader")
+    print("Hugging Face hub: https://huggingface.co/JThomas-CoE")
     print(f"Target Directory: {base_dir}\n")
 
     selection = MODELS.items()
@@ -101,6 +104,9 @@ def main():
     for key, info in selection:
         download_model(key, info['repo'], info['local'], base_dir)
 
+    print("\n[NOTE] The stable root demo.py also expects a supervisor folder named")
+    print("       'Nanbeige4.1-3B-ONNX-INT4' under ./models, D:/models, or C:/models.")
+    print("       If you keep models elsewhere, set model_base_dir in config/demo_config.json.")
     print("\n✓ Process complete.")
 
 if __name__ == "__main__":

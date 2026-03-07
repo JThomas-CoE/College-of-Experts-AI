@@ -1,0 +1,12 @@
+{
+  "device": "dml",
+  "enhance": true,
+  "confirm": true,
+  "kb": true,
+  "session": null,
+  "render_mode": "intermediate+final",
+  "embed_cpu_batch_size": 96,
+  "embed_cpu_threads": 12,
+  "max_runtime_seq_tokens": 4096,
+  "model_base_dir": null
+}

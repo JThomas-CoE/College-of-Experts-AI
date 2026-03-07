@@ -65,4 +65,152 @@ plans/
 
 # Temporary / Cache
 offload_temp/
+offload/
+lru_offload/
 *.tmp
+*.out
+*.err
+
+# Modelfiles (LLM training artifacts — internal)
+Modelfile*
+
+# Large binary artifacts
+*.zip
+*.gguf
+*.tar
+*.safetensors
+
+# Development staging area
+new Demo/
+newDemo.md
+coe2/
+oqqs_working/
+extracted_files/
+test_dir/
+payloads/
+trained_lora_adapter*/
+
+# SQLite runtime databases
+sqlite*
+*.db
+*.sqlite3
+
+# Eval / benchmark results and logs
+data/
+benchmarks/LiveCodeBench/
+benchmarks/calibration/
+benchmarks/results/
+benchmarks/web_visual/
+benchmarks/web_visual_t09/
+*_log.txt
+*_eval_log.txt
+*_eval_report.md
+*_eval_results.jsonl
+humaneval_*.jsonl
+humaneval_*.txt
+sft_eval_*.txt
+sft_eval_*.md
+sft_eval_*.jsonl
+baseline_eval_*.txt
+baseline_eval_*.md
+baseline_eval_*.jsonl
+web_visual_*.txt
+nanbeige_*.txt
+
+# Scratch / one-off root scripts
+_*.py
+autograde_game.py
+generate_report.py
+recover_from_log.py
+run_humaneval.py
+run_sft_eval.py
+run_web_visual.py
+merge_and_register.ps1
+convert_hf_to_gguf.py
+convert_lora_to_gguf.py
+qwen_config.json
+hello_base64.txt
+
+# Internal-only docs and reports
+CRASH_REPORT_HIP.md
+DEBUG_PLAN.md
+SESSION_CONTEXT.md
+UNIVERSITY_OF_INTELLIGENCE.md
+README_CLOUD_TRAINING.md
+README_QLORA_CLOUD.md
+WHITEPAPER-*.md
+ROADMAP_WALKTHROUGH.md
+
+# Config research artifacts (not part of public demo)
+config/expert_catalog_v*.json
+config/expert_catalog_*_256*.json
+config/deepspeed_zero3.json
+config/gguf_tensor_index.json
+config/web_visual_prompts.json
+
+# Internal docs
+docs/GAME_SUBSYSTEM_SFT_TEMPLATE.md
+docs/OQQS_IMPLEMENTATION_DRAFT.md
+
+# Internal benchmark scripts (not public demo)
+benchmarks/run_agentic_eval.py
+benchmarks/run_agentic_matrix.py
+benchmarks/run_lcb_eval.py
+benchmarks/run_ollama_benchmark.py
+
+# Internal research scripts in scripts/
+# (scripts/download_models.py and scripts/download_nanbeige.py are kept)
+scripts/_*.py
+scripts/acceptance_*.ps1
+scripts/analyze_*.py
+scripts/anneal_*.py
+scripts/audit_*.py
+scripts/build_*.py
+scripts/check_*.py
+scripts/collect_*.py
+scripts/convert_*.py
+scripts/create_*.py
+scripts/cross_*.py
+scripts/debug_*.py
+scripts/deploy_*.ps1
+scripts/download_qwen*.py
+scripts/dump_*.py
+scripts/export_*.py
+scripts/*.cmd
+scripts/extract_*.py
+scripts/fetch_*.py
+scripts/find_*.py
+scripts/fix_*.py
+scripts/generate_*.py
+scripts/gguf_*.py
+scripts/identity_*.py
+scripts/init_*.py
+scripts/inject_*.py
+scripts/inspect_*.py
+scripts/make_*.py
+scripts/mass_*.py
+scripts/materialize_*.py
+scripts/merge_*.ps1
+scripts/next_*.py
+scripts/optimize_*.py
+scripts/optimum_*.py
+scripts/pack_*.py
+scripts/parametric_*.py
+scripts/patch_*.py
+scripts/plot_*.py
+scripts/prepare_*.py
+scripts/profile_*.py
+scripts/quantize_*.py
+scripts/quick_*.py
+scripts/reorder_*.py
+scripts/run_*.py
+scripts/scan_*.py
+scripts/sparsify_*.py
+scripts/stack_*.py
+scripts/summarize_*.py
+scripts/train_*.py
+scripts/validate_*.py
+scripts/verify_*.py
+scripts/visualize_*.py
+scripts/college_*.py
+scripts/test_env.py

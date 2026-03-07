@@ -90,11 +90,15 @@ pip install sentence-transformers>=2.2.0
 
 The framework requires 6 specialist models + 1 supervisor model. Models are NOT included in the repository due to their size (~5 GB each, ~35 GB total). You must either download pre-quantized versions or build them from HuggingFace source weights.
 
+Authoritative model hub for this repository:
+
+- https://huggingface.co/JThomas-CoE
+
 ### 3.1 Model Inventory
 
 | Role | Source Model | HuggingFace ID | Output Directory |
 |------|-------------|----------------|------------------|
-| **Supervisor** | DeepSeek-R1-Distill-Qwen-7B | `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B` | `models/DeepSeek-R1-Distill-Qwen-7B-DML` |
+| **Supervisor (experimental / demo_v13 path)** | DeepSeek-R1-Distill-Qwen-7B | `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B` | `models/DeepSeek-R1-Distill-Qwen-7B-DML` |
 | **Code Expert** | Qwen2.5-Coder-7B-Instruct | `Qwen/Qwen2.5-Coder-7B-Instruct` | `models/Qwen2.5-Coder-7B-DML` |
 | **Math Expert** | Qwen2.5-Math-7B-Instruct | `Qwen/Qwen2.5-Math-7B-Instruct` | `models/Qwen2.5-Math-7B-DML` |
 | **Medical Expert** | BioMistral-7B | `BioMistral/BioMistral-7B` | `models/BioMistral-7B-DML` |
@@ -306,11 +310,28 @@ See [docs/DML_MODEL_REFERENCE.md](docs/DML_MODEL_REFERENCE.md) for detailed VRAM
 - [ ] `pip install -r requirements.txt`
 - [ ] ONNX Runtime GenAI installed (DirectML or CUDA)
 - [ ] All 6 models built/downloaded into `models/`
+- [ ] Nanbeige supervisor available as `Nanbeige4.1-3B-ONNX-INT4`
 - [ ] `python scripts/check_env.py` passes
 - [ ] `python benchmarks/run_coe_benchmark_v4.py --samples 1` verifies all models
 - [ ] Knowledge base seeded (`python benchmarks/seed_knowledge.py`)
 
-You're ready to run benchmarks or the interactive demo (`python demo.py`).
+For the stable root `demo.py` path, place the Nanbeige supervisor ONNX folder at one of:
+
+- `models/Nanbeige4.1-3B-ONNX-INT4`
+- `D:/models/Nanbeige4.1-3B-ONNX-INT4`
+- `C:/models/Nanbeige4.1-3B-ONNX-INT4`
+
+If your model directory is elsewhere, set `model_base_dir` in `config/demo_config.json` after first launch.
+
+The Nanbeige ONNX INT4 supervisor is hosted under the `JThomas-CoE` Hugging Face hub. `python scripts/download_nanbeige.py` will download it into the expected folder.
+
+Recommended order:
+
+1. Run the stable interactive demo with `python demo.py`
+2. Run benchmarks as needed
+3. Use `python demo_v13.py` only for the experimental multi-specialist path
+
+You're ready to run benchmarks, the stable interactive demo (`python demo.py`), or the experimental multi-specialist demo (`python demo_v13.py`).
 
 ---
 
