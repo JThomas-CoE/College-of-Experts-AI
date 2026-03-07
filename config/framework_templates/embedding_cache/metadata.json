@@ -1,0 +1,7 @@
+{
+  "embedding_model": "BAAI/bge-m3",
+  "generated_at": "2026-03-06T13:09:37.546264",
+  "source_hash": "464a69d39afe3c65",
+  "embed_dim": 1024,
+  "count": 620
+}

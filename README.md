@@ -93,6 +93,15 @@ If you keep models elsewhere, set `model_base_dir` in `config/demo_config.json` 
 
 If the Nanbeige model has already been published to the `JThomas-CoE` Hugging Face hub, you can use `python scripts/download_nanbeige.py` to download it into the expected local folder.
 
+### Template Embedding Cache
+
+The repo includes a pre-built embedding cache for the 620 framework templates
+(`config/framework_templates/embedding_cache/`).  This lets the demo start
+instantly rather than spending ~5 minutes recomputing embeddings on first launch.
+
+If you ever add or change templates the cache will be invalidated automatically
+and rebuilt once, then reused on all subsequent runs.
+
 ### Run the Demo
 
 Start the stable interactive console (`TIER1` + `TIER2`):
