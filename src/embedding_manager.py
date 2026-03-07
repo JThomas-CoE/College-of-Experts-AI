@@ -98,12 +98,28 @@ class EmbeddingManager:
                     print(f"[EmbeddingManager] CPU thread tuning: intra={threads}")
                 except Exception:
                     pass
-            self.model = SentenceTransformer(self.model_name, device=self.device)
+            # fp16 + low_cpu_mem_usage + local_files_only: ~10s vs ~70s for BGE-M3
+            _model_kwargs: dict = {"low_cpu_mem_usage": True}
+            if HAS_TORCH:
+                _model_kwargs["dtype"] = torch.float16
+            _load_kwargs: dict = {
+                "device": self.device,
+                "model_kwargs": _model_kwargs,
+                "local_files_only": True,
+            }
+            try:
+                self.model = SentenceTransformer(self.model_name, **_load_kwargs)
+            except Exception:
+                # Fall back without local_files_only in case model isn't cached yet
+                _load_kwargs.pop("local_files_only", None)
+                self.model = SentenceTransformer(self.model_name, **_load_kwargs)
             print(f"[EmbeddingManager] Model loaded successfully on {self.device}")
         except Exception as e:
             print(f"[EmbeddingManager] Failed to load on {self.device}, trying CPU: {e}")
             self.device = "cpu"
-            self.model = SentenceTransformer(self.model_name, device="cpu")
+            self.model = SentenceTransformer(self.model_name, device="cpu",
+                                             model_kwargs={"low_cpu_mem_usage": True},
+                                             local_files_only=True)
             print("[EmbeddingManager] Model loaded on CPU")
     
     def encode(self, texts: Union[str, List[str]], normalize: bool = True) -> np.ndarray:
