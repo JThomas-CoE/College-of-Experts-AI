@@ -72,7 +72,7 @@ Each model was tasked with producing a unified HTML file with inline CSS, aesthe
 | **Expense Tracker**| ✓ Full HTML+CSS+JS | ✓ Full HTML+CSS+JS | ✗ Non-HTML response |
 | **Pomodoro Timer**| ✓ Full HTML+CSS+JS | ✓ Full HTML+CSS+JS | ✓ Full HTML+CSS+JS* |
 
-*\* The Python specialist produced a complete, functional Pomodoro Timer — the one task where its code-generation strengths translated to valid HTML output. The side-by-side comparison below (left: CoE Web Specialist, centre: CoE Python Specialist, right: base Qwen3) illustrates the quality differential across all three models on this task.*
+*\* In the one instance in which the Python specialist produced something close to a full HTML file, the side-by-side comparison below (left: CoE Web Specialist, centre: CoE Python Specialist, right: base Qwen3) makes clear that the rendered output was nonetheless a complete fail.*
 
 ![Pomodoro Timer — side-by-side output comparison: CoE Web Specialist, CoE Python Specialist, base Qwen3](assets/pomodoro_comparison.png)
 
