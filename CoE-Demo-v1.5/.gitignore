@@ -8,6 +8,10 @@ __pycache__/
 .idea/
 .env
 
+# The root .gitignore excludes WHITEPAPER-*.md globally — override here so the
+# theoretical backing document is always committed with this demo folder.
+!WHITEPAPER-*.md
+
 # CoE Specific
 coe_memory.db
 *.log
