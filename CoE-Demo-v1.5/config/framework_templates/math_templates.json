@@ -1,0 +1,1607 @@
+[
+  {
+    "id": "math_proof_direct_proof",
+    "category": "math",
+    "subcategory": "proofs",
+    "title": "Direct Proof",
+    "persona": "math_proofs",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "statement",
+        "dependencies": [],
+        "description": "Complete statement"
+      },
+      {
+        "id": "s1",
+        "title": "assumptions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete assumptions"
+      },
+      {
+        "id": "s2",
+        "title": "logical_steps",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete logical_steps"
+      },
+      {
+        "id": "s3",
+        "title": "conclusion",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete conclusion"
+      }
+    ],
+    "tags": [
+      "math",
+      "proofs",
+      "logic"
+    ],
+    "description": "Direct Proof framework template"
+  },
+  {
+    "id": "math_proof_proof_by_contradiction",
+    "category": "math",
+    "subcategory": "proofs",
+    "title": "Proof by Contradiction",
+    "persona": "math_proofs",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "statement",
+        "dependencies": [],
+        "description": "Complete statement"
+      },
+      {
+        "id": "s1",
+        "title": "assume_negation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete assume_negation"
+      },
+      {
+        "id": "s2",
+        "title": "derive_contradiction",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete derive_contradiction"
+      },
+      {
+        "id": "s3",
+        "title": "conclusion",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete conclusion"
+      }
+    ],
+    "tags": [
+      "math",
+      "proofs",
+      "logic"
+    ],
+    "description": "Proof by Contradiction framework template"
+  },
+  {
+    "id": "math_proof_proof_by_induction",
+    "category": "math",
+    "subcategory": "proofs",
+    "title": "Proof by Induction",
+    "persona": "math_proofs",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "base_case",
+        "dependencies": [],
+        "description": "Complete base_case"
+      },
+      {
+        "id": "s1",
+        "title": "inductive_hypothesis",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete inductive_hypothesis"
+      },
+      {
+        "id": "s2",
+        "title": "inductive_step",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete inductive_step"
+      },
+      {
+        "id": "s3",
+        "title": "conclusion",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete conclusion"
+      }
+    ],
+    "tags": [
+      "math",
+      "proofs",
+      "logic"
+    ],
+    "description": "Proof by Induction framework template"
+  },
+  {
+    "id": "math_proof_proof_by_contrapositive",
+    "category": "math",
+    "subcategory": "proofs",
+    "title": "Proof by Contrapositive",
+    "persona": "math_proofs",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "statement",
+        "dependencies": [],
+        "description": "Complete statement"
+      },
+      {
+        "id": "s1",
+        "title": "contrapositive",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete contrapositive"
+      },
+      {
+        "id": "s2",
+        "title": "proof",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete proof"
+      },
+      {
+        "id": "s3",
+        "title": "conclusion",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete conclusion"
+      }
+    ],
+    "tags": [
+      "math",
+      "proofs",
+      "logic"
+    ],
+    "description": "Proof by Contrapositive framework template"
+  },
+  {
+    "id": "math_proof_existence_proof",
+    "category": "math",
+    "subcategory": "proofs",
+    "title": "Existence Proof",
+    "persona": "math_proofs",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "statement",
+        "dependencies": [],
+        "description": "Complete statement"
+      },
+      {
+        "id": "s1",
+        "title": "construction",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete construction"
+      },
+      {
+        "id": "s2",
+        "title": "verification",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete verification"
+      },
+      {
+        "id": "s3",
+        "title": "conclusion",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete conclusion"
+      }
+    ],
+    "tags": [
+      "math",
+      "proofs",
+      "logic"
+    ],
+    "description": "Existence Proof framework template"
+  },
+  {
+    "id": "math_proof_uniqueness_proof",
+    "category": "math",
+    "subcategory": "proofs",
+    "title": "Uniqueness Proof",
+    "persona": "math_proofs",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "existence",
+        "dependencies": [],
+        "description": "Complete existence"
+      },
+      {
+        "id": "s1",
+        "title": "assume_two",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete assume_two"
+      },
+      {
+        "id": "s2",
+        "title": "show_equal",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete show_equal"
+      },
+      {
+        "id": "s3",
+        "title": "conclusion",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete conclusion"
+      }
+    ],
+    "tags": [
+      "math",
+      "proofs",
+      "logic"
+    ],
+    "description": "Uniqueness Proof framework template"
+  },
+  {
+    "id": "math_proof_epsilon-delta_proof",
+    "category": "math",
+    "subcategory": "proofs",
+    "title": "Epsilon-Delta Proof",
+    "persona": "math_proofs",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "statement",
+        "dependencies": [],
+        "description": "Complete statement"
+      },
+      {
+        "id": "s1",
+        "title": "setup",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete setup"
+      },
+      {
+        "id": "s2",
+        "title": "construction",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete construction"
+      },
+      {
+        "id": "s3",
+        "title": "verification",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete verification"
+      }
+    ],
+    "tags": [
+      "math",
+      "proofs",
+      "logic"
+    ],
+    "description": "Epsilon-Delta Proof framework template"
+  },
+  {
+    "id": "math_proof_set_equality_proof",
+    "category": "math",
+    "subcategory": "proofs",
+    "title": "Set Equality Proof",
+    "persona": "math_proofs",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "statement",
+        "dependencies": [],
+        "description": "Complete statement"
+      },
+      {
+        "id": "s1",
+        "title": "subset_1",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete subset_1"
+      },
+      {
+        "id": "s2",
+        "title": "subset_2",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete subset_2"
+      },
+      {
+        "id": "s3",
+        "title": "conclusion",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete conclusion"
+      }
+    ],
+    "tags": [
+      "math",
+      "proofs",
+      "logic"
+    ],
+    "description": "Set Equality Proof framework template"
+  },
+  {
+    "id": "math_proof_equivalence_proof",
+    "category": "math",
+    "subcategory": "proofs",
+    "title": "Equivalence Proof",
+    "persona": "math_proofs",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "statement",
+        "dependencies": [],
+        "description": "Complete statement"
+      },
+      {
+        "id": "s1",
+        "title": "forward",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete forward"
+      },
+      {
+        "id": "s2",
+        "title": "backward",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete backward"
+      },
+      {
+        "id": "s3",
+        "title": "conclusion",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete conclusion"
+      }
+    ],
+    "tags": [
+      "math",
+      "proofs",
+      "logic"
+    ],
+    "description": "Equivalence Proof framework template"
+  },
+  {
+    "id": "math_proof_combinatorial_proof",
+    "category": "math",
+    "subcategory": "proofs",
+    "title": "Combinatorial Proof",
+    "persona": "math_proofs",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "statement",
+        "dependencies": [],
+        "description": "Complete statement"
+      },
+      {
+        "id": "s1",
+        "title": "counting_1",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete counting_1"
+      },
+      {
+        "id": "s2",
+        "title": "counting_2",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete counting_2"
+      },
+      {
+        "id": "s3",
+        "title": "equality",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete equality"
+      }
+    ],
+    "tags": [
+      "math",
+      "proofs",
+      "logic"
+    ],
+    "description": "Combinatorial Proof framework template"
+  },
+  {
+    "id": "math_stats_hypothesis_test",
+    "category": "math",
+    "subcategory": "statistics",
+    "title": "Hypothesis Test",
+    "persona": "math_statistics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "hypotheses",
+        "dependencies": [],
+        "description": "Complete hypotheses"
+      },
+      {
+        "id": "s1",
+        "title": "test_statistic",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete test_statistic"
+      },
+      {
+        "id": "s2",
+        "title": "distribution",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete distribution"
+      },
+      {
+        "id": "s3",
+        "title": "p_value",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete p_value"
+      },
+      {
+        "id": "s4",
+        "title": "conclusion",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete conclusion"
+      }
+    ],
+    "tags": [
+      "math",
+      "statistics",
+      "inference"
+    ],
+    "description": "Hypothesis Test framework template"
+  },
+  {
+    "id": "math_stats_confidence_interval",
+    "category": "math",
+    "subcategory": "statistics",
+    "title": "Confidence Interval",
+    "persona": "math_statistics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parameter",
+        "dependencies": [],
+        "description": "Complete parameter"
+      },
+      {
+        "id": "s1",
+        "title": "estimator",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete estimator"
+      },
+      {
+        "id": "s2",
+        "title": "standard_error",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete standard_error"
+      },
+      {
+        "id": "s3",
+        "title": "interval",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete interval"
+      },
+      {
+        "id": "s4",
+        "title": "interpretation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete interpretation"
+      }
+    ],
+    "tags": [
+      "math",
+      "statistics",
+      "inference"
+    ],
+    "description": "Confidence Interval framework template"
+  },
+  {
+    "id": "math_stats_linear_regression",
+    "category": "math",
+    "subcategory": "statistics",
+    "title": "Linear Regression",
+    "persona": "math_statistics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "model",
+        "dependencies": [],
+        "description": "Complete model"
+      },
+      {
+        "id": "s1",
+        "title": "estimation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete estimation"
+      },
+      {
+        "id": "s2",
+        "title": "inference",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete inference"
+      },
+      {
+        "id": "s3",
+        "title": "diagnostics",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete diagnostics"
+      },
+      {
+        "id": "s4",
+        "title": "interpretation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete interpretation"
+      }
+    ],
+    "tags": [
+      "math",
+      "statistics",
+      "inference"
+    ],
+    "description": "Linear Regression framework template"
+  },
+  {
+    "id": "math_stats_anova",
+    "category": "math",
+    "subcategory": "statistics",
+    "title": "ANOVA",
+    "persona": "math_statistics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "hypotheses",
+        "dependencies": [],
+        "description": "Complete hypotheses"
+      },
+      {
+        "id": "s1",
+        "title": "assumptions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete assumptions"
+      },
+      {
+        "id": "s2",
+        "title": "calculation",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete calculation"
+      },
+      {
+        "id": "s3",
+        "title": "post_hoc",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete post_hoc"
+      },
+      {
+        "id": "s4",
+        "title": "interpretation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete interpretation"
+      }
+    ],
+    "tags": [
+      "math",
+      "statistics",
+      "inference"
+    ],
+    "description": "ANOVA framework template"
+  },
+  {
+    "id": "math_stats_chi-square_test",
+    "category": "math",
+    "subcategory": "statistics",
+    "title": "Chi-Square Test",
+    "persona": "math_statistics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "hypotheses",
+        "dependencies": [],
+        "description": "Complete hypotheses"
+      },
+      {
+        "id": "s1",
+        "title": "expected",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete expected"
+      },
+      {
+        "id": "s2",
+        "title": "test_statistic",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete test_statistic"
+      },
+      {
+        "id": "s3",
+        "title": "p_value",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete p_value"
+      },
+      {
+        "id": "s4",
+        "title": "conclusion",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete conclusion"
+      }
+    ],
+    "tags": [
+      "math",
+      "statistics",
+      "inference"
+    ],
+    "description": "Chi-Square Test framework template"
+  },
+  {
+    "id": "math_stats_sample_size_calculation",
+    "category": "math",
+    "subcategory": "statistics",
+    "title": "Sample Size Calculation",
+    "persona": "math_statistics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "effect_size",
+        "dependencies": [],
+        "description": "Complete effect_size"
+      },
+      {
+        "id": "s1",
+        "title": "power",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete power"
+      },
+      {
+        "id": "s2",
+        "title": "alpha",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete alpha"
+      },
+      {
+        "id": "s3",
+        "title": "formula",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete formula"
+      },
+      {
+        "id": "s4",
+        "title": "result",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete result"
+      }
+    ],
+    "tags": [
+      "math",
+      "statistics",
+      "inference"
+    ],
+    "description": "Sample Size Calculation framework template"
+  },
+  {
+    "id": "math_stats_bayesian_analysis",
+    "category": "math",
+    "subcategory": "statistics",
+    "title": "Bayesian Analysis",
+    "persona": "math_statistics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "prior",
+        "dependencies": [],
+        "description": "Complete prior"
+      },
+      {
+        "id": "s1",
+        "title": "likelihood",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete likelihood"
+      },
+      {
+        "id": "s2",
+        "title": "posterior",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete posterior"
+      },
+      {
+        "id": "s3",
+        "title": "inference",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete inference"
+      },
+      {
+        "id": "s4",
+        "title": "interpretation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete interpretation"
+      }
+    ],
+    "tags": [
+      "math",
+      "statistics",
+      "inference"
+    ],
+    "description": "Bayesian Analysis framework template"
+  },
+  {
+    "id": "math_stats_survival_analysis",
+    "category": "math",
+    "subcategory": "statistics",
+    "title": "Survival Analysis",
+    "persona": "math_statistics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "data",
+        "dependencies": [],
+        "description": "Complete data"
+      },
+      {
+        "id": "s1",
+        "title": "kaplan_meier",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete kaplan_meier"
+      },
+      {
+        "id": "s2",
+        "title": "hazard",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete hazard"
+      },
+      {
+        "id": "s3",
+        "title": "comparison",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete comparison"
+      },
+      {
+        "id": "s4",
+        "title": "interpretation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete interpretation"
+      }
+    ],
+    "tags": [
+      "math",
+      "statistics",
+      "inference"
+    ],
+    "description": "Survival Analysis framework template"
+  },
+  {
+    "id": "math_stats_time_series_analysis",
+    "category": "math",
+    "subcategory": "statistics",
+    "title": "Time Series Analysis",
+    "persona": "math_statistics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "data",
+        "dependencies": [],
+        "description": "Complete data"
+      },
+      {
+        "id": "s1",
+        "title": "decomposition",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete decomposition"
+      },
+      {
+        "id": "s2",
+        "title": "model",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete model"
+      },
+      {
+        "id": "s3",
+        "title": "forecast",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete forecast"
+      },
+      {
+        "id": "s4",
+        "title": "evaluation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete evaluation"
+      }
+    ],
+    "tags": [
+      "math",
+      "statistics",
+      "inference"
+    ],
+    "description": "Time Series Analysis framework template"
+  },
+  {
+    "id": "math_stats_non-parametric_test",
+    "category": "math",
+    "subcategory": "statistics",
+    "title": "Non-parametric Test",
+    "persona": "math_statistics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "hypotheses",
+        "dependencies": [],
+        "description": "Complete hypotheses"
+      },
+      {
+        "id": "s1",
+        "title": "assumptions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete assumptions"
+      },
+      {
+        "id": "s2",
+        "title": "test",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete test"
+      },
+      {
+        "id": "s3",
+        "title": "p_value",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete p_value"
+      },
+      {
+        "id": "s4",
+        "title": "conclusion",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete conclusion"
+      }
+    ],
+    "tags": [
+      "math",
+      "statistics",
+      "inference"
+    ],
+    "description": "Non-parametric Test framework template"
+  },
+  {
+    "id": "math_opt_linear_programming",
+    "category": "math",
+    "subcategory": "optimization",
+    "title": "Linear Programming",
+    "persona": "math_optimization",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "variables",
+        "dependencies": [],
+        "description": "Complete variables"
+      },
+      {
+        "id": "s1",
+        "title": "objective",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete objective"
+      },
+      {
+        "id": "s2",
+        "title": "constraints",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete constraints"
+      },
+      {
+        "id": "s3",
+        "title": "solution",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete solution"
+      },
+      {
+        "id": "s4",
+        "title": "interpretation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete interpretation"
+      }
+    ],
+    "tags": [
+      "math",
+      "optimization",
+      "algorithms"
+    ],
+    "description": "Linear Programming framework template"
+  },
+  {
+    "id": "math_opt_integer_programming",
+    "category": "math",
+    "subcategory": "optimization",
+    "title": "Integer Programming",
+    "persona": "math_optimization",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "formulation",
+        "dependencies": [],
+        "description": "Complete formulation"
+      },
+      {
+        "id": "s1",
+        "title": "relaxation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete relaxation"
+      },
+      {
+        "id": "s2",
+        "title": "branching",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete branching"
+      },
+      {
+        "id": "s3",
+        "title": "solution",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete solution"
+      }
+    ],
+    "tags": [
+      "math",
+      "optimization",
+      "algorithms"
+    ],
+    "description": "Integer Programming framework template"
+  },
+  {
+    "id": "math_opt_nonlinear_optimization",
+    "category": "math",
+    "subcategory": "optimization",
+    "title": "Nonlinear Optimization",
+    "persona": "math_optimization",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "objective",
+        "dependencies": [],
+        "description": "Complete objective"
+      },
+      {
+        "id": "s1",
+        "title": "constraints",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete constraints"
+      },
+      {
+        "id": "s2",
+        "title": "method",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete method"
+      },
+      {
+        "id": "s3",
+        "title": "solution",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete solution"
+      },
+      {
+        "id": "s4",
+        "title": "verification",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete verification"
+      }
+    ],
+    "tags": [
+      "math",
+      "optimization",
+      "algorithms"
+    ],
+    "description": "Nonlinear Optimization framework template"
+  },
+  {
+    "id": "math_opt_dynamic_programming",
+    "category": "math",
+    "subcategory": "optimization",
+    "title": "Dynamic Programming",
+    "persona": "math_optimization",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "state",
+        "dependencies": [],
+        "description": "Complete state"
+      },
+      {
+        "id": "s1",
+        "title": "recurrence",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete recurrence"
+      },
+      {
+        "id": "s2",
+        "title": "base_case",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete base_case"
+      },
+      {
+        "id": "s3",
+        "title": "solution",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete solution"
+      },
+      {
+        "id": "s4",
+        "title": "complexity",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete complexity"
+      }
+    ],
+    "tags": [
+      "math",
+      "optimization",
+      "algorithms"
+    ],
+    "description": "Dynamic Programming framework template"
+  },
+  {
+    "id": "math_opt_convex_optimization",
+    "category": "math",
+    "subcategory": "optimization",
+    "title": "Convex Optimization",
+    "persona": "math_optimization",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "convexity",
+        "dependencies": [],
+        "description": "Complete convexity"
+      },
+      {
+        "id": "s1",
+        "title": "kkt",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete kkt"
+      },
+      {
+        "id": "s2",
+        "title": "solution",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete solution"
+      },
+      {
+        "id": "s3",
+        "title": "duality",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete duality"
+      }
+    ],
+    "tags": [
+      "math",
+      "optimization",
+      "algorithms"
+    ],
+    "description": "Convex Optimization framework template"
+  },
+  {
+    "id": "math_opt_network_flow",
+    "category": "math",
+    "subcategory": "optimization",
+    "title": "Network Flow",
+    "persona": "math_optimization",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "graph",
+        "dependencies": [],
+        "description": "Complete graph"
+      },
+      {
+        "id": "s1",
+        "title": "formulation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete formulation"
+      },
+      {
+        "id": "s2",
+        "title": "algorithm",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete algorithm"
+      },
+      {
+        "id": "s3",
+        "title": "solution",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete solution"
+      }
+    ],
+    "tags": [
+      "math",
+      "optimization",
+      "algorithms"
+    ],
+    "description": "Network Flow framework template"
+  },
+  {
+    "id": "math_opt_shortest_path",
+    "category": "math",
+    "subcategory": "optimization",
+    "title": "Shortest Path",
+    "persona": "math_optimization",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "graph",
+        "dependencies": [],
+        "description": "Complete graph"
+      },
+      {
+        "id": "s1",
+        "title": "algorithm",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete algorithm"
+      },
+      {
+        "id": "s2",
+        "title": "complexity",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete complexity"
+      },
+      {
+        "id": "s3",
+        "title": "solution",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete solution"
+      }
+    ],
+    "tags": [
+      "math",
+      "optimization",
+      "algorithms"
+    ],
+    "description": "Shortest Path framework template"
+  },
+  {
+    "id": "math_opt_scheduling_problem",
+    "category": "math",
+    "subcategory": "optimization",
+    "title": "Scheduling Problem",
+    "persona": "math_optimization",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "jobs",
+        "dependencies": [],
+        "description": "Complete jobs"
+      },
+      {
+        "id": "s1",
+        "title": "constraints",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete constraints"
+      },
+      {
+        "id": "s2",
+        "title": "objective",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete objective"
+      },
+      {
+        "id": "s3",
+        "title": "formulation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete formulation"
+      },
+      {
+        "id": "s4",
+        "title": "solution",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete solution"
+      }
+    ],
+    "tags": [
+      "math",
+      "optimization",
+      "algorithms"
+    ],
+    "description": "Scheduling Problem framework template"
+  },
+  {
+    "id": "math_opt_knapsack_problem",
+    "category": "math",
+    "subcategory": "optimization",
+    "title": "Knapsack Problem",
+    "persona": "math_optimization",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "items",
+        "dependencies": [],
+        "description": "Complete items"
+      },
+      {
+        "id": "s1",
+        "title": "formulation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete formulation"
+      },
+      {
+        "id": "s2",
+        "title": "algorithm",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete algorithm"
+      },
+      {
+        "id": "s3",
+        "title": "solution",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete solution"
+      }
+    ],
+    "tags": [
+      "math",
+      "optimization",
+      "algorithms"
+    ],
+    "description": "Knapsack Problem framework template"
+  },
+  {
+    "id": "math_opt_assignment_problem",
+    "category": "math",
+    "subcategory": "optimization",
+    "title": "Assignment Problem",
+    "persona": "math_optimization",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "agents",
+        "dependencies": [],
+        "description": "Complete agents"
+      },
+      {
+        "id": "s1",
+        "title": "tasks",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete tasks"
+      },
+      {
+        "id": "s2",
+        "title": "costs",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete costs"
+      },
+      {
+        "id": "s3",
+        "title": "algorithm",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete algorithm"
+      },
+      {
+        "id": "s4",
+        "title": "solution",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete solution"
+      }
+    ],
+    "tags": [
+      "math",
+      "optimization",
+      "algorithms"
+    ],
+    "description": "Assignment Problem framework template"
+  }
+]

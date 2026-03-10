@@ -1,0 +1,72 @@
+{
+  "version": "2.1",
+  "generated_at": "2026-01-27T10:36:28.203530",
+  "total_templates": 620,
+  "validated": true,
+  "categories": {
+    "python": {
+      "count": 85,
+      "file": "python_templates.json"
+    },
+    "javascript": {
+      "count": 40,
+      "file": "javascript_templates.json"
+    },
+    "typescript": {
+      "count": 40,
+      "file": "typescript_templates.json"
+    },
+    "react": {
+      "count": 50,
+      "file": "react_templates.json"
+    },
+    "vue": {
+      "count": 30,
+      "file": "vue_templates.json"
+    },
+    "html_css": {
+      "count": 60,
+      "file": "html_css_templates.json"
+    },
+    "nodejs": {
+      "count": 40,
+      "file": "nodejs_templates.json"
+    },
+    "devops": {
+      "count": 40,
+      "file": "devops_templates.json"
+    },
+    "sql": {
+      "count": 70,
+      "file": "sql_templates.json"
+    },
+    "legal": {
+      "count": 50,
+      "file": "legal_templates.json"
+    },
+    "medical": {
+      "count": 20,
+      "file": "medical_templates.json"
+    },
+    "math": {
+      "count": 30,
+      "file": "math_templates.json"
+    },
+    "security": {
+      "count": 20,
+      "file": "security_templates.json"
+    },
+    "reasoning": {
+      "count": 20,
+      "file": "reasoning_templates.json"
+    },
+    "general": {
+      "count": 15,
+      "file": "general_templates.json"
+    },
+    "multi_domain": {
+      "count": 10,
+      "file": "multi_domain_templates.json"
+    }
+  }
+}

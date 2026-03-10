@@ -1,0 +1,1516 @@
+[
+  {
+    "id": "js_core_async_data_fetching",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Async Data Fetching",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "fetch_wrapper",
+        "dependencies": [],
+        "description": "Complete fetch_wrapper"
+      },
+      {
+        "id": "s1",
+        "title": "error_handling",
+        "dependencies": [],
+        "description": "Complete error_handling"
+      },
+      {
+        "id": "s2",
+        "title": "retry_logic",
+        "dependencies": [],
+        "description": "Complete retry_logic"
+      },
+      {
+        "id": "s3",
+        "title": "caching",
+        "dependencies": [],
+        "description": "Complete caching"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Async Data Fetching framework template"
+  },
+  {
+    "id": "js_core_promise_utilities",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Promise Utilities",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "promisify",
+        "dependencies": [],
+        "description": "Complete promisify"
+      },
+      {
+        "id": "s1",
+        "title": "all_settled",
+        "dependencies": [],
+        "description": "Complete all_settled"
+      },
+      {
+        "id": "s2",
+        "title": "race",
+        "dependencies": [],
+        "description": "Complete race"
+      },
+      {
+        "id": "s3",
+        "title": "timeout",
+        "dependencies": [],
+        "description": "Complete timeout"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Promise Utilities framework template"
+  },
+  {
+    "id": "js_core_array_utilities",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Array Utilities",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "map_reduce",
+        "dependencies": [],
+        "description": "Complete map_reduce"
+      },
+      {
+        "id": "s1",
+        "title": "filtering",
+        "dependencies": [],
+        "description": "Complete filtering"
+      },
+      {
+        "id": "s2",
+        "title": "sorting",
+        "dependencies": [],
+        "description": "Complete sorting"
+      },
+      {
+        "id": "s3",
+        "title": "searching",
+        "dependencies": [],
+        "description": "Complete searching"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Array Utilities framework template"
+  },
+  {
+    "id": "js_core_object_utilities",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Object Utilities",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "deep_clone",
+        "dependencies": [],
+        "description": "Complete deep_clone"
+      },
+      {
+        "id": "s1",
+        "title": "merge",
+        "dependencies": [],
+        "description": "Complete merge"
+      },
+      {
+        "id": "s2",
+        "title": "pick_omit",
+        "dependencies": [],
+        "description": "Complete pick_omit"
+      },
+      {
+        "id": "s3",
+        "title": "transform",
+        "dependencies": [],
+        "description": "Complete transform"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Object Utilities framework template"
+  },
+  {
+    "id": "js_core_event_emitter",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Event Emitter",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "emitter_class",
+        "dependencies": [],
+        "description": "Complete emitter_class"
+      },
+      {
+        "id": "s1",
+        "title": "on_off",
+        "dependencies": [],
+        "description": "Complete on_off"
+      },
+      {
+        "id": "s2",
+        "title": "emit",
+        "dependencies": [],
+        "description": "Complete emit"
+      },
+      {
+        "id": "s3",
+        "title": "once",
+        "dependencies": [],
+        "description": "Complete once"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Event Emitter framework template"
+  },
+  {
+    "id": "js_core_observer_pattern",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Observer Pattern",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "subject",
+        "dependencies": [],
+        "description": "Complete subject"
+      },
+      {
+        "id": "s1",
+        "title": "observer",
+        "dependencies": [],
+        "description": "Complete observer"
+      },
+      {
+        "id": "s2",
+        "title": "subscription",
+        "dependencies": [],
+        "description": "Complete subscription"
+      },
+      {
+        "id": "s3",
+        "title": "cleanup",
+        "dependencies": [],
+        "description": "Complete cleanup"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Observer Pattern framework template"
+  },
+  {
+    "id": "js_core_pub_sub_system",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Pub Sub System",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "channels",
+        "dependencies": [],
+        "description": "Complete channels"
+      },
+      {
+        "id": "s1",
+        "title": "publish",
+        "dependencies": [],
+        "description": "Complete publish"
+      },
+      {
+        "id": "s2",
+        "title": "subscribe",
+        "dependencies": [],
+        "description": "Complete subscribe"
+      },
+      {
+        "id": "s3",
+        "title": "unsubscribe",
+        "dependencies": [],
+        "description": "Complete unsubscribe"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Pub Sub System framework template"
+  },
+  {
+    "id": "js_core_state_machine",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "State Machine",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "states",
+        "dependencies": [],
+        "description": "Complete states"
+      },
+      {
+        "id": "s1",
+        "title": "transitions",
+        "dependencies": [],
+        "description": "Complete transitions"
+      },
+      {
+        "id": "s2",
+        "title": "actions",
+        "dependencies": [],
+        "description": "Complete actions"
+      },
+      {
+        "id": "s3",
+        "title": "guards",
+        "dependencies": [],
+        "description": "Complete guards"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "State Machine framework template"
+  },
+  {
+    "id": "js_core_debounce_throttle",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Debounce Throttle",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "debounce",
+        "dependencies": [],
+        "description": "Complete debounce"
+      },
+      {
+        "id": "s1",
+        "title": "throttle",
+        "dependencies": [],
+        "description": "Complete throttle"
+      },
+      {
+        "id": "s2",
+        "title": "cancel",
+        "dependencies": [],
+        "description": "Complete cancel"
+      },
+      {
+        "id": "s3",
+        "title": "flush",
+        "dependencies": [],
+        "description": "Complete flush"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Debounce Throttle framework template"
+  },
+  {
+    "id": "js_core_local_storage_wrapper",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Local Storage Wrapper",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "get_set",
+        "dependencies": [],
+        "description": "Complete get_set"
+      },
+      {
+        "id": "s1",
+        "title": "serialization",
+        "dependencies": [],
+        "description": "Complete serialization"
+      },
+      {
+        "id": "s2",
+        "title": "expiry",
+        "dependencies": [],
+        "description": "Complete expiry"
+      },
+      {
+        "id": "s3",
+        "title": "migration",
+        "dependencies": [],
+        "description": "Complete migration"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Local Storage Wrapper framework template"
+  },
+  {
+    "id": "js_core_url_utilities",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "URL Utilities",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parsing",
+        "dependencies": [],
+        "description": "Complete parsing"
+      },
+      {
+        "id": "s1",
+        "title": "building",
+        "dependencies": [],
+        "description": "Complete building"
+      },
+      {
+        "id": "s2",
+        "title": "query_params",
+        "dependencies": [],
+        "description": "Complete query_params"
+      },
+      {
+        "id": "s3",
+        "title": "encoding",
+        "dependencies": [],
+        "description": "Complete encoding"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "URL Utilities framework template"
+  },
+  {
+    "id": "js_core_date_utilities",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Date Utilities",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "formatting",
+        "dependencies": [],
+        "description": "Complete formatting"
+      },
+      {
+        "id": "s1",
+        "title": "parsing",
+        "dependencies": [],
+        "description": "Complete parsing"
+      },
+      {
+        "id": "s2",
+        "title": "manipulation",
+        "dependencies": [],
+        "description": "Complete manipulation"
+      },
+      {
+        "id": "s3",
+        "title": "comparison",
+        "dependencies": [],
+        "description": "Complete comparison"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Date Utilities framework template"
+  },
+  {
+    "id": "js_core_validation_library",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Validation Library",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "rules",
+        "dependencies": [],
+        "description": "Complete rules"
+      },
+      {
+        "id": "s1",
+        "title": "validators",
+        "dependencies": [],
+        "description": "Complete validators"
+      },
+      {
+        "id": "s2",
+        "title": "messages",
+        "dependencies": [],
+        "description": "Complete messages"
+      },
+      {
+        "id": "s3",
+        "title": "composition",
+        "dependencies": [],
+        "description": "Complete composition"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Validation Library framework template"
+  },
+  {
+    "id": "js_core_fetch_interceptors",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Fetch Interceptors",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "request_interceptor",
+        "dependencies": [],
+        "description": "Complete request_interceptor"
+      },
+      {
+        "id": "s1",
+        "title": "response_interceptor",
+        "dependencies": [],
+        "description": "Complete response_interceptor"
+      },
+      {
+        "id": "s2",
+        "title": "error_handler",
+        "dependencies": [],
+        "description": "Complete error_handler"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Fetch Interceptors framework template"
+  },
+  {
+    "id": "js_core_module_system",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Module System",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "exports",
+        "dependencies": [],
+        "description": "Complete exports"
+      },
+      {
+        "id": "s1",
+        "title": "imports",
+        "dependencies": [],
+        "description": "Complete imports"
+      },
+      {
+        "id": "s2",
+        "title": "dynamic_imports",
+        "dependencies": [],
+        "description": "Complete dynamic_imports"
+      },
+      {
+        "id": "s3",
+        "title": "circular_deps",
+        "dependencies": [],
+        "description": "Complete circular_deps"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Module System framework template"
+  },
+  {
+    "id": "js_core_error_handling",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Error Handling",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "custom_errors",
+        "dependencies": [],
+        "description": "Complete custom_errors"
+      },
+      {
+        "id": "s1",
+        "title": "error_boundary",
+        "dependencies": [],
+        "description": "Complete error_boundary"
+      },
+      {
+        "id": "s2",
+        "title": "logging",
+        "dependencies": [],
+        "description": "Complete logging"
+      },
+      {
+        "id": "s3",
+        "title": "recovery",
+        "dependencies": [],
+        "description": "Complete recovery"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Error Handling framework template"
+  },
+  {
+    "id": "js_core_async_queue",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Async Queue",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "enqueue",
+        "dependencies": [],
+        "description": "Complete enqueue"
+      },
+      {
+        "id": "s1",
+        "title": "dequeue",
+        "dependencies": [],
+        "description": "Complete dequeue"
+      },
+      {
+        "id": "s2",
+        "title": "concurrency",
+        "dependencies": [],
+        "description": "Complete concurrency"
+      },
+      {
+        "id": "s3",
+        "title": "priority",
+        "dependencies": [],
+        "description": "Complete priority"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Async Queue framework template"
+  },
+  {
+    "id": "js_core_memoization",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Memoization",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "cache",
+        "dependencies": [],
+        "description": "Complete cache"
+      },
+      {
+        "id": "s1",
+        "title": "key_generation",
+        "dependencies": [],
+        "description": "Complete key_generation"
+      },
+      {
+        "id": "s2",
+        "title": "expiry",
+        "dependencies": [],
+        "description": "Complete expiry"
+      },
+      {
+        "id": "s3",
+        "title": "invalidation",
+        "dependencies": [],
+        "description": "Complete invalidation"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Memoization framework template"
+  },
+  {
+    "id": "js_core_deep_equal",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Deep Equal",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "comparison",
+        "dependencies": [],
+        "description": "Complete comparison"
+      },
+      {
+        "id": "s1",
+        "title": "cycles",
+        "dependencies": [],
+        "description": "Complete cycles"
+      },
+      {
+        "id": "s2",
+        "title": "types",
+        "dependencies": [],
+        "description": "Complete types"
+      },
+      {
+        "id": "s3",
+        "title": "options",
+        "dependencies": [],
+        "description": "Complete options"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Deep Equal framework template"
+  },
+  {
+    "id": "js_core_schema_validation",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Schema Validation",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "schema_definition",
+        "dependencies": [],
+        "description": "Complete schema_definition"
+      },
+      {
+        "id": "s1",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s2",
+        "title": "coercion",
+        "dependencies": [],
+        "description": "Complete coercion"
+      },
+      {
+        "id": "s3",
+        "title": "errors",
+        "dependencies": [],
+        "description": "Complete errors"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Schema Validation framework template"
+  },
+  {
+    "id": "js_core_lazy_loading",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Lazy Loading",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "intersection_observer",
+        "dependencies": [],
+        "description": "Complete intersection_observer"
+      },
+      {
+        "id": "s1",
+        "title": "dynamic_import",
+        "dependencies": [],
+        "description": "Complete dynamic_import"
+      },
+      {
+        "id": "s2",
+        "title": "placeholder",
+        "dependencies": [],
+        "description": "Complete placeholder"
+      },
+      {
+        "id": "s3",
+        "title": "loading",
+        "dependencies": [],
+        "description": "Complete loading"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Lazy Loading framework template"
+  },
+  {
+    "id": "js_core_virtual_dom",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Virtual DOM",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "create_element",
+        "dependencies": [],
+        "description": "Complete create_element"
+      },
+      {
+        "id": "s1",
+        "title": "diff",
+        "dependencies": [],
+        "description": "Complete diff"
+      },
+      {
+        "id": "s2",
+        "title": "patch",
+        "dependencies": [],
+        "description": "Complete patch"
+      },
+      {
+        "id": "s3",
+        "title": "reconciliation",
+        "dependencies": [],
+        "description": "Complete reconciliation"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Virtual DOM framework template"
+  },
+  {
+    "id": "js_core_router_library",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Router Library",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "routes",
+        "dependencies": [],
+        "description": "Complete routes"
+      },
+      {
+        "id": "s1",
+        "title": "matching",
+        "dependencies": [],
+        "description": "Complete matching"
+      },
+      {
+        "id": "s2",
+        "title": "history",
+        "dependencies": [],
+        "description": "Complete history"
+      },
+      {
+        "id": "s3",
+        "title": "navigation",
+        "dependencies": [],
+        "description": "Complete navigation"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Router Library framework template"
+  },
+  {
+    "id": "js_core_reactive_state",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Reactive State",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "signal",
+        "dependencies": [],
+        "description": "Complete signal"
+      },
+      {
+        "id": "s1",
+        "title": "computed",
+        "dependencies": [],
+        "description": "Complete computed"
+      },
+      {
+        "id": "s2",
+        "title": "effect",
+        "dependencies": [],
+        "description": "Complete effect"
+      },
+      {
+        "id": "s3",
+        "title": "batch",
+        "dependencies": [],
+        "description": "Complete batch"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Reactive State framework template"
+  },
+  {
+    "id": "js_core_form_serialization",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Form Serialization",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "serialize",
+        "dependencies": [],
+        "description": "Complete serialize"
+      },
+      {
+        "id": "s1",
+        "title": "deserialize",
+        "dependencies": [],
+        "description": "Complete deserialize"
+      },
+      {
+        "id": "s2",
+        "title": "nested",
+        "dependencies": [],
+        "description": "Complete nested"
+      },
+      {
+        "id": "s3",
+        "title": "arrays",
+        "dependencies": [],
+        "description": "Complete arrays"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Form Serialization framework template"
+  },
+  {
+    "id": "js_core_cookie_manager",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Cookie Manager",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "get",
+        "dependencies": [],
+        "description": "Complete get"
+      },
+      {
+        "id": "s1",
+        "title": "set",
+        "dependencies": [],
+        "description": "Complete set"
+      },
+      {
+        "id": "s2",
+        "title": "delete",
+        "dependencies": [],
+        "description": "Complete delete"
+      },
+      {
+        "id": "s3",
+        "title": "parse",
+        "dependencies": [],
+        "description": "Complete parse"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Cookie Manager framework template"
+  },
+  {
+    "id": "js_core_indexeddb_wrapper",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "IndexedDB Wrapper",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "open",
+        "dependencies": [],
+        "description": "Complete open"
+      },
+      {
+        "id": "s1",
+        "title": "transactions",
+        "dependencies": [],
+        "description": "Complete transactions"
+      },
+      {
+        "id": "s2",
+        "title": "queries",
+        "dependencies": [],
+        "description": "Complete queries"
+      },
+      {
+        "id": "s3",
+        "title": "migrations",
+        "dependencies": [],
+        "description": "Complete migrations"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "IndexedDB Wrapper framework template"
+  },
+  {
+    "id": "js_core_service_worker",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Service Worker",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "registration",
+        "dependencies": [],
+        "description": "Complete registration"
+      },
+      {
+        "id": "s1",
+        "title": "caching",
+        "dependencies": [],
+        "description": "Complete caching"
+      },
+      {
+        "id": "s2",
+        "title": "sync",
+        "dependencies": [],
+        "description": "Complete sync"
+      },
+      {
+        "id": "s3",
+        "title": "push",
+        "dependencies": [],
+        "description": "Complete push"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Service Worker framework template"
+  },
+  {
+    "id": "js_core_web_components",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Web Components",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "custom_element",
+        "dependencies": [],
+        "description": "Complete custom_element"
+      },
+      {
+        "id": "s1",
+        "title": "shadow_dom",
+        "dependencies": [],
+        "description": "Complete shadow_dom"
+      },
+      {
+        "id": "s2",
+        "title": "slots",
+        "dependencies": [],
+        "description": "Complete slots"
+      },
+      {
+        "id": "s3",
+        "title": "lifecycle",
+        "dependencies": [],
+        "description": "Complete lifecycle"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Web Components framework template"
+  },
+  {
+    "id": "js_core_canvas_utilities",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Canvas Utilities",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "context",
+        "dependencies": [],
+        "description": "Complete context"
+      },
+      {
+        "id": "s1",
+        "title": "drawing",
+        "dependencies": [],
+        "description": "Complete drawing"
+      },
+      {
+        "id": "s2",
+        "title": "animation",
+        "dependencies": [],
+        "description": "Complete animation"
+      },
+      {
+        "id": "s3",
+        "title": "events",
+        "dependencies": [],
+        "description": "Complete events"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Canvas Utilities framework template"
+  },
+  {
+    "id": "js_core_webgl_basics",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "WebGL Basics",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "context",
+        "dependencies": [],
+        "description": "Complete context"
+      },
+      {
+        "id": "s1",
+        "title": "shaders",
+        "dependencies": [],
+        "description": "Complete shaders"
+      },
+      {
+        "id": "s2",
+        "title": "buffers",
+        "dependencies": [],
+        "description": "Complete buffers"
+      },
+      {
+        "id": "s3",
+        "title": "rendering",
+        "dependencies": [],
+        "description": "Complete rendering"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "WebGL Basics framework template"
+  },
+  {
+    "id": "js_core_audio_api",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Audio API",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "context",
+        "dependencies": [],
+        "description": "Complete context"
+      },
+      {
+        "id": "s1",
+        "title": "oscillator",
+        "dependencies": [],
+        "description": "Complete oscillator"
+      },
+      {
+        "id": "s2",
+        "title": "analyzer",
+        "dependencies": [],
+        "description": "Complete analyzer"
+      },
+      {
+        "id": "s3",
+        "title": "effects",
+        "dependencies": [],
+        "description": "Complete effects"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Audio API framework template"
+  },
+  {
+    "id": "js_core_drag_and_drop",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Drag and Drop",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "draggable",
+        "dependencies": [],
+        "description": "Complete draggable"
+      },
+      {
+        "id": "s1",
+        "title": "drop_zone",
+        "dependencies": [],
+        "description": "Complete drop_zone"
+      },
+      {
+        "id": "s2",
+        "title": "data_transfer",
+        "dependencies": [],
+        "description": "Complete data_transfer"
+      },
+      {
+        "id": "s3",
+        "title": "feedback",
+        "dependencies": [],
+        "description": "Complete feedback"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Drag and Drop framework template"
+  },
+  {
+    "id": "js_core_clipboard_api",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Clipboard API",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "copy",
+        "dependencies": [],
+        "description": "Complete copy"
+      },
+      {
+        "id": "s1",
+        "title": "paste",
+        "dependencies": [],
+        "description": "Complete paste"
+      },
+      {
+        "id": "s2",
+        "title": "permissions",
+        "dependencies": [],
+        "description": "Complete permissions"
+      },
+      {
+        "id": "s3",
+        "title": "fallback",
+        "dependencies": [],
+        "description": "Complete fallback"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Clipboard API framework template"
+  },
+  {
+    "id": "js_core_geolocation",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Geolocation",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "current_position",
+        "dependencies": [],
+        "description": "Complete current_position"
+      },
+      {
+        "id": "s1",
+        "title": "watch",
+        "dependencies": [],
+        "description": "Complete watch"
+      },
+      {
+        "id": "s2",
+        "title": "options",
+        "dependencies": [],
+        "description": "Complete options"
+      },
+      {
+        "id": "s3",
+        "title": "errors",
+        "dependencies": [],
+        "description": "Complete errors"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Geolocation framework template"
+  },
+  {
+    "id": "js_core_notification_api",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Notification API",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "permission",
+        "dependencies": [],
+        "description": "Complete permission"
+      },
+      {
+        "id": "s1",
+        "title": "create",
+        "dependencies": [],
+        "description": "Complete create"
+      },
+      {
+        "id": "s2",
+        "title": "actions",
+        "dependencies": [],
+        "description": "Complete actions"
+      },
+      {
+        "id": "s3",
+        "title": "events",
+        "dependencies": [],
+        "description": "Complete events"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Notification API framework template"
+  },
+  {
+    "id": "js_core_intersection_observer",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Intersection Observer",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "observer",
+        "dependencies": [],
+        "description": "Complete observer"
+      },
+      {
+        "id": "s1",
+        "title": "options",
+        "dependencies": [],
+        "description": "Complete options"
+      },
+      {
+        "id": "s2",
+        "title": "callback",
+        "dependencies": [],
+        "description": "Complete callback"
+      },
+      {
+        "id": "s3",
+        "title": "cleanup",
+        "dependencies": [],
+        "description": "Complete cleanup"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Intersection Observer framework template"
+  },
+  {
+    "id": "js_core_resize_observer",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Resize Observer",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "observer",
+        "dependencies": [],
+        "description": "Complete observer"
+      },
+      {
+        "id": "s1",
+        "title": "entries",
+        "dependencies": [],
+        "description": "Complete entries"
+      },
+      {
+        "id": "s2",
+        "title": "debounce",
+        "dependencies": [],
+        "description": "Complete debounce"
+      },
+      {
+        "id": "s3",
+        "title": "cleanup",
+        "dependencies": [],
+        "description": "Complete cleanup"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Resize Observer framework template"
+  },
+  {
+    "id": "js_core_mutation_observer",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Mutation Observer",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "observer",
+        "dependencies": [],
+        "description": "Complete observer"
+      },
+      {
+        "id": "s1",
+        "title": "options",
+        "dependencies": [],
+        "description": "Complete options"
+      },
+      {
+        "id": "s2",
+        "title": "callback",
+        "dependencies": [],
+        "description": "Complete callback"
+      },
+      {
+        "id": "s3",
+        "title": "disconnect",
+        "dependencies": [],
+        "description": "Complete disconnect"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Mutation Observer framework template"
+  },
+  {
+    "id": "js_core_performance_api",
+    "category": "javascript",
+    "subcategory": "core",
+    "title": "Performance API",
+    "persona": "javascript_core",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "marks",
+        "dependencies": [],
+        "description": "Complete marks"
+      },
+      {
+        "id": "s1",
+        "title": "measures",
+        "dependencies": [],
+        "description": "Complete measures"
+      },
+      {
+        "id": "s2",
+        "title": "entries",
+        "dependencies": [],
+        "description": "Complete entries"
+      },
+      {
+        "id": "s3",
+        "title": "observers",
+        "dependencies": [],
+        "description": "Complete observers"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "utilities"
+    ],
+    "description": "Performance API framework template"
+  }
+]

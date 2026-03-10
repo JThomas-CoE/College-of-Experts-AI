@@ -1,0 +1,4142 @@
+[
+  {
+    "id": "py_fastapi_fastapi_crud_api",
+    "category": "python",
+    "subcategory": "fastapi",
+    "title": "FastAPI CRUD API",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "models",
+        "dependencies": [],
+        "description": "Complete models"
+      },
+      {
+        "id": "s1",
+        "title": "schemas",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete schemas"
+      },
+      {
+        "id": "s2",
+        "title": "crud_operations",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete crud_operations"
+      },
+      {
+        "id": "s3",
+        "title": "routes",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete routes"
+      },
+      {
+        "id": "s4",
+        "title": "main_app",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete main_app"
+      },
+      {
+        "id": "s5",
+        "title": "tests",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete tests"
+      }
+    ],
+    "tags": [
+      "python",
+      "fastapi",
+      "api"
+    ],
+    "description": "FastAPI CRUD API framework template"
+  },
+  {
+    "id": "py_fastapi_fastapi_auth_jwt",
+    "category": "python",
+    "subcategory": "fastapi",
+    "title": "FastAPI Auth JWT",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "user_model",
+        "dependencies": [],
+        "description": "Complete user_model"
+      },
+      {
+        "id": "s1",
+        "title": "auth_utils",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete auth_utils"
+      },
+      {
+        "id": "s2",
+        "title": "dependencies",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete dependencies"
+      },
+      {
+        "id": "s3",
+        "title": "login_route",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete login_route"
+      },
+      {
+        "id": "s4",
+        "title": "protected_routes",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete protected_routes"
+      }
+    ],
+    "tags": [
+      "python",
+      "fastapi",
+      "api"
+    ],
+    "description": "FastAPI Auth JWT framework template"
+  },
+  {
+    "id": "py_fastapi_fastapi_websocket",
+    "category": "python",
+    "subcategory": "fastapi",
+    "title": "FastAPI WebSocket",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "connection_manager",
+        "dependencies": [],
+        "description": "Complete connection_manager"
+      },
+      {
+        "id": "s1",
+        "title": "websocket_route",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete websocket_route"
+      },
+      {
+        "id": "s2",
+        "title": "message_handlers",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete message_handlers"
+      },
+      {
+        "id": "s3",
+        "title": "client_example",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete client_example"
+      }
+    ],
+    "tags": [
+      "python",
+      "fastapi",
+      "api"
+    ],
+    "description": "FastAPI WebSocket framework template"
+  },
+  {
+    "id": "py_fastapi_fastapi_background_tasks",
+    "category": "python",
+    "subcategory": "fastapi",
+    "title": "FastAPI Background Tasks",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "task_definitions",
+        "dependencies": [],
+        "description": "Complete task_definitions"
+      },
+      {
+        "id": "s1",
+        "title": "task_queue",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete task_queue"
+      },
+      {
+        "id": "s2",
+        "title": "worker",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete worker"
+      },
+      {
+        "id": "s3",
+        "title": "status_endpoints",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete status_endpoints"
+      }
+    ],
+    "tags": [
+      "python",
+      "fastapi",
+      "api"
+    ],
+    "description": "FastAPI Background Tasks framework template"
+  },
+  {
+    "id": "py_fastapi_fastapi_file_upload",
+    "category": "python",
+    "subcategory": "fastapi",
+    "title": "FastAPI File Upload",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "upload_config",
+        "dependencies": [],
+        "description": "Complete upload_config"
+      },
+      {
+        "id": "s1",
+        "title": "validators",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete validators"
+      },
+      {
+        "id": "s2",
+        "title": "storage",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete storage"
+      },
+      {
+        "id": "s3",
+        "title": "routes",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete routes"
+      },
+      {
+        "id": "s4",
+        "title": "cleanup",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete cleanup"
+      }
+    ],
+    "tags": [
+      "python",
+      "fastapi",
+      "api"
+    ],
+    "description": "FastAPI File Upload framework template"
+  },
+  {
+    "id": "py_fastapi_fastapi_middleware",
+    "category": "python",
+    "subcategory": "fastapi",
+    "title": "FastAPI Middleware",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "logging_middleware",
+        "dependencies": [],
+        "description": "Complete logging_middleware"
+      },
+      {
+        "id": "s1",
+        "title": "auth_middleware",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete auth_middleware"
+      },
+      {
+        "id": "s2",
+        "title": "rate_limiter",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete rate_limiter"
+      },
+      {
+        "id": "s3",
+        "title": "error_handler",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete error_handler"
+      }
+    ],
+    "tags": [
+      "python",
+      "fastapi",
+      "api"
+    ],
+    "description": "FastAPI Middleware framework template"
+  },
+  {
+    "id": "py_fastapi_fastapi_dependencies",
+    "category": "python",
+    "subcategory": "fastapi",
+    "title": "FastAPI Dependencies",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "database",
+        "dependencies": [],
+        "description": "Complete database"
+      },
+      {
+        "id": "s1",
+        "title": "auth",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete auth"
+      },
+      {
+        "id": "s2",
+        "title": "pagination",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete pagination"
+      },
+      {
+        "id": "s3",
+        "title": "caching",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete caching"
+      },
+      {
+        "id": "s4",
+        "title": "validation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete validation"
+      }
+    ],
+    "tags": [
+      "python",
+      "fastapi",
+      "api"
+    ],
+    "description": "FastAPI Dependencies framework template"
+  },
+  {
+    "id": "py_fastapi_fastapi_openapi_customization",
+    "category": "python",
+    "subcategory": "fastapi",
+    "title": "FastAPI OpenAPI Customization",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "schemas",
+        "dependencies": [],
+        "description": "Complete schemas"
+      },
+      {
+        "id": "s1",
+        "title": "examples",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete examples"
+      },
+      {
+        "id": "s2",
+        "title": "tags",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete tags"
+      },
+      {
+        "id": "s3",
+        "title": "security_schemes",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete security_schemes"
+      }
+    ],
+    "tags": [
+      "python",
+      "fastapi",
+      "api"
+    ],
+    "description": "FastAPI OpenAPI Customization framework template"
+  },
+  {
+    "id": "py_fastapi_fastapi_testing_suite",
+    "category": "python",
+    "subcategory": "fastapi",
+    "title": "FastAPI Testing Suite",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "conftest",
+        "dependencies": [],
+        "description": "Complete conftest"
+      },
+      {
+        "id": "s1",
+        "title": "test_routes",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete test_routes"
+      },
+      {
+        "id": "s2",
+        "title": "test_services",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete test_services"
+      },
+      {
+        "id": "s3",
+        "title": "fixtures",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete fixtures"
+      }
+    ],
+    "tags": [
+      "python",
+      "fastapi",
+      "api"
+    ],
+    "description": "FastAPI Testing Suite framework template"
+  },
+  {
+    "id": "py_fastapi_fastapi_microservice",
+    "category": "python",
+    "subcategory": "fastapi",
+    "title": "FastAPI Microservice",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "service_structure",
+        "dependencies": [],
+        "description": "Complete service_structure"
+      },
+      {
+        "id": "s1",
+        "title": "config",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete config"
+      },
+      {
+        "id": "s2",
+        "title": "health_checks",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete health_checks"
+      },
+      {
+        "id": "s3",
+        "title": "docker",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete docker"
+      }
+    ],
+    "tags": [
+      "python",
+      "fastapi",
+      "api"
+    ],
+    "description": "FastAPI Microservice framework template"
+  },
+  {
+    "id": "py_django_django_rest_api",
+    "category": "python",
+    "subcategory": "django",
+    "title": "Django REST API",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "models",
+        "dependencies": [],
+        "description": "Complete models"
+      },
+      {
+        "id": "s1",
+        "title": "serializers",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete serializers"
+      },
+      {
+        "id": "s2",
+        "title": "views",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete views"
+      },
+      {
+        "id": "s3",
+        "title": "urls",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete urls"
+      },
+      {
+        "id": "s4",
+        "title": "permissions",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete permissions"
+      },
+      {
+        "id": "s5",
+        "title": "tests",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete tests"
+      }
+    ],
+    "tags": [
+      "python",
+      "django",
+      "api"
+    ],
+    "description": "Django REST API framework template"
+  },
+  {
+    "id": "py_django_django_auth_system",
+    "category": "python",
+    "subcategory": "django",
+    "title": "Django Auth System",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "user_model",
+        "dependencies": [],
+        "description": "Complete user_model"
+      },
+      {
+        "id": "s1",
+        "title": "authentication",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete authentication"
+      },
+      {
+        "id": "s2",
+        "title": "permissions",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete permissions"
+      },
+      {
+        "id": "s3",
+        "title": "views",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete views"
+      },
+      {
+        "id": "s4",
+        "title": "templates",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete templates"
+      }
+    ],
+    "tags": [
+      "python",
+      "django",
+      "api"
+    ],
+    "description": "Django Auth System framework template"
+  },
+  {
+    "id": "py_django_django_admin_customization",
+    "category": "python",
+    "subcategory": "django",
+    "title": "Django Admin Customization",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "admin_classes",
+        "dependencies": [],
+        "description": "Complete admin_classes"
+      },
+      {
+        "id": "s1",
+        "title": "filters",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete filters"
+      },
+      {
+        "id": "s2",
+        "title": "actions",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete actions"
+      },
+      {
+        "id": "s3",
+        "title": "inlines",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete inlines"
+      },
+      {
+        "id": "s4",
+        "title": "widgets",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete widgets"
+      }
+    ],
+    "tags": [
+      "python",
+      "django",
+      "api"
+    ],
+    "description": "Django Admin Customization framework template"
+  },
+  {
+    "id": "py_django_django_celery_tasks",
+    "category": "python",
+    "subcategory": "django",
+    "title": "Django Celery Tasks",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "celery_config",
+        "dependencies": [],
+        "description": "Complete celery_config"
+      },
+      {
+        "id": "s1",
+        "title": "tasks",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete tasks"
+      },
+      {
+        "id": "s2",
+        "title": "scheduling",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete scheduling"
+      },
+      {
+        "id": "s3",
+        "title": "monitoring",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete monitoring"
+      }
+    ],
+    "tags": [
+      "python",
+      "django",
+      "api"
+    ],
+    "description": "Django Celery Tasks framework template"
+  },
+  {
+    "id": "py_django_django_signal_handlers",
+    "category": "python",
+    "subcategory": "django",
+    "title": "Django Signal Handlers",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "signals",
+        "dependencies": [],
+        "description": "Complete signals"
+      },
+      {
+        "id": "s1",
+        "title": "receivers",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete receivers"
+      },
+      {
+        "id": "s2",
+        "title": "async_handlers",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete async_handlers"
+      },
+      {
+        "id": "s3",
+        "title": "tests",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete tests"
+      }
+    ],
+    "tags": [
+      "python",
+      "django",
+      "api"
+    ],
+    "description": "Django Signal Handlers framework template"
+  },
+  {
+    "id": "py_django_django_middleware",
+    "category": "python",
+    "subcategory": "django",
+    "title": "Django Middleware",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "process_request",
+        "dependencies": [],
+        "description": "Complete process_request"
+      },
+      {
+        "id": "s1",
+        "title": "process_response",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete process_response"
+      },
+      {
+        "id": "s2",
+        "title": "process_exception",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete process_exception"
+      }
+    ],
+    "tags": [
+      "python",
+      "django",
+      "api"
+    ],
+    "description": "Django Middleware framework template"
+  },
+  {
+    "id": "py_django_django_forms",
+    "category": "python",
+    "subcategory": "django",
+    "title": "Django Forms",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "form_classes",
+        "dependencies": [],
+        "description": "Complete form_classes"
+      },
+      {
+        "id": "s1",
+        "title": "validation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s2",
+        "title": "widgets",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete widgets"
+      },
+      {
+        "id": "s3",
+        "title": "formsets",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete formsets"
+      }
+    ],
+    "tags": [
+      "python",
+      "django",
+      "api"
+    ],
+    "description": "Django Forms framework template"
+  },
+  {
+    "id": "py_django_django_query_optimization",
+    "category": "python",
+    "subcategory": "django",
+    "title": "Django Query Optimization",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "select_related",
+        "dependencies": [],
+        "description": "Complete select_related"
+      },
+      {
+        "id": "s1",
+        "title": "prefetch",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete prefetch"
+      },
+      {
+        "id": "s2",
+        "title": "annotations",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete annotations"
+      },
+      {
+        "id": "s3",
+        "title": "raw_sql",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete raw_sql"
+      }
+    ],
+    "tags": [
+      "python",
+      "django",
+      "api"
+    ],
+    "description": "Django Query Optimization framework template"
+  },
+  {
+    "id": "py_django_django_testing",
+    "category": "python",
+    "subcategory": "django",
+    "title": "Django Testing",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "fixtures",
+        "dependencies": [],
+        "description": "Complete fixtures"
+      },
+      {
+        "id": "s1",
+        "title": "factories",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete factories"
+      },
+      {
+        "id": "s2",
+        "title": "test_cases",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete test_cases"
+      },
+      {
+        "id": "s3",
+        "title": "integration_tests",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete integration_tests"
+      }
+    ],
+    "tags": [
+      "python",
+      "django",
+      "api"
+    ],
+    "description": "Django Testing framework template"
+  },
+  {
+    "id": "py_django_django_deployment",
+    "category": "python",
+    "subcategory": "django",
+    "title": "Django Deployment",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "settings",
+        "dependencies": [],
+        "description": "Complete settings"
+      },
+      {
+        "id": "s1",
+        "title": "wsgi",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete wsgi"
+      },
+      {
+        "id": "s2",
+        "title": "static_files",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete static_files"
+      },
+      {
+        "id": "s3",
+        "title": "database_config",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete database_config"
+      }
+    ],
+    "tags": [
+      "python",
+      "django",
+      "api"
+    ],
+    "description": "Django Deployment framework template"
+  },
+  {
+    "id": "py_flask_flask_rest_api",
+    "category": "python",
+    "subcategory": "flask",
+    "title": "Flask REST API",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "app_factory",
+        "dependencies": [],
+        "description": "Complete app_factory"
+      },
+      {
+        "id": "s1",
+        "title": "blueprints",
+        "dependencies": [],
+        "description": "Complete blueprints"
+      },
+      {
+        "id": "s2",
+        "title": "models",
+        "dependencies": [],
+        "description": "Complete models"
+      },
+      {
+        "id": "s3",
+        "title": "routes",
+        "dependencies": [],
+        "description": "Complete routes"
+      },
+      {
+        "id": "s4",
+        "title": "error_handlers",
+        "dependencies": [],
+        "description": "Complete error_handlers"
+      }
+    ],
+    "tags": [
+      "python",
+      "flask",
+      "api"
+    ],
+    "description": "Flask REST API framework template"
+  },
+  {
+    "id": "py_flask_flask_sqlalchemy",
+    "category": "python",
+    "subcategory": "flask",
+    "title": "Flask SQLAlchemy",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "config",
+        "dependencies": [],
+        "description": "Complete config"
+      },
+      {
+        "id": "s1",
+        "title": "models",
+        "dependencies": [],
+        "description": "Complete models"
+      },
+      {
+        "id": "s2",
+        "title": "migrations",
+        "dependencies": [],
+        "description": "Complete migrations"
+      },
+      {
+        "id": "s3",
+        "title": "queries",
+        "dependencies": [],
+        "description": "Complete queries"
+      },
+      {
+        "id": "s4",
+        "title": "session_management",
+        "dependencies": [],
+        "description": "Complete session_management"
+      }
+    ],
+    "tags": [
+      "python",
+      "flask",
+      "api"
+    ],
+    "description": "Flask SQLAlchemy framework template"
+  },
+  {
+    "id": "py_flask_flask_authentication",
+    "category": "python",
+    "subcategory": "flask",
+    "title": "Flask Authentication",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "login_manager",
+        "dependencies": [],
+        "description": "Complete login_manager"
+      },
+      {
+        "id": "s1",
+        "title": "user_loader",
+        "dependencies": [],
+        "description": "Complete user_loader"
+      },
+      {
+        "id": "s2",
+        "title": "login_routes",
+        "dependencies": [],
+        "description": "Complete login_routes"
+      },
+      {
+        "id": "s3",
+        "title": "decorators",
+        "dependencies": [],
+        "description": "Complete decorators"
+      }
+    ],
+    "tags": [
+      "python",
+      "flask",
+      "api"
+    ],
+    "description": "Flask Authentication framework template"
+  },
+  {
+    "id": "py_flask_flask_blueprints",
+    "category": "python",
+    "subcategory": "flask",
+    "title": "Flask Blueprints",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "blueprint_structure",
+        "dependencies": [],
+        "description": "Complete blueprint_structure"
+      },
+      {
+        "id": "s1",
+        "title": "routes",
+        "dependencies": [],
+        "description": "Complete routes"
+      },
+      {
+        "id": "s2",
+        "title": "templates",
+        "dependencies": [],
+        "description": "Complete templates"
+      },
+      {
+        "id": "s3",
+        "title": "registration",
+        "dependencies": [],
+        "description": "Complete registration"
+      }
+    ],
+    "tags": [
+      "python",
+      "flask",
+      "api"
+    ],
+    "description": "Flask Blueprints framework template"
+  },
+  {
+    "id": "py_flask_flask_error_handling",
+    "category": "python",
+    "subcategory": "flask",
+    "title": "Flask Error Handling",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "custom_errors",
+        "dependencies": [],
+        "description": "Complete custom_errors"
+      },
+      {
+        "id": "s1",
+        "title": "handlers",
+        "dependencies": [],
+        "description": "Complete handlers"
+      },
+      {
+        "id": "s2",
+        "title": "logging",
+        "dependencies": [],
+        "description": "Complete logging"
+      },
+      {
+        "id": "s3",
+        "title": "responses",
+        "dependencies": [],
+        "description": "Complete responses"
+      }
+    ],
+    "tags": [
+      "python",
+      "flask",
+      "api"
+    ],
+    "description": "Flask Error Handling framework template"
+  },
+  {
+    "id": "py_async_async_http_client",
+    "category": "python",
+    "subcategory": "async",
+    "title": "Async HTTP Client",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "client_config",
+        "dependencies": [],
+        "description": "Complete client_config"
+      },
+      {
+        "id": "s1",
+        "title": "request_methods",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete request_methods"
+      },
+      {
+        "id": "s2",
+        "title": "retry_logic",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete retry_logic"
+      },
+      {
+        "id": "s3",
+        "title": "error_handling",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete error_handling"
+      }
+    ],
+    "tags": [
+      "python",
+      "async",
+      "asyncio"
+    ],
+    "description": "Async HTTP Client framework template"
+  },
+  {
+    "id": "py_async_async_database",
+    "category": "python",
+    "subcategory": "async",
+    "title": "Async Database",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "connection_pool",
+        "dependencies": [],
+        "description": "Complete connection_pool"
+      },
+      {
+        "id": "s1",
+        "title": "queries",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete queries"
+      },
+      {
+        "id": "s2",
+        "title": "transactions",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete transactions"
+      },
+      {
+        "id": "s3",
+        "title": "models",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete models"
+      }
+    ],
+    "tags": [
+      "python",
+      "async",
+      "asyncio"
+    ],
+    "description": "Async Database framework template"
+  },
+  {
+    "id": "py_async_async_websocket_server",
+    "category": "python",
+    "subcategory": "async",
+    "title": "Async WebSocket Server",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "server_setup",
+        "dependencies": [],
+        "description": "Complete server_setup"
+      },
+      {
+        "id": "s1",
+        "title": "connection_handling",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete connection_handling"
+      },
+      {
+        "id": "s2",
+        "title": "message_processing",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete message_processing"
+      }
+    ],
+    "tags": [
+      "python",
+      "async",
+      "asyncio"
+    ],
+    "description": "Async WebSocket Server framework template"
+  },
+  {
+    "id": "py_async_async_task_queue",
+    "category": "python",
+    "subcategory": "async",
+    "title": "Async Task Queue",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "task_definitions",
+        "dependencies": [],
+        "description": "Complete task_definitions"
+      },
+      {
+        "id": "s1",
+        "title": "queue",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete queue"
+      },
+      {
+        "id": "s2",
+        "title": "workers",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete workers"
+      },
+      {
+        "id": "s3",
+        "title": "results",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete results"
+      }
+    ],
+    "tags": [
+      "python",
+      "async",
+      "asyncio"
+    ],
+    "description": "Async Task Queue framework template"
+  },
+  {
+    "id": "py_async_async_file_processing",
+    "category": "python",
+    "subcategory": "async",
+    "title": "Async File Processing",
+    "persona": "python_backend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "file_readers",
+        "dependencies": [],
+        "description": "Complete file_readers"
+      },
+      {
+        "id": "s1",
+        "title": "processors",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete processors"
+      },
+      {
+        "id": "s2",
+        "title": "writers",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete writers"
+      },
+      {
+        "id": "s3",
+        "title": "pipeline",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete pipeline"
+      }
+    ],
+    "tags": [
+      "python",
+      "async",
+      "asyncio"
+    ],
+    "description": "Async File Processing framework template"
+  },
+  {
+    "id": "py_data_pandas_etl_pipeline",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Pandas ETL Pipeline",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "data_extraction",
+        "dependencies": [],
+        "description": "Complete data_extraction"
+      },
+      {
+        "id": "s1",
+        "title": "cleaning",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete cleaning"
+      },
+      {
+        "id": "s2",
+        "title": "transformation",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete transformation"
+      },
+      {
+        "id": "s3",
+        "title": "validation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s4",
+        "title": "loading",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete loading"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Pandas ETL Pipeline framework template"
+  },
+  {
+    "id": "py_data_pandas_data_cleaning",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Pandas Data Cleaning",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "missing_values",
+        "dependencies": [],
+        "description": "Complete missing_values"
+      },
+      {
+        "id": "s1",
+        "title": "duplicates",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete duplicates"
+      },
+      {
+        "id": "s2",
+        "title": "outliers",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete outliers"
+      },
+      {
+        "id": "s3",
+        "title": "type_conversion",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete type_conversion"
+      },
+      {
+        "id": "s4",
+        "title": "normalization",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete normalization"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Pandas Data Cleaning framework template"
+  },
+  {
+    "id": "py_data_pandas_aggregation_report",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Pandas Aggregation Report",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "data_loading",
+        "dependencies": [],
+        "description": "Complete data_loading"
+      },
+      {
+        "id": "s1",
+        "title": "groupby_operations",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete groupby_operations"
+      },
+      {
+        "id": "s2",
+        "title": "pivoting",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete pivoting"
+      },
+      {
+        "id": "s3",
+        "title": "formatting",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete formatting"
+      },
+      {
+        "id": "s4",
+        "title": "export",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete export"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Pandas Aggregation Report framework template"
+  },
+  {
+    "id": "py_data_pandas_time_series",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Pandas Time Series",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "datetime_parsing",
+        "dependencies": [],
+        "description": "Complete datetime_parsing"
+      },
+      {
+        "id": "s1",
+        "title": "resampling",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete resampling"
+      },
+      {
+        "id": "s2",
+        "title": "rolling_windows",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete rolling_windows"
+      },
+      {
+        "id": "s3",
+        "title": "interpolation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete interpolation"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Pandas Time Series framework template"
+  },
+  {
+    "id": "py_data_pandas_merge_operations",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Pandas Merge Operations",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "left_join",
+        "dependencies": [],
+        "description": "Complete left_join"
+      },
+      {
+        "id": "s1",
+        "title": "inner_join",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete inner_join"
+      },
+      {
+        "id": "s2",
+        "title": "merge_validation",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete merge_validation"
+      },
+      {
+        "id": "s3",
+        "title": "deduplication",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete deduplication"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Pandas Merge Operations framework template"
+  },
+  {
+    "id": "py_data_numpy_array_operations",
+    "category": "python",
+    "subcategory": "data",
+    "title": "NumPy Array Operations",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "array_creation",
+        "dependencies": [],
+        "description": "Complete array_creation"
+      },
+      {
+        "id": "s1",
+        "title": "broadcasting",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete broadcasting"
+      },
+      {
+        "id": "s2",
+        "title": "vectorization",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete vectorization"
+      },
+      {
+        "id": "s3",
+        "title": "performance",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete performance"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "NumPy Array Operations framework template"
+  },
+  {
+    "id": "py_data_numpy_linear_algebra",
+    "category": "python",
+    "subcategory": "data",
+    "title": "NumPy Linear Algebra",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "matrices",
+        "dependencies": [],
+        "description": "Complete matrices"
+      },
+      {
+        "id": "s1",
+        "title": "operations",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete operations"
+      },
+      {
+        "id": "s2",
+        "title": "decomposition",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete decomposition"
+      },
+      {
+        "id": "s3",
+        "title": "solving",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete solving"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "NumPy Linear Algebra framework template"
+  },
+  {
+    "id": "py_data_polars_fast_processing",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Polars Fast Processing",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "lazy_evaluation",
+        "dependencies": [],
+        "description": "Complete lazy_evaluation"
+      },
+      {
+        "id": "s1",
+        "title": "expressions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete expressions"
+      },
+      {
+        "id": "s2",
+        "title": "groupby",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete groupby"
+      },
+      {
+        "id": "s3",
+        "title": "joins",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete joins"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Polars Fast Processing framework template"
+  },
+  {
+    "id": "py_data_data_validation_pydantic",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Data Validation Pydantic",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "models",
+        "dependencies": [],
+        "description": "Complete models"
+      },
+      {
+        "id": "s1",
+        "title": "validators",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete validators"
+      },
+      {
+        "id": "s2",
+        "title": "parsing",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete parsing"
+      },
+      {
+        "id": "s3",
+        "title": "error_handling",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete error_handling"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Data Validation Pydantic framework template"
+  },
+  {
+    "id": "py_data_data_validation_pandera",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Data Validation Pandera",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "schemas",
+        "dependencies": [],
+        "description": "Complete schemas"
+      },
+      {
+        "id": "s1",
+        "title": "checks",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete checks"
+      },
+      {
+        "id": "s2",
+        "title": "transformations",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete transformations"
+      },
+      {
+        "id": "s3",
+        "title": "reporting",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete reporting"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Data Validation Pandera framework template"
+  },
+  {
+    "id": "py_data_csv_processing",
+    "category": "python",
+    "subcategory": "data",
+    "title": "CSV Processing",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "reading",
+        "dependencies": [],
+        "description": "Complete reading"
+      },
+      {
+        "id": "s1",
+        "title": "chunked_processing",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete chunked_processing"
+      },
+      {
+        "id": "s2",
+        "title": "writing",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete writing"
+      },
+      {
+        "id": "s3",
+        "title": "encoding",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete encoding"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "CSV Processing framework template"
+  },
+  {
+    "id": "py_data_json_processing",
+    "category": "python",
+    "subcategory": "data",
+    "title": "JSON Processing",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parsing",
+        "dependencies": [],
+        "description": "Complete parsing"
+      },
+      {
+        "id": "s1",
+        "title": "normalization",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete normalization"
+      },
+      {
+        "id": "s2",
+        "title": "nested_extraction",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete nested_extraction"
+      },
+      {
+        "id": "s3",
+        "title": "export",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete export"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "JSON Processing framework template"
+  },
+  {
+    "id": "py_data_parquet_processing",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Parquet Processing",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "reading",
+        "dependencies": [],
+        "description": "Complete reading"
+      },
+      {
+        "id": "s1",
+        "title": "partitioning",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete partitioning"
+      },
+      {
+        "id": "s2",
+        "title": "compression",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete compression"
+      },
+      {
+        "id": "s3",
+        "title": "metadata",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete metadata"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Parquet Processing framework template"
+  },
+  {
+    "id": "py_data_excel_processing",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Excel Processing",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "reading",
+        "dependencies": [],
+        "description": "Complete reading"
+      },
+      {
+        "id": "s1",
+        "title": "sheets",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete sheets"
+      },
+      {
+        "id": "s2",
+        "title": "formatting",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete formatting"
+      },
+      {
+        "id": "s3",
+        "title": "writing",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete writing"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Excel Processing framework template"
+  },
+  {
+    "id": "py_data_database_etl",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Database ETL",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "connection",
+        "dependencies": [],
+        "description": "Complete connection"
+      },
+      {
+        "id": "s1",
+        "title": "extraction",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete extraction"
+      },
+      {
+        "id": "s2",
+        "title": "transformation",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete transformation"
+      },
+      {
+        "id": "s3",
+        "title": "upsert",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete upsert"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Database ETL framework template"
+  },
+  {
+    "id": "py_data_api_data_extraction",
+    "category": "python",
+    "subcategory": "data",
+    "title": "API Data Extraction",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "pagination",
+        "dependencies": [],
+        "description": "Complete pagination"
+      },
+      {
+        "id": "s1",
+        "title": "rate_limiting",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete rate_limiting"
+      },
+      {
+        "id": "s2",
+        "title": "error_handling",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete error_handling"
+      },
+      {
+        "id": "s3",
+        "title": "storage",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete storage"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "API Data Extraction framework template"
+  },
+  {
+    "id": "py_data_data_quality_checks",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Data Quality Checks",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "completeness",
+        "dependencies": [],
+        "description": "Complete completeness"
+      },
+      {
+        "id": "s1",
+        "title": "consistency",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete consistency"
+      },
+      {
+        "id": "s2",
+        "title": "accuracy",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete accuracy"
+      },
+      {
+        "id": "s3",
+        "title": "timeliness",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete timeliness"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Data Quality Checks framework template"
+  },
+  {
+    "id": "py_data_data_deduplication",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Data Deduplication",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "exact_matching",
+        "dependencies": [],
+        "description": "Complete exact_matching"
+      },
+      {
+        "id": "s1",
+        "title": "fuzzy_matching",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete fuzzy_matching"
+      },
+      {
+        "id": "s2",
+        "title": "clustering",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete clustering"
+      },
+      {
+        "id": "s3",
+        "title": "merge_rules",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete merge_rules"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Data Deduplication framework template"
+  },
+  {
+    "id": "py_data_feature_store",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Feature Store",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "feature_definitions",
+        "dependencies": [],
+        "description": "Complete feature_definitions"
+      },
+      {
+        "id": "s1",
+        "title": "computation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete computation"
+      },
+      {
+        "id": "s2",
+        "title": "storage",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete storage"
+      },
+      {
+        "id": "s3",
+        "title": "retrieval",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete retrieval"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Feature Store framework template"
+  },
+  {
+    "id": "py_data_data_catalog",
+    "category": "python",
+    "subcategory": "data",
+    "title": "Data Catalog",
+    "persona": "python_data",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "metadata_extraction",
+        "dependencies": [],
+        "description": "Complete metadata_extraction"
+      },
+      {
+        "id": "s1",
+        "title": "lineage",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete lineage"
+      },
+      {
+        "id": "s2",
+        "title": "documentation",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete documentation"
+      },
+      {
+        "id": "s3",
+        "title": "search",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete search"
+      }
+    ],
+    "tags": [
+      "python",
+      "data",
+      "etl"
+    ],
+    "description": "Data Catalog framework template"
+  },
+  {
+    "id": "py_ml_pytorch_training_loop",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "PyTorch Training Loop",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "dataset",
+        "dependencies": [],
+        "description": "Complete dataset"
+      },
+      {
+        "id": "s1",
+        "title": "dataloader",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete dataloader"
+      },
+      {
+        "id": "s2",
+        "title": "model",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete model"
+      },
+      {
+        "id": "s3",
+        "title": "training_loop",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete training_loop"
+      },
+      {
+        "id": "s4",
+        "title": "validation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s5",
+        "title": "checkpointing",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete checkpointing"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "PyTorch Training Loop framework template"
+  },
+  {
+    "id": "py_ml_pytorch_custom_model",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "PyTorch Custom Model",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "layers",
+        "dependencies": [],
+        "description": "Complete layers"
+      },
+      {
+        "id": "s1",
+        "title": "forward_pass",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete forward_pass"
+      },
+      {
+        "id": "s2",
+        "title": "initialization",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete initialization"
+      },
+      {
+        "id": "s3",
+        "title": "hooks",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete hooks"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "PyTorch Custom Model framework template"
+  },
+  {
+    "id": "py_ml_pytorch_transfer_learning",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "PyTorch Transfer Learning",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "pretrained_model",
+        "dependencies": [],
+        "description": "Complete pretrained_model"
+      },
+      {
+        "id": "s1",
+        "title": "frozen_layers",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete frozen_layers"
+      },
+      {
+        "id": "s2",
+        "title": "new_head",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete new_head"
+      },
+      {
+        "id": "s3",
+        "title": "fine_tuning",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete fine_tuning"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "PyTorch Transfer Learning framework template"
+  },
+  {
+    "id": "py_ml_pytorch_data_augmentation",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "PyTorch Data Augmentation",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "transforms",
+        "dependencies": [],
+        "description": "Complete transforms"
+      },
+      {
+        "id": "s1",
+        "title": "composition",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete composition"
+      },
+      {
+        "id": "s2",
+        "title": "custom_transforms",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete custom_transforms"
+      },
+      {
+        "id": "s3",
+        "title": "pipeline",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete pipeline"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "PyTorch Data Augmentation framework template"
+  },
+  {
+    "id": "py_ml_pytorch_distributed_training",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "PyTorch Distributed Training",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "setup",
+        "dependencies": [],
+        "description": "Complete setup"
+      },
+      {
+        "id": "s1",
+        "title": "model_wrapping",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete model_wrapping"
+      },
+      {
+        "id": "s2",
+        "title": "data_parallel",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete data_parallel"
+      },
+      {
+        "id": "s3",
+        "title": "gradient_sync",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete gradient_sync"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "PyTorch Distributed Training framework template"
+  },
+  {
+    "id": "py_ml_sklearn_pipeline",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "Sklearn Pipeline",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "preprocessing",
+        "dependencies": [],
+        "description": "Complete preprocessing"
+      },
+      {
+        "id": "s1",
+        "title": "feature_selection",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete feature_selection"
+      },
+      {
+        "id": "s2",
+        "title": "model",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete model"
+      },
+      {
+        "id": "s3",
+        "title": "evaluation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete evaluation"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "Sklearn Pipeline framework template"
+  },
+  {
+    "id": "py_ml_sklearn_classification",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "Sklearn Classification",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "data_prep",
+        "dependencies": [],
+        "description": "Complete data_prep"
+      },
+      {
+        "id": "s1",
+        "title": "model_selection",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete model_selection"
+      },
+      {
+        "id": "s2",
+        "title": "training",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete training"
+      },
+      {
+        "id": "s3",
+        "title": "metrics",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete metrics"
+      },
+      {
+        "id": "s4",
+        "title": "tuning",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete tuning"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "Sklearn Classification framework template"
+  },
+  {
+    "id": "py_ml_sklearn_regression",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "Sklearn Regression",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "data_prep",
+        "dependencies": [],
+        "description": "Complete data_prep"
+      },
+      {
+        "id": "s1",
+        "title": "model_selection",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete model_selection"
+      },
+      {
+        "id": "s2",
+        "title": "training",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete training"
+      },
+      {
+        "id": "s3",
+        "title": "metrics",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete metrics"
+      },
+      {
+        "id": "s4",
+        "title": "residuals",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete residuals"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "Sklearn Regression framework template"
+  },
+  {
+    "id": "py_ml_sklearn_clustering",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "Sklearn Clustering",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "preprocessing",
+        "dependencies": [],
+        "description": "Complete preprocessing"
+      },
+      {
+        "id": "s1",
+        "title": "clustering",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete clustering"
+      },
+      {
+        "id": "s2",
+        "title": "evaluation",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete evaluation"
+      },
+      {
+        "id": "s3",
+        "title": "visualization",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete visualization"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "Sklearn Clustering framework template"
+  },
+  {
+    "id": "py_ml_huggingface_fine-tuning",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "HuggingFace Fine-tuning",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "dataset",
+        "dependencies": [],
+        "description": "Complete dataset"
+      },
+      {
+        "id": "s1",
+        "title": "tokenizer",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete tokenizer"
+      },
+      {
+        "id": "s2",
+        "title": "model",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete model"
+      },
+      {
+        "id": "s3",
+        "title": "trainer",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete trainer"
+      },
+      {
+        "id": "s4",
+        "title": "evaluation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete evaluation"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "HuggingFace Fine-tuning framework template"
+  },
+  {
+    "id": "py_ml_huggingface_inference",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "HuggingFace Inference",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "model_loading",
+        "dependencies": [],
+        "description": "Complete model_loading"
+      },
+      {
+        "id": "s1",
+        "title": "tokenization",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete tokenization"
+      },
+      {
+        "id": "s2",
+        "title": "generation",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete generation"
+      },
+      {
+        "id": "s3",
+        "title": "post_processing",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete post_processing"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "HuggingFace Inference framework template"
+  },
+  {
+    "id": "py_ml_huggingface_custom_dataset",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "HuggingFace Custom Dataset",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "dataset_class",
+        "dependencies": [],
+        "description": "Complete dataset_class"
+      },
+      {
+        "id": "s1",
+        "title": "preprocessing",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete preprocessing"
+      },
+      {
+        "id": "s2",
+        "title": "batching",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete batching"
+      },
+      {
+        "id": "s3",
+        "title": "caching",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete caching"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "HuggingFace Custom Dataset framework template"
+  },
+  {
+    "id": "py_ml_model_evaluation_suite",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "Model Evaluation Suite",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "metrics",
+        "dependencies": [],
+        "description": "Complete metrics"
+      },
+      {
+        "id": "s1",
+        "title": "cross_validation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete cross_validation"
+      },
+      {
+        "id": "s2",
+        "title": "learning_curves",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete learning_curves"
+      },
+      {
+        "id": "s3",
+        "title": "confusion_matrix",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete confusion_matrix"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "Model Evaluation Suite framework template"
+  },
+  {
+    "id": "py_ml_hyperparameter_tuning",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "Hyperparameter Tuning",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "search_space",
+        "dependencies": [],
+        "description": "Complete search_space"
+      },
+      {
+        "id": "s1",
+        "title": "objective",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete objective"
+      },
+      {
+        "id": "s2",
+        "title": "optimizer",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete optimizer"
+      },
+      {
+        "id": "s3",
+        "title": "analysis",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete analysis"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "Hyperparameter Tuning framework template"
+  },
+  {
+    "id": "py_ml_model_export_onnx",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "Model Export ONNX",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "model_prep",
+        "dependencies": [],
+        "description": "Complete model_prep"
+      },
+      {
+        "id": "s1",
+        "title": "export",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete export"
+      },
+      {
+        "id": "s2",
+        "title": "verification",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete verification"
+      },
+      {
+        "id": "s3",
+        "title": "optimization",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete optimization"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "Model Export ONNX framework template"
+  },
+  {
+    "id": "py_ml_mlflow_experiment",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "MLflow Experiment",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "tracking",
+        "dependencies": [],
+        "description": "Complete tracking"
+      },
+      {
+        "id": "s1",
+        "title": "parameters",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete parameters"
+      },
+      {
+        "id": "s2",
+        "title": "metrics",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete metrics"
+      },
+      {
+        "id": "s3",
+        "title": "artifacts",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete artifacts"
+      },
+      {
+        "id": "s4",
+        "title": "registration",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete registration"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "MLflow Experiment framework template"
+  },
+  {
+    "id": "py_ml_feature_engineering",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "Feature Engineering",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "numerical",
+        "dependencies": [],
+        "description": "Complete numerical"
+      },
+      {
+        "id": "s1",
+        "title": "categorical",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete categorical"
+      },
+      {
+        "id": "s2",
+        "title": "text",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete text"
+      },
+      {
+        "id": "s3",
+        "title": "temporal",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete temporal"
+      },
+      {
+        "id": "s4",
+        "title": "interactions",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete interactions"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "Feature Engineering framework template"
+  },
+  {
+    "id": "py_ml_imbalanced_data",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "Imbalanced Data",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "sampling",
+        "dependencies": [],
+        "description": "Complete sampling"
+      },
+      {
+        "id": "s1",
+        "title": "weighting",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete weighting"
+      },
+      {
+        "id": "s2",
+        "title": "threshold_tuning",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete threshold_tuning"
+      },
+      {
+        "id": "s3",
+        "title": "evaluation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete evaluation"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "Imbalanced Data framework template"
+  },
+  {
+    "id": "py_ml_time_series_forecasting",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "Time Series Forecasting",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "data_prep",
+        "dependencies": [],
+        "description": "Complete data_prep"
+      },
+      {
+        "id": "s1",
+        "title": "features",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete features"
+      },
+      {
+        "id": "s2",
+        "title": "model",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete model"
+      },
+      {
+        "id": "s3",
+        "title": "validation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s4",
+        "title": "prediction",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete prediction"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "Time Series Forecasting framework template"
+  },
+  {
+    "id": "py_ml_nlp_text_classification",
+    "category": "python",
+    "subcategory": "ml",
+    "title": "NLP Text Classification",
+    "persona": "python_ml",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "preprocessing",
+        "dependencies": [],
+        "description": "Complete preprocessing"
+      },
+      {
+        "id": "s1",
+        "title": "embeddings",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete embeddings"
+      },
+      {
+        "id": "s2",
+        "title": "model",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete model"
+      },
+      {
+        "id": "s3",
+        "title": "training",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete training"
+      },
+      {
+        "id": "s4",
+        "title": "inference",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete inference"
+      }
+    ],
+    "tags": [
+      "python",
+      "ml",
+      "pytorch",
+      "sklearn"
+    ],
+    "description": "NLP Text Classification framework template"
+  },
+  {
+    "id": "py_test_pytest_unit_tests",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Pytest Unit Tests",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "fixtures",
+        "dependencies": [],
+        "description": "Complete fixtures"
+      },
+      {
+        "id": "s1",
+        "title": "test_functions",
+        "dependencies": [],
+        "description": "Complete test_functions"
+      },
+      {
+        "id": "s2",
+        "title": "assertions",
+        "dependencies": [],
+        "description": "Complete assertions"
+      },
+      {
+        "id": "s3",
+        "title": "parametrize",
+        "dependencies": [],
+        "description": "Complete parametrize"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Pytest Unit Tests framework template"
+  },
+  {
+    "id": "py_test_pytest_fixtures",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Pytest Fixtures",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "setup",
+        "dependencies": [],
+        "description": "Complete setup"
+      },
+      {
+        "id": "s1",
+        "title": "teardown",
+        "dependencies": [],
+        "description": "Complete teardown"
+      },
+      {
+        "id": "s2",
+        "title": "scoped",
+        "dependencies": [],
+        "description": "Complete scoped"
+      },
+      {
+        "id": "s3",
+        "title": "factories",
+        "dependencies": [],
+        "description": "Complete factories"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Pytest Fixtures framework template"
+  },
+  {
+    "id": "py_test_pytest_mocking",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Pytest Mocking",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "patch",
+        "dependencies": [],
+        "description": "Complete patch"
+      },
+      {
+        "id": "s1",
+        "title": "mock_objects",
+        "dependencies": [],
+        "description": "Complete mock_objects"
+      },
+      {
+        "id": "s2",
+        "title": "side_effects",
+        "dependencies": [],
+        "description": "Complete side_effects"
+      },
+      {
+        "id": "s3",
+        "title": "assertions",
+        "dependencies": [],
+        "description": "Complete assertions"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Pytest Mocking framework template"
+  },
+  {
+    "id": "py_test_pytest_api_tests",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Pytest API Tests",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "client_fixture",
+        "dependencies": [],
+        "description": "Complete client_fixture"
+      },
+      {
+        "id": "s1",
+        "title": "test_endpoints",
+        "dependencies": [],
+        "description": "Complete test_endpoints"
+      },
+      {
+        "id": "s2",
+        "title": "auth_tests",
+        "dependencies": [],
+        "description": "Complete auth_tests"
+      },
+      {
+        "id": "s3",
+        "title": "error_tests",
+        "dependencies": [],
+        "description": "Complete error_tests"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Pytest API Tests framework template"
+  },
+  {
+    "id": "py_test_pytest_database_tests",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Pytest Database Tests",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "db_fixture",
+        "dependencies": [],
+        "description": "Complete db_fixture"
+      },
+      {
+        "id": "s1",
+        "title": "transactions",
+        "dependencies": [],
+        "description": "Complete transactions"
+      },
+      {
+        "id": "s2",
+        "title": "factories",
+        "dependencies": [],
+        "description": "Complete factories"
+      },
+      {
+        "id": "s3",
+        "title": "cleanup",
+        "dependencies": [],
+        "description": "Complete cleanup"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Pytest Database Tests framework template"
+  },
+  {
+    "id": "py_test_pytest_async_tests",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Pytest Async Tests",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "async_fixtures",
+        "dependencies": [],
+        "description": "Complete async_fixtures"
+      },
+      {
+        "id": "s1",
+        "title": "async_tests",
+        "dependencies": [],
+        "description": "Complete async_tests"
+      },
+      {
+        "id": "s2",
+        "title": "event_loop",
+        "dependencies": [],
+        "description": "Complete event_loop"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Pytest Async Tests framework template"
+  },
+  {
+    "id": "py_test_pytest_parametrize",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Pytest Parametrize",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "parameters",
+        "dependencies": [],
+        "description": "Complete parameters"
+      },
+      {
+        "id": "s1",
+        "title": "ids",
+        "dependencies": [],
+        "description": "Complete ids"
+      },
+      {
+        "id": "s2",
+        "title": "indirect",
+        "dependencies": [],
+        "description": "Complete indirect"
+      },
+      {
+        "id": "s3",
+        "title": "combinations",
+        "dependencies": [],
+        "description": "Complete combinations"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Pytest Parametrize framework template"
+  },
+  {
+    "id": "py_test_pytest_markers",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Pytest Markers",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "skip",
+        "dependencies": [],
+        "description": "Complete skip"
+      },
+      {
+        "id": "s1",
+        "title": "xfail",
+        "dependencies": [],
+        "description": "Complete xfail"
+      },
+      {
+        "id": "s2",
+        "title": "custom_markers",
+        "dependencies": [],
+        "description": "Complete custom_markers"
+      },
+      {
+        "id": "s3",
+        "title": "filtering",
+        "dependencies": [],
+        "description": "Complete filtering"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Pytest Markers framework template"
+  },
+  {
+    "id": "py_test_property_testing_hypothesis",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Property Testing Hypothesis",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "strategies",
+        "dependencies": [],
+        "description": "Complete strategies"
+      },
+      {
+        "id": "s1",
+        "title": "properties",
+        "dependencies": [],
+        "description": "Complete properties"
+      },
+      {
+        "id": "s2",
+        "title": "examples",
+        "dependencies": [],
+        "description": "Complete examples"
+      },
+      {
+        "id": "s3",
+        "title": "settings",
+        "dependencies": [],
+        "description": "Complete settings"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Property Testing Hypothesis framework template"
+  },
+  {
+    "id": "py_test_coverage_configuration",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Coverage Configuration",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "setup",
+        "dependencies": [],
+        "description": "Complete setup"
+      },
+      {
+        "id": "s1",
+        "title": "includes",
+        "dependencies": [],
+        "description": "Complete includes"
+      },
+      {
+        "id": "s2",
+        "title": "excludes",
+        "dependencies": [],
+        "description": "Complete excludes"
+      },
+      {
+        "id": "s3",
+        "title": "reporting",
+        "dependencies": [],
+        "description": "Complete reporting"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Coverage Configuration framework template"
+  },
+  {
+    "id": "py_test_integration_test_suite",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Integration Test Suite",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "environment",
+        "dependencies": [],
+        "description": "Complete environment"
+      },
+      {
+        "id": "s1",
+        "title": "fixtures",
+        "dependencies": [],
+        "description": "Complete fixtures"
+      },
+      {
+        "id": "s2",
+        "title": "tests",
+        "dependencies": [],
+        "description": "Complete tests"
+      },
+      {
+        "id": "s3",
+        "title": "cleanup",
+        "dependencies": [],
+        "description": "Complete cleanup"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Integration Test Suite framework template"
+  },
+  {
+    "id": "py_test_test_data_factories",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Test Data Factories",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "factory_definitions",
+        "dependencies": [],
+        "description": "Complete factory_definitions"
+      },
+      {
+        "id": "s1",
+        "title": "traits",
+        "dependencies": [],
+        "description": "Complete traits"
+      },
+      {
+        "id": "s2",
+        "title": "sequences",
+        "dependencies": [],
+        "description": "Complete sequences"
+      },
+      {
+        "id": "s3",
+        "title": "relations",
+        "dependencies": [],
+        "description": "Complete relations"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Test Data Factories framework template"
+  },
+  {
+    "id": "py_test_snapshot_testing",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Snapshot Testing",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "setup",
+        "dependencies": [],
+        "description": "Complete setup"
+      },
+      {
+        "id": "s1",
+        "title": "snapshots",
+        "dependencies": [],
+        "description": "Complete snapshots"
+      },
+      {
+        "id": "s2",
+        "title": "updates",
+        "dependencies": [],
+        "description": "Complete updates"
+      },
+      {
+        "id": "s3",
+        "title": "comparisons",
+        "dependencies": [],
+        "description": "Complete comparisons"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Snapshot Testing framework template"
+  },
+  {
+    "id": "py_test_performance_tests",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Performance Tests",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "benchmarks",
+        "dependencies": [],
+        "description": "Complete benchmarks"
+      },
+      {
+        "id": "s1",
+        "title": "profiling",
+        "dependencies": [],
+        "description": "Complete profiling"
+      },
+      {
+        "id": "s2",
+        "title": "baselines",
+        "dependencies": [],
+        "description": "Complete baselines"
+      },
+      {
+        "id": "s3",
+        "title": "reporting",
+        "dependencies": [],
+        "description": "Complete reporting"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Performance Tests framework template"
+  },
+  {
+    "id": "py_test_contract_tests",
+    "category": "python",
+    "subcategory": "testing",
+    "title": "Contract Tests",
+    "persona": "python_testing",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "schemas",
+        "dependencies": [],
+        "description": "Complete schemas"
+      },
+      {
+        "id": "s1",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s2",
+        "title": "provider_tests",
+        "dependencies": [],
+        "description": "Complete provider_tests"
+      },
+      {
+        "id": "s3",
+        "title": "consumer_tests",
+        "dependencies": [],
+        "description": "Complete consumer_tests"
+      }
+    ],
+    "tags": [
+      "python",
+      "testing",
+      "pytest"
+    ],
+    "description": "Contract Tests framework template"
+  }
+]

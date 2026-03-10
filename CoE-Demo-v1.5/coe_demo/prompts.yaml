@@ -1,0 +1,15 @@
+# prompts.yaml — Future prompt-override configuration (NOT YET WIRED)
+#
+# This file is reserved for per-deployment prompt customisation.  When
+# implemented, entries here will override the hardcoded prompt strings in
+# templates.py / pipeline.py without requiring a code change.
+#
+# Planned keys (currently unused — production code uses inline defaults):
+#   strict_evaluator:         grading prompt injected after specialist output
+#   tier1_supervisor:         system prompt for the Nanbeige supervisor model
+#   tier2_supervisor_synthetic: prompt for synthetic-data supervisor mode
+#
+# Example (future use):
+#   strict_evaluator: "You are a strict {domain} specialist grader..."
+#   tier1_supervisor: "You are an advanced reasoning supervisor..."
+#   tier2_supervisor_synthetic: "You are a highly capable AI assistant..."

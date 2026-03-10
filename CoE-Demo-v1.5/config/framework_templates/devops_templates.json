@@ -1,0 +1,1614 @@
+[
+  {
+    "id": "devops_dockerfile_python",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Dockerfile Python",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "base_image",
+        "dependencies": [],
+        "description": "Complete base_image"
+      },
+      {
+        "id": "s1",
+        "title": "dependencies",
+        "dependencies": [],
+        "description": "Complete dependencies"
+      },
+      {
+        "id": "s2",
+        "title": "copy",
+        "dependencies": [],
+        "description": "Complete copy"
+      },
+      {
+        "id": "s3",
+        "title": "entrypoint",
+        "dependencies": [],
+        "description": "Complete entrypoint"
+      },
+      {
+        "id": "s4",
+        "title": "healthcheck",
+        "dependencies": [],
+        "description": "Complete healthcheck"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Dockerfile Python framework template"
+  },
+  {
+    "id": "devops_dockerfile_node",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Dockerfile Node",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "base_image",
+        "dependencies": [],
+        "description": "Complete base_image"
+      },
+      {
+        "id": "s1",
+        "title": "dependencies",
+        "dependencies": [],
+        "description": "Complete dependencies"
+      },
+      {
+        "id": "s2",
+        "title": "build",
+        "dependencies": [],
+        "description": "Complete build"
+      },
+      {
+        "id": "s3",
+        "title": "runtime",
+        "dependencies": [],
+        "description": "Complete runtime"
+      },
+      {
+        "id": "s4",
+        "title": "entrypoint",
+        "dependencies": [],
+        "description": "Complete entrypoint"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Dockerfile Node framework template"
+  },
+  {
+    "id": "devops_dockerfile_multi-stage",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Dockerfile Multi-stage",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "build_stage",
+        "dependencies": [],
+        "description": "Complete build_stage"
+      },
+      {
+        "id": "s1",
+        "title": "test_stage",
+        "dependencies": [],
+        "description": "Complete test_stage"
+      },
+      {
+        "id": "s2",
+        "title": "production_stage",
+        "dependencies": [],
+        "description": "Complete production_stage"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Dockerfile Multi-stage framework template"
+  },
+  {
+    "id": "devops_docker_compose_dev",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Docker Compose Dev",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "services",
+        "dependencies": [],
+        "description": "Complete services"
+      },
+      {
+        "id": "s1",
+        "title": "networks",
+        "dependencies": [],
+        "description": "Complete networks"
+      },
+      {
+        "id": "s2",
+        "title": "volumes",
+        "dependencies": [],
+        "description": "Complete volumes"
+      },
+      {
+        "id": "s3",
+        "title": "environment",
+        "dependencies": [],
+        "description": "Complete environment"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Docker Compose Dev framework template"
+  },
+  {
+    "id": "devops_docker_compose_production",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Docker Compose Production",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "services",
+        "dependencies": [],
+        "description": "Complete services"
+      },
+      {
+        "id": "s1",
+        "title": "healthchecks",
+        "dependencies": [],
+        "description": "Complete healthchecks"
+      },
+      {
+        "id": "s2",
+        "title": "resources",
+        "dependencies": [],
+        "description": "Complete resources"
+      },
+      {
+        "id": "s3",
+        "title": "logging",
+        "dependencies": [],
+        "description": "Complete logging"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Docker Compose Production framework template"
+  },
+  {
+    "id": "devops_github_actions_ci",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "GitHub Actions CI",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "trigger",
+        "dependencies": [],
+        "description": "Complete trigger"
+      },
+      {
+        "id": "s1",
+        "title": "jobs",
+        "dependencies": [],
+        "description": "Complete jobs"
+      },
+      {
+        "id": "s2",
+        "title": "steps",
+        "dependencies": [],
+        "description": "Complete steps"
+      },
+      {
+        "id": "s3",
+        "title": "artifacts",
+        "dependencies": [],
+        "description": "Complete artifacts"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "GitHub Actions CI framework template"
+  },
+  {
+    "id": "devops_github_actions_cd",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "GitHub Actions CD",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "trigger",
+        "dependencies": [],
+        "description": "Complete trigger"
+      },
+      {
+        "id": "s1",
+        "title": "build",
+        "dependencies": [],
+        "description": "Complete build"
+      },
+      {
+        "id": "s2",
+        "title": "test",
+        "dependencies": [],
+        "description": "Complete test"
+      },
+      {
+        "id": "s3",
+        "title": "deploy",
+        "dependencies": [],
+        "description": "Complete deploy"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "GitHub Actions CD framework template"
+  },
+  {
+    "id": "devops_github_actions_pr",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "GitHub Actions PR",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "trigger",
+        "dependencies": [],
+        "description": "Complete trigger"
+      },
+      {
+        "id": "s1",
+        "title": "lint",
+        "dependencies": [],
+        "description": "Complete lint"
+      },
+      {
+        "id": "s2",
+        "title": "test",
+        "dependencies": [],
+        "description": "Complete test"
+      },
+      {
+        "id": "s3",
+        "title": "coverage",
+        "dependencies": [],
+        "description": "Complete coverage"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "GitHub Actions PR framework template"
+  },
+  {
+    "id": "devops_gitlab_ci_pipeline",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "GitLab CI Pipeline",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "stages",
+        "dependencies": [],
+        "description": "Complete stages"
+      },
+      {
+        "id": "s1",
+        "title": "jobs",
+        "dependencies": [],
+        "description": "Complete jobs"
+      },
+      {
+        "id": "s2",
+        "title": "artifacts",
+        "dependencies": [],
+        "description": "Complete artifacts"
+      },
+      {
+        "id": "s3",
+        "title": "cache",
+        "dependencies": [],
+        "description": "Complete cache"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "GitLab CI Pipeline framework template"
+  },
+  {
+    "id": "devops_jenkins_pipeline",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Jenkins Pipeline",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "stages",
+        "dependencies": [],
+        "description": "Complete stages"
+      },
+      {
+        "id": "s1",
+        "title": "steps",
+        "dependencies": [],
+        "description": "Complete steps"
+      },
+      {
+        "id": "s2",
+        "title": "post",
+        "dependencies": [],
+        "description": "Complete post"
+      },
+      {
+        "id": "s3",
+        "title": "environment",
+        "dependencies": [],
+        "description": "Complete environment"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Jenkins Pipeline framework template"
+  },
+  {
+    "id": "devops_kubernetes_deployment",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Kubernetes Deployment",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "deployment",
+        "dependencies": [],
+        "description": "Complete deployment"
+      },
+      {
+        "id": "s1",
+        "title": "service",
+        "dependencies": [],
+        "description": "Complete service"
+      },
+      {
+        "id": "s2",
+        "title": "configmap",
+        "dependencies": [],
+        "description": "Complete configmap"
+      },
+      {
+        "id": "s3",
+        "title": "secrets",
+        "dependencies": [],
+        "description": "Complete secrets"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Kubernetes Deployment framework template"
+  },
+  {
+    "id": "devops_kubernetes_statefulset",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Kubernetes StatefulSet",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "statefulset",
+        "dependencies": [],
+        "description": "Complete statefulset"
+      },
+      {
+        "id": "s1",
+        "title": "service",
+        "dependencies": [],
+        "description": "Complete service"
+      },
+      {
+        "id": "s2",
+        "title": "pvc",
+        "dependencies": [],
+        "description": "Complete pvc"
+      },
+      {
+        "id": "s3",
+        "title": "init_containers",
+        "dependencies": [],
+        "description": "Complete init_containers"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Kubernetes StatefulSet framework template"
+  },
+  {
+    "id": "devops_kubernetes_ingress",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Kubernetes Ingress",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "ingress",
+        "dependencies": [],
+        "description": "Complete ingress"
+      },
+      {
+        "id": "s1",
+        "title": "tls",
+        "dependencies": [],
+        "description": "Complete tls"
+      },
+      {
+        "id": "s2",
+        "title": "rules",
+        "dependencies": [],
+        "description": "Complete rules"
+      },
+      {
+        "id": "s3",
+        "title": "annotations",
+        "dependencies": [],
+        "description": "Complete annotations"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Kubernetes Ingress framework template"
+  },
+  {
+    "id": "devops_helm_chart_basic",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Helm Chart Basic",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "chart",
+        "dependencies": [],
+        "description": "Complete chart"
+      },
+      {
+        "id": "s1",
+        "title": "values",
+        "dependencies": [],
+        "description": "Complete values"
+      },
+      {
+        "id": "s2",
+        "title": "templates",
+        "dependencies": [],
+        "description": "Complete templates"
+      },
+      {
+        "id": "s3",
+        "title": "helpers",
+        "dependencies": [],
+        "description": "Complete helpers"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Helm Chart Basic framework template"
+  },
+  {
+    "id": "devops_terraform_aws_ec2",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Terraform AWS EC2",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "provider",
+        "dependencies": [],
+        "description": "Complete provider"
+      },
+      {
+        "id": "s1",
+        "title": "vpc",
+        "dependencies": [],
+        "description": "Complete vpc"
+      },
+      {
+        "id": "s2",
+        "title": "ec2",
+        "dependencies": [],
+        "description": "Complete ec2"
+      },
+      {
+        "id": "s3",
+        "title": "security_groups",
+        "dependencies": [],
+        "description": "Complete security_groups"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Terraform AWS EC2 framework template"
+  },
+  {
+    "id": "devops_terraform_aws_rds",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Terraform AWS RDS",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "provider",
+        "dependencies": [],
+        "description": "Complete provider"
+      },
+      {
+        "id": "s1",
+        "title": "rds",
+        "dependencies": [],
+        "description": "Complete rds"
+      },
+      {
+        "id": "s2",
+        "title": "subnet_group",
+        "dependencies": [],
+        "description": "Complete subnet_group"
+      },
+      {
+        "id": "s3",
+        "title": "parameters",
+        "dependencies": [],
+        "description": "Complete parameters"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Terraform AWS RDS framework template"
+  },
+  {
+    "id": "devops_terraform_aws_s3",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Terraform AWS S3",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "bucket",
+        "dependencies": [],
+        "description": "Complete bucket"
+      },
+      {
+        "id": "s1",
+        "title": "policy",
+        "dependencies": [],
+        "description": "Complete policy"
+      },
+      {
+        "id": "s2",
+        "title": "versioning",
+        "dependencies": [],
+        "description": "Complete versioning"
+      },
+      {
+        "id": "s3",
+        "title": "lifecycle",
+        "dependencies": [],
+        "description": "Complete lifecycle"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Terraform AWS S3 framework template"
+  },
+  {
+    "id": "devops_nginx_configuration",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Nginx Configuration",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "server",
+        "dependencies": [],
+        "description": "Complete server"
+      },
+      {
+        "id": "s1",
+        "title": "location",
+        "dependencies": [],
+        "description": "Complete location"
+      },
+      {
+        "id": "s2",
+        "title": "proxy",
+        "dependencies": [],
+        "description": "Complete proxy"
+      },
+      {
+        "id": "s3",
+        "title": "ssl",
+        "dependencies": [],
+        "description": "Complete ssl"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Nginx Configuration framework template"
+  },
+  {
+    "id": "devops_prometheus_metrics",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Prometheus Metrics",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "exposition",
+        "dependencies": [],
+        "description": "Complete exposition"
+      },
+      {
+        "id": "s1",
+        "title": "labels",
+        "dependencies": [],
+        "description": "Complete labels"
+      },
+      {
+        "id": "s2",
+        "title": "types",
+        "dependencies": [],
+        "description": "Complete types"
+      },
+      {
+        "id": "s3",
+        "title": "scraping",
+        "dependencies": [],
+        "description": "Complete scraping"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Prometheus Metrics framework template"
+  },
+  {
+    "id": "devops_grafana_dashboard",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Grafana Dashboard",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "panels",
+        "dependencies": [],
+        "description": "Complete panels"
+      },
+      {
+        "id": "s1",
+        "title": "queries",
+        "dependencies": [],
+        "description": "Complete queries"
+      },
+      {
+        "id": "s2",
+        "title": "variables",
+        "dependencies": [],
+        "description": "Complete variables"
+      },
+      {
+        "id": "s3",
+        "title": "alerts",
+        "dependencies": [],
+        "description": "Complete alerts"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Grafana Dashboard framework template"
+  },
+  {
+    "id": "devops_docker_security_scan",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Docker Security Scan",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "image_scan",
+        "dependencies": [],
+        "description": "Complete image_scan"
+      },
+      {
+        "id": "s1",
+        "title": "vulnerability",
+        "dependencies": [],
+        "description": "Complete vulnerability"
+      },
+      {
+        "id": "s2",
+        "title": "compliance",
+        "dependencies": [],
+        "description": "Complete compliance"
+      },
+      {
+        "id": "s3",
+        "title": "remediation",
+        "dependencies": [],
+        "description": "Complete remediation"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Docker Security Scan framework template"
+  },
+  {
+    "id": "devops_kubernetes_rbac",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Kubernetes RBAC",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "roles",
+        "dependencies": [],
+        "description": "Complete roles"
+      },
+      {
+        "id": "s1",
+        "title": "role_bindings",
+        "dependencies": [],
+        "description": "Complete role_bindings"
+      },
+      {
+        "id": "s2",
+        "title": "service_accounts",
+        "dependencies": [],
+        "description": "Complete service_accounts"
+      },
+      {
+        "id": "s3",
+        "title": "permissions",
+        "dependencies": [],
+        "description": "Complete permissions"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Kubernetes RBAC framework template"
+  },
+  {
+    "id": "devops_kubernetes_network_policy",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Kubernetes Network Policy",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "ingress",
+        "dependencies": [],
+        "description": "Complete ingress"
+      },
+      {
+        "id": "s1",
+        "title": "egress",
+        "dependencies": [],
+        "description": "Complete egress"
+      },
+      {
+        "id": "s2",
+        "title": "selectors",
+        "dependencies": [],
+        "description": "Complete selectors"
+      },
+      {
+        "id": "s3",
+        "title": "ports",
+        "dependencies": [],
+        "description": "Complete ports"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Kubernetes Network Policy framework template"
+  },
+  {
+    "id": "devops_kubernetes_hpa",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Kubernetes HPA",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "target",
+        "dependencies": [],
+        "description": "Complete target"
+      },
+      {
+        "id": "s1",
+        "title": "metrics",
+        "dependencies": [],
+        "description": "Complete metrics"
+      },
+      {
+        "id": "s2",
+        "title": "scaling",
+        "dependencies": [],
+        "description": "Complete scaling"
+      },
+      {
+        "id": "s3",
+        "title": "behavior",
+        "dependencies": [],
+        "description": "Complete behavior"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Kubernetes HPA framework template"
+  },
+  {
+    "id": "devops_kubernetes_pod_disruption_budget",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Kubernetes Pod Disruption Budget",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "min_available",
+        "dependencies": [],
+        "description": "Complete min_available"
+      },
+      {
+        "id": "s1",
+        "title": "max_unavailable",
+        "dependencies": [],
+        "description": "Complete max_unavailable"
+      },
+      {
+        "id": "s2",
+        "title": "selectors",
+        "dependencies": [],
+        "description": "Complete selectors"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Kubernetes Pod Disruption Budget framework template"
+  },
+  {
+    "id": "devops_argocd_application",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "ArgoCD Application",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "application",
+        "dependencies": [],
+        "description": "Complete application"
+      },
+      {
+        "id": "s1",
+        "title": "sync",
+        "dependencies": [],
+        "description": "Complete sync"
+      },
+      {
+        "id": "s2",
+        "title": "health",
+        "dependencies": [],
+        "description": "Complete health"
+      },
+      {
+        "id": "s3",
+        "title": "hooks",
+        "dependencies": [],
+        "description": "Complete hooks"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "ArgoCD Application framework template"
+  },
+  {
+    "id": "devops_terraform_azure_vm",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Terraform Azure VM",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "provider",
+        "dependencies": [],
+        "description": "Complete provider"
+      },
+      {
+        "id": "s1",
+        "title": "resource_group",
+        "dependencies": [],
+        "description": "Complete resource_group"
+      },
+      {
+        "id": "s2",
+        "title": "vm",
+        "dependencies": [],
+        "description": "Complete vm"
+      },
+      {
+        "id": "s3",
+        "title": "networking",
+        "dependencies": [],
+        "description": "Complete networking"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Terraform Azure VM framework template"
+  },
+  {
+    "id": "devops_terraform_azure_aks",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Terraform Azure AKS",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "provider",
+        "dependencies": [],
+        "description": "Complete provider"
+      },
+      {
+        "id": "s1",
+        "title": "cluster",
+        "dependencies": [],
+        "description": "Complete cluster"
+      },
+      {
+        "id": "s2",
+        "title": "node_pools",
+        "dependencies": [],
+        "description": "Complete node_pools"
+      },
+      {
+        "id": "s3",
+        "title": "networking",
+        "dependencies": [],
+        "description": "Complete networking"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Terraform Azure AKS framework template"
+  },
+  {
+    "id": "devops_terraform_gcp_gke",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Terraform GCP GKE",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "provider",
+        "dependencies": [],
+        "description": "Complete provider"
+      },
+      {
+        "id": "s1",
+        "title": "cluster",
+        "dependencies": [],
+        "description": "Complete cluster"
+      },
+      {
+        "id": "s2",
+        "title": "node_pools",
+        "dependencies": [],
+        "description": "Complete node_pools"
+      },
+      {
+        "id": "s3",
+        "title": "networking",
+        "dependencies": [],
+        "description": "Complete networking"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Terraform GCP GKE framework template"
+  },
+  {
+    "id": "devops_ansible_playbook",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Ansible Playbook",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "hosts",
+        "dependencies": [],
+        "description": "Complete hosts"
+      },
+      {
+        "id": "s1",
+        "title": "vars",
+        "dependencies": [],
+        "description": "Complete vars"
+      },
+      {
+        "id": "s2",
+        "title": "tasks",
+        "dependencies": [],
+        "description": "Complete tasks"
+      },
+      {
+        "id": "s3",
+        "title": "handlers",
+        "dependencies": [],
+        "description": "Complete handlers"
+      },
+      {
+        "id": "s4",
+        "title": "roles",
+        "dependencies": [],
+        "description": "Complete roles"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Ansible Playbook framework template"
+  },
+  {
+    "id": "devops_ansible_role",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Ansible Role",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "tasks",
+        "dependencies": [],
+        "description": "Complete tasks"
+      },
+      {
+        "id": "s1",
+        "title": "handlers",
+        "dependencies": [],
+        "description": "Complete handlers"
+      },
+      {
+        "id": "s2",
+        "title": "vars",
+        "dependencies": [],
+        "description": "Complete vars"
+      },
+      {
+        "id": "s3",
+        "title": "defaults",
+        "dependencies": [],
+        "description": "Complete defaults"
+      },
+      {
+        "id": "s4",
+        "title": "templates",
+        "dependencies": [],
+        "description": "Complete templates"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Ansible Role framework template"
+  },
+  {
+    "id": "devops_shell_script_deploy",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Shell Script Deploy",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "variables",
+        "dependencies": [],
+        "description": "Complete variables"
+      },
+      {
+        "id": "s1",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s2",
+        "title": "deploy",
+        "dependencies": [],
+        "description": "Complete deploy"
+      },
+      {
+        "id": "s3",
+        "title": "rollback",
+        "dependencies": [],
+        "description": "Complete rollback"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Shell Script Deploy framework template"
+  },
+  {
+    "id": "devops_makefile_build",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Makefile Build",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "variables",
+        "dependencies": [],
+        "description": "Complete variables"
+      },
+      {
+        "id": "s1",
+        "title": "targets",
+        "dependencies": [],
+        "description": "Complete targets"
+      },
+      {
+        "id": "s2",
+        "title": "dependencies",
+        "dependencies": [],
+        "description": "Complete dependencies"
+      },
+      {
+        "id": "s3",
+        "title": "phony",
+        "dependencies": [],
+        "description": "Complete phony"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Makefile Build framework template"
+  },
+  {
+    "id": "devops_docker_registry_setup",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Docker Registry Setup",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "registry",
+        "dependencies": [],
+        "description": "Complete registry"
+      },
+      {
+        "id": "s1",
+        "title": "storage",
+        "dependencies": [],
+        "description": "Complete storage"
+      },
+      {
+        "id": "s2",
+        "title": "authentication",
+        "dependencies": [],
+        "description": "Complete authentication"
+      },
+      {
+        "id": "s3",
+        "title": "tls",
+        "dependencies": [],
+        "description": "Complete tls"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Docker Registry Setup framework template"
+  },
+  {
+    "id": "devops_log_aggregation_elk",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Log Aggregation ELK",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "elasticsearch",
+        "dependencies": [],
+        "description": "Complete elasticsearch"
+      },
+      {
+        "id": "s1",
+        "title": "logstash",
+        "dependencies": [],
+        "description": "Complete logstash"
+      },
+      {
+        "id": "s2",
+        "title": "kibana",
+        "dependencies": [],
+        "description": "Complete kibana"
+      },
+      {
+        "id": "s3",
+        "title": "beats",
+        "dependencies": [],
+        "description": "Complete beats"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Log Aggregation ELK framework template"
+  },
+  {
+    "id": "devops_monitoring_stack",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Monitoring Stack",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "prometheus",
+        "dependencies": [],
+        "description": "Complete prometheus"
+      },
+      {
+        "id": "s1",
+        "title": "grafana",
+        "dependencies": [],
+        "description": "Complete grafana"
+      },
+      {
+        "id": "s2",
+        "title": "alertmanager",
+        "dependencies": [],
+        "description": "Complete alertmanager"
+      },
+      {
+        "id": "s3",
+        "title": "exporters",
+        "dependencies": [],
+        "description": "Complete exporters"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Monitoring Stack framework template"
+  },
+  {
+    "id": "devops_service_mesh_istio",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Service Mesh Istio",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "gateway",
+        "dependencies": [],
+        "description": "Complete gateway"
+      },
+      {
+        "id": "s1",
+        "title": "virtual_service",
+        "dependencies": [],
+        "description": "Complete virtual_service"
+      },
+      {
+        "id": "s2",
+        "title": "destination_rule",
+        "dependencies": [],
+        "description": "Complete destination_rule"
+      },
+      {
+        "id": "s3",
+        "title": "policy",
+        "dependencies": [],
+        "description": "Complete policy"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Service Mesh Istio framework template"
+  },
+  {
+    "id": "devops_secrets_management_vault",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Secrets Management Vault",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "setup",
+        "dependencies": [],
+        "description": "Complete setup"
+      },
+      {
+        "id": "s1",
+        "title": "policies",
+        "dependencies": [],
+        "description": "Complete policies"
+      },
+      {
+        "id": "s2",
+        "title": "auth",
+        "dependencies": [],
+        "description": "Complete auth"
+      },
+      {
+        "id": "s3",
+        "title": "secrets",
+        "dependencies": [],
+        "description": "Complete secrets"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Secrets Management Vault framework template"
+  },
+  {
+    "id": "devops_blue_green_deployment",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Blue Green Deployment",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "setup",
+        "dependencies": [],
+        "description": "Complete setup"
+      },
+      {
+        "id": "s1",
+        "title": "switch",
+        "dependencies": [],
+        "description": "Complete switch"
+      },
+      {
+        "id": "s2",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s3",
+        "title": "rollback",
+        "dependencies": [],
+        "description": "Complete rollback"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Blue Green Deployment framework template"
+  },
+  {
+    "id": "devops_canary_deployment",
+    "category": "devops",
+    "subcategory": "infrastructure",
+    "title": "Canary Deployment",
+    "persona": "devops_containers",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "setup",
+        "dependencies": [],
+        "description": "Complete setup"
+      },
+      {
+        "id": "s1",
+        "title": "routing",
+        "dependencies": [],
+        "description": "Complete routing"
+      },
+      {
+        "id": "s2",
+        "title": "metrics",
+        "dependencies": [],
+        "description": "Complete metrics"
+      },
+      {
+        "id": "s3",
+        "title": "promotion",
+        "dependencies": [],
+        "description": "Complete promotion"
+      }
+    ],
+    "tags": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "cicd"
+    ],
+    "description": "Canary Deployment framework template"
+  }
+]

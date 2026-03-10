@@ -1,0 +1,1510 @@
+[
+  {
+    "id": "ts_api_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "API Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "request_types",
+        "dependencies": [],
+        "description": "Complete request_types"
+      },
+      {
+        "id": "s1",
+        "title": "response_types",
+        "dependencies": [],
+        "description": "Complete response_types"
+      },
+      {
+        "id": "s2",
+        "title": "error_types",
+        "dependencies": [],
+        "description": "Complete error_types"
+      },
+      {
+        "id": "s3",
+        "title": "utility_types",
+        "dependencies": [],
+        "description": "Complete utility_types"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "API Types framework template"
+  },
+  {
+    "id": "ts_generic_data_structures",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Generic Data Structures",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "list",
+        "dependencies": [],
+        "description": "Complete list"
+      },
+      {
+        "id": "s1",
+        "title": "map",
+        "dependencies": [],
+        "description": "Complete map"
+      },
+      {
+        "id": "s2",
+        "title": "set",
+        "dependencies": [],
+        "description": "Complete set"
+      },
+      {
+        "id": "s3",
+        "title": "tree",
+        "dependencies": [],
+        "description": "Complete tree"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Generic Data Structures framework template"
+  },
+  {
+    "id": "ts_type_guards",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Type Guards",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "primitive_guards",
+        "dependencies": [],
+        "description": "Complete primitive_guards"
+      },
+      {
+        "id": "s1",
+        "title": "object_guards",
+        "dependencies": [],
+        "description": "Complete object_guards"
+      },
+      {
+        "id": "s2",
+        "title": "discriminated_unions",
+        "dependencies": [],
+        "description": "Complete discriminated_unions"
+      },
+      {
+        "id": "s3",
+        "title": "assertions",
+        "dependencies": [],
+        "description": "Complete assertions"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Type Guards framework template"
+  },
+  {
+    "id": "ts_utility_types_custom",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Utility Types Custom",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "deep_partial",
+        "dependencies": [],
+        "description": "Complete deep_partial"
+      },
+      {
+        "id": "s1",
+        "title": "deep_required",
+        "dependencies": [],
+        "description": "Complete deep_required"
+      },
+      {
+        "id": "s2",
+        "title": "paths",
+        "dependencies": [],
+        "description": "Complete paths"
+      },
+      {
+        "id": "s3",
+        "title": "values",
+        "dependencies": [],
+        "description": "Complete values"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Utility Types Custom framework template"
+  },
+  {
+    "id": "ts_branded_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Branded Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "brand_definition",
+        "dependencies": [],
+        "description": "Complete brand_definition"
+      },
+      {
+        "id": "s1",
+        "title": "constructors",
+        "dependencies": [],
+        "description": "Complete constructors"
+      },
+      {
+        "id": "s2",
+        "title": "validators",
+        "dependencies": [],
+        "description": "Complete validators"
+      },
+      {
+        "id": "s3",
+        "title": "utilities",
+        "dependencies": [],
+        "description": "Complete utilities"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Branded Types framework template"
+  },
+  {
+    "id": "ts_builder_pattern",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Builder Pattern",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "builder_class",
+        "dependencies": [],
+        "description": "Complete builder_class"
+      },
+      {
+        "id": "s1",
+        "title": "methods",
+        "dependencies": [],
+        "description": "Complete methods"
+      },
+      {
+        "id": "s2",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s3",
+        "title": "build",
+        "dependencies": [],
+        "description": "Complete build"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Builder Pattern framework template"
+  },
+  {
+    "id": "ts_factory_pattern",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Factory Pattern",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "factory_interface",
+        "dependencies": [],
+        "description": "Complete factory_interface"
+      },
+      {
+        "id": "s1",
+        "title": "implementations",
+        "dependencies": [],
+        "description": "Complete implementations"
+      },
+      {
+        "id": "s2",
+        "title": "registration",
+        "dependencies": [],
+        "description": "Complete registration"
+      },
+      {
+        "id": "s3",
+        "title": "creation",
+        "dependencies": [],
+        "description": "Complete creation"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Factory Pattern framework template"
+  },
+  {
+    "id": "ts_repository_pattern",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Repository Pattern",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "interface",
+        "dependencies": [],
+        "description": "Complete interface"
+      },
+      {
+        "id": "s1",
+        "title": "implementation",
+        "dependencies": [],
+        "description": "Complete implementation"
+      },
+      {
+        "id": "s2",
+        "title": "queries",
+        "dependencies": [],
+        "description": "Complete queries"
+      },
+      {
+        "id": "s3",
+        "title": "mutations",
+        "dependencies": [],
+        "description": "Complete mutations"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Repository Pattern framework template"
+  },
+  {
+    "id": "ts_service_layer",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Service Layer",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "interface",
+        "dependencies": [],
+        "description": "Complete interface"
+      },
+      {
+        "id": "s1",
+        "title": "implementation",
+        "dependencies": [],
+        "description": "Complete implementation"
+      },
+      {
+        "id": "s2",
+        "title": "dependencies",
+        "dependencies": [],
+        "description": "Complete dependencies"
+      },
+      {
+        "id": "s3",
+        "title": "methods",
+        "dependencies": [],
+        "description": "Complete methods"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Service Layer framework template"
+  },
+  {
+    "id": "ts_dto_transformations",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "DTO Transformations",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "input_dto",
+        "dependencies": [],
+        "description": "Complete input_dto"
+      },
+      {
+        "id": "s1",
+        "title": "output_dto",
+        "dependencies": [],
+        "description": "Complete output_dto"
+      },
+      {
+        "id": "s2",
+        "title": "transformers",
+        "dependencies": [],
+        "description": "Complete transformers"
+      },
+      {
+        "id": "s3",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "DTO Transformations framework template"
+  },
+  {
+    "id": "ts_event_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Event Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "event_definitions",
+        "dependencies": [],
+        "description": "Complete event_definitions"
+      },
+      {
+        "id": "s1",
+        "title": "handlers",
+        "dependencies": [],
+        "description": "Complete handlers"
+      },
+      {
+        "id": "s2",
+        "title": "emitter",
+        "dependencies": [],
+        "description": "Complete emitter"
+      },
+      {
+        "id": "s3",
+        "title": "listeners",
+        "dependencies": [],
+        "description": "Complete listeners"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Event Types framework template"
+  },
+  {
+    "id": "ts_config_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Config Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "schema",
+        "dependencies": [],
+        "description": "Complete schema"
+      },
+      {
+        "id": "s1",
+        "title": "defaults",
+        "dependencies": [],
+        "description": "Complete defaults"
+      },
+      {
+        "id": "s2",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s3",
+        "title": "merging",
+        "dependencies": [],
+        "description": "Complete merging"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Config Types framework template"
+  },
+  {
+    "id": "ts_form_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Form Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "field_types",
+        "dependencies": [],
+        "description": "Complete field_types"
+      },
+      {
+        "id": "s1",
+        "title": "validation_types",
+        "dependencies": [],
+        "description": "Complete validation_types"
+      },
+      {
+        "id": "s2",
+        "title": "state_types",
+        "dependencies": [],
+        "description": "Complete state_types"
+      },
+      {
+        "id": "s3",
+        "title": "submission",
+        "dependencies": [],
+        "description": "Complete submission"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Form Types framework template"
+  },
+  {
+    "id": "ts_api_client_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "API Client Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "endpoints",
+        "dependencies": [],
+        "description": "Complete endpoints"
+      },
+      {
+        "id": "s1",
+        "title": "parameters",
+        "dependencies": [],
+        "description": "Complete parameters"
+      },
+      {
+        "id": "s2",
+        "title": "responses",
+        "dependencies": [],
+        "description": "Complete responses"
+      },
+      {
+        "id": "s3",
+        "title": "errors",
+        "dependencies": [],
+        "description": "Complete errors"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "API Client Types framework template"
+  },
+  {
+    "id": "ts_state_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "State Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "state_shape",
+        "dependencies": [],
+        "description": "Complete state_shape"
+      },
+      {
+        "id": "s1",
+        "title": "actions",
+        "dependencies": [],
+        "description": "Complete actions"
+      },
+      {
+        "id": "s2",
+        "title": "reducers",
+        "dependencies": [],
+        "description": "Complete reducers"
+      },
+      {
+        "id": "s3",
+        "title": "selectors",
+        "dependencies": [],
+        "description": "Complete selectors"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "State Types framework template"
+  },
+  {
+    "id": "ts_module_declarations",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Module Declarations",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "global",
+        "dependencies": [],
+        "description": "Complete global"
+      },
+      {
+        "id": "s1",
+        "title": "ambient",
+        "dependencies": [],
+        "description": "Complete ambient"
+      },
+      {
+        "id": "s2",
+        "title": "augmentation",
+        "dependencies": [],
+        "description": "Complete augmentation"
+      },
+      {
+        "id": "s3",
+        "title": "exports",
+        "dependencies": [],
+        "description": "Complete exports"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Module Declarations framework template"
+  },
+  {
+    "id": "ts_mapped_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Mapped Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "readonly",
+        "dependencies": [],
+        "description": "Complete readonly"
+      },
+      {
+        "id": "s1",
+        "title": "optional",
+        "dependencies": [],
+        "description": "Complete optional"
+      },
+      {
+        "id": "s2",
+        "title": "pick",
+        "dependencies": [],
+        "description": "Complete pick"
+      },
+      {
+        "id": "s3",
+        "title": "omit",
+        "dependencies": [],
+        "description": "Complete omit"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Mapped Types framework template"
+  },
+  {
+    "id": "ts_conditional_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Conditional Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "extends",
+        "dependencies": [],
+        "description": "Complete extends"
+      },
+      {
+        "id": "s1",
+        "title": "infer",
+        "dependencies": [],
+        "description": "Complete infer"
+      },
+      {
+        "id": "s2",
+        "title": "distributive",
+        "dependencies": [],
+        "description": "Complete distributive"
+      },
+      {
+        "id": "s3",
+        "title": "recursive",
+        "dependencies": [],
+        "description": "Complete recursive"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Conditional Types framework template"
+  },
+  {
+    "id": "ts_template_literals",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Template Literals",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "string_manipulation",
+        "dependencies": [],
+        "description": "Complete string_manipulation"
+      },
+      {
+        "id": "s1",
+        "title": "parsing",
+        "dependencies": [],
+        "description": "Complete parsing"
+      },
+      {
+        "id": "s2",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s3",
+        "title": "formatting",
+        "dependencies": [],
+        "description": "Complete formatting"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Template Literals framework template"
+  },
+  {
+    "id": "ts_decorators",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Decorators",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "class_decorator",
+        "dependencies": [],
+        "description": "Complete class_decorator"
+      },
+      {
+        "id": "s1",
+        "title": "method_decorator",
+        "dependencies": [],
+        "description": "Complete method_decorator"
+      },
+      {
+        "id": "s2",
+        "title": "property_decorator",
+        "dependencies": [],
+        "description": "Complete property_decorator"
+      },
+      {
+        "id": "s3",
+        "title": "parameter",
+        "dependencies": [],
+        "description": "Complete parameter"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Decorators framework template"
+  },
+  {
+    "id": "ts_zod_schema",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Zod Schema",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "primitives",
+        "dependencies": [],
+        "description": "Complete primitives"
+      },
+      {
+        "id": "s1",
+        "title": "objects",
+        "dependencies": [],
+        "description": "Complete objects"
+      },
+      {
+        "id": "s2",
+        "title": "arrays",
+        "dependencies": [],
+        "description": "Complete arrays"
+      },
+      {
+        "id": "s3",
+        "title": "transforms",
+        "dependencies": [],
+        "description": "Complete transforms"
+      },
+      {
+        "id": "s4",
+        "title": "refinements",
+        "dependencies": [],
+        "description": "Complete refinements"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Zod Schema framework template"
+  },
+  {
+    "id": "ts_strict_mode_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Strict Mode Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "no_implicit_any",
+        "dependencies": [],
+        "description": "Complete no_implicit_any"
+      },
+      {
+        "id": "s1",
+        "title": "strict_null",
+        "dependencies": [],
+        "description": "Complete strict_null"
+      },
+      {
+        "id": "s2",
+        "title": "strict_function",
+        "dependencies": [],
+        "description": "Complete strict_function"
+      },
+      {
+        "id": "s3",
+        "title": "exact",
+        "dependencies": [],
+        "description": "Complete exact"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Strict Mode Types framework template"
+  },
+  {
+    "id": "ts_generic_constraints",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Generic Constraints",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "extends",
+        "dependencies": [],
+        "description": "Complete extends"
+      },
+      {
+        "id": "s1",
+        "title": "keyof",
+        "dependencies": [],
+        "description": "Complete keyof"
+      },
+      {
+        "id": "s2",
+        "title": "in",
+        "dependencies": [],
+        "description": "Complete in"
+      },
+      {
+        "id": "s3",
+        "title": "conditional",
+        "dependencies": [],
+        "description": "Complete conditional"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Generic Constraints framework template"
+  },
+  {
+    "id": "ts_type_inference",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Type Inference",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "return_type",
+        "dependencies": [],
+        "description": "Complete return_type"
+      },
+      {
+        "id": "s1",
+        "title": "parameters",
+        "dependencies": [],
+        "description": "Complete parameters"
+      },
+      {
+        "id": "s2",
+        "title": "awaited",
+        "dependencies": [],
+        "description": "Complete awaited"
+      },
+      {
+        "id": "s3",
+        "title": "infer",
+        "dependencies": [],
+        "description": "Complete infer"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Type Inference framework template"
+  },
+  {
+    "id": "ts_overloaded_functions",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Overloaded Functions",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "signatures",
+        "dependencies": [],
+        "description": "Complete signatures"
+      },
+      {
+        "id": "s1",
+        "title": "implementation",
+        "dependencies": [],
+        "description": "Complete implementation"
+      },
+      {
+        "id": "s2",
+        "title": "type_narrowing",
+        "dependencies": [],
+        "description": "Complete type_narrowing"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Overloaded Functions framework template"
+  },
+  {
+    "id": "ts_namespace_pattern",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Namespace Pattern",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "namespace",
+        "dependencies": [],
+        "description": "Complete namespace"
+      },
+      {
+        "id": "s1",
+        "title": "exports",
+        "dependencies": [],
+        "description": "Complete exports"
+      },
+      {
+        "id": "s2",
+        "title": "imports",
+        "dependencies": [],
+        "description": "Complete imports"
+      },
+      {
+        "id": "s3",
+        "title": "merging",
+        "dependencies": [],
+        "description": "Complete merging"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Namespace Pattern framework template"
+  },
+  {
+    "id": "ts_enum_patterns",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Enum Patterns",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "numeric",
+        "dependencies": [],
+        "description": "Complete numeric"
+      },
+      {
+        "id": "s1",
+        "title": "string",
+        "dependencies": [],
+        "description": "Complete string"
+      },
+      {
+        "id": "s2",
+        "title": "const",
+        "dependencies": [],
+        "description": "Complete const"
+      },
+      {
+        "id": "s3",
+        "title": "reverse_mapping",
+        "dependencies": [],
+        "description": "Complete reverse_mapping"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Enum Patterns framework template"
+  },
+  {
+    "id": "ts_class_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Class Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "abstract",
+        "dependencies": [],
+        "description": "Complete abstract"
+      },
+      {
+        "id": "s1",
+        "title": "implements",
+        "dependencies": [],
+        "description": "Complete implements"
+      },
+      {
+        "id": "s2",
+        "title": "extends",
+        "dependencies": [],
+        "description": "Complete extends"
+      },
+      {
+        "id": "s3",
+        "title": "access_modifiers",
+        "dependencies": [],
+        "description": "Complete access_modifiers"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Class Types framework template"
+  },
+  {
+    "id": "ts_index_signatures",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Index Signatures",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "string_index",
+        "dependencies": [],
+        "description": "Complete string_index"
+      },
+      {
+        "id": "s1",
+        "title": "number_index",
+        "dependencies": [],
+        "description": "Complete number_index"
+      },
+      {
+        "id": "s2",
+        "title": "template_literal",
+        "dependencies": [],
+        "description": "Complete template_literal"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Index Signatures framework template"
+  },
+  {
+    "id": "ts_discriminated_unions",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Discriminated Unions",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "discriminant",
+        "dependencies": [],
+        "description": "Complete discriminant"
+      },
+      {
+        "id": "s1",
+        "title": "narrowing",
+        "dependencies": [],
+        "description": "Complete narrowing"
+      },
+      {
+        "id": "s2",
+        "title": "exhaustive_check",
+        "dependencies": [],
+        "description": "Complete exhaustive_check"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Discriminated Unions framework template"
+  },
+  {
+    "id": "ts_type_assertions",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Type Assertions",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "as_const",
+        "dependencies": [],
+        "description": "Complete as_const"
+      },
+      {
+        "id": "s1",
+        "title": "as_type",
+        "dependencies": [],
+        "description": "Complete as_type"
+      },
+      {
+        "id": "s2",
+        "title": "non_null",
+        "dependencies": [],
+        "description": "Complete non_null"
+      },
+      {
+        "id": "s3",
+        "title": "satisfies",
+        "dependencies": [],
+        "description": "Complete satisfies"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Type Assertions framework template"
+  },
+  {
+    "id": "ts_path_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Path Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "dot_notation",
+        "dependencies": [],
+        "description": "Complete dot_notation"
+      },
+      {
+        "id": "s1",
+        "title": "bracket_notation",
+        "dependencies": [],
+        "description": "Complete bracket_notation"
+      },
+      {
+        "id": "s2",
+        "title": "nested",
+        "dependencies": [],
+        "description": "Complete nested"
+      },
+      {
+        "id": "s3",
+        "title": "array_paths",
+        "dependencies": [],
+        "description": "Complete array_paths"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Path Types framework template"
+  },
+  {
+    "id": "ts_promise_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Promise Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "async_function",
+        "dependencies": [],
+        "description": "Complete async_function"
+      },
+      {
+        "id": "s1",
+        "title": "then_catch",
+        "dependencies": [],
+        "description": "Complete then_catch"
+      },
+      {
+        "id": "s2",
+        "title": "promise_all",
+        "dependencies": [],
+        "description": "Complete promise_all"
+      },
+      {
+        "id": "s3",
+        "title": "awaited",
+        "dependencies": [],
+        "description": "Complete awaited"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Promise Types framework template"
+  },
+  {
+    "id": "ts_function_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Function Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "callable",
+        "dependencies": [],
+        "description": "Complete callable"
+      },
+      {
+        "id": "s1",
+        "title": "constructable",
+        "dependencies": [],
+        "description": "Complete constructable"
+      },
+      {
+        "id": "s2",
+        "title": "this_type",
+        "dependencies": [],
+        "description": "Complete this_type"
+      },
+      {
+        "id": "s3",
+        "title": "overloads",
+        "dependencies": [],
+        "description": "Complete overloads"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Function Types framework template"
+  },
+  {
+    "id": "ts_tuple_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Tuple Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "fixed",
+        "dependencies": [],
+        "description": "Complete fixed"
+      },
+      {
+        "id": "s1",
+        "title": "variadic",
+        "dependencies": [],
+        "description": "Complete variadic"
+      },
+      {
+        "id": "s2",
+        "title": "labeled",
+        "dependencies": [],
+        "description": "Complete labeled"
+      },
+      {
+        "id": "s3",
+        "title": "spread",
+        "dependencies": [],
+        "description": "Complete spread"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Tuple Types framework template"
+  },
+  {
+    "id": "ts_union_utilities",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Union Utilities",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "exclude",
+        "dependencies": [],
+        "description": "Complete exclude"
+      },
+      {
+        "id": "s1",
+        "title": "extract",
+        "dependencies": [],
+        "description": "Complete extract"
+      },
+      {
+        "id": "s2",
+        "title": "distribution",
+        "dependencies": [],
+        "description": "Complete distribution"
+      },
+      {
+        "id": "s3",
+        "title": "narrowing",
+        "dependencies": [],
+        "description": "Complete narrowing"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Union Utilities framework template"
+  },
+  {
+    "id": "ts_object_utilities_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Object Utilities Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "partial",
+        "dependencies": [],
+        "description": "Complete partial"
+      },
+      {
+        "id": "s1",
+        "title": "required",
+        "dependencies": [],
+        "description": "Complete required"
+      },
+      {
+        "id": "s2",
+        "title": "readonly",
+        "dependencies": [],
+        "description": "Complete readonly"
+      },
+      {
+        "id": "s3",
+        "title": "record",
+        "dependencies": [],
+        "description": "Complete record"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Object Utilities Types framework template"
+  },
+  {
+    "id": "ts_string_utilities_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "String Utilities Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "uppercase",
+        "dependencies": [],
+        "description": "Complete uppercase"
+      },
+      {
+        "id": "s1",
+        "title": "lowercase",
+        "dependencies": [],
+        "description": "Complete lowercase"
+      },
+      {
+        "id": "s2",
+        "title": "capitalize",
+        "dependencies": [],
+        "description": "Complete capitalize"
+      },
+      {
+        "id": "s3",
+        "title": "trim",
+        "dependencies": [],
+        "description": "Complete trim"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "String Utilities Types framework template"
+  },
+  {
+    "id": "ts_array_utilities_types",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Array Utilities Types",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "element_type",
+        "dependencies": [],
+        "description": "Complete element_type"
+      },
+      {
+        "id": "s1",
+        "title": "length",
+        "dependencies": [],
+        "description": "Complete length"
+      },
+      {
+        "id": "s2",
+        "title": "head_tail",
+        "dependencies": [],
+        "description": "Complete head_tail"
+      },
+      {
+        "id": "s3",
+        "title": "reverse",
+        "dependencies": [],
+        "description": "Complete reverse"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Array Utilities Types framework template"
+  },
+  {
+    "id": "ts_type_predicates",
+    "category": "typescript",
+    "subcategory": "types",
+    "title": "Type Predicates",
+    "persona": "typescript_fullstack",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "is_type",
+        "dependencies": [],
+        "description": "Complete is_type"
+      },
+      {
+        "id": "s1",
+        "title": "narrowing",
+        "dependencies": [],
+        "description": "Complete narrowing"
+      },
+      {
+        "id": "s2",
+        "title": "custom_guards",
+        "dependencies": [],
+        "description": "Complete custom_guards"
+      },
+      {
+        "id": "s3",
+        "title": "assertion_functions",
+        "dependencies": [],
+        "description": "Complete assertion_functions"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "types"
+    ],
+    "description": "Type Predicates framework template"
+  }
+]

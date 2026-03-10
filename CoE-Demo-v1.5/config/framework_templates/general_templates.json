@@ -1,0 +1,689 @@
+[
+  {
+    "id": "general_technical_document",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "Technical Document",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "overview",
+        "dependencies": [],
+        "description": "Complete overview"
+      },
+      {
+        "id": "s1",
+        "title": "background",
+        "dependencies": [],
+        "description": "Complete background"
+      },
+      {
+        "id": "s2",
+        "title": "details",
+        "dependencies": [],
+        "description": "Complete details"
+      },
+      {
+        "id": "s3",
+        "title": "examples",
+        "dependencies": [],
+        "description": "Complete examples"
+      },
+      {
+        "id": "s4",
+        "title": "conclusion",
+        "dependencies": [],
+        "description": "Complete conclusion"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "Technical Document framework template"
+  },
+  {
+    "id": "general_proposal_document",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "Proposal Document",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "executive_summary",
+        "dependencies": [],
+        "description": "Complete executive_summary"
+      },
+      {
+        "id": "s1",
+        "title": "problem",
+        "dependencies": [],
+        "description": "Complete problem"
+      },
+      {
+        "id": "s2",
+        "title": "solution",
+        "dependencies": [],
+        "description": "Complete solution"
+      },
+      {
+        "id": "s3",
+        "title": "approach",
+        "dependencies": [],
+        "description": "Complete approach"
+      },
+      {
+        "id": "s4",
+        "title": "timeline",
+        "dependencies": [],
+        "description": "Complete timeline"
+      },
+      {
+        "id": "s5",
+        "title": "budget",
+        "dependencies": [],
+        "description": "Complete budget"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "Proposal Document framework template"
+  },
+  {
+    "id": "general_report_document",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "Report Document",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "summary",
+        "dependencies": [],
+        "description": "Complete summary"
+      },
+      {
+        "id": "s1",
+        "title": "methodology",
+        "dependencies": [],
+        "description": "Complete methodology"
+      },
+      {
+        "id": "s2",
+        "title": "findings",
+        "dependencies": [],
+        "description": "Complete findings"
+      },
+      {
+        "id": "s3",
+        "title": "analysis",
+        "dependencies": [],
+        "description": "Complete analysis"
+      },
+      {
+        "id": "s4",
+        "title": "recommendations",
+        "dependencies": [],
+        "description": "Complete recommendations"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "Report Document framework template"
+  },
+  {
+    "id": "general_tutorial_document",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "Tutorial Document",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "introduction",
+        "dependencies": [],
+        "description": "Complete introduction"
+      },
+      {
+        "id": "s1",
+        "title": "prerequisites",
+        "dependencies": [],
+        "description": "Complete prerequisites"
+      },
+      {
+        "id": "s2",
+        "title": "steps",
+        "dependencies": [],
+        "description": "Complete steps"
+      },
+      {
+        "id": "s3",
+        "title": "examples",
+        "dependencies": [],
+        "description": "Complete examples"
+      },
+      {
+        "id": "s4",
+        "title": "troubleshooting",
+        "dependencies": [],
+        "description": "Complete troubleshooting"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "Tutorial Document framework template"
+  },
+  {
+    "id": "general_api_documentation",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "API Documentation",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "overview",
+        "dependencies": [],
+        "description": "Complete overview"
+      },
+      {
+        "id": "s1",
+        "title": "authentication",
+        "dependencies": [],
+        "description": "Complete authentication"
+      },
+      {
+        "id": "s2",
+        "title": "endpoints",
+        "dependencies": [],
+        "description": "Complete endpoints"
+      },
+      {
+        "id": "s3",
+        "title": "examples",
+        "dependencies": [],
+        "description": "Complete examples"
+      },
+      {
+        "id": "s4",
+        "title": "errors",
+        "dependencies": [],
+        "description": "Complete errors"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "API Documentation framework template"
+  },
+  {
+    "id": "general_user_guide",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "User Guide",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "introduction",
+        "dependencies": [],
+        "description": "Complete introduction"
+      },
+      {
+        "id": "s1",
+        "title": "getting_started",
+        "dependencies": [],
+        "description": "Complete getting_started"
+      },
+      {
+        "id": "s2",
+        "title": "features",
+        "dependencies": [],
+        "description": "Complete features"
+      },
+      {
+        "id": "s3",
+        "title": "faq",
+        "dependencies": [],
+        "description": "Complete faq"
+      },
+      {
+        "id": "s4",
+        "title": "support",
+        "dependencies": [],
+        "description": "Complete support"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "User Guide framework template"
+  },
+  {
+    "id": "general_release_notes",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "Release Notes",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "version",
+        "dependencies": [],
+        "description": "Complete version"
+      },
+      {
+        "id": "s1",
+        "title": "new_features",
+        "dependencies": [],
+        "description": "Complete new_features"
+      },
+      {
+        "id": "s2",
+        "title": "improvements",
+        "dependencies": [],
+        "description": "Complete improvements"
+      },
+      {
+        "id": "s3",
+        "title": "fixes",
+        "dependencies": [],
+        "description": "Complete fixes"
+      },
+      {
+        "id": "s4",
+        "title": "known_issues",
+        "dependencies": [],
+        "description": "Complete known_issues"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "Release Notes framework template"
+  },
+  {
+    "id": "general_meeting_notes",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "Meeting Notes",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "attendees",
+        "dependencies": [],
+        "description": "Complete attendees"
+      },
+      {
+        "id": "s1",
+        "title": "agenda",
+        "dependencies": [],
+        "description": "Complete agenda"
+      },
+      {
+        "id": "s2",
+        "title": "discussion",
+        "dependencies": [],
+        "description": "Complete discussion"
+      },
+      {
+        "id": "s3",
+        "title": "decisions",
+        "dependencies": [],
+        "description": "Complete decisions"
+      },
+      {
+        "id": "s4",
+        "title": "action_items",
+        "dependencies": [],
+        "description": "Complete action_items"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "Meeting Notes framework template"
+  },
+  {
+    "id": "general_business_email",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "Business Email",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "subject",
+        "dependencies": [],
+        "description": "Complete subject"
+      },
+      {
+        "id": "s1",
+        "title": "greeting",
+        "dependencies": [],
+        "description": "Complete greeting"
+      },
+      {
+        "id": "s2",
+        "title": "body",
+        "dependencies": [],
+        "description": "Complete body"
+      },
+      {
+        "id": "s3",
+        "title": "call_to_action",
+        "dependencies": [],
+        "description": "Complete call_to_action"
+      },
+      {
+        "id": "s4",
+        "title": "closing",
+        "dependencies": [],
+        "description": "Complete closing"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "Business Email framework template"
+  },
+  {
+    "id": "general_presentation_outline",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "Presentation Outline",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "opening",
+        "dependencies": [],
+        "description": "Complete opening"
+      },
+      {
+        "id": "s1",
+        "title": "main_points",
+        "dependencies": [],
+        "description": "Complete main_points"
+      },
+      {
+        "id": "s2",
+        "title": "supporting",
+        "dependencies": [],
+        "description": "Complete supporting"
+      },
+      {
+        "id": "s3",
+        "title": "conclusion",
+        "dependencies": [],
+        "description": "Complete conclusion"
+      },
+      {
+        "id": "s4",
+        "title": "qa",
+        "dependencies": [],
+        "description": "Complete qa"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "Presentation Outline framework template"
+  },
+  {
+    "id": "general_blog_post",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "Blog Post",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "hook",
+        "dependencies": [],
+        "description": "Complete hook"
+      },
+      {
+        "id": "s1",
+        "title": "problem",
+        "dependencies": [],
+        "description": "Complete problem"
+      },
+      {
+        "id": "s2",
+        "title": "solution",
+        "dependencies": [],
+        "description": "Complete solution"
+      },
+      {
+        "id": "s3",
+        "title": "examples",
+        "dependencies": [],
+        "description": "Complete examples"
+      },
+      {
+        "id": "s4",
+        "title": "conclusion",
+        "dependencies": [],
+        "description": "Complete conclusion"
+      },
+      {
+        "id": "s5",
+        "title": "cta",
+        "dependencies": [],
+        "description": "Complete cta"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "Blog Post framework template"
+  },
+  {
+    "id": "general_case_study",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "Case Study",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "challenge",
+        "dependencies": [],
+        "description": "Complete challenge"
+      },
+      {
+        "id": "s1",
+        "title": "solution",
+        "dependencies": [],
+        "description": "Complete solution"
+      },
+      {
+        "id": "s2",
+        "title": "implementation",
+        "dependencies": [],
+        "description": "Complete implementation"
+      },
+      {
+        "id": "s3",
+        "title": "results",
+        "dependencies": [],
+        "description": "Complete results"
+      },
+      {
+        "id": "s4",
+        "title": "lessons",
+        "dependencies": [],
+        "description": "Complete lessons"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "Case Study framework template"
+  },
+  {
+    "id": "general_white_paper",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "White Paper",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "abstract",
+        "dependencies": [],
+        "description": "Complete abstract"
+      },
+      {
+        "id": "s1",
+        "title": "introduction",
+        "dependencies": [],
+        "description": "Complete introduction"
+      },
+      {
+        "id": "s2",
+        "title": "analysis",
+        "dependencies": [],
+        "description": "Complete analysis"
+      },
+      {
+        "id": "s3",
+        "title": "findings",
+        "dependencies": [],
+        "description": "Complete findings"
+      },
+      {
+        "id": "s4",
+        "title": "conclusion",
+        "dependencies": [],
+        "description": "Complete conclusion"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "White Paper framework template"
+  },
+  {
+    "id": "general_faq_document",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "FAQ Document",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "categories",
+        "dependencies": [],
+        "description": "Complete categories"
+      },
+      {
+        "id": "s1",
+        "title": "questions",
+        "dependencies": [],
+        "description": "Complete questions"
+      },
+      {
+        "id": "s2",
+        "title": "answers",
+        "dependencies": [],
+        "description": "Complete answers"
+      },
+      {
+        "id": "s3",
+        "title": "related",
+        "dependencies": [],
+        "description": "Complete related"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "FAQ Document framework template"
+  },
+  {
+    "id": "general_changelog",
+    "category": "general",
+    "subcategory": "documentation",
+    "title": "Changelog",
+    "persona": "general_assistant",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "version",
+        "dependencies": [],
+        "description": "Complete version"
+      },
+      {
+        "id": "s1",
+        "title": "date",
+        "dependencies": [],
+        "description": "Complete date"
+      },
+      {
+        "id": "s2",
+        "title": "added",
+        "dependencies": [],
+        "description": "Complete added"
+      },
+      {
+        "id": "s3",
+        "title": "changed",
+        "dependencies": [],
+        "description": "Complete changed"
+      },
+      {
+        "id": "s4",
+        "title": "fixed",
+        "dependencies": [],
+        "description": "Complete fixed"
+      },
+      {
+        "id": "s5",
+        "title": "removed",
+        "dependencies": [],
+        "description": "Complete removed"
+      }
+    ],
+    "tags": [
+      "general",
+      "writing",
+      "documentation"
+    ],
+    "description": "Changelog framework template"
+  }
+]

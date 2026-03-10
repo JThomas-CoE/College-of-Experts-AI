@@ -1,0 +1,2372 @@
+[
+  {
+    "id": "html_css_semantic_page_layout",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Semantic Page Layout",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "header",
+        "dependencies": [],
+        "description": "Complete header"
+      },
+      {
+        "id": "s1",
+        "title": "nav",
+        "dependencies": [],
+        "description": "Complete nav"
+      },
+      {
+        "id": "s2",
+        "title": "main",
+        "dependencies": [],
+        "description": "Complete main"
+      },
+      {
+        "id": "s3",
+        "title": "aside",
+        "dependencies": [],
+        "description": "Complete aside"
+      },
+      {
+        "id": "s4",
+        "title": "footer",
+        "dependencies": [],
+        "description": "Complete footer"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Semantic Page Layout framework template"
+  },
+  {
+    "id": "html_css_accessible_form",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Accessible Form",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "form",
+        "dependencies": [],
+        "description": "Complete form"
+      },
+      {
+        "id": "s1",
+        "title": "labels",
+        "dependencies": [],
+        "description": "Complete labels"
+      },
+      {
+        "id": "s2",
+        "title": "inputs",
+        "dependencies": [],
+        "description": "Complete inputs"
+      },
+      {
+        "id": "s3",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s4",
+        "title": "submission",
+        "dependencies": [],
+        "description": "Complete submission"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Accessible Form framework template"
+  },
+  {
+    "id": "html_css_responsive_navigation",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Responsive Navigation",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "mobile_menu",
+        "dependencies": [],
+        "description": "Complete mobile_menu"
+      },
+      {
+        "id": "s1",
+        "title": "desktop_menu",
+        "dependencies": [],
+        "description": "Complete desktop_menu"
+      },
+      {
+        "id": "s2",
+        "title": "hamburger",
+        "dependencies": [],
+        "description": "Complete hamburger"
+      },
+      {
+        "id": "s3",
+        "title": "transitions",
+        "dependencies": [],
+        "description": "Complete transitions"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Responsive Navigation framework template"
+  },
+  {
+    "id": "html_css_card_component",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Card Component",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "container",
+        "dependencies": [],
+        "description": "Complete container"
+      },
+      {
+        "id": "s1",
+        "title": "image",
+        "dependencies": [],
+        "description": "Complete image"
+      },
+      {
+        "id": "s2",
+        "title": "content",
+        "dependencies": [],
+        "description": "Complete content"
+      },
+      {
+        "id": "s3",
+        "title": "footer",
+        "dependencies": [],
+        "description": "Complete footer"
+      },
+      {
+        "id": "s4",
+        "title": "hover",
+        "dependencies": [],
+        "description": "Complete hover"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Card Component framework template"
+  },
+  {
+    "id": "html_css_hero_section",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Hero Section",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "background",
+        "dependencies": [],
+        "description": "Complete background"
+      },
+      {
+        "id": "s1",
+        "title": "content",
+        "dependencies": [],
+        "description": "Complete content"
+      },
+      {
+        "id": "s2",
+        "title": "cta",
+        "dependencies": [],
+        "description": "Complete cta"
+      },
+      {
+        "id": "s3",
+        "title": "responsive",
+        "dependencies": [],
+        "description": "Complete responsive"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Hero Section framework template"
+  },
+  {
+    "id": "html_css_feature_grid",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Feature Grid",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "grid_layout",
+        "dependencies": [],
+        "description": "Complete grid_layout"
+      },
+      {
+        "id": "s1",
+        "title": "feature_cards",
+        "dependencies": [],
+        "description": "Complete feature_cards"
+      },
+      {
+        "id": "s2",
+        "title": "icons",
+        "dependencies": [],
+        "description": "Complete icons"
+      },
+      {
+        "id": "s3",
+        "title": "responsive",
+        "dependencies": [],
+        "description": "Complete responsive"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Feature Grid framework template"
+  },
+  {
+    "id": "html_css_pricing_table",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Pricing Table",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "tiers",
+        "dependencies": [],
+        "description": "Complete tiers"
+      },
+      {
+        "id": "s1",
+        "title": "features",
+        "dependencies": [],
+        "description": "Complete features"
+      },
+      {
+        "id": "s2",
+        "title": "cta",
+        "dependencies": [],
+        "description": "Complete cta"
+      },
+      {
+        "id": "s3",
+        "title": "comparison",
+        "dependencies": [],
+        "description": "Complete comparison"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Pricing Table framework template"
+  },
+  {
+    "id": "html_css_testimonials_section",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Testimonials Section",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "layout",
+        "dependencies": [],
+        "description": "Complete layout"
+      },
+      {
+        "id": "s1",
+        "title": "quote",
+        "dependencies": [],
+        "description": "Complete quote"
+      },
+      {
+        "id": "s2",
+        "title": "author",
+        "dependencies": [],
+        "description": "Complete author"
+      },
+      {
+        "id": "s3",
+        "title": "carousel",
+        "dependencies": [],
+        "description": "Complete carousel"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Testimonials Section framework template"
+  },
+  {
+    "id": "html_css_contact_form",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Contact Form",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "form_layout",
+        "dependencies": [],
+        "description": "Complete form_layout"
+      },
+      {
+        "id": "s1",
+        "title": "inputs",
+        "dependencies": [],
+        "description": "Complete inputs"
+      },
+      {
+        "id": "s2",
+        "title": "validation_styles",
+        "dependencies": [],
+        "description": "Complete validation_styles"
+      },
+      {
+        "id": "s3",
+        "title": "submission",
+        "dependencies": [],
+        "description": "Complete submission"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Contact Form framework template"
+  },
+  {
+    "id": "html_css_footer_layout",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Footer Layout",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "columns",
+        "dependencies": [],
+        "description": "Complete columns"
+      },
+      {
+        "id": "s1",
+        "title": "links",
+        "dependencies": [],
+        "description": "Complete links"
+      },
+      {
+        "id": "s2",
+        "title": "social",
+        "dependencies": [],
+        "description": "Complete social"
+      },
+      {
+        "id": "s3",
+        "title": "copyright",
+        "dependencies": [],
+        "description": "Complete copyright"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Footer Layout framework template"
+  },
+  {
+    "id": "html_css_blog_post_layout",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Blog Post Layout",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "header",
+        "dependencies": [],
+        "description": "Complete header"
+      },
+      {
+        "id": "s1",
+        "title": "content",
+        "dependencies": [],
+        "description": "Complete content"
+      },
+      {
+        "id": "s2",
+        "title": "sidebar",
+        "dependencies": [],
+        "description": "Complete sidebar"
+      },
+      {
+        "id": "s3",
+        "title": "comments",
+        "dependencies": [],
+        "description": "Complete comments"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Blog Post Layout framework template"
+  },
+  {
+    "id": "html_css_product_card",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Product Card",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "image",
+        "dependencies": [],
+        "description": "Complete image"
+      },
+      {
+        "id": "s1",
+        "title": "details",
+        "dependencies": [],
+        "description": "Complete details"
+      },
+      {
+        "id": "s2",
+        "title": "price",
+        "dependencies": [],
+        "description": "Complete price"
+      },
+      {
+        "id": "s3",
+        "title": "add_to_cart",
+        "dependencies": [],
+        "description": "Complete add_to_cart"
+      },
+      {
+        "id": "s4",
+        "title": "hover",
+        "dependencies": [],
+        "description": "Complete hover"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Product Card framework template"
+  },
+  {
+    "id": "html_css_modal_dialog",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Modal Dialog",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "overlay",
+        "dependencies": [],
+        "description": "Complete overlay"
+      },
+      {
+        "id": "s1",
+        "title": "container",
+        "dependencies": [],
+        "description": "Complete container"
+      },
+      {
+        "id": "s2",
+        "title": "header",
+        "dependencies": [],
+        "description": "Complete header"
+      },
+      {
+        "id": "s3",
+        "title": "content",
+        "dependencies": [],
+        "description": "Complete content"
+      },
+      {
+        "id": "s4",
+        "title": "actions",
+        "dependencies": [],
+        "description": "Complete actions"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Modal Dialog framework template"
+  },
+  {
+    "id": "html_css_dropdown_menu",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Dropdown Menu",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "trigger",
+        "dependencies": [],
+        "description": "Complete trigger"
+      },
+      {
+        "id": "s1",
+        "title": "menu",
+        "dependencies": [],
+        "description": "Complete menu"
+      },
+      {
+        "id": "s2",
+        "title": "items",
+        "dependencies": [],
+        "description": "Complete items"
+      },
+      {
+        "id": "s3",
+        "title": "positioning",
+        "dependencies": [],
+        "description": "Complete positioning"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Dropdown Menu framework template"
+  },
+  {
+    "id": "html_css_tabs_component",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Tabs Component",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "tab_list",
+        "dependencies": [],
+        "description": "Complete tab_list"
+      },
+      {
+        "id": "s1",
+        "title": "tab_content",
+        "dependencies": [],
+        "description": "Complete tab_content"
+      },
+      {
+        "id": "s2",
+        "title": "active_state",
+        "dependencies": [],
+        "description": "Complete active_state"
+      },
+      {
+        "id": "s3",
+        "title": "transitions",
+        "dependencies": [],
+        "description": "Complete transitions"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Tabs Component framework template"
+  },
+  {
+    "id": "html_css_accordion_component",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Accordion Component",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "headers",
+        "dependencies": [],
+        "description": "Complete headers"
+      },
+      {
+        "id": "s1",
+        "title": "panels",
+        "dependencies": [],
+        "description": "Complete panels"
+      },
+      {
+        "id": "s2",
+        "title": "icons",
+        "dependencies": [],
+        "description": "Complete icons"
+      },
+      {
+        "id": "s3",
+        "title": "transitions",
+        "dependencies": [],
+        "description": "Complete transitions"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Accordion Component framework template"
+  },
+  {
+    "id": "html_css_breadcrumb_navigation",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Breadcrumb Navigation",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "links",
+        "dependencies": [],
+        "description": "Complete links"
+      },
+      {
+        "id": "s1",
+        "title": "separators",
+        "dependencies": [],
+        "description": "Complete separators"
+      },
+      {
+        "id": "s2",
+        "title": "current",
+        "dependencies": [],
+        "description": "Complete current"
+      },
+      {
+        "id": "s3",
+        "title": "overflow",
+        "dependencies": [],
+        "description": "Complete overflow"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Breadcrumb Navigation framework template"
+  },
+  {
+    "id": "html_css_pagination_component",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Pagination Component",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "pages",
+        "dependencies": [],
+        "description": "Complete pages"
+      },
+      {
+        "id": "s1",
+        "title": "prev_next",
+        "dependencies": [],
+        "description": "Complete prev_next"
+      },
+      {
+        "id": "s2",
+        "title": "active",
+        "dependencies": [],
+        "description": "Complete active"
+      },
+      {
+        "id": "s3",
+        "title": "ellipsis",
+        "dependencies": [],
+        "description": "Complete ellipsis"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Pagination Component framework template"
+  },
+  {
+    "id": "html_css_progress_bar",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Progress Bar",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "container",
+        "dependencies": [],
+        "description": "Complete container"
+      },
+      {
+        "id": "s1",
+        "title": "fill",
+        "dependencies": [],
+        "description": "Complete fill"
+      },
+      {
+        "id": "s2",
+        "title": "label",
+        "dependencies": [],
+        "description": "Complete label"
+      },
+      {
+        "id": "s3",
+        "title": "animation",
+        "dependencies": [],
+        "description": "Complete animation"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Progress Bar framework template"
+  },
+  {
+    "id": "html_css_tooltip_component",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Tooltip Component",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "trigger",
+        "dependencies": [],
+        "description": "Complete trigger"
+      },
+      {
+        "id": "s1",
+        "title": "content",
+        "dependencies": [],
+        "description": "Complete content"
+      },
+      {
+        "id": "s2",
+        "title": "positioning",
+        "dependencies": [],
+        "description": "Complete positioning"
+      },
+      {
+        "id": "s3",
+        "title": "arrow",
+        "dependencies": [],
+        "description": "Complete arrow"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Tooltip Component framework template"
+  },
+  {
+    "id": "html_css_badge_component",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Badge Component",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "variants",
+        "dependencies": [],
+        "description": "Complete variants"
+      },
+      {
+        "id": "s1",
+        "title": "sizes",
+        "dependencies": [],
+        "description": "Complete sizes"
+      },
+      {
+        "id": "s2",
+        "title": "icons",
+        "dependencies": [],
+        "description": "Complete icons"
+      },
+      {
+        "id": "s3",
+        "title": "dismissible",
+        "dependencies": [],
+        "description": "Complete dismissible"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Badge Component framework template"
+  },
+  {
+    "id": "html_css_avatar_component",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Avatar Component",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "image",
+        "dependencies": [],
+        "description": "Complete image"
+      },
+      {
+        "id": "s1",
+        "title": "fallback",
+        "dependencies": [],
+        "description": "Complete fallback"
+      },
+      {
+        "id": "s2",
+        "title": "sizes",
+        "dependencies": [],
+        "description": "Complete sizes"
+      },
+      {
+        "id": "s3",
+        "title": "status",
+        "dependencies": [],
+        "description": "Complete status"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Avatar Component framework template"
+  },
+  {
+    "id": "html_css_button_variants",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Button Variants",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "primary",
+        "dependencies": [],
+        "description": "Complete primary"
+      },
+      {
+        "id": "s1",
+        "title": "secondary",
+        "dependencies": [],
+        "description": "Complete secondary"
+      },
+      {
+        "id": "s2",
+        "title": "outline",
+        "dependencies": [],
+        "description": "Complete outline"
+      },
+      {
+        "id": "s3",
+        "title": "sizes",
+        "dependencies": [],
+        "description": "Complete sizes"
+      },
+      {
+        "id": "s4",
+        "title": "states",
+        "dependencies": [],
+        "description": "Complete states"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Button Variants framework template"
+  },
+  {
+    "id": "html_css_input_variants",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Input Variants",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "text",
+        "dependencies": [],
+        "description": "Complete text"
+      },
+      {
+        "id": "s1",
+        "title": "select",
+        "dependencies": [],
+        "description": "Complete select"
+      },
+      {
+        "id": "s2",
+        "title": "checkbox",
+        "dependencies": [],
+        "description": "Complete checkbox"
+      },
+      {
+        "id": "s3",
+        "title": "radio",
+        "dependencies": [],
+        "description": "Complete radio"
+      },
+      {
+        "id": "s4",
+        "title": "states",
+        "dependencies": [],
+        "description": "Complete states"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Input Variants framework template"
+  },
+  {
+    "id": "html_css_alert_component",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Alert Component",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "variants",
+        "dependencies": [],
+        "description": "Complete variants"
+      },
+      {
+        "id": "s1",
+        "title": "icon",
+        "dependencies": [],
+        "description": "Complete icon"
+      },
+      {
+        "id": "s2",
+        "title": "content",
+        "dependencies": [],
+        "description": "Complete content"
+      },
+      {
+        "id": "s3",
+        "title": "dismissible",
+        "dependencies": [],
+        "description": "Complete dismissible"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Alert Component framework template"
+  },
+  {
+    "id": "html_css_skeleton_loading",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Skeleton Loading",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "shapes",
+        "dependencies": [],
+        "description": "Complete shapes"
+      },
+      {
+        "id": "s1",
+        "title": "animation",
+        "dependencies": [],
+        "description": "Complete animation"
+      },
+      {
+        "id": "s2",
+        "title": "variants",
+        "dependencies": [],
+        "description": "Complete variants"
+      },
+      {
+        "id": "s3",
+        "title": "composition",
+        "dependencies": [],
+        "description": "Complete composition"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Skeleton Loading framework template"
+  },
+  {
+    "id": "html_css_css_grid_dashboard",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "CSS Grid Dashboard",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "grid_layout",
+        "dependencies": [],
+        "description": "Complete grid_layout"
+      },
+      {
+        "id": "s1",
+        "title": "cards",
+        "dependencies": [],
+        "description": "Complete cards"
+      },
+      {
+        "id": "s2",
+        "title": "responsive",
+        "dependencies": [],
+        "description": "Complete responsive"
+      },
+      {
+        "id": "s3",
+        "title": "gaps",
+        "dependencies": [],
+        "description": "Complete gaps"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "CSS Grid Dashboard framework template"
+  },
+  {
+    "id": "html_css_flexbox_layout",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Flexbox Layout",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "container",
+        "dependencies": [],
+        "description": "Complete container"
+      },
+      {
+        "id": "s1",
+        "title": "items",
+        "dependencies": [],
+        "description": "Complete items"
+      },
+      {
+        "id": "s2",
+        "title": "alignment",
+        "dependencies": [],
+        "description": "Complete alignment"
+      },
+      {
+        "id": "s3",
+        "title": "wrapping",
+        "dependencies": [],
+        "description": "Complete wrapping"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Flexbox Layout framework template"
+  },
+  {
+    "id": "html_css_css_variables_theme",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "CSS Variables Theme",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "colors",
+        "dependencies": [],
+        "description": "Complete colors"
+      },
+      {
+        "id": "s1",
+        "title": "spacing",
+        "dependencies": [],
+        "description": "Complete spacing"
+      },
+      {
+        "id": "s2",
+        "title": "typography",
+        "dependencies": [],
+        "description": "Complete typography"
+      },
+      {
+        "id": "s3",
+        "title": "dark_mode",
+        "dependencies": [],
+        "description": "Complete dark_mode"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "CSS Variables Theme framework template"
+  },
+  {
+    "id": "html_css_print_stylesheet",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Print Stylesheet",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "page_setup",
+        "dependencies": [],
+        "description": "Complete page_setup"
+      },
+      {
+        "id": "s1",
+        "title": "hide_elements",
+        "dependencies": [],
+        "description": "Complete hide_elements"
+      },
+      {
+        "id": "s2",
+        "title": "colors",
+        "dependencies": [],
+        "description": "Complete colors"
+      },
+      {
+        "id": "s3",
+        "title": "breaks",
+        "dependencies": [],
+        "description": "Complete breaks"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Print Stylesheet framework template"
+  },
+  {
+    "id": "html_css_animation_library",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Animation Library",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "keyframes",
+        "dependencies": [],
+        "description": "Complete keyframes"
+      },
+      {
+        "id": "s1",
+        "title": "transitions",
+        "dependencies": [],
+        "description": "Complete transitions"
+      },
+      {
+        "id": "s2",
+        "title": "hover",
+        "dependencies": [],
+        "description": "Complete hover"
+      },
+      {
+        "id": "s3",
+        "title": "scroll",
+        "dependencies": [],
+        "description": "Complete scroll"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Animation Library framework template"
+  },
+  {
+    "id": "html_css_responsive_images",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Responsive Images",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "srcset",
+        "dependencies": [],
+        "description": "Complete srcset"
+      },
+      {
+        "id": "s1",
+        "title": "sizes",
+        "dependencies": [],
+        "description": "Complete sizes"
+      },
+      {
+        "id": "s2",
+        "title": "art_direction",
+        "dependencies": [],
+        "description": "Complete art_direction"
+      },
+      {
+        "id": "s3",
+        "title": "lazy_loading",
+        "dependencies": [],
+        "description": "Complete lazy_loading"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Responsive Images framework template"
+  },
+  {
+    "id": "html_css_form_validation_styles",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Form Validation Styles",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "valid",
+        "dependencies": [],
+        "description": "Complete valid"
+      },
+      {
+        "id": "s1",
+        "title": "invalid",
+        "dependencies": [],
+        "description": "Complete invalid"
+      },
+      {
+        "id": "s2",
+        "title": "focus",
+        "dependencies": [],
+        "description": "Complete focus"
+      },
+      {
+        "id": "s3",
+        "title": "error_messages",
+        "dependencies": [],
+        "description": "Complete error_messages"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Form Validation Styles framework template"
+  },
+  {
+    "id": "html_css_accessibility_styles",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Accessibility Styles",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "focus_visible",
+        "dependencies": [],
+        "description": "Complete focus_visible"
+      },
+      {
+        "id": "s1",
+        "title": "skip_links",
+        "dependencies": [],
+        "description": "Complete skip_links"
+      },
+      {
+        "id": "s2",
+        "title": "reduced_motion",
+        "dependencies": [],
+        "description": "Complete reduced_motion"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Accessibility Styles framework template"
+  },
+  {
+    "id": "html_css_tailwind_component",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Tailwind Component",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "utility_classes",
+        "dependencies": [],
+        "description": "Complete utility_classes"
+      },
+      {
+        "id": "s1",
+        "title": "responsive",
+        "dependencies": [],
+        "description": "Complete responsive"
+      },
+      {
+        "id": "s2",
+        "title": "states",
+        "dependencies": [],
+        "description": "Complete states"
+      },
+      {
+        "id": "s3",
+        "title": "custom",
+        "dependencies": [],
+        "description": "Complete custom"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Tailwind Component framework template"
+  },
+  {
+    "id": "html_css_css_grid_magazine",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "CSS Grid Magazine",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "grid_areas",
+        "dependencies": [],
+        "description": "Complete grid_areas"
+      },
+      {
+        "id": "s1",
+        "title": "spanning",
+        "dependencies": [],
+        "description": "Complete spanning"
+      },
+      {
+        "id": "s2",
+        "title": "alignment",
+        "dependencies": [],
+        "description": "Complete alignment"
+      },
+      {
+        "id": "s3",
+        "title": "responsive",
+        "dependencies": [],
+        "description": "Complete responsive"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "CSS Grid Magazine framework template"
+  },
+  {
+    "id": "html_css_masonry_layout",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Masonry Layout",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "columns",
+        "dependencies": [],
+        "description": "Complete columns"
+      },
+      {
+        "id": "s1",
+        "title": "items",
+        "dependencies": [],
+        "description": "Complete items"
+      },
+      {
+        "id": "s2",
+        "title": "gaps",
+        "dependencies": [],
+        "description": "Complete gaps"
+      },
+      {
+        "id": "s3",
+        "title": "responsive",
+        "dependencies": [],
+        "description": "Complete responsive"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Masonry Layout framework template"
+  },
+  {
+    "id": "html_css_sticky_header",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Sticky Header",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "position",
+        "dependencies": [],
+        "description": "Complete position"
+      },
+      {
+        "id": "s1",
+        "title": "scroll_behavior",
+        "dependencies": [],
+        "description": "Complete scroll_behavior"
+      },
+      {
+        "id": "s2",
+        "title": "shadow",
+        "dependencies": [],
+        "description": "Complete shadow"
+      },
+      {
+        "id": "s3",
+        "title": "responsive",
+        "dependencies": [],
+        "description": "Complete responsive"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Sticky Header framework template"
+  },
+  {
+    "id": "html_css_sidebar_layout",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Sidebar Layout",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "sidebar",
+        "dependencies": [],
+        "description": "Complete sidebar"
+      },
+      {
+        "id": "s1",
+        "title": "content",
+        "dependencies": [],
+        "description": "Complete content"
+      },
+      {
+        "id": "s2",
+        "title": "collapsible",
+        "dependencies": [],
+        "description": "Complete collapsible"
+      },
+      {
+        "id": "s3",
+        "title": "responsive",
+        "dependencies": [],
+        "description": "Complete responsive"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Sidebar Layout framework template"
+  },
+  {
+    "id": "html_css_split_screen_layout",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Split Screen Layout",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "left_panel",
+        "dependencies": [],
+        "description": "Complete left_panel"
+      },
+      {
+        "id": "s1",
+        "title": "right_panel",
+        "dependencies": [],
+        "description": "Complete right_panel"
+      },
+      {
+        "id": "s2",
+        "title": "divider",
+        "dependencies": [],
+        "description": "Complete divider"
+      },
+      {
+        "id": "s3",
+        "title": "responsive",
+        "dependencies": [],
+        "description": "Complete responsive"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Split Screen Layout framework template"
+  },
+  {
+    "id": "html_css_full_page_sections",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Full Page Sections",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "sections",
+        "dependencies": [],
+        "description": "Complete sections"
+      },
+      {
+        "id": "s1",
+        "title": "snap_scroll",
+        "dependencies": [],
+        "description": "Complete snap_scroll"
+      },
+      {
+        "id": "s2",
+        "title": "navigation",
+        "dependencies": [],
+        "description": "Complete navigation"
+      },
+      {
+        "id": "s3",
+        "title": "indicators",
+        "dependencies": [],
+        "description": "Complete indicators"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Full Page Sections framework template"
+  },
+  {
+    "id": "html_css_parallax_section",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Parallax Section",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "background",
+        "dependencies": [],
+        "description": "Complete background"
+      },
+      {
+        "id": "s1",
+        "title": "content",
+        "dependencies": [],
+        "description": "Complete content"
+      },
+      {
+        "id": "s2",
+        "title": "scroll_effect",
+        "dependencies": [],
+        "description": "Complete scroll_effect"
+      },
+      {
+        "id": "s3",
+        "title": "performance",
+        "dependencies": [],
+        "description": "Complete performance"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Parallax Section framework template"
+  },
+  {
+    "id": "html_css_gradient_backgrounds",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Gradient Backgrounds",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "linear",
+        "dependencies": [],
+        "description": "Complete linear"
+      },
+      {
+        "id": "s1",
+        "title": "radial",
+        "dependencies": [],
+        "description": "Complete radial"
+      },
+      {
+        "id": "s2",
+        "title": "conic",
+        "dependencies": [],
+        "description": "Complete conic"
+      },
+      {
+        "id": "s3",
+        "title": "animated",
+        "dependencies": [],
+        "description": "Complete animated"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Gradient Backgrounds framework template"
+  },
+  {
+    "id": "html_css_glassmorphism_card",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Glassmorphism Card",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "backdrop_filter",
+        "dependencies": [],
+        "description": "Complete backdrop_filter"
+      },
+      {
+        "id": "s1",
+        "title": "border",
+        "dependencies": [],
+        "description": "Complete border"
+      },
+      {
+        "id": "s2",
+        "title": "shadow",
+        "dependencies": [],
+        "description": "Complete shadow"
+      },
+      {
+        "id": "s3",
+        "title": "content",
+        "dependencies": [],
+        "description": "Complete content"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Glassmorphism Card framework template"
+  },
+  {
+    "id": "html_css_neumorphism_button",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Neumorphism Button",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "shadow_outer",
+        "dependencies": [],
+        "description": "Complete shadow_outer"
+      },
+      {
+        "id": "s1",
+        "title": "shadow_inner",
+        "dependencies": [],
+        "description": "Complete shadow_inner"
+      },
+      {
+        "id": "s2",
+        "title": "states",
+        "dependencies": [],
+        "description": "Complete states"
+      },
+      {
+        "id": "s3",
+        "title": "variants",
+        "dependencies": [],
+        "description": "Complete variants"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Neumorphism Button framework template"
+  },
+  {
+    "id": "html_css_custom_scrollbar",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Custom Scrollbar",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "track",
+        "dependencies": [],
+        "description": "Complete track"
+      },
+      {
+        "id": "s1",
+        "title": "thumb",
+        "dependencies": [],
+        "description": "Complete thumb"
+      },
+      {
+        "id": "s2",
+        "title": "hover",
+        "dependencies": [],
+        "description": "Complete hover"
+      },
+      {
+        "id": "s3",
+        "title": "cross_browser",
+        "dependencies": [],
+        "description": "Complete cross_browser"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Custom Scrollbar framework template"
+  },
+  {
+    "id": "html_css_css_shapes",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "CSS Shapes",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "clip_path",
+        "dependencies": [],
+        "description": "Complete clip_path"
+      },
+      {
+        "id": "s1",
+        "title": "shape_outside",
+        "dependencies": [],
+        "description": "Complete shape_outside"
+      },
+      {
+        "id": "s2",
+        "title": "mask",
+        "dependencies": [],
+        "description": "Complete mask"
+      },
+      {
+        "id": "s3",
+        "title": "filters",
+        "dependencies": [],
+        "description": "Complete filters"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "CSS Shapes framework template"
+  },
+  {
+    "id": "html_css_loading_spinners",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Loading Spinners",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "spinner",
+        "dependencies": [],
+        "description": "Complete spinner"
+      },
+      {
+        "id": "s1",
+        "title": "dots",
+        "dependencies": [],
+        "description": "Complete dots"
+      },
+      {
+        "id": "s2",
+        "title": "bars",
+        "dependencies": [],
+        "description": "Complete bars"
+      },
+      {
+        "id": "s3",
+        "title": "skeleton",
+        "dependencies": [],
+        "description": "Complete skeleton"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Loading Spinners framework template"
+  },
+  {
+    "id": "html_css_image_overlay",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Image Overlay",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "overlay",
+        "dependencies": [],
+        "description": "Complete overlay"
+      },
+      {
+        "id": "s1",
+        "title": "content",
+        "dependencies": [],
+        "description": "Complete content"
+      },
+      {
+        "id": "s2",
+        "title": "hover",
+        "dependencies": [],
+        "description": "Complete hover"
+      },
+      {
+        "id": "s3",
+        "title": "transitions",
+        "dependencies": [],
+        "description": "Complete transitions"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Image Overlay framework template"
+  },
+  {
+    "id": "html_css_card_hover_effects",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Card Hover Effects",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "scale",
+        "dependencies": [],
+        "description": "Complete scale"
+      },
+      {
+        "id": "s1",
+        "title": "shadow",
+        "dependencies": [],
+        "description": "Complete shadow"
+      },
+      {
+        "id": "s2",
+        "title": "reveal",
+        "dependencies": [],
+        "description": "Complete reveal"
+      },
+      {
+        "id": "s3",
+        "title": "border",
+        "dependencies": [],
+        "description": "Complete border"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Card Hover Effects framework template"
+  },
+  {
+    "id": "html_css_button_animations",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Button Animations",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "ripple",
+        "dependencies": [],
+        "description": "Complete ripple"
+      },
+      {
+        "id": "s1",
+        "title": "loading",
+        "dependencies": [],
+        "description": "Complete loading"
+      },
+      {
+        "id": "s2",
+        "title": "success",
+        "dependencies": [],
+        "description": "Complete success"
+      },
+      {
+        "id": "s3",
+        "title": "hover",
+        "dependencies": [],
+        "description": "Complete hover"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Button Animations framework template"
+  },
+  {
+    "id": "html_css_form_field_animation",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Form Field Animation",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "focus",
+        "dependencies": [],
+        "description": "Complete focus"
+      },
+      {
+        "id": "s1",
+        "title": "label",
+        "dependencies": [],
+        "description": "Complete label"
+      },
+      {
+        "id": "s2",
+        "title": "error",
+        "dependencies": [],
+        "description": "Complete error"
+      },
+      {
+        "id": "s3",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Form Field Animation framework template"
+  },
+  {
+    "id": "html_css_page_transitions",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Page Transitions",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "fade",
+        "dependencies": [],
+        "description": "Complete fade"
+      },
+      {
+        "id": "s1",
+        "title": "slide",
+        "dependencies": [],
+        "description": "Complete slide"
+      },
+      {
+        "id": "s2",
+        "title": "scale",
+        "dependencies": [],
+        "description": "Complete scale"
+      },
+      {
+        "id": "s3",
+        "title": "timing",
+        "dependencies": [],
+        "description": "Complete timing"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Page Transitions framework template"
+  },
+  {
+    "id": "html_css_scroll_animations",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Scroll Animations",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "reveal",
+        "dependencies": [],
+        "description": "Complete reveal"
+      },
+      {
+        "id": "s1",
+        "title": "parallax",
+        "dependencies": [],
+        "description": "Complete parallax"
+      },
+      {
+        "id": "s2",
+        "title": "progress",
+        "dependencies": [],
+        "description": "Complete progress"
+      },
+      {
+        "id": "s3",
+        "title": "trigger",
+        "dependencies": [],
+        "description": "Complete trigger"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Scroll Animations framework template"
+  },
+  {
+    "id": "html_css_dark_mode_toggle",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Dark Mode Toggle",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "variables",
+        "dependencies": [],
+        "description": "Complete variables"
+      },
+      {
+        "id": "s1",
+        "title": "toggle",
+        "dependencies": [],
+        "description": "Complete toggle"
+      },
+      {
+        "id": "s2",
+        "title": "transition",
+        "dependencies": [],
+        "description": "Complete transition"
+      },
+      {
+        "id": "s3",
+        "title": "storage",
+        "dependencies": [],
+        "description": "Complete storage"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Dark Mode Toggle framework template"
+  },
+  {
+    "id": "html_css_responsive_typography",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Responsive Typography",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "fluid",
+        "dependencies": [],
+        "description": "Complete fluid"
+      },
+      {
+        "id": "s1",
+        "title": "clamp",
+        "dependencies": [],
+        "description": "Complete clamp"
+      },
+      {
+        "id": "s2",
+        "title": "modular_scale",
+        "dependencies": [],
+        "description": "Complete modular_scale"
+      },
+      {
+        "id": "s3",
+        "title": "line_height",
+        "dependencies": [],
+        "description": "Complete line_height"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Responsive Typography framework template"
+  },
+  {
+    "id": "html_css_icon_system",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Icon System",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "svg_sprites",
+        "dependencies": [],
+        "description": "Complete svg_sprites"
+      },
+      {
+        "id": "s1",
+        "title": "font_icons",
+        "dependencies": [],
+        "description": "Complete font_icons"
+      },
+      {
+        "id": "s2",
+        "title": "sizing",
+        "dependencies": [],
+        "description": "Complete sizing"
+      },
+      {
+        "id": "s3",
+        "title": "colors",
+        "dependencies": [],
+        "description": "Complete colors"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Icon System framework template"
+  },
+  {
+    "id": "html_css_aspect_ratio_boxes",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Aspect Ratio Boxes",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "padding_hack",
+        "dependencies": [],
+        "description": "Complete padding_hack"
+      },
+      {
+        "id": "s1",
+        "title": "aspect_ratio",
+        "dependencies": [],
+        "description": "Complete aspect_ratio"
+      },
+      {
+        "id": "s2",
+        "title": "object_fit",
+        "dependencies": [],
+        "description": "Complete object_fit"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Aspect Ratio Boxes framework template"
+  },
+  {
+    "id": "html_css_css_counters",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "CSS Counters",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "counter_reset",
+        "dependencies": [],
+        "description": "Complete counter_reset"
+      },
+      {
+        "id": "s1",
+        "title": "counter_increment",
+        "dependencies": [],
+        "description": "Complete counter_increment"
+      },
+      {
+        "id": "s2",
+        "title": "content",
+        "dependencies": [],
+        "description": "Complete content"
+      },
+      {
+        "id": "s3",
+        "title": "nested",
+        "dependencies": [],
+        "description": "Complete nested"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "CSS Counters framework template"
+  },
+  {
+    "id": "html_css_multi-column_text",
+    "category": "html_css",
+    "subcategory": "components",
+    "title": "Multi-Column Text",
+    "persona": "html_css_specialist",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "columns",
+        "dependencies": [],
+        "description": "Complete columns"
+      },
+      {
+        "id": "s1",
+        "title": "gaps",
+        "dependencies": [],
+        "description": "Complete gaps"
+      },
+      {
+        "id": "s2",
+        "title": "spanning",
+        "dependencies": [],
+        "description": "Complete spanning"
+      },
+      {
+        "id": "s3",
+        "title": "breaks",
+        "dependencies": [],
+        "description": "Complete breaks"
+      }
+    ],
+    "tags": [
+      "html",
+      "css",
+      "frontend"
+    ],
+    "description": "Multi-Column Text framework template"
+  }
+]

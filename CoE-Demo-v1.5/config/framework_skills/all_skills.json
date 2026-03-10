@@ -1,0 +1,226 @@
+[
+  {
+    "id": "code_python_error_handling",
+    "domain": "code",
+    "tags": ["python", "errors", "exceptions", "robustness"],
+    "title": "Python Error Handling",
+    "description": "Python exception handling, try/except blocks, specific exception types, context managers, graceful degradation, error propagation",
+    "guidance": "- Catch specific exception types, never bare `except:` or `except Exception:` unless re-raising\n- Use context managers (`with`) for resource cleanup — files, locks, connections\n- Raise meaningful exceptions with descriptive messages; include the original cause via `raise ... from e`\n- Log errors at the appropriate level (warning vs error vs critical) before handling\n- Prefer returning sentinel values or Optional[] over swallowing exceptions in library code\n- Define custom exception classes for domain-specific error conditions"
+  },
+  {
+    "id": "code_python_type_hints",
+    "domain": "code",
+    "tags": ["python", "types", "annotations", "documentation"],
+    "title": "Python Type Hints and Docstrings",
+    "description": "Python type annotations, type hints, function signatures, return types, docstrings, documentation, Optional, Union, List, Dict",
+    "guidance": "- Annotate all public function parameters and return types; use `Optional[T]` not `T | None` for Python <3.10 compatibility. GRADING NOTE: `T | None` union syntax is valid and idiomatic in Python 3.10+ — its use is NOT a failure unless backwards compatibility with Python <3.10 was explicitly required.\n- Prefer `list[T]`, `dict[K,V]` (lowercase) in Python 3.9+\n- Write docstrings for all public functions/classes: one-line summary, then Args/Returns/Raises sections\n- Use `TypeVar` and generics for reusable container utilities\n- Avoid `Any` except at genuine system boundaries (JSON parsing, dynamic dispatch)\n- Run `mypy --strict` or equivalent to catch annotation gaps before shipping. GRADING NOTE: `mypy` is a workflow tool — its absence from the generated code is NOT a failure; only evaluate the annotations present in the code itself."
+  },
+  {
+    "id": "code_python_algorithm_complexity",
+    "domain": "code",
+    "tags": ["python", "algorithms", "performance", "complexity", "optimization"],
+    "title": "Algorithm Complexity and Performance",
+    "description": "Time complexity, space complexity, Big O notation, algorithm selection, performance optimization, bottlenecks, profiling",
+    "guidance": "- State the time and space complexity of every non-trivial function in its docstring. GRADING NOTE: complexity annotation is a best-practice recommendation — its absence is NOT a correctness failure unless the task explicitly asks for complexity analysis.\n- Prefer O(n log n) sorting/searching over O(n\u00b2) nested loops; use `bisect` for sorted-list lookups\n- Use `set` and `dict` for O(1) membership/lookup instead of `list` where order is irrelevant\n- Avoid repeated `.append()` inside loops building large strings — use `''.join(parts)`\n- Defer optimization until profiling (`cProfile`, `line_profiler`) identifies the actual bottleneck\n- For numeric work, prefer numpy vectorization over Python loops"
+  },
+  {
+    "id": "code_python_data_structures",
+    "domain": "code",
+    "tags": ["python", "data structures", "collections", "dict", "list", "set"],
+    "title": "Python Data Structure Selection",
+    "description": "Choosing between list, dict, set, tuple, deque, defaultdict, Counter, namedtuple, dataclass, queue",
+    "guidance": "- Use `collections.deque` for O(1) append/popleft queues; `list` is O(n) for popleft\n- Use `collections.defaultdict` to avoid key-existence boilerplate\n- Use `collections.Counter` for frequency counting — cleaner and faster than manual dicts\n- Prefer `dataclasses.dataclass` or `typing.NamedTuple` over plain dicts for structured records\n- Use `tuple` for heterogeneous immutable records; `list` for homogeneous mutable sequences\n- Use `frozenset` when a set must be hashable (e.g. dict key or set member)"
+  },
+  {
+    "id": "code_python_testing",
+    "domain": "code",
+    "tags": ["python", "testing", "pytest", "unit tests", "TDD", "mocking"],
+    "title": "Python Testing Approach",
+    "description": "Writing unit tests, pytest, test-driven development, mocking, fixtures, coverage, assertions",
+    "guidance": "- Write tests in the same commit as the code; name test functions `test_<what>_<condition>_<expected>`\n- Use `pytest` fixtures for shared setup; avoid `setUp`/`tearDown` in favour of `conftest.py`\n- Mock external I/O (network, filesystem, time) — `unittest.mock.patch` or `pytest-mock`\n- Test edge cases explicitly: empty input, None, boundary values, error paths\n- Aim for branch coverage, not just line coverage — use `pytest --cov --cov-branch`\n- Keep each test focused on one behaviour; long tests are a sign of missing decomposition"
+  },
+  {
+    "id": "code_python_security",
+    "domain": "code",
+    "tags": ["python", "security", "injection", "secrets", "validation", "SQL"],
+    "title": "Python Security Practices",
+    "description": "SQL injection, input validation, secrets management, environment variables, subprocess safety, serialization security",
+    "guidance": "- Never interpolate user input into SQL — use parameterized queries (`?` or `%s` placeholders)\n- Store secrets in environment variables or a secrets manager, never in source code or config files\n- Validate and sanitize all external input before use; use `pathlib` to prevent path-traversal\n- Avoid `subprocess.shell=True` with any user-controlled data; use list form with `shlex.split`\n- Use `secrets` module (not `random`) for cryptographic tokens and passwords\n- When deserializing, prefer JSON/TOML over `pickle`; never unpickle untrusted data"
+  },
+  {
+    "id": "code_python_concurrency",
+    "domain": "code",
+    "tags": ["python", "concurrency", "threading", "asyncio", "multiprocessing", "async"],
+    "title": "Python Concurrency Patterns",
+    "description": "asyncio, threading, multiprocessing, concurrent.futures, async/await, GIL, I/O bound, CPU bound, race conditions",
+    "guidance": "- I/O-bound work: use `asyncio` + `async/await`; CPU-bound work: use `multiprocessing` or `concurrent.futures.ProcessPoolExecutor`\n- The GIL prevents true thread parallelism for CPU work — threads are only useful for I/O\n- Use `asyncio.gather()` for concurrent coroutines; `asyncio.Queue` for producer/consumer patterns\n- Protect shared mutable state with `asyncio.Lock` (async) or `threading.Lock` (threads)\n- Use `concurrent.futures.ThreadPoolExecutor` for wrapping blocking third-party calls in async code\n- Avoid mixing `async` and blocking calls in the same event loop — use `loop.run_in_executor()`"
+  },
+  {
+    "id": "code_python_oop_design",
+    "domain": "code",
+    "tags": ["python", "OOP", "classes", "inheritance", "composition", "SOLID", "design patterns"],
+    "title": "Python OOP and Class Design",
+    "description": "Class design, inheritance, composition, SOLID principles, abstract base classes, protocols, mixins, single responsibility",
+    "guidance": "- Prefer composition over inheritance; use `typing.Protocol` for structural subtyping instead of deep hierarchies\n- Apply single responsibility: one class, one reason to change\n- Use `@dataclass` for value objects; use `@property` sparingly — only when invariants need enforcing\n- Define `__repr__` for all non-trivial classes to simplify debugging\n- Use `abc.ABC` / `@abstractmethod` only when a common interface across implementations is required\n- Keep `__init__` lean — delegate complex construction to `@classmethod` factory methods"
+  },
+  {
+    "id": "code_python_api_design",
+    "domain": "code",
+    "tags": ["python", "API", "interface", "library", "public interface", "backwards compatibility"],
+    "title": "Python API and Interface Design",
+    "description": "Designing public interfaces, function signatures, default arguments, keyword-only arguments, backwards compatibility, versioning",
+    "guidance": "- Make arguments keyword-only (after `*`) when order would be confusing: `def f(*, timeout, retries)`\n- Use `**kwargs` sparingly — prefer explicit parameters for discoverability\n- Default arguments should be immutable; never use mutable defaults (`[]`, `{}`)\n- Design for the caller, not the implementer — minimize required arguments, maximize sensible defaults\n- Mark internal APIs with a leading underscore; document breaking changes in changelogs\n- Use `__all__` to explicitly declare the public surface of every module"
+  },
+  {
+    "id": "code_python_dependency_management",
+    "domain": "code",
+    "tags": ["python", "dependencies", "imports", "packaging", "requirements", "virtual environment"],
+    "title": "Python Dependency Management",
+    "description": "Managing imports, packages, requirements.txt, virtual environments, circular imports, optional dependencies",
+    "guidance": "- Pin exact versions in `requirements.txt` for applications; use `>=` ranges in library `setup.cfg`/`pyproject.toml`\n- Avoid circular imports — restructure shared code into a separate module\n- Use lazy imports inside functions for optional heavy dependencies to keep startup fast\n- Group imports: stdlib, then third-party, then local — separated by blank lines (PEP 8)\n- Declare optional dependencies clearly with a try/except ImportError guard and a helpful error message\n- Use a virtual environment for every project; never install into the system Python"
+  },
+  {
+    "id": "web_semantic_html_accessibility",
+    "domain": "web",
+    "tags": ["HTML", "accessibility", "ARIA", "semantic", "a11y", "screen reader"],
+    "title": "Semantic HTML and Accessibility",
+    "description": "Semantic HTML elements, ARIA attributes, accessibility, screen readers, keyboard navigation, alt text, form labels",
+    "guidance": "- Use semantic elements (`<main>`, `<nav>`, `<article>`, `<section>`, `<aside>`, `<header>`, `<footer>`) rather than `<div>` everywhere\n- Every `<img>` needs a meaningful `alt` attribute; decorative images use `alt=\"\"`\n- Every form `<input>` must have an associated `<label>` (via `for`/`id` or wrapping)\n- Ensure keyboard navigation works without a mouse: focus order, visible focus styles, no keyboard traps\n- Use `aria-label`, `aria-describedby`, `role` only when native semantics are insufficient\n- Colour contrast ratio >= 4.5:1 for normal text, 3:1 for large text (WCAG AA)"
+  },
+  {
+    "id": "web_css_layout",
+    "domain": "web",
+    "tags": ["CSS", "flexbox", "grid", "layout", "positioning", "responsive"],
+    "title": "CSS Layout Best Practices",
+    "description": "CSS flexbox, CSS grid, layout techniques, positioning, float, responsive design, container queries",
+    "guidance": "- Use CSS Grid for two-dimensional layouts; Flexbox for single-axis component layouts\n- Avoid `float` for layout (legacy); avoid `position: absolute` except for overlays and tooltips\n- Use logical properties (`margin-inline`, `padding-block`) for better internationalisation support\n- Prefer `gap` over margin hacks in flex/grid containers\n- Use CSS custom properties (variables) for design tokens: colours, spacing, typography\n- Avoid fixed pixel heights on containers — let content determine height; use `min-height` instead"
+  },
+  {
+    "id": "web_javascript_async",
+    "domain": "web",
+    "tags": ["JavaScript", "async", "await", "promises", "fetch", "error handling", "async/await"],
+    "title": "JavaScript Async Patterns",
+    "description": "JavaScript async/await, promises, fetch API, error handling, async functions, chaining, race conditions",
+    "guidance": "- Always use `async/await` over raw `.then()` chains for readability\n- Wrap `await` calls in `try/catch`; never leave a rejected promise unhandled\n- Use `Promise.all()` for concurrent independent fetches; `Promise.allSettled()` when partial failure is acceptable\n- Avoid `async` functions that mix awaited and synchronous return paths — be consistent\n- Cancel long-running fetches with `AbortController` when the component unmounts or the user navigates\n- Never `await` inside a `forEach` — use `for...of` or `Promise.all(array.map(async ...))`"
+  },
+  {
+    "id": "web_performance",
+    "domain": "web",
+    "tags": ["web", "performance", "loading", "lazy loading", "debounce", "throttle", "bundle", "optimization"],
+    "title": "Web Performance Optimization",
+    "description": "Web performance, lazy loading, code splitting, debouncing, throttling, bundle size, render blocking, LCP, CLS",
+    "guidance": "- Lazy-load below-the-fold images and non-critical JS chunks\n- Debounce input handlers and resize/scroll listeners — 150-300ms is typical. GRADING NOTE: the 150-300ms range is a general guideline, not a hard requirement — any reasonable debounce delay (e.g. 100ms, 500ms) is acceptable; the ABSENCE of debouncing on high-frequency handlers is what should be flagged.\n- Avoid layout thrashing: batch DOM reads before DOM writes; use `requestAnimationFrame` for animations\n- Minimise main-thread work: move heavy computation to Web Workers\n- Use `content-visibility: auto` on long lists to skip off-screen rendering\n- Prefer `transform` and `opacity` for animations — they compositor-thread only, no reflow"
+  },
+  {
+    "id": "web_security",
+    "domain": "web",
+    "tags": ["web", "security", "XSS", "CSRF", "CSP", "injection", "sanitization", "CORS"],
+    "title": "Web Security Fundamentals",
+    "description": "XSS prevention, CSRF tokens, Content Security Policy, input sanitization, CORS, cookie security, SQL injection in web",
+    "guidance": "- Never insert user content into the DOM via `innerHTML` — use `textContent` or a trusted sanitizer (DOMPurify)\n- Set `HttpOnly`, `Secure`, `SameSite=Strict` on all authentication cookies\n- Implement a Content Security Policy header; disallow `unsafe-inline` scripts\n- Validate and sanitize all inputs server-side regardless of client-side validation\n- CORS: specify exact allowed origins, never `Access-Control-Allow-Origin: *` for credentialed requests\n- Use CSRF tokens for any state-mutating form or API endpoint"
+  },
+  {
+    "id": "web_responsive_design",
+    "domain": "web",
+    "tags": ["CSS", "responsive", "mobile-first", "breakpoints", "viewport", "media queries"],
+    "title": "Responsive Design Approach",
+    "description": "Mobile-first design, breakpoints, media queries, fluid typography, viewport units, responsive images, container queries",
+    "guidance": "- Design mobile-first: write base styles for small screens, use `min-width` media queries to enhance for larger\n- Use relative units (`rem`, `em`, `%`, `vw`) over fixed `px` for typography and spacing\n- Use `clamp()` for fluid typography: `font-size: clamp(1rem, 2.5vw, 1.5rem)`\n- Provide responsive images with `srcset` and `sizes`; use `<picture>` for art direction\n- Prefer CSS container queries (`@container`) over media queries for component-level responsiveness\n- Test on real devices or accurate emulators — browser DevTools device mode misses many touch issues"
+  },
+  {
+    "id": "web_react_patterns",
+    "domain": "web",
+    "tags": ["React", "hooks", "components", "state", "props", "patterns", "composition"],
+    "title": "React Component Patterns",
+    "description": "React hooks, functional components, state management, props, component composition, useEffect, custom hooks",
+    "guidance": "- Use functional components with hooks exclusively — no class components in new code\n- Extract repeated stateful logic into custom hooks (`use` prefix required)\n- Keep components focused: split render logic from data-fetching; co-locate state with where it's needed\n- Use `useCallback` and `useMemo` only when profiling shows a real performance problem — premature memoisation adds complexity. GRADING NOTE: code that USES `useCallback` or `useMemo` is NOT a failure — this guidance discourages reflexive over-use, but their presence in correct code is acceptable.\n- Avoid side effects in render; put them in `useEffect` with a correct dependency array\n- Lift state up only as far as needed; prefer `Context` + `useReducer` over prop-drilling beyond 2 levels"
+  },
+  {
+    "id": "web_typescript_usage",
+    "domain": "web",
+    "tags": ["TypeScript", "types", "interfaces", "generics", "strict", "narrowing"],
+    "title": "TypeScript Usage Patterns",
+    "description": "TypeScript type definitions, interfaces, type aliases, generics, strict mode, type narrowing, utility types",
+    "guidance": "- Enable `strict: true` in `tsconfig.json`; address all implied-any and null-check errors\n- Prefer `interface` for object shapes (extensible via declaration merging); `type` for unions, tuples, primitives\n- Use discriminated unions for sum types: `type Result = { ok: true; value: T } | { ok: false; error: string }`\n- Use utility types (`Partial<T>`, `Required<T>`, `Pick<T,K>`, `Omit<T,K>`) instead of duplicating shapes\n- Narrow types explicitly with type guards (`typeof`, `instanceof`, `in`) rather than casting with `as`\n- Avoid `any`; prefer `unknown` for genuinely dynamic data — forces explicit narrowing before use"
+  },
+  {
+    "id": "web_state_management",
+    "domain": "web",
+    "tags": ["web", "state", "Redux", "Zustand", "Context", "global state", "local state"],
+    "title": "Web State Management Strategy",
+    "description": "Frontend state management, local state, global state, Redux, Zustand, React Context, server state, caching",
+    "guidance": "- Categorise state before choosing a solution: local UI state (useState), shared app state (Context/Zustand), server state (React Query/SWR)\n- Use React Query or SWR for server-fetched data — they handle caching, deduplication, and revalidation automatically\n- Reach for a global state library (Zustand, Redux Toolkit) only when Context causes excessive re-renders or update complexity\n- Normalise server data in the store to avoid duplication; keep derived values as selectors not stored state\n- Never store derived state — compute it from source of truth using `useMemo` or selectors\n- Colocate state as close to where it's used as possible; resist the urge to hoist everything to global"
+  },
+  {
+    "id": "web_api_consumption",
+    "domain": "web",
+    "tags": ["web", "REST", "API", "fetch", "HTTP", "error handling", "loading states"],
+    "title": "REST API Consumption Patterns",
+    "description": "Consuming REST APIs, fetch, axios, loading states, error states, retry logic, pagination, authentication headers",
+    "guidance": "- Always handle all three states: loading, success, and error — never leave error state unrendered\n- Check `response.ok` after `fetch()` — a 4xx/5xx does NOT throw by default; you must check and throw manually\n- Send authentication tokens in `Authorization: Bearer <token>` headers, not query strings\n- Implement exponential backoff for retries on 429 and 5xx responses\n- Paginate large result sets — never assume an endpoint returns all results in one call\n- Centralise API calls in a service layer, not scattered across components; mock the service layer in tests"
+  },
+  {
+    "id": "code_refactoring_principles",
+    "domain": "code",
+    "tags": ["refactoring", "clean code", "readability", "maintainability", "code quality"],
+    "title": "Refactoring and Code Quality",
+    "description": "Code refactoring, clean code, readability, maintainability, naming, function length, code smells",
+    "guidance": "- Function length: if it doesn't fit on one screen (~40 lines), it does too much — extract helpers\n- Name variables and functions for what they are, not what they do: `user_email` not `get_user_email` for a variable\n- Remove dead code immediately — version control preserves history; orphaned code misleads readers\n- Replace magic numbers and strings with named constants\n- The DRY principle applies to knowledge, not just text — identical logic across distant callsites is the problem, not repeated literals\n- Leave code cleaner than you found it — opportunistic refactoring of the touched area, not wholesale rewrites"
+  },
+  {
+    "id": "code_debugging_approach",
+    "domain": "code",
+    "tags": ["debugging", "logging", "tracing", "print debugging", "pdb", "profiling"],
+    "title": "Systematic Debugging Approach",
+    "description": "Debugging strategy, logging, tracing, print debugging, pdb debugger, hypothesis testing, reproducing bugs",
+    "guidance": "- Reproduce the bug deterministically before attempting a fix — a fix you can't verify may not have worked\n- Binary-search the failing code: comment out halves to localise the problem quickly\n- Use structured logging (`logging` module, not `print`) with log levels so production verbosity is configurable\n- Use `pdb.set_trace()` or `breakpoint()` for interactive inspection; never leave debugger statements in committed code\n- Read the full traceback from bottom to top — the last frame is usually where the fix belongs\n- Check your assumptions with assertions before trusting them"
+  },
+  {
+    "id": "web_css_naming_organisation",
+    "domain": "web",
+    "tags": ["CSS", "BEM", "naming", "organisation", "CSS modules", "specificity", "cascade"],
+    "title": "CSS Naming and Organisation",
+    "description": "CSS naming conventions, BEM, CSS modules, specificity, cascade, maintainable CSS, utility classes",
+    "guidance": "- Use BEM (Block__Element--Modifier) or CSS Modules to scope styles and avoid global specificity conflicts\n- Avoid qualifying selectors with element types (`div.card` → `.card`) — reduces specificity unnecessarily\n- Keep specificity low and flat — IDs in CSS are almost never appropriate\n- Group related properties: positioning, box-model, typography, visual, then misc\n- CSS custom properties for design tokens belong in `:root`; component-local tokens in the component selector\n- Avoid `!important` except for utility override classes — it creates unpayable specificity debt"
+  },
+  {
+    "id": "code_documentation_standards",
+    "domain": "code",
+    "tags": ["documentation", "comments", "README", "inline docs", "API docs"],
+    "title": "Code Documentation Standards",
+    "description": "Writing documentation, inline comments, module docstrings, README, API documentation, when to comment",
+    "guidance": "- Comment *why*, not *what* — the code already says what; comments explain intent, constraints, and non-obvious tradeoffs\n- Module-level docstrings should describe the module's purpose and its public API surface in 2-3 sentences\n- Keep comments current — a wrong comment is worse than no comment\n- Document preconditions, postconditions, and side effects for non-trivial functions\n- README should answer: what is this, how do I install and run it, how do I run tests, how do I contribute\n- Use type hints as lightweight documentation that tools can also verify"
+  },
+  {
+    "id": "web_node_backend_patterns",
+    "domain": "web",
+    "tags": ["Node.js", "Express", "backend", "middleware", "routing", "error handling", "REST"],
+    "title": "Node.js Backend Patterns",
+    "description": "Node.js backend development, Express middleware, routing, error handling, request validation, REST API design",
+    "guidance": "- Always use an error-handling middleware with 4 arguments `(err, req, res, next)` as the final middleware\n- Validate request bodies with a schema library (Zod, Joi, express-validator) before touching the data\n- Use `next(err)` to propagate errors up to the error handler — never send responses in multiple middleware\n- Keep route handlers thin: extract business logic into service functions, not inline in the router\n- Set security headers with `helmet`; enable compression with `compression` middleware\n- Use `process.env` for configuration via `dotenv` in development; never hardcode ports or credentials"
+  },
+  {
+    "id": "code_python_numba_jit",
+    "domain": "code",
+    "tags": ["python", "numba", "JIT", "acceleration", "performance", "GPU", "nopython", "parallel"],
+    "title": "Numba JIT Acceleration",
+    "description": "Numba JIT compilation, @jit, @njit, nopython mode, parallel=True, prange, CUDA GPU kernels, loop vectorisation, type inference, warm-up",
+    "guidance": "- Use `@njit` over bare `@jit` — `@njit` is shorthand for `@jit(nopython=True)` and compiles the full function to machine code with no Python fallback. GRADING NOTE: `@njit(parallel=True)`, `@njit(cache=True)`, `@njit(parallel=True, cache=True)` are all valid forms of `@njit`; passing arguments to `@njit` does NOT make it a different decorator. `@jit(nopython=True, parallel=True)` is also fully equivalent to `@njit(parallel=True)` — both are PASS.\n- Use `parallel=True` with `prange` instead of `range` to auto-parallelise independent loops: `for i in prange(n)` on the outermost loop is the canonical pattern. GRADING NOTE: presence of `prange` with `parallel=True` in the decorator is the correctness signal — loops controlled by `range` inside a `prange` outer loop are fine.\n- Numba gains are largest on tight numeric loops over plain numpy arrays; avoid Python objects, dicts, and class methods inside JIT functions.\n- `cache=True` persists compiled bytecode to disk and avoids re-compilation on subsequent runs. GRADING NOTE: `cache=True` is a PERFORMANCE OPTIMISATION, not a correctness requirement — its absence is NOT a failure.\n- Keep JIT function arguments to scalar types and plain numpy arrays — avoid returning lists, dicts, or Python objects.\n- Use `numba.typed.List` / `numba.typed.Dict` when container types must be passed into JIT functions"
+  },
+  {
+    "id": "code_python_threadsafe_multiprocessing",
+    "domain": "code",
+    "tags": ["python", "multiprocessing", "thread-safe", "shared memory", "Manager", "Lock", "Queue", "pickling", "parallel"],
+    "title": "Thread-Safe Multiprocessing",
+    "description": "Python multiprocessing safe shared state, Manager, Value, Array, multiprocessing Queue, Lock, pickling, process-safe data structures, spawn vs fork",
+    "guidance": "- Use `multiprocessing.Queue` or `multiprocessing.Pipe` for inter-process communication — never share mutable objects through a raw reference across processes\n- Use `multiprocessing.Value` / `multiprocessing.Array` (ctypes-backed) for simple numeric shared state; always pair writes with a `Lock`\n- Use `multiprocessing.Manager()` for complex shared objects (dicts, lists); accept that Manager-proxied access is slower than direct shared memory\n- Worker functions must be picklable: top-level functions only, not lambdas or closures; use `functools.partial` to bind arguments\n- Always `.join()` spawned processes to avoid zombies; use `with Pool(...) as p:` for automatic cleanup\n- Explicitly set `mp.set_start_method('spawn')` when mixing with GPU/CUDA resources — the default `fork` is unsafe with most threaded native libraries"
+  },
+  {
+    "id": "code_python_numpy_vectorization",
+    "domain": "code",
+    "tags": ["python", "numpy", "vectorization", "broadcasting", "ufunc", "array", "performance", "dtype", "memory layout"],
+    "title": "NumPy Vectorized Array Operations",
+    "description": "NumPy vectorization, broadcasting, universal functions (ufuncs), array operations, memory layout, dtype selection, avoiding Python loops over arrays",
+    "guidance": "- Replace Python loops over arrays with numpy operations — element-wise `a + b` on a large array can be 100\u00d7 faster than an explicit loop\n- Understand broadcasting rules before combining arrays of different shapes; use `.reshape()` or `np.newaxis` to make intent explicit\n- Use in-place operators (`+=`, `*=`, `np.add(a, b, out=a)`) to avoid allocating a temporary array when working with large buffers\n- Choose the narrowest dtype that fits your data (`float32` vs `float64`, `int32` vs `int64`) — halving dtype width roughly halves memory and improves cache performance\n- Prefer `np.where`, `np.clip`, `np.einsum`, and ufuncs over manual loops; `np.einsum` handles batched contraction/dot-product patterns concisely\n- Check memory layout with `arr.flags`; C-contiguous (row-major) access is cache-optimal for row-wise operations — use `np.ascontiguousarray()` to force layout. GRADING NOTE: `arr.flags` is a diagnostic tool and `np.ascontiguousarray()` is a defensive optimisation — their absence from generated code is NOT a failure; only flag code that uses explicitly column-major layout in a row-wise operation context."
+  }
+]

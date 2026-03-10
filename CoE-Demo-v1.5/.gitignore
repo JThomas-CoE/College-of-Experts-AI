@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and Project
+.vscode/
+.idea/
+.env
+
+# CoE Specific
+coe_memory.db
+*.log
+logs/
+sessions/
+cache/
+
+# Embedding caches — built at runtime, machine-specific numpy vectors
+config/framework_templates/embedding_cache/
+config/framework_skills/embedding_cache/
+coe_demo/data/memory.db
+
+# Model Weights (Prevent accidental massive uploads)
+*.gguf
+*.bin
+*.onnx
+*.safetensors
+*.pt

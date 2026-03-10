@@ -1,0 +1,3273 @@
+[
+  {
+    "id": "sql_query_select_with_joins",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "SELECT with Joins",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "tables",
+        "dependencies": [],
+        "description": "Complete tables"
+      },
+      {
+        "id": "s1",
+        "title": "join_conditions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete join_conditions"
+      },
+      {
+        "id": "s2",
+        "title": "columns",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete columns"
+      },
+      {
+        "id": "s3",
+        "title": "filters",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete filters"
+      },
+      {
+        "id": "s4",
+        "title": "ordering",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete ordering"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "SELECT with Joins framework template"
+  },
+  {
+    "id": "sql_query_aggregate_report",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Aggregate Report",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "grouping",
+        "dependencies": [],
+        "description": "Complete grouping"
+      },
+      {
+        "id": "s1",
+        "title": "aggregations",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete aggregations"
+      },
+      {
+        "id": "s2",
+        "title": "having",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete having"
+      },
+      {
+        "id": "s3",
+        "title": "formatting",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete formatting"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Aggregate Report framework template"
+  },
+  {
+    "id": "sql_query_window_functions",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Window Functions",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "partitioning",
+        "dependencies": [],
+        "description": "Complete partitioning"
+      },
+      {
+        "id": "s1",
+        "title": "ordering",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete ordering"
+      },
+      {
+        "id": "s2",
+        "title": "functions",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete functions"
+      },
+      {
+        "id": "s3",
+        "title": "framing",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete framing"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Window Functions framework template"
+  },
+  {
+    "id": "sql_query_cte_query",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "CTE Query",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "cte_definition",
+        "dependencies": [],
+        "description": "Complete cte_definition"
+      },
+      {
+        "id": "s1",
+        "title": "recursive_part",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete recursive_part"
+      },
+      {
+        "id": "s2",
+        "title": "main_query",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete main_query"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "CTE Query framework template"
+  },
+  {
+    "id": "sql_query_subquery_patterns",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Subquery Patterns",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "scalar",
+        "dependencies": [],
+        "description": "Complete scalar"
+      },
+      {
+        "id": "s1",
+        "title": "correlated",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete correlated"
+      },
+      {
+        "id": "s2",
+        "title": "exists",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete exists"
+      },
+      {
+        "id": "s3",
+        "title": "in_clause",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete in_clause"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Subquery Patterns framework template"
+  },
+  {
+    "id": "sql_query_union_operations",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "UNION Operations",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "query_1",
+        "dependencies": [],
+        "description": "Complete query_1"
+      },
+      {
+        "id": "s1",
+        "title": "query_2",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete query_2"
+      },
+      {
+        "id": "s2",
+        "title": "ordering",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete ordering"
+      },
+      {
+        "id": "s3",
+        "title": "deduplication",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete deduplication"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "UNION Operations framework template"
+  },
+  {
+    "id": "sql_query_pivot_query",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Pivot Query",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "rows",
+        "dependencies": [],
+        "description": "Complete rows"
+      },
+      {
+        "id": "s1",
+        "title": "columns",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete columns"
+      },
+      {
+        "id": "s2",
+        "title": "values",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete values"
+      },
+      {
+        "id": "s3",
+        "title": "aggregation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete aggregation"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Pivot Query framework template"
+  },
+  {
+    "id": "sql_query_date_range_query",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Date Range Query",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "date_functions",
+        "dependencies": [],
+        "description": "Complete date_functions"
+      },
+      {
+        "id": "s1",
+        "title": "ranges",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete ranges"
+      },
+      {
+        "id": "s2",
+        "title": "periods",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete periods"
+      },
+      {
+        "id": "s3",
+        "title": "calculations",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete calculations"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Date Range Query framework template"
+  },
+  {
+    "id": "sql_query_full_text_search",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Full Text Search",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "indexing",
+        "dependencies": [],
+        "description": "Complete indexing"
+      },
+      {
+        "id": "s1",
+        "title": "search_query",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete search_query"
+      },
+      {
+        "id": "s2",
+        "title": "ranking",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete ranking"
+      },
+      {
+        "id": "s3",
+        "title": "highlighting",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete highlighting"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Full Text Search framework template"
+  },
+  {
+    "id": "sql_query_hierarchical_query",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Hierarchical Query",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "anchor",
+        "dependencies": [],
+        "description": "Complete anchor"
+      },
+      {
+        "id": "s1",
+        "title": "recursive",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete recursive"
+      },
+      {
+        "id": "s2",
+        "title": "path",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete path"
+      },
+      {
+        "id": "s3",
+        "title": "level",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete level"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Hierarchical Query framework template"
+  },
+  {
+    "id": "sql_query_lead_lag_analysis",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Lead Lag Analysis",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "partitioning",
+        "dependencies": [],
+        "description": "Complete partitioning"
+      },
+      {
+        "id": "s1",
+        "title": "lead",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete lead"
+      },
+      {
+        "id": "s2",
+        "title": "lag",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete lag"
+      },
+      {
+        "id": "s3",
+        "title": "comparison",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete comparison"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Lead Lag Analysis framework template"
+  },
+  {
+    "id": "sql_query_running_total",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Running Total",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "partitioning",
+        "dependencies": [],
+        "description": "Complete partitioning"
+      },
+      {
+        "id": "s1",
+        "title": "ordering",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete ordering"
+      },
+      {
+        "id": "s2",
+        "title": "sum",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete sum"
+      },
+      {
+        "id": "s3",
+        "title": "reset",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete reset"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Running Total framework template"
+  },
+  {
+    "id": "sql_query_ranking_query",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Ranking Query",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "row_number",
+        "dependencies": [],
+        "description": "Complete row_number"
+      },
+      {
+        "id": "s1",
+        "title": "rank",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete rank"
+      },
+      {
+        "id": "s2",
+        "title": "dense_rank",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete dense_rank"
+      },
+      {
+        "id": "s3",
+        "title": "ntile",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete ntile"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Ranking Query framework template"
+  },
+  {
+    "id": "sql_query_moving_average",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Moving Average",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "partitioning",
+        "dependencies": [],
+        "description": "Complete partitioning"
+      },
+      {
+        "id": "s1",
+        "title": "ordering",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete ordering"
+      },
+      {
+        "id": "s2",
+        "title": "frame",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete frame"
+      },
+      {
+        "id": "s3",
+        "title": "calculation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete calculation"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Moving Average framework template"
+  },
+  {
+    "id": "sql_query_gap_analysis",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Gap Analysis",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "sequence",
+        "dependencies": [],
+        "description": "Complete sequence"
+      },
+      {
+        "id": "s1",
+        "title": "gaps",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete gaps"
+      },
+      {
+        "id": "s2",
+        "title": "islands",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete islands"
+      },
+      {
+        "id": "s3",
+        "title": "identification",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete identification"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Gap Analysis framework template"
+  },
+  {
+    "id": "sql_query_deduplication_query",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Deduplication Query",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "row_number",
+        "dependencies": [],
+        "description": "Complete row_number"
+      },
+      {
+        "id": "s1",
+        "title": "partition",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete partition"
+      },
+      {
+        "id": "s2",
+        "title": "filter",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete filter"
+      },
+      {
+        "id": "s3",
+        "title": "result",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete result"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Deduplication Query framework template"
+  },
+  {
+    "id": "sql_query_string_aggregation",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "String Aggregation",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "grouping",
+        "dependencies": [],
+        "description": "Complete grouping"
+      },
+      {
+        "id": "s1",
+        "title": "concatenation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete concatenation"
+      },
+      {
+        "id": "s2",
+        "title": "separator",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete separator"
+      },
+      {
+        "id": "s3",
+        "title": "ordering",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete ordering"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "String Aggregation framework template"
+  },
+  {
+    "id": "sql_query_conditional_aggregation",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Conditional Aggregation",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "case_when",
+        "dependencies": [],
+        "description": "Complete case_when"
+      },
+      {
+        "id": "s1",
+        "title": "sum",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete sum"
+      },
+      {
+        "id": "s2",
+        "title": "count",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete count"
+      },
+      {
+        "id": "s3",
+        "title": "avg",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete avg"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Conditional Aggregation framework template"
+  },
+  {
+    "id": "sql_query_cross_tab_query",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Cross Tab Query",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "rows",
+        "dependencies": [],
+        "description": "Complete rows"
+      },
+      {
+        "id": "s1",
+        "title": "columns",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete columns"
+      },
+      {
+        "id": "s2",
+        "title": "aggregation",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete aggregation"
+      },
+      {
+        "id": "s3",
+        "title": "dynamic",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete dynamic"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Cross Tab Query framework template"
+  },
+  {
+    "id": "sql_query_median_calculation",
+    "category": "sql",
+    "subcategory": "queries",
+    "title": "Median Calculation",
+    "persona": "sql_query_builder",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "percentile",
+        "dependencies": [],
+        "description": "Complete percentile"
+      },
+      {
+        "id": "s1",
+        "title": "window",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete window"
+      },
+      {
+        "id": "s2",
+        "title": "alternative",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete alternative"
+      },
+      {
+        "id": "s3",
+        "title": "result",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete result"
+      }
+    ],
+    "tags": [
+      "sql",
+      "queries"
+    ],
+    "description": "Median Calculation framework template"
+  },
+  {
+    "id": "sql_schema_normalized_schema",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Normalized Schema",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "entities",
+        "dependencies": [],
+        "description": "Complete entities"
+      },
+      {
+        "id": "s1",
+        "title": "relationships",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete relationships"
+      },
+      {
+        "id": "s2",
+        "title": "normalization",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete normalization"
+      },
+      {
+        "id": "s3",
+        "title": "constraints",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete constraints"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Normalized Schema framework template"
+  },
+  {
+    "id": "sql_schema_star_schema",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Star Schema",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "fact_table",
+        "dependencies": [],
+        "description": "Complete fact_table"
+      },
+      {
+        "id": "s1",
+        "title": "dimensions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete dimensions"
+      },
+      {
+        "id": "s2",
+        "title": "keys",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete keys"
+      },
+      {
+        "id": "s3",
+        "title": "indexes",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete indexes"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Star Schema framework template"
+  },
+  {
+    "id": "sql_schema_audit_trail",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Audit Trail",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "main_table",
+        "dependencies": [],
+        "description": "Complete main_table"
+      },
+      {
+        "id": "s1",
+        "title": "history_table",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete history_table"
+      },
+      {
+        "id": "s2",
+        "title": "triggers",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete triggers"
+      },
+      {
+        "id": "s3",
+        "title": "timestamps",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete timestamps"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Audit Trail framework template"
+  },
+  {
+    "id": "sql_schema_soft_delete",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Soft Delete",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "table_structure",
+        "dependencies": [],
+        "description": "Complete table_structure"
+      },
+      {
+        "id": "s1",
+        "title": "delete_flag",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete delete_flag"
+      },
+      {
+        "id": "s2",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete queries"
+      },
+      {
+        "id": "s3",
+        "title": "cleanup",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete cleanup"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Soft Delete framework template"
+  },
+  {
+    "id": "sql_schema_multi-tenant",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Multi-tenant",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "tenant_column",
+        "dependencies": [],
+        "description": "Complete tenant_column"
+      },
+      {
+        "id": "s1",
+        "title": "indexes",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete indexes"
+      },
+      {
+        "id": "s2",
+        "title": "row_level_security",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete row_level_security"
+      },
+      {
+        "id": "s3",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete queries"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Multi-tenant framework template"
+  },
+  {
+    "id": "sql_schema_polymorphic_relations",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Polymorphic Relations",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "type_column",
+        "dependencies": [],
+        "description": "Complete type_column"
+      },
+      {
+        "id": "s1",
+        "title": "constraints",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete constraints"
+      },
+      {
+        "id": "s2",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete queries"
+      },
+      {
+        "id": "s3",
+        "title": "indexes",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete indexes"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Polymorphic Relations framework template"
+  },
+  {
+    "id": "sql_schema_eav_pattern",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "EAV Pattern",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "entity",
+        "dependencies": [],
+        "description": "Complete entity"
+      },
+      {
+        "id": "s1",
+        "title": "attribute",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete attribute"
+      },
+      {
+        "id": "s2",
+        "title": "value",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete value"
+      },
+      {
+        "id": "s3",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete queries"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "EAV Pattern framework template"
+  },
+  {
+    "id": "sql_schema_temporal_tables",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Temporal Tables",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "main_table",
+        "dependencies": [],
+        "description": "Complete main_table"
+      },
+      {
+        "id": "s1",
+        "title": "history",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete history"
+      },
+      {
+        "id": "s2",
+        "title": "period",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete period"
+      },
+      {
+        "id": "s3",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete queries"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Temporal Tables framework template"
+  },
+  {
+    "id": "sql_schema_partitioned_table",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Partitioned Table",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "partition_key",
+        "dependencies": [],
+        "description": "Complete partition_key"
+      },
+      {
+        "id": "s1",
+        "title": "partitions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete partitions"
+      },
+      {
+        "id": "s2",
+        "title": "maintenance",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete maintenance"
+      },
+      {
+        "id": "s3",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete queries"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Partitioned Table framework template"
+  },
+  {
+    "id": "sql_schema_materialized_view",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Materialized View",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "view_definition",
+        "dependencies": [],
+        "description": "Complete view_definition"
+      },
+      {
+        "id": "s1",
+        "title": "refresh",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete refresh"
+      },
+      {
+        "id": "s2",
+        "title": "indexes",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete indexes"
+      },
+      {
+        "id": "s3",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete queries"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Materialized View framework template"
+  },
+  {
+    "id": "sql_schema_snowflake_schema",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Snowflake Schema",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "fact",
+        "dependencies": [],
+        "description": "Complete fact"
+      },
+      {
+        "id": "s1",
+        "title": "dimensions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete dimensions"
+      },
+      {
+        "id": "s2",
+        "title": "sub_dimensions",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete sub_dimensions"
+      },
+      {
+        "id": "s3",
+        "title": "keys",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete keys"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Snowflake Schema framework template"
+  },
+  {
+    "id": "sql_schema_slowly_changing_dimension_type_1",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Slowly Changing Dimension Type 1",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "dimension",
+        "dependencies": [],
+        "description": "Complete dimension"
+      },
+      {
+        "id": "s1",
+        "title": "update_logic",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete update_logic"
+      },
+      {
+        "id": "s2",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete queries"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Slowly Changing Dimension Type 1 framework template"
+  },
+  {
+    "id": "sql_schema_slowly_changing_dimension_type_2",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Slowly Changing Dimension Type 2",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "dimension",
+        "dependencies": [],
+        "description": "Complete dimension"
+      },
+      {
+        "id": "s1",
+        "title": "history",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete history"
+      },
+      {
+        "id": "s2",
+        "title": "effective_dates",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete effective_dates"
+      },
+      {
+        "id": "s3",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete queries"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Slowly Changing Dimension Type 2 framework template"
+  },
+  {
+    "id": "sql_schema_bridge_table",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Bridge Table",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "many_to_many",
+        "dependencies": [],
+        "description": "Complete many_to_many"
+      },
+      {
+        "id": "s1",
+        "title": "bridge",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete bridge"
+      },
+      {
+        "id": "s2",
+        "title": "weights",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete weights"
+      },
+      {
+        "id": "s3",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete queries"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Bridge Table framework template"
+  },
+  {
+    "id": "sql_schema_junk_dimension",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Junk Dimension",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "flags",
+        "dependencies": [],
+        "description": "Complete flags"
+      },
+      {
+        "id": "s1",
+        "title": "indicators",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete indicators"
+      },
+      {
+        "id": "s2",
+        "title": "combinations",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete combinations"
+      },
+      {
+        "id": "s3",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete queries"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Junk Dimension framework template"
+  },
+  {
+    "id": "sql_schema_degenerate_dimension",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Degenerate Dimension",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "fact_table",
+        "dependencies": [],
+        "description": "Complete fact_table"
+      },
+      {
+        "id": "s1",
+        "title": "dimension_key",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete dimension_key"
+      },
+      {
+        "id": "s2",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete queries"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Degenerate Dimension framework template"
+  },
+  {
+    "id": "sql_schema_role_playing_dimension",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Role Playing Dimension",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "dimension",
+        "dependencies": [],
+        "description": "Complete dimension"
+      },
+      {
+        "id": "s1",
+        "title": "views",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete views"
+      },
+      {
+        "id": "s2",
+        "title": "aliases",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete aliases"
+      },
+      {
+        "id": "s3",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete queries"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Role Playing Dimension framework template"
+  },
+  {
+    "id": "sql_schema_conformed_dimension",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Conformed Dimension",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "shared_dimension",
+        "dependencies": [],
+        "description": "Complete shared_dimension"
+      },
+      {
+        "id": "s1",
+        "title": "bus_matrix",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete bus_matrix"
+      },
+      {
+        "id": "s2",
+        "title": "integration",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete integration"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Conformed Dimension framework template"
+  },
+  {
+    "id": "sql_schema_factless_fact_table",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Factless Fact Table",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "events",
+        "dependencies": [],
+        "description": "Complete events"
+      },
+      {
+        "id": "s1",
+        "title": "coverage",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete coverage"
+      },
+      {
+        "id": "s2",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete queries"
+      },
+      {
+        "id": "s3",
+        "title": "analysis",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete analysis"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Factless Fact Table framework template"
+  },
+  {
+    "id": "sql_schema_aggregate_table",
+    "category": "sql",
+    "subcategory": "schema",
+    "title": "Aggregate Table",
+    "persona": "sql_schema_architect",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "source",
+        "dependencies": [],
+        "description": "Complete source"
+      },
+      {
+        "id": "s1",
+        "title": "aggregation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete aggregation"
+      },
+      {
+        "id": "s2",
+        "title": "refresh",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete refresh"
+      },
+      {
+        "id": "s3",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete queries"
+      }
+    ],
+    "tags": [
+      "sql",
+      "schema"
+    ],
+    "description": "Aggregate Table framework template"
+  },
+  {
+    "id": "sql_analytics_revenue_report",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Revenue Report",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "time_dimension",
+        "dependencies": [],
+        "description": "Complete time_dimension"
+      },
+      {
+        "id": "s1",
+        "title": "revenue_metrics",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete revenue_metrics"
+      },
+      {
+        "id": "s2",
+        "title": "breakdown",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete breakdown"
+      },
+      {
+        "id": "s3",
+        "title": "comparison",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete comparison"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Revenue Report framework template"
+  },
+  {
+    "id": "sql_analytics_cohort_analysis",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Cohort Analysis",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "cohort_definition",
+        "dependencies": [],
+        "description": "Complete cohort_definition"
+      },
+      {
+        "id": "s1",
+        "title": "metrics",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete metrics"
+      },
+      {
+        "id": "s2",
+        "title": "retention",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete retention"
+      },
+      {
+        "id": "s3",
+        "title": "visualization",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete visualization"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Cohort Analysis framework template"
+  },
+  {
+    "id": "sql_analytics_funnel_analysis",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Funnel Analysis",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "stages",
+        "dependencies": [],
+        "description": "Complete stages"
+      },
+      {
+        "id": "s1",
+        "title": "conversion",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete conversion"
+      },
+      {
+        "id": "s2",
+        "title": "drop_off",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete drop_off"
+      },
+      {
+        "id": "s3",
+        "title": "segmentation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete segmentation"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Funnel Analysis framework template"
+  },
+  {
+    "id": "sql_analytics_customer_lifetime_value",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Customer Lifetime Value",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "revenue",
+        "dependencies": [],
+        "description": "Complete revenue"
+      },
+      {
+        "id": "s1",
+        "title": "retention",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete retention"
+      },
+      {
+        "id": "s2",
+        "title": "prediction",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete prediction"
+      },
+      {
+        "id": "s3",
+        "title": "segmentation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete segmentation"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Customer Lifetime Value framework template"
+  },
+  {
+    "id": "sql_analytics_rfm_analysis",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "RFM Analysis",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "recency",
+        "dependencies": [],
+        "description": "Complete recency"
+      },
+      {
+        "id": "s1",
+        "title": "frequency",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete frequency"
+      },
+      {
+        "id": "s2",
+        "title": "monetary",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete monetary"
+      },
+      {
+        "id": "s3",
+        "title": "scoring",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete scoring"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "RFM Analysis framework template"
+  },
+  {
+    "id": "sql_analytics_trending_analysis",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Trending Analysis",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "time_series",
+        "dependencies": [],
+        "description": "Complete time_series"
+      },
+      {
+        "id": "s1",
+        "title": "moving_averages",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete moving_averages"
+      },
+      {
+        "id": "s2",
+        "title": "growth_rates",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete growth_rates"
+      },
+      {
+        "id": "s3",
+        "title": "forecasting",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete forecasting"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Trending Analysis framework template"
+  },
+  {
+    "id": "sql_analytics_comparative_analysis",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Comparative Analysis",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "period_over_period",
+        "dependencies": [],
+        "description": "Complete period_over_period"
+      },
+      {
+        "id": "s1",
+        "title": "benchmarks",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete benchmarks"
+      },
+      {
+        "id": "s2",
+        "title": "variance",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete variance"
+      },
+      {
+        "id": "s3",
+        "title": "insights",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete insights"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Comparative Analysis framework template"
+  },
+  {
+    "id": "sql_analytics_segmentation_analysis",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Segmentation Analysis",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "dimensions",
+        "dependencies": [],
+        "description": "Complete dimensions"
+      },
+      {
+        "id": "s1",
+        "title": "metrics",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete metrics"
+      },
+      {
+        "id": "s2",
+        "title": "clustering",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete clustering"
+      },
+      {
+        "id": "s3",
+        "title": "profiling",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete profiling"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Segmentation Analysis framework template"
+  },
+  {
+    "id": "sql_analytics_attribution_analysis",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Attribution Analysis",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "touchpoints",
+        "dependencies": [],
+        "description": "Complete touchpoints"
+      },
+      {
+        "id": "s1",
+        "title": "models",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete models"
+      },
+      {
+        "id": "s2",
+        "title": "credit",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete credit"
+      },
+      {
+        "id": "s3",
+        "title": "optimization",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete optimization"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Attribution Analysis framework template"
+  },
+  {
+    "id": "sql_analytics_kpi_dashboard_queries",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "KPI Dashboard Queries",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "metrics",
+        "dependencies": [],
+        "description": "Complete metrics"
+      },
+      {
+        "id": "s1",
+        "title": "dimensions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete dimensions"
+      },
+      {
+        "id": "s2",
+        "title": "filters",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete filters"
+      },
+      {
+        "id": "s3",
+        "title": "calculations",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete calculations"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "KPI Dashboard Queries framework template"
+  },
+  {
+    "id": "sql_analytics_churn_analysis",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Churn Analysis",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "definition",
+        "dependencies": [],
+        "description": "Complete definition"
+      },
+      {
+        "id": "s1",
+        "title": "prediction",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete prediction"
+      },
+      {
+        "id": "s2",
+        "title": "factors",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete factors"
+      },
+      {
+        "id": "s3",
+        "title": "prevention",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete prevention"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Churn Analysis framework template"
+  },
+  {
+    "id": "sql_analytics_market_basket_analysis",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Market Basket Analysis",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "transactions",
+        "dependencies": [],
+        "description": "Complete transactions"
+      },
+      {
+        "id": "s1",
+        "title": "associations",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete associations"
+      },
+      {
+        "id": "s2",
+        "title": "support",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete support"
+      },
+      {
+        "id": "s3",
+        "title": "confidence",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete confidence"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Market Basket Analysis framework template"
+  },
+  {
+    "id": "sql_analytics_customer_journey",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Customer Journey",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "touchpoints",
+        "dependencies": [],
+        "description": "Complete touchpoints"
+      },
+      {
+        "id": "s1",
+        "title": "sequences",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete sequences"
+      },
+      {
+        "id": "s2",
+        "title": "paths",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete paths"
+      },
+      {
+        "id": "s3",
+        "title": "optimization",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete optimization"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Customer Journey framework template"
+  },
+  {
+    "id": "sql_analytics_product_performance",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Product Performance",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "metrics",
+        "dependencies": [],
+        "description": "Complete metrics"
+      },
+      {
+        "id": "s1",
+        "title": "ranking",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete ranking"
+      },
+      {
+        "id": "s2",
+        "title": "trends",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete trends"
+      },
+      {
+        "id": "s3",
+        "title": "recommendations",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete recommendations"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Product Performance framework template"
+  },
+  {
+    "id": "sql_analytics_sales_territory_analysis",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Sales Territory Analysis",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "geography",
+        "dependencies": [],
+        "description": "Complete geography"
+      },
+      {
+        "id": "s1",
+        "title": "performance",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete performance"
+      },
+      {
+        "id": "s2",
+        "title": "allocation",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete allocation"
+      },
+      {
+        "id": "s3",
+        "title": "optimization",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete optimization"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Sales Territory Analysis framework template"
+  },
+  {
+    "id": "sql_analytics_inventory_analysis",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Inventory Analysis",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "levels",
+        "dependencies": [],
+        "description": "Complete levels"
+      },
+      {
+        "id": "s1",
+        "title": "turnover",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete turnover"
+      },
+      {
+        "id": "s2",
+        "title": "forecasting",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete forecasting"
+      },
+      {
+        "id": "s3",
+        "title": "optimization",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete optimization"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Inventory Analysis framework template"
+  },
+  {
+    "id": "sql_analytics_financial_ratios",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Financial Ratios",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "liquidity",
+        "dependencies": [],
+        "description": "Complete liquidity"
+      },
+      {
+        "id": "s1",
+        "title": "profitability",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete profitability"
+      },
+      {
+        "id": "s2",
+        "title": "efficiency",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete efficiency"
+      },
+      {
+        "id": "s3",
+        "title": "leverage",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete leverage"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Financial Ratios framework template"
+  },
+  {
+    "id": "sql_analytics_variance_analysis",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Variance Analysis",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "budget",
+        "dependencies": [],
+        "description": "Complete budget"
+      },
+      {
+        "id": "s1",
+        "title": "actual",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete actual"
+      },
+      {
+        "id": "s2",
+        "title": "variance",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete variance"
+      },
+      {
+        "id": "s3",
+        "title": "drivers",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete drivers"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Variance Analysis framework template"
+  },
+  {
+    "id": "sql_analytics_abc_analysis",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "ABC Analysis",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "classification",
+        "dependencies": [],
+        "description": "Complete classification"
+      },
+      {
+        "id": "s1",
+        "title": "thresholds",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete thresholds"
+      },
+      {
+        "id": "s2",
+        "title": "distribution",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete distribution"
+      },
+      {
+        "id": "s3",
+        "title": "actions",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete actions"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "ABC Analysis framework template"
+  },
+  {
+    "id": "sql_analytics_pareto_analysis_sql",
+    "category": "sql",
+    "subcategory": "analytics",
+    "title": "Pareto Analysis SQL",
+    "persona": "sql_analytics",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "ranking",
+        "dependencies": [],
+        "description": "Complete ranking"
+      },
+      {
+        "id": "s1",
+        "title": "cumulative",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete cumulative"
+      },
+      {
+        "id": "s2",
+        "title": "classification",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete classification"
+      },
+      {
+        "id": "s3",
+        "title": "insights",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete insights"
+      }
+    ],
+    "tags": [
+      "sql",
+      "analytics"
+    ],
+    "description": "Pareto Analysis SQL framework template"
+  },
+  {
+    "id": "sql_opt_index_strategy",
+    "category": "sql",
+    "subcategory": "optimization",
+    "title": "Index Strategy",
+    "persona": "sql_performance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "table_analysis",
+        "dependencies": [],
+        "description": "Complete table_analysis"
+      },
+      {
+        "id": "s1",
+        "title": "query_patterns",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete query_patterns"
+      },
+      {
+        "id": "s2",
+        "title": "index_design",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete index_design"
+      },
+      {
+        "id": "s3",
+        "title": "maintenance",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete maintenance"
+      }
+    ],
+    "tags": [
+      "sql",
+      "optimization",
+      "performance"
+    ],
+    "description": "Index Strategy framework template"
+  },
+  {
+    "id": "sql_opt_query_performance_tuning",
+    "category": "sql",
+    "subcategory": "optimization",
+    "title": "Query Performance Tuning",
+    "persona": "sql_performance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "execution_plan",
+        "dependencies": [],
+        "description": "Complete execution_plan"
+      },
+      {
+        "id": "s1",
+        "title": "bottlenecks",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete bottlenecks"
+      },
+      {
+        "id": "s2",
+        "title": "rewrites",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete rewrites"
+      },
+      {
+        "id": "s3",
+        "title": "verification",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete verification"
+      }
+    ],
+    "tags": [
+      "sql",
+      "optimization",
+      "performance"
+    ],
+    "description": "Query Performance Tuning framework template"
+  },
+  {
+    "id": "sql_opt_partition_strategy",
+    "category": "sql",
+    "subcategory": "optimization",
+    "title": "Partition Strategy",
+    "persona": "sql_performance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "data_analysis",
+        "dependencies": [],
+        "description": "Complete data_analysis"
+      },
+      {
+        "id": "s1",
+        "title": "partition_key",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete partition_key"
+      },
+      {
+        "id": "s2",
+        "title": "implementation",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete implementation"
+      },
+      {
+        "id": "s3",
+        "title": "queries",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete queries"
+      }
+    ],
+    "tags": [
+      "sql",
+      "optimization",
+      "performance"
+    ],
+    "description": "Partition Strategy framework template"
+  },
+  {
+    "id": "sql_opt_statistics_management",
+    "category": "sql",
+    "subcategory": "optimization",
+    "title": "Statistics Management",
+    "persona": "sql_performance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "analysis",
+        "dependencies": [],
+        "description": "Complete analysis"
+      },
+      {
+        "id": "s1",
+        "title": "update_strategy",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete update_strategy"
+      },
+      {
+        "id": "s2",
+        "title": "histograms",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete histograms"
+      },
+      {
+        "id": "s3",
+        "title": "verification",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete verification"
+      }
+    ],
+    "tags": [
+      "sql",
+      "optimization",
+      "performance"
+    ],
+    "description": "Statistics Management framework template"
+  },
+  {
+    "id": "sql_opt_lock_contention",
+    "category": "sql",
+    "subcategory": "optimization",
+    "title": "Lock Contention",
+    "persona": "sql_performance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "identification",
+        "dependencies": [],
+        "description": "Complete identification"
+      },
+      {
+        "id": "s1",
+        "title": "analysis",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete analysis"
+      },
+      {
+        "id": "s2",
+        "title": "resolution",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete resolution"
+      },
+      {
+        "id": "s3",
+        "title": "prevention",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete prevention"
+      }
+    ],
+    "tags": [
+      "sql",
+      "optimization",
+      "performance"
+    ],
+    "description": "Lock Contention framework template"
+  },
+  {
+    "id": "sql_opt_deadlock_resolution",
+    "category": "sql",
+    "subcategory": "optimization",
+    "title": "Deadlock Resolution",
+    "persona": "sql_performance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "detection",
+        "dependencies": [],
+        "description": "Complete detection"
+      },
+      {
+        "id": "s1",
+        "title": "analysis",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete analysis"
+      },
+      {
+        "id": "s2",
+        "title": "resolution",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete resolution"
+      },
+      {
+        "id": "s3",
+        "title": "prevention",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete prevention"
+      }
+    ],
+    "tags": [
+      "sql",
+      "optimization",
+      "performance"
+    ],
+    "description": "Deadlock Resolution framework template"
+  },
+  {
+    "id": "sql_opt_memory_optimization",
+    "category": "sql",
+    "subcategory": "optimization",
+    "title": "Memory Optimization",
+    "persona": "sql_performance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "buffer_pool",
+        "dependencies": [],
+        "description": "Complete buffer_pool"
+      },
+      {
+        "id": "s1",
+        "title": "sort",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete sort"
+      },
+      {
+        "id": "s2",
+        "title": "hash",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete hash"
+      },
+      {
+        "id": "s3",
+        "title": "configuration",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete configuration"
+      }
+    ],
+    "tags": [
+      "sql",
+      "optimization",
+      "performance"
+    ],
+    "description": "Memory Optimization framework template"
+  },
+  {
+    "id": "sql_opt_io_optimization",
+    "category": "sql",
+    "subcategory": "optimization",
+    "title": "IO Optimization",
+    "persona": "sql_performance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "disk_access",
+        "dependencies": [],
+        "description": "Complete disk_access"
+      },
+      {
+        "id": "s1",
+        "title": "caching",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete caching"
+      },
+      {
+        "id": "s2",
+        "title": "prefetching",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete prefetching"
+      },
+      {
+        "id": "s3",
+        "title": "configuration",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete configuration"
+      }
+    ],
+    "tags": [
+      "sql",
+      "optimization",
+      "performance"
+    ],
+    "description": "IO Optimization framework template"
+  },
+  {
+    "id": "sql_opt_connection_pooling",
+    "category": "sql",
+    "subcategory": "optimization",
+    "title": "Connection Pooling",
+    "persona": "sql_performance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "configuration",
+        "dependencies": [],
+        "description": "Complete configuration"
+      },
+      {
+        "id": "s1",
+        "title": "sizing",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete sizing"
+      },
+      {
+        "id": "s2",
+        "title": "monitoring",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete monitoring"
+      },
+      {
+        "id": "s3",
+        "title": "optimization",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete optimization"
+      }
+    ],
+    "tags": [
+      "sql",
+      "optimization",
+      "performance"
+    ],
+    "description": "Connection Pooling framework template"
+  },
+  {
+    "id": "sql_opt_batch_processing",
+    "category": "sql",
+    "subcategory": "optimization",
+    "title": "Batch Processing",
+    "persona": "sql_performance",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "chunking",
+        "dependencies": [],
+        "description": "Complete chunking"
+      },
+      {
+        "id": "s1",
+        "title": "transactions",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete transactions"
+      },
+      {
+        "id": "s2",
+        "title": "logging",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete logging"
+      },
+      {
+        "id": "s3",
+        "title": "recovery",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete recovery"
+      }
+    ],
+    "tags": [
+      "sql",
+      "optimization",
+      "performance"
+    ],
+    "description": "Batch Processing framework template"
+  }
+]

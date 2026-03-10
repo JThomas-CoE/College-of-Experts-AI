@@ -1,0 +1,1184 @@
+[
+  {
+    "id": "vue_vue_composition_component",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Composition Component",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "props",
+        "dependencies": [],
+        "description": "Complete props"
+      },
+      {
+        "id": "s1",
+        "title": "reactive_state",
+        "dependencies": [],
+        "description": "Complete reactive_state"
+      },
+      {
+        "id": "s2",
+        "title": "computed",
+        "dependencies": [],
+        "description": "Complete computed"
+      },
+      {
+        "id": "s3",
+        "title": "methods",
+        "dependencies": [],
+        "description": "Complete methods"
+      },
+      {
+        "id": "s4",
+        "title": "template",
+        "dependencies": [],
+        "description": "Complete template"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Composition Component framework template"
+  },
+  {
+    "id": "vue_vue_composable",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Composable",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "state",
+        "dependencies": [],
+        "description": "Complete state"
+      },
+      {
+        "id": "s1",
+        "title": "actions",
+        "dependencies": [],
+        "description": "Complete actions"
+      },
+      {
+        "id": "s2",
+        "title": "computed",
+        "dependencies": [],
+        "description": "Complete computed"
+      },
+      {
+        "id": "s3",
+        "title": "watchers",
+        "dependencies": [],
+        "description": "Complete watchers"
+      },
+      {
+        "id": "s4",
+        "title": "return",
+        "dependencies": [],
+        "description": "Complete return"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Composable framework template"
+  },
+  {
+    "id": "vue_vue_pinia_store",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Pinia Store",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "state",
+        "dependencies": [],
+        "description": "Complete state"
+      },
+      {
+        "id": "s1",
+        "title": "getters",
+        "dependencies": [],
+        "description": "Complete getters"
+      },
+      {
+        "id": "s2",
+        "title": "actions",
+        "dependencies": [],
+        "description": "Complete actions"
+      },
+      {
+        "id": "s3",
+        "title": "subscriptions",
+        "dependencies": [],
+        "description": "Complete subscriptions"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Pinia Store framework template"
+  },
+  {
+    "id": "vue_vue_form_component",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Form Component",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "v_model",
+        "dependencies": [],
+        "description": "Complete v_model"
+      },
+      {
+        "id": "s1",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      },
+      {
+        "id": "s2",
+        "title": "submission",
+        "dependencies": [],
+        "description": "Complete submission"
+      },
+      {
+        "id": "s3",
+        "title": "errors",
+        "dependencies": [],
+        "description": "Complete errors"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Form Component framework template"
+  },
+  {
+    "id": "vue_vue_modal_component",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Modal Component",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "teleport",
+        "dependencies": [],
+        "description": "Complete teleport"
+      },
+      {
+        "id": "s1",
+        "title": "transitions",
+        "dependencies": [],
+        "description": "Complete transitions"
+      },
+      {
+        "id": "s2",
+        "title": "close",
+        "dependencies": [],
+        "description": "Complete close"
+      },
+      {
+        "id": "s3",
+        "title": "accessibility",
+        "dependencies": [],
+        "description": "Complete accessibility"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Modal Component framework template"
+  },
+  {
+    "id": "vue_vue_table_component",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Table Component",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "columns",
+        "dependencies": [],
+        "description": "Complete columns"
+      },
+      {
+        "id": "s1",
+        "title": "rows",
+        "dependencies": [],
+        "description": "Complete rows"
+      },
+      {
+        "id": "s2",
+        "title": "sorting",
+        "dependencies": [],
+        "description": "Complete sorting"
+      },
+      {
+        "id": "s3",
+        "title": "pagination",
+        "dependencies": [],
+        "description": "Complete pagination"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Table Component framework template"
+  },
+  {
+    "id": "vue_vue_list_component",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue List Component",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "items",
+        "dependencies": [],
+        "description": "Complete items"
+      },
+      {
+        "id": "s1",
+        "title": "v_for",
+        "dependencies": [],
+        "description": "Complete v_for"
+      },
+      {
+        "id": "s2",
+        "title": "key",
+        "dependencies": [],
+        "description": "Complete key"
+      },
+      {
+        "id": "s3",
+        "title": "transitions",
+        "dependencies": [],
+        "description": "Complete transitions"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue List Component framework template"
+  },
+  {
+    "id": "vue_vue_search_component",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Search Component",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "input",
+        "dependencies": [],
+        "description": "Complete input"
+      },
+      {
+        "id": "s1",
+        "title": "debounce",
+        "dependencies": [],
+        "description": "Complete debounce"
+      },
+      {
+        "id": "s2",
+        "title": "results",
+        "dependencies": [],
+        "description": "Complete results"
+      },
+      {
+        "id": "s3",
+        "title": "slots",
+        "dependencies": [],
+        "description": "Complete slots"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Search Component framework template"
+  },
+  {
+    "id": "vue_vue_tabs_component",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Tabs Component",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "tabs",
+        "dependencies": [],
+        "description": "Complete tabs"
+      },
+      {
+        "id": "s1",
+        "title": "panels",
+        "dependencies": [],
+        "description": "Complete panels"
+      },
+      {
+        "id": "s2",
+        "title": "active",
+        "dependencies": [],
+        "description": "Complete active"
+      },
+      {
+        "id": "s3",
+        "title": "transitions",
+        "dependencies": [],
+        "description": "Complete transitions"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Tabs Component framework template"
+  },
+  {
+    "id": "vue_vue_accordion_component",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Accordion Component",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "items",
+        "dependencies": [],
+        "description": "Complete items"
+      },
+      {
+        "id": "s1",
+        "title": "expand",
+        "dependencies": [],
+        "description": "Complete expand"
+      },
+      {
+        "id": "s2",
+        "title": "collapse",
+        "dependencies": [],
+        "description": "Complete collapse"
+      },
+      {
+        "id": "s3",
+        "title": "transitions",
+        "dependencies": [],
+        "description": "Complete transitions"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Accordion Component framework template"
+  },
+  {
+    "id": "vue_vue_dropdown_component",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Dropdown Component",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "trigger",
+        "dependencies": [],
+        "description": "Complete trigger"
+      },
+      {
+        "id": "s1",
+        "title": "menu",
+        "dependencies": [],
+        "description": "Complete menu"
+      },
+      {
+        "id": "s2",
+        "title": "items",
+        "dependencies": [],
+        "description": "Complete items"
+      },
+      {
+        "id": "s3",
+        "title": "outside_click",
+        "dependencies": [],
+        "description": "Complete outside_click"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Dropdown Component framework template"
+  },
+  {
+    "id": "vue_vue_toast_plugin",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Toast Plugin",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "plugin",
+        "dependencies": [],
+        "description": "Complete plugin"
+      },
+      {
+        "id": "s1",
+        "title": "composable",
+        "dependencies": [],
+        "description": "Complete composable"
+      },
+      {
+        "id": "s2",
+        "title": "component",
+        "dependencies": [],
+        "description": "Complete component"
+      },
+      {
+        "id": "s3",
+        "title": "queue",
+        "dependencies": [],
+        "description": "Complete queue"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Toast Plugin framework template"
+  },
+  {
+    "id": "vue_vue_infinite_scroll",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Infinite Scroll",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "intersection",
+        "dependencies": [],
+        "description": "Complete intersection"
+      },
+      {
+        "id": "s1",
+        "title": "loading",
+        "dependencies": [],
+        "description": "Complete loading"
+      },
+      {
+        "id": "s2",
+        "title": "data",
+        "dependencies": [],
+        "description": "Complete data"
+      },
+      {
+        "id": "s3",
+        "title": "virtual",
+        "dependencies": [],
+        "description": "Complete virtual"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Infinite Scroll framework template"
+  },
+  {
+    "id": "vue_vue_drag_drop",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Drag Drop",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "draggable",
+        "dependencies": [],
+        "description": "Complete draggable"
+      },
+      {
+        "id": "s1",
+        "title": "droppable",
+        "dependencies": [],
+        "description": "Complete droppable"
+      },
+      {
+        "id": "s2",
+        "title": "handlers",
+        "dependencies": [],
+        "description": "Complete handlers"
+      },
+      {
+        "id": "s3",
+        "title": "transitions",
+        "dependencies": [],
+        "description": "Complete transitions"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Drag Drop framework template"
+  },
+  {
+    "id": "vue_vue_file_upload",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue File Upload",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "dropzone",
+        "dependencies": [],
+        "description": "Complete dropzone"
+      },
+      {
+        "id": "s1",
+        "title": "preview",
+        "dependencies": [],
+        "description": "Complete preview"
+      },
+      {
+        "id": "s2",
+        "title": "progress",
+        "dependencies": [],
+        "description": "Complete progress"
+      },
+      {
+        "id": "s3",
+        "title": "validation",
+        "dependencies": [],
+        "description": "Complete validation"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue File Upload framework template"
+  },
+  {
+    "id": "vue_vue_router_guards",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Router Guards",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "before_each",
+        "dependencies": [],
+        "description": "Complete before_each"
+      },
+      {
+        "id": "s1",
+        "title": "after_each",
+        "dependencies": [],
+        "description": "Complete after_each"
+      },
+      {
+        "id": "s2",
+        "title": "per_route",
+        "dependencies": [],
+        "description": "Complete per_route"
+      },
+      {
+        "id": "s3",
+        "title": "meta",
+        "dependencies": [],
+        "description": "Complete meta"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Router Guards framework template"
+  },
+  {
+    "id": "vue_vue_auth_composable",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Auth Composable",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "user",
+        "dependencies": [],
+        "description": "Complete user"
+      },
+      {
+        "id": "s1",
+        "title": "login",
+        "dependencies": [],
+        "description": "Complete login"
+      },
+      {
+        "id": "s2",
+        "title": "logout",
+        "dependencies": [],
+        "description": "Complete logout"
+      },
+      {
+        "id": "s3",
+        "title": "guards",
+        "dependencies": [],
+        "description": "Complete guards"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Auth Composable framework template"
+  },
+  {
+    "id": "vue_vue_theme_composable",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Theme Composable",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "theme",
+        "dependencies": [],
+        "description": "Complete theme"
+      },
+      {
+        "id": "s1",
+        "title": "toggle",
+        "dependencies": [],
+        "description": "Complete toggle"
+      },
+      {
+        "id": "s2",
+        "title": "persist",
+        "dependencies": [],
+        "description": "Complete persist"
+      },
+      {
+        "id": "s3",
+        "title": "system",
+        "dependencies": [],
+        "description": "Complete system"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Theme Composable framework template"
+  },
+  {
+    "id": "vue_vue_i18n_setup",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue i18n Setup",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "messages",
+        "dependencies": [],
+        "description": "Complete messages"
+      },
+      {
+        "id": "s1",
+        "title": "locale",
+        "dependencies": [],
+        "description": "Complete locale"
+      },
+      {
+        "id": "s2",
+        "title": "formatting",
+        "dependencies": [],
+        "description": "Complete formatting"
+      },
+      {
+        "id": "s3",
+        "title": "lazy_loading",
+        "dependencies": [],
+        "description": "Complete lazy_loading"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue i18n Setup framework template"
+  },
+  {
+    "id": "vue_vue_testing_suite",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Testing Suite",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "mount",
+        "dependencies": [],
+        "description": "Complete mount"
+      },
+      {
+        "id": "s1",
+        "title": "interaction",
+        "dependencies": [],
+        "description": "Complete interaction"
+      },
+      {
+        "id": "s2",
+        "title": "emits",
+        "dependencies": [],
+        "description": "Complete emits"
+      },
+      {
+        "id": "s3",
+        "title": "slots",
+        "dependencies": [],
+        "description": "Complete slots"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Testing Suite framework template"
+  },
+  {
+    "id": "vue_vue_directive_custom",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Directive Custom",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "mounted",
+        "dependencies": [],
+        "description": "Complete mounted"
+      },
+      {
+        "id": "s1",
+        "title": "updated",
+        "dependencies": [],
+        "description": "Complete updated"
+      },
+      {
+        "id": "s2",
+        "title": "unmounted",
+        "dependencies": [],
+        "description": "Complete unmounted"
+      },
+      {
+        "id": "s3",
+        "title": "arguments",
+        "dependencies": [],
+        "description": "Complete arguments"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Directive Custom framework template"
+  },
+  {
+    "id": "vue_vue_plugin_development",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Plugin Development",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "install",
+        "dependencies": [],
+        "description": "Complete install"
+      },
+      {
+        "id": "s1",
+        "title": "options",
+        "dependencies": [],
+        "description": "Complete options"
+      },
+      {
+        "id": "s2",
+        "title": "global",
+        "dependencies": [],
+        "description": "Complete global"
+      },
+      {
+        "id": "s3",
+        "title": "components",
+        "dependencies": [],
+        "description": "Complete components"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Plugin Development framework template"
+  },
+  {
+    "id": "vue_vue_render_function",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Render Function",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "h",
+        "dependencies": [],
+        "description": "Complete h"
+      },
+      {
+        "id": "s1",
+        "title": "props",
+        "dependencies": [],
+        "description": "Complete props"
+      },
+      {
+        "id": "s2",
+        "title": "slots",
+        "dependencies": [],
+        "description": "Complete slots"
+      },
+      {
+        "id": "s3",
+        "title": "context",
+        "dependencies": [],
+        "description": "Complete context"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Render Function framework template"
+  },
+  {
+    "id": "vue_vue_suspense_async",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Suspense Async",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "async_component",
+        "dependencies": [],
+        "description": "Complete async_component"
+      },
+      {
+        "id": "s1",
+        "title": "suspense",
+        "dependencies": [],
+        "description": "Complete suspense"
+      },
+      {
+        "id": "s2",
+        "title": "fallback",
+        "dependencies": [],
+        "description": "Complete fallback"
+      },
+      {
+        "id": "s3",
+        "title": "error",
+        "dependencies": [],
+        "description": "Complete error"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Suspense Async framework template"
+  },
+  {
+    "id": "vue_vue_provide_inject",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Provide Inject",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "provide",
+        "dependencies": [],
+        "description": "Complete provide"
+      },
+      {
+        "id": "s1",
+        "title": "inject",
+        "dependencies": [],
+        "description": "Complete inject"
+      },
+      {
+        "id": "s2",
+        "title": "reactive",
+        "dependencies": [],
+        "description": "Complete reactive"
+      },
+      {
+        "id": "s3",
+        "title": "symbols",
+        "dependencies": [],
+        "description": "Complete symbols"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Provide Inject framework template"
+  },
+  {
+    "id": "vue_vue_ssr_nuxt_page",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue SSR Nuxt Page",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "fetch",
+        "dependencies": [],
+        "description": "Complete fetch"
+      },
+      {
+        "id": "s1",
+        "title": "head",
+        "dependencies": [],
+        "description": "Complete head"
+      },
+      {
+        "id": "s2",
+        "title": "middleware",
+        "dependencies": [],
+        "description": "Complete middleware"
+      },
+      {
+        "id": "s3",
+        "title": "layout",
+        "dependencies": [],
+        "description": "Complete layout"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue SSR Nuxt Page framework template"
+  },
+  {
+    "id": "vue_vue_ssr_data_fetching",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue SSR Data Fetching",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "use_async_data",
+        "dependencies": [],
+        "description": "Complete use_async_data"
+      },
+      {
+        "id": "s1",
+        "title": "use_fetch",
+        "dependencies": [],
+        "description": "Complete use_fetch"
+      },
+      {
+        "id": "s2",
+        "title": "caching",
+        "dependencies": [],
+        "description": "Complete caching"
+      },
+      {
+        "id": "s3",
+        "title": "hydration",
+        "dependencies": [],
+        "description": "Complete hydration"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue SSR Data Fetching framework template"
+  },
+  {
+    "id": "vue_vue_form_validation_veevalidate",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Form Validation VeeValidate",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "schema",
+        "dependencies": [],
+        "description": "Complete schema"
+      },
+      {
+        "id": "s1",
+        "title": "field",
+        "dependencies": [],
+        "description": "Complete field"
+      },
+      {
+        "id": "s2",
+        "title": "form",
+        "dependencies": [],
+        "description": "Complete form"
+      },
+      {
+        "id": "s3",
+        "title": "errors",
+        "dependencies": [],
+        "description": "Complete errors"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Form Validation VeeValidate framework template"
+  },
+  {
+    "id": "vue_vue_animation_gsap",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Animation GSAP",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "timeline",
+        "dependencies": [],
+        "description": "Complete timeline"
+      },
+      {
+        "id": "s1",
+        "title": "tweens",
+        "dependencies": [],
+        "description": "Complete tweens"
+      },
+      {
+        "id": "s2",
+        "title": "scroll_trigger",
+        "dependencies": [],
+        "description": "Complete scroll_trigger"
+      },
+      {
+        "id": "s3",
+        "title": "cleanup",
+        "dependencies": [],
+        "description": "Complete cleanup"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Animation GSAP framework template"
+  },
+  {
+    "id": "vue_vue_chart_integration",
+    "category": "vue",
+    "subcategory": "components",
+    "title": "Vue Chart Integration",
+    "persona": "vue_frontend",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "chart_data",
+        "dependencies": [],
+        "description": "Complete chart_data"
+      },
+      {
+        "id": "s1",
+        "title": "options",
+        "dependencies": [],
+        "description": "Complete options"
+      },
+      {
+        "id": "s2",
+        "title": "update",
+        "dependencies": [],
+        "description": "Complete update"
+      },
+      {
+        "id": "s3",
+        "title": "resize",
+        "dependencies": [],
+        "description": "Complete resize"
+      }
+    ],
+    "tags": [
+      "vue",
+      "frontend",
+      "components"
+    ],
+    "description": "Vue Chart Integration framework template"
+  }
+]

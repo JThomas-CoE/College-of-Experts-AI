@@ -1,0 +1,1283 @@
+[
+  {
+    "id": "medical_clinical_disease_overview",
+    "category": "medical",
+    "subcategory": "clinical",
+    "title": "Disease Overview",
+    "persona": "medical_clinical",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "definition",
+        "dependencies": [],
+        "description": "Complete definition"
+      },
+      {
+        "id": "s1",
+        "title": "epidemiology",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete epidemiology"
+      },
+      {
+        "id": "s2",
+        "title": "pathophysiology",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete pathophysiology"
+      },
+      {
+        "id": "s3",
+        "title": "symptoms",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete symptoms"
+      },
+      {
+        "id": "s4",
+        "title": "diagnosis",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete diagnosis"
+      },
+      {
+        "id": "s5",
+        "title": "treatment",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete treatment"
+      }
+    ],
+    "tags": [
+      "medical",
+      "clinical",
+      "education"
+    ],
+    "description": "Disease Overview framework template"
+  },
+  {
+    "id": "medical_clinical_medication_guide",
+    "category": "medical",
+    "subcategory": "clinical",
+    "title": "Medication Guide",
+    "persona": "medical_clinical",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "indication",
+        "dependencies": [],
+        "description": "Complete indication"
+      },
+      {
+        "id": "s1",
+        "title": "mechanism",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete mechanism"
+      },
+      {
+        "id": "s2",
+        "title": "dosing",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete dosing"
+      },
+      {
+        "id": "s3",
+        "title": "side_effects",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete side_effects"
+      },
+      {
+        "id": "s4",
+        "title": "interactions",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete interactions"
+      },
+      {
+        "id": "s5",
+        "title": "monitoring",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete monitoring"
+      }
+    ],
+    "tags": [
+      "medical",
+      "clinical",
+      "education"
+    ],
+    "description": "Medication Guide framework template"
+  },
+  {
+    "id": "medical_clinical_lab_test_guide",
+    "category": "medical",
+    "subcategory": "clinical",
+    "title": "Lab Test Guide",
+    "persona": "medical_clinical",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "purpose",
+        "dependencies": [],
+        "description": "Complete purpose"
+      },
+      {
+        "id": "s1",
+        "title": "preparation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete preparation"
+      },
+      {
+        "id": "s2",
+        "title": "procedure",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete procedure"
+      },
+      {
+        "id": "s3",
+        "title": "normal_values",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete normal_values"
+      },
+      {
+        "id": "s4",
+        "title": "interpretation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete interpretation"
+      }
+    ],
+    "tags": [
+      "medical",
+      "clinical",
+      "education"
+    ],
+    "description": "Lab Test Guide framework template"
+  },
+  {
+    "id": "medical_clinical_patient_education",
+    "category": "medical",
+    "subcategory": "clinical",
+    "title": "Patient Education",
+    "persona": "medical_clinical",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "condition",
+        "dependencies": [],
+        "description": "Complete condition"
+      },
+      {
+        "id": "s1",
+        "title": "causes",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete causes"
+      },
+      {
+        "id": "s2",
+        "title": "symptoms",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete symptoms"
+      },
+      {
+        "id": "s3",
+        "title": "treatment",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete treatment"
+      },
+      {
+        "id": "s4",
+        "title": "prevention",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete prevention"
+      },
+      {
+        "id": "s5",
+        "title": "when_to_seek_care",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete when_to_seek_care"
+      }
+    ],
+    "tags": [
+      "medical",
+      "clinical",
+      "education"
+    ],
+    "description": "Patient Education framework template"
+  },
+  {
+    "id": "medical_clinical_procedure_guide",
+    "category": "medical",
+    "subcategory": "clinical",
+    "title": "Procedure Guide",
+    "persona": "medical_clinical",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "indication",
+        "dependencies": [],
+        "description": "Complete indication"
+      },
+      {
+        "id": "s1",
+        "title": "preparation",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete preparation"
+      },
+      {
+        "id": "s2",
+        "title": "procedure",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete procedure"
+      },
+      {
+        "id": "s3",
+        "title": "recovery",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete recovery"
+      },
+      {
+        "id": "s4",
+        "title": "risks",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete risks"
+      },
+      {
+        "id": "s5",
+        "title": "alternatives",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete alternatives"
+      }
+    ],
+    "tags": [
+      "medical",
+      "clinical",
+      "education"
+    ],
+    "description": "Procedure Guide framework template"
+  },
+  {
+    "id": "medical_clinical_anatomy_overview",
+    "category": "medical",
+    "subcategory": "clinical",
+    "title": "Anatomy Overview",
+    "persona": "medical_clinical",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "structure",
+        "dependencies": [],
+        "description": "Complete structure"
+      },
+      {
+        "id": "s1",
+        "title": "location",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete location"
+      },
+      {
+        "id": "s2",
+        "title": "function",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete function"
+      },
+      {
+        "id": "s3",
+        "title": "blood_supply",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete blood_supply"
+      },
+      {
+        "id": "s4",
+        "title": "innervation",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete innervation"
+      },
+      {
+        "id": "s5",
+        "title": "clinical",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete clinical"
+      }
+    ],
+    "tags": [
+      "medical",
+      "clinical",
+      "education"
+    ],
+    "description": "Anatomy Overview framework template"
+  },
+  {
+    "id": "medical_clinical_differential_diagnosis",
+    "category": "medical",
+    "subcategory": "clinical",
+    "title": "Differential Diagnosis",
+    "persona": "medical_clinical",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "presenting_symptoms",
+        "dependencies": [],
+        "description": "Complete presenting_symptoms"
+      },
+      {
+        "id": "s1",
+        "title": "likely_causes",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete likely_causes"
+      },
+      {
+        "id": "s2",
+        "title": "workup",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete workup"
+      },
+      {
+        "id": "s3",
+        "title": "red_flags",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete red_flags"
+      }
+    ],
+    "tags": [
+      "medical",
+      "clinical",
+      "education"
+    ],
+    "description": "Differential Diagnosis framework template"
+  },
+  {
+    "id": "medical_clinical_treatment_protocol",
+    "category": "medical",
+    "subcategory": "clinical",
+    "title": "Treatment Protocol",
+    "persona": "medical_clinical",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "indication",
+        "dependencies": [],
+        "description": "Complete indication"
+      },
+      {
+        "id": "s1",
+        "title": "first_line",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete first_line"
+      },
+      {
+        "id": "s2",
+        "title": "alternatives",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete alternatives"
+      },
+      {
+        "id": "s3",
+        "title": "monitoring",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete monitoring"
+      },
+      {
+        "id": "s4",
+        "title": "referral",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete referral"
+      }
+    ],
+    "tags": [
+      "medical",
+      "clinical",
+      "education"
+    ],
+    "description": "Treatment Protocol framework template"
+  },
+  {
+    "id": "medical_clinical_drug_class_overview",
+    "category": "medical",
+    "subcategory": "clinical",
+    "title": "Drug Class Overview",
+    "persona": "medical_clinical",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "mechanism",
+        "dependencies": [],
+        "description": "Complete mechanism"
+      },
+      {
+        "id": "s1",
+        "title": "indications",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete indications"
+      },
+      {
+        "id": "s2",
+        "title": "examples",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete examples"
+      },
+      {
+        "id": "s3",
+        "title": "side_effects",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete side_effects"
+      },
+      {
+        "id": "s4",
+        "title": "interactions",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete interactions"
+      }
+    ],
+    "tags": [
+      "medical",
+      "clinical",
+      "education"
+    ],
+    "description": "Drug Class Overview framework template"
+  },
+  {
+    "id": "medical_clinical_clinical_guideline_summary",
+    "category": "medical",
+    "subcategory": "clinical",
+    "title": "Clinical Guideline Summary",
+    "persona": "medical_clinical",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "condition",
+        "dependencies": [],
+        "description": "Complete condition"
+      },
+      {
+        "id": "s1",
+        "title": "screening",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete screening"
+      },
+      {
+        "id": "s2",
+        "title": "diagnosis",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete diagnosis"
+      },
+      {
+        "id": "s3",
+        "title": "treatment",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete treatment"
+      },
+      {
+        "id": "s4",
+        "title": "follow_up",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete follow_up"
+      }
+    ],
+    "tags": [
+      "medical",
+      "clinical",
+      "education"
+    ],
+    "description": "Clinical Guideline Summary framework template"
+  },
+  {
+    "id": "medical_doc_soap_note",
+    "category": "medical",
+    "subcategory": "documentation",
+    "title": "SOAP Note",
+    "persona": "medical_documentation",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "subjective",
+        "dependencies": [],
+        "description": "Complete subjective"
+      },
+      {
+        "id": "s1",
+        "title": "objective",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete objective"
+      },
+      {
+        "id": "s2",
+        "title": "assessment",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete assessment"
+      },
+      {
+        "id": "s3",
+        "title": "plan",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete plan"
+      }
+    ],
+    "tags": [
+      "medical",
+      "documentation",
+      "clinical"
+    ],
+    "description": "SOAP Note framework template"
+  },
+  {
+    "id": "medical_doc_h&p_note",
+    "category": "medical",
+    "subcategory": "documentation",
+    "title": "H&P Note",
+    "persona": "medical_documentation",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "chief_complaint",
+        "dependencies": [],
+        "description": "Complete chief_complaint"
+      },
+      {
+        "id": "s1",
+        "title": "hpi",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete hpi"
+      },
+      {
+        "id": "s2",
+        "title": "pmh",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete pmh"
+      },
+      {
+        "id": "s3",
+        "title": "medications",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete medications"
+      },
+      {
+        "id": "s4",
+        "title": "exam",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete exam"
+      },
+      {
+        "id": "s5",
+        "title": "assessment",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete assessment"
+      },
+      {
+        "id": "s6",
+        "title": "plan",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "description": "Complete plan"
+      }
+    ],
+    "tags": [
+      "medical",
+      "documentation",
+      "clinical"
+    ],
+    "description": "H&P Note framework template"
+  },
+  {
+    "id": "medical_doc_progress_note",
+    "category": "medical",
+    "subcategory": "documentation",
+    "title": "Progress Note",
+    "persona": "medical_documentation",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "interval_history",
+        "dependencies": [],
+        "description": "Complete interval_history"
+      },
+      {
+        "id": "s1",
+        "title": "exam",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete exam"
+      },
+      {
+        "id": "s2",
+        "title": "data",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete data"
+      },
+      {
+        "id": "s3",
+        "title": "assessment",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete assessment"
+      },
+      {
+        "id": "s4",
+        "title": "plan",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete plan"
+      }
+    ],
+    "tags": [
+      "medical",
+      "documentation",
+      "clinical"
+    ],
+    "description": "Progress Note framework template"
+  },
+  {
+    "id": "medical_doc_discharge_summary",
+    "category": "medical",
+    "subcategory": "documentation",
+    "title": "Discharge Summary",
+    "persona": "medical_documentation",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "admission",
+        "dependencies": [],
+        "description": "Complete admission"
+      },
+      {
+        "id": "s1",
+        "title": "hospital_course",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete hospital_course"
+      },
+      {
+        "id": "s2",
+        "title": "discharge_condition",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete discharge_condition"
+      },
+      {
+        "id": "s3",
+        "title": "instructions",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete instructions"
+      },
+      {
+        "id": "s4",
+        "title": "follow_up",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete follow_up"
+      }
+    ],
+    "tags": [
+      "medical",
+      "documentation",
+      "clinical"
+    ],
+    "description": "Discharge Summary framework template"
+  },
+  {
+    "id": "medical_doc_consultation_note",
+    "category": "medical",
+    "subcategory": "documentation",
+    "title": "Consultation Note",
+    "persona": "medical_documentation",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "reason",
+        "dependencies": [],
+        "description": "Complete reason"
+      },
+      {
+        "id": "s1",
+        "title": "history",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete history"
+      },
+      {
+        "id": "s2",
+        "title": "exam",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete exam"
+      },
+      {
+        "id": "s3",
+        "title": "data",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete data"
+      },
+      {
+        "id": "s4",
+        "title": "assessment",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete assessment"
+      },
+      {
+        "id": "s5",
+        "title": "recommendations",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete recommendations"
+      }
+    ],
+    "tags": [
+      "medical",
+      "documentation",
+      "clinical"
+    ],
+    "description": "Consultation Note framework template"
+  },
+  {
+    "id": "medical_doc_procedure_note",
+    "category": "medical",
+    "subcategory": "documentation",
+    "title": "Procedure Note",
+    "persona": "medical_documentation",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "indication",
+        "dependencies": [],
+        "description": "Complete indication"
+      },
+      {
+        "id": "s1",
+        "title": "consent",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete consent"
+      },
+      {
+        "id": "s2",
+        "title": "procedure",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete procedure"
+      },
+      {
+        "id": "s3",
+        "title": "findings",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete findings"
+      },
+      {
+        "id": "s4",
+        "title": "complications",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete complications"
+      },
+      {
+        "id": "s5",
+        "title": "plan",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete plan"
+      }
+    ],
+    "tags": [
+      "medical",
+      "documentation",
+      "clinical"
+    ],
+    "description": "Procedure Note framework template"
+  },
+  {
+    "id": "medical_doc_operative_note",
+    "category": "medical",
+    "subcategory": "documentation",
+    "title": "Operative Note",
+    "persona": "medical_documentation",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "preop_diagnosis",
+        "dependencies": [],
+        "description": "Complete preop_diagnosis"
+      },
+      {
+        "id": "s1",
+        "title": "postop_diagnosis",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete postop_diagnosis"
+      },
+      {
+        "id": "s2",
+        "title": "procedure",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete procedure"
+      },
+      {
+        "id": "s3",
+        "title": "findings",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete findings"
+      },
+      {
+        "id": "s4",
+        "title": "complications",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete complications"
+      }
+    ],
+    "tags": [
+      "medical",
+      "documentation",
+      "clinical"
+    ],
+    "description": "Operative Note framework template"
+  },
+  {
+    "id": "medical_doc_admission_note",
+    "category": "medical",
+    "subcategory": "documentation",
+    "title": "Admission Note",
+    "persona": "medical_documentation",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "chief_complaint",
+        "dependencies": [],
+        "description": "Complete chief_complaint"
+      },
+      {
+        "id": "s1",
+        "title": "hpi",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete hpi"
+      },
+      {
+        "id": "s2",
+        "title": "pmh",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete pmh"
+      },
+      {
+        "id": "s3",
+        "title": "exam",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete exam"
+      },
+      {
+        "id": "s4",
+        "title": "data",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete data"
+      },
+      {
+        "id": "s5",
+        "title": "assessment",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "description": "Complete assessment"
+      },
+      {
+        "id": "s6",
+        "title": "plan",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "description": "Complete plan"
+      }
+    ],
+    "tags": [
+      "medical",
+      "documentation",
+      "clinical"
+    ],
+    "description": "Admission Note framework template"
+  },
+  {
+    "id": "medical_doc_transfer_note",
+    "category": "medical",
+    "subcategory": "documentation",
+    "title": "Transfer Note",
+    "persona": "medical_documentation",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "reason",
+        "dependencies": [],
+        "description": "Complete reason"
+      },
+      {
+        "id": "s1",
+        "title": "summary",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete summary"
+      },
+      {
+        "id": "s2",
+        "title": "current_status",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete current_status"
+      },
+      {
+        "id": "s3",
+        "title": "pending",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete pending"
+      },
+      {
+        "id": "s4",
+        "title": "plan",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "description": "Complete plan"
+      }
+    ],
+    "tags": [
+      "medical",
+      "documentation",
+      "clinical"
+    ],
+    "description": "Transfer Note framework template"
+  },
+  {
+    "id": "medical_doc_death_summary",
+    "category": "medical",
+    "subcategory": "documentation",
+    "title": "Death Summary",
+    "persona": "medical_documentation",
+    "slots": [
+      {
+        "id": "s0",
+        "title": "date_time",
+        "dependencies": [],
+        "description": "Complete date_time"
+      },
+      {
+        "id": "s1",
+        "title": "cause",
+        "dependencies": [
+          "s0"
+        ],
+        "description": "Complete cause"
+      },
+      {
+        "id": "s2",
+        "title": "hospital_course",
+        "dependencies": [
+          "s0",
+          "s1"
+        ],
+        "description": "Complete hospital_course"
+      },
+      {
+        "id": "s3",
+        "title": "final_diagnoses",
+        "dependencies": [
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "description": "Complete final_diagnoses"
+      }
+    ],
+    "tags": [
+      "medical",
+      "documentation",
+      "clinical"
+    ],
+    "description": "Death Summary framework template"
+  }
+]
