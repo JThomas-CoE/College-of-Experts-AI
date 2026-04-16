@@ -214,3 +214,8 @@ scripts/verify_*.py
 scripts/visualize_*.py
 scripts/college_*.py
 scripts/test_env.py
+
+# Ollama Hybrid CLI
+Ollama Demo/
+ollamaDemo.md
+ollamaDemo.py

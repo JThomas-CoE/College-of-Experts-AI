@@ -1,0 +1,65 @@
+# qwen3.5/.gitignore — whitelist approach
+# Everything is excluded by default; only explicitly listed items are tracked.
+
+# Exclude everything
+*
+
+# --- Pipeline scripts (3) ---
+!master_profiler_v44_release.py
+!generate_all_masks_release.py
+!scripts/
+!scripts/prune_gguf_from_mask.py
+
+# --- Documentation ---
+!RESEARCH_LOG.md
+!PREPRINT.md
+!environment.yml
+
+# --- Pre-computed histograms (8 release domains, textual only) ---
+!histograms/
+!histograms/final/
+!histograms/final/coding_systems_textual_histogram.pt
+!histograms/final/coding_web_textual_histogram.pt
+!histograms/final/math_textual_histogram.pt
+!histograms/final/physics_textual_histogram.pt
+!histograms/final/bio_chem_textual_histogram.pt
+!histograms/final/applied_engineering_textual_histogram.pt
+!histograms/final/vocational_trades_textual_histogram.pt
+!histograms/final/humanities_textual_histogram.pt
+
+# --- Release masks (specialist only) ---
+!masks/
+!masks/specialist/
+!masks/specialist/coverage_SYSTEMS_K128.pt
+!masks/specialist/coverage_WEB_T_K128.pt
+!masks/specialist/coverage_MATH_T_K128.pt
+!masks/specialist/coverage_PHYS_T_K128.pt
+!masks/specialist/coverage_BIO_T_K128.pt
+!masks/specialist/coverage_ENG_K128.pt
+!masks/specialist/coverage_VOC_K128.pt
+!masks/specialist/coverage_HUM_K128.pt
+
+# --- Domain corpora (raw source files for 8 release models) ---
+!data/
+!data/curated/
+!data/curated/01_coding_web.jsonl
+!data/curated/02_coding_systems.jsonl
+!data/curated/05_science_physics.jsonl
+!data/curated/06_science_bio_chem.jsonl
+!data/curated/07_science_adv_math.jsonl
+!data/curated/07_science_math.jsonl
+!data/curated/08_humanities_phil.jsonl
+!data/curated/09_liberal_arts.jsonl
+
+# --- Domain corpora (hydrated — used for mask generation) ---
+!data/curated/hydrated/
+!data/curated/hydrated/01_coding_web_hydrated.jsonl
+!data/curated/hydrated/02_coding_systems_hydrated.jsonl
+!data/curated/hydrated/05_science_physics_hydrated.jsonl
+!data/curated/hydrated/06_science_bio_chem_hydrated.jsonl
+!data/curated/hydrated/07_science_adv_math_hydrated.jsonl
+!data/curated/hydrated/07_science_math_hydrated.jsonl
+!data/curated/hydrated/08_humanities_phil_hydrated.jsonl
+!data/curated/hydrated/09_liberal_arts_hydrated.jsonl
+!data/curated/hydrated/09_vocational_engineering_hydrated.jsonl
+!data/curated/hydrated/10_applied_engineering_hydrated.jsonl

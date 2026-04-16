@@ -1,0 +1,39 @@
+# College of Experts — Qwen3.5 pipeline dependencies
+#
+# This file lists the minimum packages required to run the three pipeline scripts:
+#   master_profiler_v44_release.py  — histogram collection (requires BF16 model)
+#   generate_all_masks_release.py   — mask generation from histograms
+#   scripts/prune_gguf_from_mask.py — GGUF surgery
+#
+# PLATFORM NOTE
+# The original experiments were run on a ROCm-enabled system. The torch entry
+# below uses the standard PyPI wheel. Replace with the appropriate CUDA or ROCm
+# wheel for your platform:
+#
+#   CUDA:   pip install torch --index-url https://download.pytorch.org/whl/cu124
+#   ROCm:   pip install torch --index-url https://download.pytorch.org/whl/rocm6.x
+#   CPU:    pip install torch
+#
+# A full conda env export is not provided because the original environment
+# contains ROCm-specific packages that are not portable.
+
+name: coe-qwen35
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      # Core tensor operations (see platform note above for GPU wheel)
+      - torch>=2.4.0
+      - numpy>=1.26.0
+      # Histogram collection (master_profiler_v44_release.py)
+      - transformers>=4.47.0
+      - accelerate>=0.34.0
+      - safetensors>=0.4.0
+      - pillow>=10.0.0
+      - tqdm>=4.66.0
+      - psutil>=5.9.0
+      # GGUF surgery (scripts/prune_gguf_from_mask.py)
+      - gguf>=0.10.0
