@@ -1,0 +1,109 @@
+# ===========================================================================
+# ALLOWLIST — everything excluded by default.
+# Add a line here to track a new file; do NOT add exclusions.
+# ===========================================================================
+
+# Block all files, allow git to recurse into subdirectories,
+# then re-ignore directories that must never be committed
+*
+!*/
+node_modules/
+gemma-4-26B-A4B-it/
+
+# ---------------------------------------------------------------------------
+# Repo meta
+# ---------------------------------------------------------------------------
+!.gitignore
+!/README.md
+
+# ---------------------------------------------------------------------------
+# Step 1 — corpus generation
+# ---------------------------------------------------------------------------
+!generate_domain_corpus_gemma4.py
+
+# ---------------------------------------------------------------------------
+# Step 2 — MoE activation profiling (full-precision HF model, router hooks)
+# ---------------------------------------------------------------------------
+!profile_domains_gemma4.py
+
+# ---------------------------------------------------------------------------
+# Step 3 — expert mask construction (three-pass: utility + CoT injection)
+# ---------------------------------------------------------------------------
+!build_coe_mask.py
+
+# ---------------------------------------------------------------------------
+# Step 4 — GGUF expert surgery
+# ---------------------------------------------------------------------------
+!surgery_gemma4.py
+
+# ---------------------------------------------------------------------------
+# MMLU-Pro benchmark runner & evaluator
+# ---------------------------------------------------------------------------
+!bench_mmlu_pro.py
+!bench_mmlu_pro_calc.py
+
+# ---------------------------------------------------------------------------
+# Near/far transfer analysis
+# ---------------------------------------------------------------------------
+!_run_pairwise_cross_domain_bench.py
+!compute_param_similarity.py
+!_compute_residual_similarity.py
+!_analyze_transfer_correlations.py
+!plot_pairwise_scatter.py
+!plot_transfer_efficiency_g39.py
+
+# ---------------------------------------------------------------------------
+# Plot images (committed so README/HF card can embed them)
+# ---------------------------------------------------------------------------
+!plot_transfer_efficiency_g39.png
+!data/pairwise_scatter_g39.png
+
+# ---------------------------------------------------------------------------
+# Reference data (small committed resources)
+# ---------------------------------------------------------------------------
+!data/cot_think_results.pt
+!data/param_similarity.json
+!data/residual_similarity.json
+
+# ---------------------------------------------------------------------------
+# Released masks — 10 MMLU-Pro domains (merged off4+off9, K=64)
+# ---------------------------------------------------------------------------
+!mask_coe_math_mmlu_merged_swapactive_K64.json
+!mask_coe_math_mmlu_merged_swapactive_K64_swaplog.json
+!mask_coe_physics_mmlu_merged_swapactive_K64.json
+!mask_coe_physics_mmlu_merged_swapactive_K64_swaplog.json
+!mask_coe_chemistry_mmlu_merged_swapactive_K64.json
+!mask_coe_chemistry_mmlu_merged_swapactive_K64_swaplog.json
+!mask_coe_engineering_mmlu_merged_swapactive_K64.json
+!mask_coe_engineering_mmlu_merged_swapactive_K64_swaplog.json
+!mask_coe_cs_mmlu_merged_swapactive_K64.json
+!mask_coe_cs_mmlu_merged_swapactive_K64_swaplog.json
+!mask_coe_biology_mmlu_merged_swapactive_K64.json
+!mask_coe_biology_mmlu_merged_swapactive_K64_swaplog.json
+!mask_coe_economics_mmlu_merged_swapactive_K64.json
+!mask_coe_economics_mmlu_merged_swapactive_K64_swaplog.json
+!mask_coe_business_mmlu_merged_swapactive_K64.json
+!mask_coe_business_mmlu_merged_swapactive_K64_swaplog.json
+!mask_coe_psychology_mmlu_merged_swapactive_K64.json
+!mask_coe_psychology_mmlu_merged_swapactive_K64_swaplog.json
+!mask_coe_law_mmlu_merged_swapactive_K64.json
+!mask_coe_law_mmlu_merged_swapactive_K64_swaplog.json
+
+# ---------------------------------------------------------------------------
+# Modelfiles — 10 MMLU-Pro domains
+# ---------------------------------------------------------------------------
+!Modelfile.math-mmlu-K64
+!Modelfile.physics-mmlu-K64
+!Modelfile.chemistry-mmlu-K64
+!Modelfile.engineering-mmlu-K64
+!Modelfile.cs-mmlu-K64
+!Modelfile.biology-mmlu-K64
+!Modelfile.economics-mmlu-K64
+!Modelfile.business-mmlu-K64
+!Modelfile.psychology-mmlu-K64
+!Modelfile.law-mmlu-K64
+
+# ---------------------------------------------------------------------------
+# HF model card template
+# ---------------------------------------------------------------------------
+!HF_README_coe-gemma4-mmlu_pro_batch.md

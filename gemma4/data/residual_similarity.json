@@ -1,0 +1,1103 @@
+{
+  "domains": [
+    "math",
+    "physics",
+    "engineering",
+    "cs",
+    "chemistry",
+    "biology",
+    "health",
+    "economics",
+    "business",
+    "psychology",
+    "law",
+    "history",
+    "philosophy",
+    "other"
+  ],
+  "universal_count": 1114,
+  "residual_counts": {
+    "math": 806,
+    "physics": 806,
+    "engineering": 806,
+    "cs": 806,
+    "chemistry": 806,
+    "biology": 806,
+    "health": 806,
+    "economics": 806,
+    "business": 806,
+    "psychology": 806,
+    "law": 806,
+    "history": 806,
+    "philosophy": 806,
+    "other": 806
+  },
+  "matrix": {
+    "math": {
+      "math": 1.0,
+      "physics": 0.7866,
+      "engineering": 0.764268,
+      "cs": 0.723325,
+      "chemistry": 0.78536,
+      "biology": 0.610422,
+      "health": 0.578164,
+      "economics": 0.641439,
+      "business": 0.755583,
+      "psychology": 0.552109,
+      "law": 0.485112,
+      "history": 0.46402,
+      "philosophy": 0.55335,
+      "other": 0.566998
+    },
+    "physics": {
+      "math": 0.7866,
+      "physics": 1.0,
+      "engineering": 0.853598,
+      "cs": 0.663772,
+      "chemistry": 0.854839,
+      "biology": 0.629032,
+      "health": 0.595533,
+      "economics": 0.58933,
+      "business": 0.710918,
+      "psychology": 0.507444,
+      "law": 0.447891,
+      "history": 0.455335,
+      "philosophy": 0.496278,
+      "other": 0.521092
+    },
+    "engineering": {
+      "math": 0.764268,
+      "physics": 0.853598,
+      "engineering": 1.0,
+      "cs": 0.66129,
+      "chemistry": 0.847395,
+      "biology": 0.58933,
+      "health": 0.576923,
+      "economics": 0.57196,
+      "business": 0.686104,
+      "psychology": 0.486352,
+      "law": 0.420596,
+      "history": 0.403226,
+      "philosophy": 0.467742,
+      "other": 0.493797
+    },
+    "cs": {
+      "math": 0.723325,
+      "physics": 0.663772,
+      "engineering": 0.66129,
+      "cs": 1.0,
+      "chemistry": 0.646402,
+      "biology": 0.590571,
+      "health": 0.57196,
+      "economics": 0.64268,
+      "business": 0.671216,
+      "psychology": 0.555831,
+      "law": 0.485112,
+      "history": 0.440447,
+      "philosophy": 0.528536,
+      "other": 0.566998
+    },
+    "chemistry": {
+      "math": 0.78536,
+      "physics": 0.854839,
+      "engineering": 0.847395,
+      "cs": 0.646402,
+      "chemistry": 1.0,
+      "biology": 0.611663,
+      "health": 0.583127,
+      "economics": 0.57072,
+      "business": 0.69727,
+      "psychology": 0.495037,
+      "law": 0.413151,
+      "history": 0.41067,
+      "philosophy": 0.477667,
+      "other": 0.5
+    },
+    "biology": {
+      "math": 0.610422,
+      "physics": 0.629032,
+      "engineering": 0.58933,
+      "cs": 0.590571,
+      "chemistry": 0.611663,
+      "biology": 1.0,
+      "health": 0.825062,
+      "economics": 0.733251,
+      "business": 0.575682,
+      "psychology": 0.74938,
+      "law": 0.617866,
+      "history": 0.631514,
+      "philosophy": 0.669975,
+      "other": 0.643921
+    },
+    "health": {
+      "math": 0.578164,
+      "physics": 0.595533,
+      "engineering": 0.576923,
+      "cs": 0.57196,
+      "chemistry": 0.583127,
+      "biology": 0.825062,
+      "health": 1.0,
+      "economics": 0.707196,
+      "business": 0.568238,
+      "psychology": 0.74938,
+      "law": 0.62531,
+      "history": 0.629032,
+      "philosophy": 0.666253,
+      "other": 0.669975
+    },
+    "economics": {
+      "math": 0.641439,
+      "physics": 0.58933,
+      "engineering": 0.57196,
+      "cs": 0.64268,
+      "chemistry": 0.57072,
+      "biology": 0.733251,
+      "health": 0.707196,
+      "economics": 1.0,
+      "business": 0.684864,
+      "psychology": 0.739454,
+      "law": 0.700993,
+      "history": 0.64268,
+      "philosophy": 0.718362,
+      "other": 0.758065
+    },
+    "business": {
+      "math": 0.755583,
+      "physics": 0.710918,
+      "engineering": 0.686104,
+      "cs": 0.671216,
+      "chemistry": 0.69727,
+      "biology": 0.575682,
+      "health": 0.568238,
+      "economics": 0.684864,
+      "business": 1.0,
+      "psychology": 0.568238,
+      "law": 0.540943,
+      "history": 0.486352,
+      "philosophy": 0.547146,
+      "other": 0.651365
+    },
+    "psychology": {
+      "math": 0.552109,
+      "physics": 0.507444,
+      "engineering": 0.486352,
+      "cs": 0.555831,
+      "chemistry": 0.495037,
+      "biology": 0.74938,
+      "health": 0.74938,
+      "economics": 0.739454,
+      "business": 0.568238,
+      "psychology": 1.0,
+      "law": 0.694789,
+      "history": 0.668734,
+      "philosophy": 0.772953,
+      "other": 0.718362
+    },
+    "law": {
+      "math": 0.485112,
+      "physics": 0.447891,
+      "engineering": 0.420596,
+      "cs": 0.485112,
+      "chemistry": 0.413151,
+      "biology": 0.617866,
+      "health": 0.62531,
+      "economics": 0.700993,
+      "business": 0.540943,
+      "psychology": 0.694789,
+      "law": 1.0,
+      "history": 0.704715,
+      "philosophy": 0.698511,
+      "other": 0.718362
+    },
+    "history": {
+      "math": 0.46402,
+      "physics": 0.455335,
+      "engineering": 0.403226,
+      "cs": 0.440447,
+      "chemistry": 0.41067,
+      "biology": 0.631514,
+      "health": 0.629032,
+      "economics": 0.64268,
+      "business": 0.486352,
+      "psychology": 0.668734,
+      "law": 0.704715,
+      "history": 1.0,
+      "philosophy": 0.730769,
+      "other": 0.704715
+    },
+    "philosophy": {
+      "math": 0.55335,
+      "physics": 0.496278,
+      "engineering": 0.467742,
+      "cs": 0.528536,
+      "chemistry": 0.477667,
+      "biology": 0.669975,
+      "health": 0.666253,
+      "economics": 0.718362,
+      "business": 0.547146,
+      "psychology": 0.772953,
+      "law": 0.698511,
+      "history": 0.730769,
+      "philosophy": 1.0,
+      "other": 0.7134
+    },
+    "other": {
+      "math": 0.566998,
+      "physics": 0.521092,
+      "engineering": 0.493797,
+      "cs": 0.566998,
+      "chemistry": 0.5,
+      "biology": 0.643921,
+      "health": 0.669975,
+      "economics": 0.758065,
+      "business": 0.651365,
+      "psychology": 0.718362,
+      "law": 0.718362,
+      "history": 0.704715,
+      "philosophy": 0.7134,
+      "other": 1.0
+    }
+  },
+  "rankings": {
+    "math": {
+      "nearest": "physics",
+      "nearest_frac": 0.7866,
+      "furthest": "history",
+      "furthest_frac": 0.464,
+      "ranked": [
+        [
+          "physics",
+          0.7866
+        ],
+        [
+          "chemistry",
+          0.7854
+        ],
+        [
+          "engineering",
+          0.7643
+        ],
+        [
+          "business",
+          0.7556
+        ],
+        [
+          "cs",
+          0.7233
+        ],
+        [
+          "economics",
+          0.6414
+        ],
+        [
+          "biology",
+          0.6104
+        ],
+        [
+          "health",
+          0.5782
+        ],
+        [
+          "other",
+          0.567
+        ],
+        [
+          "philosophy",
+          0.5533
+        ],
+        [
+          "psychology",
+          0.5521
+        ],
+        [
+          "law",
+          0.4851
+        ],
+        [
+          "history",
+          0.464
+        ]
+      ]
+    },
+    "physics": {
+      "nearest": "chemistry",
+      "nearest_frac": 0.8548,
+      "furthest": "law",
+      "furthest_frac": 0.4479,
+      "ranked": [
+        [
+          "chemistry",
+          0.8548
+        ],
+        [
+          "engineering",
+          0.8536
+        ],
+        [
+          "math",
+          0.7866
+        ],
+        [
+          "business",
+          0.7109
+        ],
+        [
+          "cs",
+          0.6638
+        ],
+        [
+          "biology",
+          0.629
+        ],
+        [
+          "health",
+          0.5955
+        ],
+        [
+          "economics",
+          0.5893
+        ],
+        [
+          "other",
+          0.5211
+        ],
+        [
+          "psychology",
+          0.5074
+        ],
+        [
+          "philosophy",
+          0.4963
+        ],
+        [
+          "history",
+          0.4553
+        ],
+        [
+          "law",
+          0.4479
+        ]
+      ]
+    },
+    "engineering": {
+      "nearest": "physics",
+      "nearest_frac": 0.8536,
+      "furthest": "history",
+      "furthest_frac": 0.4032,
+      "ranked": [
+        [
+          "physics",
+          0.8536
+        ],
+        [
+          "chemistry",
+          0.8474
+        ],
+        [
+          "math",
+          0.7643
+        ],
+        [
+          "business",
+          0.6861
+        ],
+        [
+          "cs",
+          0.6613
+        ],
+        [
+          "biology",
+          0.5893
+        ],
+        [
+          "health",
+          0.5769
+        ],
+        [
+          "economics",
+          0.572
+        ],
+        [
+          "other",
+          0.4938
+        ],
+        [
+          "psychology",
+          0.4864
+        ],
+        [
+          "philosophy",
+          0.4677
+        ],
+        [
+          "law",
+          0.4206
+        ],
+        [
+          "history",
+          0.4032
+        ]
+      ]
+    },
+    "cs": {
+      "nearest": "math",
+      "nearest_frac": 0.7233,
+      "furthest": "history",
+      "furthest_frac": 0.4404,
+      "ranked": [
+        [
+          "math",
+          0.7233
+        ],
+        [
+          "business",
+          0.6712
+        ],
+        [
+          "physics",
+          0.6638
+        ],
+        [
+          "engineering",
+          0.6613
+        ],
+        [
+          "chemistry",
+          0.6464
+        ],
+        [
+          "economics",
+          0.6427
+        ],
+        [
+          "biology",
+          0.5906
+        ],
+        [
+          "health",
+          0.572
+        ],
+        [
+          "other",
+          0.567
+        ],
+        [
+          "psychology",
+          0.5558
+        ],
+        [
+          "philosophy",
+          0.5285
+        ],
+        [
+          "law",
+          0.4851
+        ],
+        [
+          "history",
+          0.4404
+        ]
+      ]
+    },
+    "chemistry": {
+      "nearest": "physics",
+      "nearest_frac": 0.8548,
+      "furthest": "history",
+      "furthest_frac": 0.4107,
+      "ranked": [
+        [
+          "physics",
+          0.8548
+        ],
+        [
+          "engineering",
+          0.8474
+        ],
+        [
+          "math",
+          0.7854
+        ],
+        [
+          "business",
+          0.6973
+        ],
+        [
+          "cs",
+          0.6464
+        ],
+        [
+          "biology",
+          0.6117
+        ],
+        [
+          "health",
+          0.5831
+        ],
+        [
+          "economics",
+          0.5707
+        ],
+        [
+          "other",
+          0.5
+        ],
+        [
+          "psychology",
+          0.495
+        ],
+        [
+          "philosophy",
+          0.4777
+        ],
+        [
+          "law",
+          0.4132
+        ],
+        [
+          "history",
+          0.4107
+        ]
+      ]
+    },
+    "biology": {
+      "nearest": "health",
+      "nearest_frac": 0.8251,
+      "furthest": "business",
+      "furthest_frac": 0.5757,
+      "ranked": [
+        [
+          "health",
+          0.8251
+        ],
+        [
+          "psychology",
+          0.7494
+        ],
+        [
+          "economics",
+          0.7333
+        ],
+        [
+          "philosophy",
+          0.67
+        ],
+        [
+          "other",
+          0.6439
+        ],
+        [
+          "history",
+          0.6315
+        ],
+        [
+          "physics",
+          0.629
+        ],
+        [
+          "law",
+          0.6179
+        ],
+        [
+          "chemistry",
+          0.6117
+        ],
+        [
+          "math",
+          0.6104
+        ],
+        [
+          "cs",
+          0.5906
+        ],
+        [
+          "engineering",
+          0.5893
+        ],
+        [
+          "business",
+          0.5757
+        ]
+      ]
+    },
+    "health": {
+      "nearest": "biology",
+      "nearest_frac": 0.8251,
+      "furthest": "business",
+      "furthest_frac": 0.5682,
+      "ranked": [
+        [
+          "biology",
+          0.8251
+        ],
+        [
+          "psychology",
+          0.7494
+        ],
+        [
+          "economics",
+          0.7072
+        ],
+        [
+          "other",
+          0.67
+        ],
+        [
+          "philosophy",
+          0.6663
+        ],
+        [
+          "history",
+          0.629
+        ],
+        [
+          "law",
+          0.6253
+        ],
+        [
+          "physics",
+          0.5955
+        ],
+        [
+          "chemistry",
+          0.5831
+        ],
+        [
+          "math",
+          0.5782
+        ],
+        [
+          "engineering",
+          0.5769
+        ],
+        [
+          "cs",
+          0.572
+        ],
+        [
+          "business",
+          0.5682
+        ]
+      ]
+    },
+    "economics": {
+      "nearest": "other",
+      "nearest_frac": 0.7581,
+      "furthest": "chemistry",
+      "furthest_frac": 0.5707,
+      "ranked": [
+        [
+          "other",
+          0.7581
+        ],
+        [
+          "psychology",
+          0.7395
+        ],
+        [
+          "biology",
+          0.7333
+        ],
+        [
+          "philosophy",
+          0.7184
+        ],
+        [
+          "health",
+          0.7072
+        ],
+        [
+          "law",
+          0.701
+        ],
+        [
+          "business",
+          0.6849
+        ],
+        [
+          "cs",
+          0.6427
+        ],
+        [
+          "history",
+          0.6427
+        ],
+        [
+          "math",
+          0.6414
+        ],
+        [
+          "physics",
+          0.5893
+        ],
+        [
+          "engineering",
+          0.572
+        ],
+        [
+          "chemistry",
+          0.5707
+        ]
+      ]
+    },
+    "business": {
+      "nearest": "math",
+      "nearest_frac": 0.7556,
+      "furthest": "history",
+      "furthest_frac": 0.4864,
+      "ranked": [
+        [
+          "math",
+          0.7556
+        ],
+        [
+          "physics",
+          0.7109
+        ],
+        [
+          "chemistry",
+          0.6973
+        ],
+        [
+          "engineering",
+          0.6861
+        ],
+        [
+          "economics",
+          0.6849
+        ],
+        [
+          "cs",
+          0.6712
+        ],
+        [
+          "other",
+          0.6514
+        ],
+        [
+          "biology",
+          0.5757
+        ],
+        [
+          "health",
+          0.5682
+        ],
+        [
+          "psychology",
+          0.5682
+        ],
+        [
+          "philosophy",
+          0.5471
+        ],
+        [
+          "law",
+          0.5409
+        ],
+        [
+          "history",
+          0.4864
+        ]
+      ]
+    },
+    "psychology": {
+      "nearest": "philosophy",
+      "nearest_frac": 0.773,
+      "furthest": "engineering",
+      "furthest_frac": 0.4864,
+      "ranked": [
+        [
+          "philosophy",
+          0.773
+        ],
+        [
+          "biology",
+          0.7494
+        ],
+        [
+          "health",
+          0.7494
+        ],
+        [
+          "economics",
+          0.7395
+        ],
+        [
+          "other",
+          0.7184
+        ],
+        [
+          "law",
+          0.6948
+        ],
+        [
+          "history",
+          0.6687
+        ],
+        [
+          "business",
+          0.5682
+        ],
+        [
+          "cs",
+          0.5558
+        ],
+        [
+          "math",
+          0.5521
+        ],
+        [
+          "physics",
+          0.5074
+        ],
+        [
+          "chemistry",
+          0.495
+        ],
+        [
+          "engineering",
+          0.4864
+        ]
+      ]
+    },
+    "law": {
+      "nearest": "other",
+      "nearest_frac": 0.7184,
+      "furthest": "chemistry",
+      "furthest_frac": 0.4132,
+      "ranked": [
+        [
+          "other",
+          0.7184
+        ],
+        [
+          "history",
+          0.7047
+        ],
+        [
+          "economics",
+          0.701
+        ],
+        [
+          "philosophy",
+          0.6985
+        ],
+        [
+          "psychology",
+          0.6948
+        ],
+        [
+          "health",
+          0.6253
+        ],
+        [
+          "biology",
+          0.6179
+        ],
+        [
+          "business",
+          0.5409
+        ],
+        [
+          "math",
+          0.4851
+        ],
+        [
+          "cs",
+          0.4851
+        ],
+        [
+          "physics",
+          0.4479
+        ],
+        [
+          "engineering",
+          0.4206
+        ],
+        [
+          "chemistry",
+          0.4132
+        ]
+      ]
+    },
+    "history": {
+      "nearest": "philosophy",
+      "nearest_frac": 0.7308,
+      "furthest": "engineering",
+      "furthest_frac": 0.4032,
+      "ranked": [
+        [
+          "philosophy",
+          0.7308
+        ],
+        [
+          "law",
+          0.7047
+        ],
+        [
+          "other",
+          0.7047
+        ],
+        [
+          "psychology",
+          0.6687
+        ],
+        [
+          "economics",
+          0.6427
+        ],
+        [
+          "biology",
+          0.6315
+        ],
+        [
+          "health",
+          0.629
+        ],
+        [
+          "business",
+          0.4864
+        ],
+        [
+          "math",
+          0.464
+        ],
+        [
+          "physics",
+          0.4553
+        ],
+        [
+          "cs",
+          0.4404
+        ],
+        [
+          "chemistry",
+          0.4107
+        ],
+        [
+          "engineering",
+          0.4032
+        ]
+      ]
+    },
+    "philosophy": {
+      "nearest": "psychology",
+      "nearest_frac": 0.773,
+      "furthest": "engineering",
+      "furthest_frac": 0.4677,
+      "ranked": [
+        [
+          "psychology",
+          0.773
+        ],
+        [
+          "history",
+          0.7308
+        ],
+        [
+          "economics",
+          0.7184
+        ],
+        [
+          "other",
+          0.7134
+        ],
+        [
+          "law",
+          0.6985
+        ],
+        [
+          "biology",
+          0.67
+        ],
+        [
+          "health",
+          0.6663
+        ],
+        [
+          "math",
+          0.5533
+        ],
+        [
+          "business",
+          0.5471
+        ],
+        [
+          "cs",
+          0.5285
+        ],
+        [
+          "physics",
+          0.4963
+        ],
+        [
+          "chemistry",
+          0.4777
+        ],
+        [
+          "engineering",
+          0.4677
+        ]
+      ]
+    },
+    "other": {
+      "nearest": "economics",
+      "nearest_frac": 0.7581,
+      "furthest": "engineering",
+      "furthest_frac": 0.4938,
+      "ranked": [
+        [
+          "economics",
+          0.7581
+        ],
+        [
+          "psychology",
+          0.7184
+        ],
+        [
+          "law",
+          0.7184
+        ],
+        [
+          "philosophy",
+          0.7134
+        ],
+        [
+          "history",
+          0.7047
+        ],
+        [
+          "health",
+          0.67
+        ],
+        [
+          "business",
+          0.6514
+        ],
+        [
+          "biology",
+          0.6439
+        ],
+        [
+          "math",
+          0.567
+        ],
+        [
+          "cs",
+          0.567
+        ],
+        [
+          "physics",
+          0.5211
+        ],
+        [
+          "chemistry",
+          0.5
+        ],
+        [
+          "engineering",
+          0.4938
+        ]
+      ]
+    }
+  }
+}

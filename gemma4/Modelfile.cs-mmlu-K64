@@ -1,0 +1,8 @@
+﻿FROM D:\ollama\models\blobs\gemma4-cs-mmlu-swapactive-K64.gguf
+TEMPLATE {{ .Prompt }}
+RENDERER gemma4
+PARSER gemma4
+PARAMETER stop <turn|>
+PARAMETER temperature 0.6
+PARAMETER repeat_penalty 1.05
+PARAMETER repeat_last_n 1024
