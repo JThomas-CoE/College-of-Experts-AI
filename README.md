@@ -1,6 +1,14 @@
 # College of Experts (CoE)
 
-> A disk-resident sparse mixture architecture for running trillion-parameter-scale AI locally on consumer hardware.
+> ## What's New — Gemma4 Automated Domain Specialist Model Generator and Proof of Domain Localization in Parameter Space
+>
+> → **[gemma4/README.md](gemma4/README.md)** for the full pipeline, benchmarks, and findings.
+>
+> Activation-directed expert surgery on Gemma4-26B-A4B produces 10 domain specialist models at **12.3 GB VRAM** (vs 19.4 GB parent, −37%), with parent-level home-domain accuracy and a fully automatable pipeline. The near/far cross-domain transfer experiments provide the first quantitative, multi-domain empirical proof of **semantic localization in expert parameter space** across a large MoE model.
+>
+> *The content below describes the original CoE dynamic-routing framework (Qwen/DeepSeek era). It remains for historical context but is largely superseded by the Gemma4 surgery approach above.*
+
+---
 
 [![License: PolyForm Noncommercial](https://img.shields.io/badge/License-PolyForm_Noncommercial-purple.svg)](https://polyformproject.org/licenses/noncommercial/1.0.0)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
